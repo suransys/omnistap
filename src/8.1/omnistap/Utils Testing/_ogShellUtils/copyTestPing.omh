@@ -1,0 +1,10 @@
+Calculate lcPathToPing as "C:\Windows\System32\PING.EXE"
+
+Calculate icPathToTestPing as uoPath.$temp()
+Calculate icPathToTestPing as con(icPathToTestPing,"testping.exe")
+
+If FileOps.$doesfileexist(icPathToTestPing)
+	Do FileOps.$deletefile(icPathToTestPing)
+End If
+
+Do FileOps.$copyfile(lcPathToPing,icPathToTestPing)

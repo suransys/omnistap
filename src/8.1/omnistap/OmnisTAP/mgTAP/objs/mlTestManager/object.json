@@ -1,0 +1,22 @@
+{
+	"ident": 1008,
+	"order": 1,
+	"properties": {
+		"cascade": "",
+		"checked": false,
+		"enabled": true,
+		"fontstyle": "kPlain",
+		"helpfile": 0,
+		"helptext": "",
+		"iconid": 0,
+		"macshortcutkey": "Cmnd+Opt+Z",
+		"text": {
+			"type": 0,
+			"calc": "OmnisTAP"
+		},
+		"unixshortcutkey": "Ctrl+Shift+Z",
+		"userinfo": "",
+		"users": "12345678",
+		"winshortcutkey": "Ctrl+Shift+Z"
+	}
+}

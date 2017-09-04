@@ -1,0 +1,7 @@
+Do $cinst.$getWidthForList() Returns lnListWidth
+
+Calculate lbHorizontalScrollbarVisible as iirList.$width<lnListWidth
+
+If iirList.$horzscroll<>lbHorizontalScrollbarVisible
+	Do $cinst.$_setHorizontalScrollVisible(lbHorizontalScrollbarVisible)
+End If

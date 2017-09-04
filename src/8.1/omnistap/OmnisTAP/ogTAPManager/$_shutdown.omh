@@ -1,0 +1,8 @@
+Do $cinst.$_executeLibraryShutdown()
+
+If isclear(icTAPOutputDirectory)
+	Do $cinst.$_logTimingsToTAP()
+	Do $cinst.$_logTestTypesToTAP()
+End If
+
+Do $itasks.$findname("omnistap").$setTestRunning(kFalse)

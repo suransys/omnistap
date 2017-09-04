@@ -1,0 +1,14 @@
+If not(isclear(ilDestinations.Path))
+	Quit method ilDestinations.Path
+End If
+
+Switch ilDestinations.Destination
+	Case "Log"
+		Calculate ilDestinations.Path as con(uoPath.$logs(),low($ctask.uoBranding.$getProgramName()),"_",dat(#D,"yMD"),".log")
+	Case "Stdout"
+		Calculate ilDestinations.Path as uoPath.$stdout()
+	Case "Stderr"
+		Calculate ilDestinations.Path as uoPath.$stderr()
+End Switch
+
+Quit method ilDestinations.Path

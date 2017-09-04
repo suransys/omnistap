@@ -1,0 +1,17 @@
+Do $cinst.$_getOpenWindows() Returns llOpenWindowsAfter
+
+If llOpenWindowsAfter.$linecount<=ilOpenWindowsBefore.$linecount
+	Quit method
+End If
+
+Calculate icChange as con("(+",llOpenWindowsAfter.$linecount-ilOpenWindowsBefore.$linecount,") ")
+
+Do ioTAP.$fail(con(icChange,"Started with ",ilOpenWindowsBefore.$linecount," open windows, ended with ",llOpenWindowsAfter.$linecount))
+
+For ilOpenWindowsBefore.$line from 1 to ilOpenWindowsBefore.$linecount step 1
+	Do ioTAP.$diag(con("Window open before: ",ilOpenWindowsBefore.Name,"; Class: ",ilOpenWindowsBefore.Class,"; Title: ",ilOpenWindowsBefore.Title))
+End For
+
+For llOpenWindowsAfter.$line from 1 to llOpenWindowsAfter.$linecount step 1
+	Do ioTAP.$diag(con("Window open after: ",llOpenWindowsAfter.Name,"; Class: ",llOpenWindowsAfter.Class,"; Title: ",llOpenWindowsAfter.Title))
+End For

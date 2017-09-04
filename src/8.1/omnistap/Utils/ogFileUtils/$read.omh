@@ -1,0 +1,9 @@
+If FileOps.$doesfileexist(pcPath)=kFalse
+	Quit method ""
+End If
+
+Do loFile.$openfile(pcPath,kTrue) Returns #1
+Do loFile.$readcharacter(kUniTypeAuto,lcContents)
+Do loFile.$closefile()
+
+Quit method lcContents

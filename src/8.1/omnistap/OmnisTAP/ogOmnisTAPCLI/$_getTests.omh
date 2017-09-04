@@ -1,0 +1,10 @@
+Set reference lirTask to $ctask
+Set reference lirLibrary to lirTask.$lib
+Do $itasks.omnistap.$getTests(lirLibrary().$name) Returns llTestMethods
+
+If not(isclear(pcTestsToRunExpression))
+	Do llTestMethods.$search(rxpos(pcTestsToRunExpression,llTestMethods.Test,kTrue,kFalse,liMatchLength)>0,1,0,1,1)
+	Do llTestMethods.$remove(kListKeepSelected)
+End If
+
+Quit method llTestMethods

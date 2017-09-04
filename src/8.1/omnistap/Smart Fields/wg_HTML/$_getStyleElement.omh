@@ -1,0 +1,17 @@
+Begin text block
+Text: {<style>}
+Text: {* {}
+Text: {font-family: Sans-serif;}
+Text: {font-size: small;}
+Text: {}}
+Text: {table {}
+Text: {width: 100%;}
+Text: {border-spacing: 0px;}
+Text: {}}
+Text: {[_icCSS]}
+Text: {</style>}
+End text block
+
+Get text block lcStyleElement
+
+Quit method lcStyleElement

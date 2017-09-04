@@ -1,0 +1,7 @@
+;  Set iirExternalVariable to internal variables.
+;  ==Uncomment these==
+Do inherited
+
+Calculate iirExternalVariable as icText
+
+Do $cinst.$dataChanged()

@@ -1,0 +1,9 @@
+Do $cinst.$_getLogFile() Returns lcPath
+
+If FileOps.$doesfileexist(lcPath)
+	Do loFile.$openfile(lcPath) Returns lnStatus
+	Do loFile.$readcharacter(kUniTypeUTF8,lcText) Returns lnStatus
+	Do loFile.$closefile() Returns lnStatus
+End If
+
+Quit method lcText

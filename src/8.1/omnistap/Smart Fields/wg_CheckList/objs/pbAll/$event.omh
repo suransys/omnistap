@@ -1,0 +1,2 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Do $cfield.$click()

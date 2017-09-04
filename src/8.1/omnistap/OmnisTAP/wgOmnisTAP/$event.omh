@@ -1,0 +1,12 @@
+On evToTop
+	Calculate llStack as sys(192)
+	If llStack.$linecount>2
+		Quit method
+	End If
+	
+	If _ibBypassNextReload=kTrue
+		Calculate _ibBypassNextReload as kFalse
+		Quit method
+	End If
+	
+	Do $cinst.$_loadTestsFromLibrary()

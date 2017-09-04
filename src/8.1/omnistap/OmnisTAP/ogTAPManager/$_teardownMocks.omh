@@ -1,0 +1,22 @@
+;  Classes
+For ilMocks.$line from 1 to ilMocks.$linecount step 1
+	;  Destroy instance
+	Do ilMocks.Mock.$getMockInstance() Returns lirMockInstance
+	Set reference lirMockClass to ilMocks.Mock.$getMockClass()
+	
+	If lirMockClass.$classtype=kObjectclass
+		Calculate lorMockInstanceObjectRef as lirMockInstance.$objref
+		Do lorMockInstanceObjectRef.$deleteref()
+	Else
+		Do lirMockInstance.$close()
+	End If
+	
+	;  Delete class
+	Set reference lirLibrary to lirMockClass().$lib
+	Do lirLibrary.$classes.$remove(lirMockClass)
+	
+	;  Delete mock object
+	Do ilMocks.Mock.$deleteref()
+End For
+
+Do ilMocks.$clear()

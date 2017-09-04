@@ -1,0 +1,35 @@
+{
+	"classtype": "kObjectclass",
+	"internalversion": 20,
+	"superclass": "omnistap.ogTAPSuper",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ibClickCalled",
+			"order": 1,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2014-11-25 13:16:48",
+		"desc": "",
+		"designtaskname": "Startup_Task",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2017-08-12 17:35:00",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 2
+	}
+}

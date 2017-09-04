@@ -1,0 +1,11 @@
+Calculate ilTests.$line as iiCurrentTest
+
+Do $cinst.$_runTest()
+Calculate iiCurrentTest as iiCurrentTest+1
+
+If $cinst.$_canContinueTestRun()
+	Do $cinst.$starttimer()
+	Quit method
+End If
+
+Do $cinst.$_finishTestRun()

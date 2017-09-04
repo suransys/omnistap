@@ -1,0 +1,5 @@
+Do $cinst.$_runCommand(pcScript,pfrResult,pnExecutionLevel,pbBackground,pcUserName,pcPassword) Returns lnReturnCode
+
+Do $cinst.$_logCommand("$run",pcScript,pfrResult,pnExecutionLevel,pbBackground,lnReturnCode)
+
+Quit method lnReturnCode

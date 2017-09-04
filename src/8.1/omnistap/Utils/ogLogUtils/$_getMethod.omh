@@ -1,0 +1,4 @@
+Calculate lcMethodLine as con(ilLog.Method().$fullname," line ",ilLog.MethodLine)
+Calculate lcMethodLine as replaceall(lcMethodLine,"//","")
+
+Quit method lcMethodLine

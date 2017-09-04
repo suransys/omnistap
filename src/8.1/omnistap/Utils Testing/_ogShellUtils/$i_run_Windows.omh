@@ -1,0 +1,36 @@
+If tvMacVersion
+	Quit method
+End If
+
+Do $cinst.$when("running a foreground command")
+
+Calculate lcScript as "echo foo"
+Do uoShell.$run(lcScript,lcResult)
+Do ioTAP.$is_char(lcResult,"foo","echo command ran successfully")
+
+Do $cinst.$when("running a foreground command elevated")
+
+Calculate lcFile as getenv("PROGRAMFILES")
+Calculate lcFile as con(lcFile,sys(9),"temp_",#CT,".txt")
+
+Do uoShell.$run(con('echo foo > "',lcFile,'"'),lcResults,2) Returns lnErrorCode
+Do ioTAP.$is_number(lnErrorCode,0,"Got a zero return code")
+Do ioTAP.$fileexists(lcFile,"Wrote a file to a directory requiring admin privileges")
+Do uoShell.$run(con('del "',lcFile,'"'),lcResults,2) Returns lnErrorCode
+
+Do $cinst.$when("running a background command")
+
+Do uoPath.$temp() Returns lcTempFile
+Calculate lcTempFile as con(lcTempFile,"temp.txt")
+
+Do $cinst.$_getDelayScript(lnDelay) Returns lcScript
+Calculate lcScript as con(lcScript,kCr,kLf,'echo done > "',lcTempFile,'"')
+
+Calculate lnCT as #CT
+Do uoShell.$run(lcScript,lcResult,kFalse,kTrue)
+Do ioTAP.$ok((#CT-lnCT)<lnDelay*60,"Delay script is running in background because control returned to Omnis in less time than the amount of the delay")
+
+Do uoDateTime.$wait((lnDelay+1)*60)
+
+Do ioTAP.$fileexists(lcTempFile,"We have a file created by the background script")
+Do FileOps.$deletefile(lcTempFile)

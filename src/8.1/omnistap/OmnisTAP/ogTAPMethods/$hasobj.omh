@@ -1,0 +1,8 @@
+If isclear(pcMessage)
+	Calculate pcMessage as con('The class ',pcLibName,'.',pcClassName,' should have the object ',pcObjName)
+End If
+
+Do $libs.$findname(pcLibName) Returns lirLibRef
+Do lirLibRef.$classes.$findname(pcClassName) Returns lirClassRef
+Do lirClassRef.$objs.$findname(pcObjName) Returns lirObjRef
+Do $cinst.$ok(not(isclear(lirObjRef)),pcMessage,"class has obj")

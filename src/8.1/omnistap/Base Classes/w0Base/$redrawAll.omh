@@ -1,0 +1,15 @@
+If $cinst.$norefresh=kTrue
+	Calculate ibRedrawAllCalledDuringNoRefresh as kTrue
+	Quit method
+End If
+
+Calculate lbFixedCursor as $modes.$fixedcursor
+Calculate $modes.$fixedcursor as kTrue
+
+Do $cinst.$_cascadeMessage($cinst,"$redraw()")
+
+Do $cinst.$toolbars.$sendall($ref.$redraw)
+
+Calculate $modes.$fixedcursor as lbFixedCursor
+
+Calculate ibRedrawAllCalledDuringNoRefresh as kFalse

@@ -1,0 +1,7 @@
+Do $itasks.omnistap.$getOmnisTAPWindow() Returns lirOmnisTAP
+If isclear(lirOmnisTAP)
+	Quit method
+End If
+
+Do lirOmnisTAP.$runSelectedTests()
+Do lirOmnisTAP.$bringtofront()

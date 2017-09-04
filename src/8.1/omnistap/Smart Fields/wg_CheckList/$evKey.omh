@@ -1,0 +1,9 @@
+If pcKey=" "
+	Calculate _ilList.0.$selected as not(_ilList.0.$selected)
+	Redraw {clList}
+	
+	Do $cinst.$objs.ppList.$objs.clList.$click()
+	Quit method
+End If
+
+Do inherited

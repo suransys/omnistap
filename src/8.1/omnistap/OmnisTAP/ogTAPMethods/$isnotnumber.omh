@@ -1,0 +1,1 @@
+Do $cinst.$notok(isnumber(pcCharacter),pcMessage)

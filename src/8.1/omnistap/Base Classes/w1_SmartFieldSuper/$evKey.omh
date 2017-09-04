@@ -1,0 +1,4 @@
+;  Passed pcKey and pcSystemKey
+;  Return kTrue to allow the keypress or kFalse to disallow
+;  The default is to return kTrue
+Quit method kTrue

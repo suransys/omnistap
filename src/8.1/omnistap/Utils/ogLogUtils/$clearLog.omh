@@ -1,0 +1,4 @@
+Do ilLog.$clear()
+Calculate inID as 1
+
+Do $cinst.$notice("**Log cleared**",1)

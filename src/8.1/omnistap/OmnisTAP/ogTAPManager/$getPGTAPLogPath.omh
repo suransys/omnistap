@@ -1,0 +1,6 @@
+
+If isclear(pcDatabaseName)
+	Calculate pcDatabaseName as $cinst.$getBrandedShortName()
+End If
+
+Quit method $cinst.$_getTemplateTAPPath('tap_logs',pcDatabaseName)

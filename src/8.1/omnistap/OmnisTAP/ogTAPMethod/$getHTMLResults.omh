@@ -1,0 +1,6 @@
+Calculate lcID as $cinst.$_getHTMLIDForTest()
+Calculate lcSummaryDescription as irTest.DisplayName
+
+Do $cinst.$_getHTMLForSummaryAndResults(lcID,lcSummaryDescription,$cinst.$_getHTMLClassForMethod(),icFooter) Returns lcHTML
+
+Quit method lcHTML

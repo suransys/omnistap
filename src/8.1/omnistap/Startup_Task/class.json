@@ -1,0 +1,49 @@
+{
+	"classtype": "kTask",
+	"internalversion": 87,
+	"superclass": "k1Super",
+	"tvardefs": [
+
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ibTestRunning",
+			"order": 1,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iirOmnisTAPMenu",
+			"order": 3,
+			"type": "kItemref",
+			"subtype": "$imenus.menu",
+			"sublen": 0
+		},
+		{
+			"name": "iirOmnisTAPWindow",
+			"order": 2,
+			"type": "kItemref",
+			"subtype": "$iwindows.window",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2009-02-20 11:59:41",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2017-05-30 10:57:00",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 47
+	}
+}

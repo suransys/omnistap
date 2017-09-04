@@ -1,0 +1,3 @@
+Calculate icTAPOutput as pcTAPOutput
+
+Do $cinst.$redrawAll()

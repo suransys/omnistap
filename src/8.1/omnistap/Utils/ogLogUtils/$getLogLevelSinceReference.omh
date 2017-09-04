@@ -1,0 +1,6 @@
+Calculate llLogLevelSinceReference as ilLog
+
+Do llLogLevelSinceReference.$search($ref.Level<>pcLevel|$ref.$line<pnStartingReference,1,0,1,1)
+Do llLogLevelSinceReference.$remove(kListDeleteSelected)
+
+Quit method llLogLevelSinceReference

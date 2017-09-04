@@ -1,0 +1,21 @@
+{
+	"ident": 1011,
+	"order": 3,
+	"objtype": "kToolCommandButton",
+	"properties": {
+		"enabled": false,
+		"helpfile": 0,
+		"iconid": 1759,
+		"text": {
+			"type": 0,
+			"calc": "Run Tests"
+		},
+		"tooltip": {
+			"type": 0,
+			"calc": "Runs all tests"
+		},
+		"userinfo": "",
+		"users": "12345678",
+		"varwidthtextplatforms": "kVWTMSWindows,kVWTmacOS,kVWTUnix"
+	}
+}

@@ -1,0 +1,14 @@
+Begin text block
+If tvMacVersion
+	Text: {#/bin/bash} (Linefeed)
+	Text: {sleep [pnSeconds]} (Linefeed)
+Else
+	Calculate lcSleepCommand as con(kDq,lcSleepCommand,pathsep(),"sleep.exe",kDq)
+	
+	Text: {[lcSleepCommand] [pnSeconds]} (Carriage return,Linefeed)
+End If
+End text block
+
+Get text block lcScript
+
+Quit method lcScript

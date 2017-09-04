@@ -1,0 +1,54 @@
+{
+	"ident": 1019,
+	"order": 4,
+	"objtype": "kPagedPane",
+	"properties": {
+		"active": true,
+		"alpha": 255,
+		"backcolor": "kColorWindow",
+		"backgroundtheme": "kBGThemeParent",
+		"backpattern": 0,
+		"bordercolor": "RGB(0,0,0)",
+		"candropcursor": 0,
+		"contextmenu": "",
+		"currentpage": 1,
+		"cursor": 0,
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"dragborder": false,
+		"dragiconid": 0,
+		"dragmode": "kNoDragging",
+		"dragrange": "kRangeAll",
+		"dropmode": "kAcceptNone",
+		"edgefloat": "kEFposnStatusBar",
+		"effect": "kBorderEmbossed",
+		"enabled": true,
+		"fieldstyle": "CtrlPagedPane",
+		"forecolor": "kColor3DFace",
+		"height": 26,
+		"helpfile": 0,
+		"horzscroll": false,
+		"keyevents": false,
+		"left": 0,
+		"mouseevents": false,
+		"nodropcursor": 0,
+		"objlink": 65541,
+		"pagecount": 1,
+		"rmouseevents": false,
+		"statusevents": false,
+		"tooltip": "",
+		"top": 132,
+		"userinfo": "",
+		"vertscroll": false,
+		"visible": true,
+		"width": 172
+	},
+	"multivalueproperties": {
+		"properties": [
+			{
+				"pagename": ""
+			}
+		]
+	}
+}

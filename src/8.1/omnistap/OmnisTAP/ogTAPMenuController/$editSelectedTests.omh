@@ -1,0 +1,9 @@
+Do $itasks.omnistap.$getOmnisTAPWindow() Returns lirOmnisTAP
+If isclear(lirOmnisTAP)
+	Quit method
+End If
+
+Do lirOmnisTAP.$getSelectedTests() Returns llTests
+Do lirOmnisTAP.$getLibraryName() Returns lcLibrary
+
+Do $libs.$findname(lcLibrary).$classes.$findname(llTests.ObjectName).$methods.$findname(llTests.Method).$modify()

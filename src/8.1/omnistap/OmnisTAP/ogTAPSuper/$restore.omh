@@ -1,0 +1,3 @@
+For _ilStoredInstances.$line from 1 to _ilStoredInstances.$linecount step 1
+	Calculate [_ilStoredInstances.Instance] as _ilStoredInstances.StoredData.Data
+End For

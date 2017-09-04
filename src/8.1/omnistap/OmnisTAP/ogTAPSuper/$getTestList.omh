@@ -1,0 +1,43 @@
+Do $cinst.$getDisplayName() Returns lcClassDisplayName
+
+Do $cinst.$methods.$makelist($ref.$name) Returns llMethods
+Calculate llMethods.$cols.1.$name as 'Name'
+
+For llMethods.$line from 1 to llMethods.$linecount step 1
+	Calculate lcPrefix as mid(llMethods.Name,1,3)
+	
+	Switch lcPrefix
+		Case "$u_"
+			Calculate lcType as "Unit"
+			Calculate lnIconID as 9720
+			Calculate lnTypeSort as 0
+		Case "$i_"
+			Calculate lcType as "Integration"
+			Calculate lnIconID as 9721
+			Calculate lnTypeSort as 1
+		Default
+			Jump to start of loop
+	End Switch
+	
+	Calculate lcTestName as mid(llMethods.Name,4)
+	
+	If left(lcTestName,len(lcClassDisplayName)+1)=con(lcClassDisplayName,"_")     ;; Classic $u_[application name minus prefix]_[method]
+		Calculate lcTestMethodDisplayName as mid(lcTestName,len(lcClassDisplayName)+2)
+	Else
+		Calculate lcTestMethodDisplayName as lcTestName
+	End If
+	
+	Do llTestMethods.$add()
+	Calculate llTestMethods.$line as llTestMethods.$linecount
+	Calculate llTestMethods.ObjectName as $cinst.$class().$name()
+	Calculate llTestMethods.Method as llMethods.Name
+	Calculate llTestMethods.Test as lcTestName
+	Calculate llTestMethods.Type as lcType
+	Calculate llTestMethods.IconID as lnIconID
+	Calculate llTestMethods.DisplayName as lcTestMethodDisplayName
+	Calculate llTestMethods.TypeSort as lnTypeSort
+End For
+
+Do llTestMethods.$sort($ref.TypeSort,kFalse,upp($ref.DisplayName),kFalse)
+
+Quit method llTestMethods

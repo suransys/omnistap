@@ -1,0 +1,77 @@
+;  Begin text block
+;
+;  For ilTAPResults.$line from 1 to ilTAPResults.$linecount step 1
+;  Calculate lcText as ilTAPResults.Description
+;  Do $cinst.$_cleanHTML(lcText)
+;
+;  Switch ilTAPResults.Type
+;  Case "Method"
+;  Calculate lcMethod as lcText
+;  Calculate lcClass as ilTAPResults.Class
+;
+;  If lcClass<>lcLastClass
+;  Text: <h1 align=center>[lcClass]</h1>
+;  Calculate lcLastClass as lcClass
+;  End If
+;
+;  Calculate liTestMethodNumber as ilTAPResults.$line
+;  Calculate liContextMethodNumber as 0
+;  Calculate lbCurrentTestPassed as ilTAPResults.Passed
+;
+;  Text: <div id='test_[liTestMethodNumber]' class='test method [pick(ilTAPResults.Pass,"failed","passing")]'>
+;  Text: <table>
+;  Text: <tr class='test summary'><td onClick="toggleTestDisplay('test_[liTestMethodNumber]_results');">[lcMethod]</td><td class='test outcome [pick(ilTAPResults.Pass,"failed","passing")]'>[ilTAPResults.TestsPassed]/[ilTAPResults.TestsRun]</td></tr>
+;  Text: <tr><td colspan=2>
+;  Text: <div class='test results' id='test_[liTestMethodNumber]_results'><table>
+;  Case "Test"
+;  Text: <tr class='test result test_[liTestMethodNumber]'>
+;  If isnull(lcText)
+;  Text: <td width="90%" bgcolor=#FFFF00><b>Missing test description</b>
+;  Else
+;  If ilTAPResults.Pass=kFalse
+;  Text: <td width="90%" bgcolor=#EEEEEE><font color=red><b>[lcText]</b></font>
+;  Else
+;  Text: <td width="90%" bgcolor=white>[lcText]
+;  End If
+;  End If
+;
+;  If not(isclear(ilTAPResults.Test))
+;  Calculate lcTest as ilTAPResults.Test
+;  Do $cinst.$_cleanHTML(lcTest)
+;  Text: <div class='test assertion failed'>[lcTest]</div>
+;  End If
+;
+;  Text: </td><td class='test outcome [pick(ilTAPResults.Pass,"failed","passing")]'>[pick(ilTAPResults.Pass,"fail","pass")]</td>
+;  Text: </tr>
+;
+;  If ilTAPResults.[ilTAPResults.$line+1].Type<>"Test"&ilTAPResults.[ilTAPResults.$line+1].Type<>"Context"
+;  If liContextMethodNumber>0
+;  Text: </table>
+;  End If
+;  Text: </table></td></tr></div></table>
+;  End If
+;  Case "Meta Header"
+;  If lcHTMLResults=""
+;  End text block
+;  Get text block lcHTMLResults
+;  Begin text block
+;  End If
+;
+;  Text: <table border=1 cellspacing=0 cellpadding=2>
+;  Text: <tr bgcolor=#CCCCCC><td>[lcText]</td></tr>
+;  Case "Meta Data"
+;  Text: <tr><td>[lcText]</td></tr>
+;
+;  If ilTAPResults.[ilTAPResults.$line+1].Type<>"Meta Data"
+;  Text: </table>
+;  End If
+;  Case "Footer"
+;  Text: <p align=right class='footer'><i>[lcText]</i></p></div>
+;  Default
+;  Text: <p>[lcText]</p>
+;  End Switch
+;  End For
+;
+;  End text block
+;
+;  Quit method lcHTMLResults

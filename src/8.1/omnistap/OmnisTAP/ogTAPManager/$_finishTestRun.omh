@@ -1,0 +1,5 @@
+Do $cinst.$_shutdown()
+
+Do [iirFinishMethod]
+
+Do $cinst.$_getTestWindow().$setTAPOutput(icMasterTAP)

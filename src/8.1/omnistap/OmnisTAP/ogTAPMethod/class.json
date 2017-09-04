@@ -1,0 +1,61 @@
+{
+	"classtype": "kObjectclass",
+	"internalversion": 21,
+	"superclass": "ogTAPResults",
+	"cvardefs": [
+		{
+			"name": "ciTestID",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0
+		}
+	],
+	"ivardefs": [
+		{
+			"name": "icFooter",
+			"order": 3,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "ilContexts",
+			"order": 1,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iorContext",
+			"order": 2,
+			"type": "kObjectref",
+			"subtype": "ogTAPContext",
+			"sublen": 0
+		},
+		{
+			"name": "irTest",
+			"order": 4,
+			"type": "kRow",
+			"subtype": "",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2016-07-10 14:02:14",
+		"desc": "",
+		"designtaskname": "Startup_Task",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2017-08-11 17:12:29",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 1
+	}
+}

@@ -1,0 +1,37 @@
+;  pnAdminPriviledges definition
+;  0 - Elevate if necessary (default)
+;  1 - Same as 0
+;  2 - Only run elevated
+;  3 - Only run standard
+
+If tvMacVersion=kFalse&isvista()=kFalse&pnAdminPriviledges=2
+	Calculate pnAdminPriviledges as 1
+End If
+
+If pnAdminPriviledges<>2
+	If tvMacVersion
+		Do method macShellScript (pcFolder,pcCommand,pfrResult,kFalse,pbBackground,pcUserName,pcPassword) Returns lnError
+	Else
+		Do method winShellScript (pcFolder,pcCommand,pfrResult,kFalse,pbBackground,pcUserName,pcPassword) Returns lnError
+	End If
+	
+	If lnError>0&pnAdminPriviledges<>3
+		Calculate pnAdminPriviledges as 1
+	Else
+		Calculate pnAdminPriviledges as 0
+	End If
+End If
+
+If pnAdminPriviledges=1|pnAdminPriviledges=2
+	If tvMacVersion
+		Do method macShellScript (pcFolder,pcCommand,pfrResult,kTrue,pbBackground,pcUserName,pcPassword) Returns lnError
+	Else
+		If isvista()=kFalse
+			Quit method lnError
+		End If
+		
+		Do method winShellScript (pcFolder,pcCommand,pfrResult,kTrue,pbBackground,pcUserName,pcPassword) Returns lnError
+	End If
+End If
+
+Quit method lnError

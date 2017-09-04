@@ -1,0 +1,4 @@
+Do sys(192) Returns llStack
+Calculate llStack.$line as 5+inExtraMethodDepth
+
+Quit method llStack
