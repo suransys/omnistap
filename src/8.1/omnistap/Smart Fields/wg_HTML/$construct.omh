@@ -1,4 +1,0 @@
-Do inherited
-
-Calculate icTempHTMLFile as uoFile.$getTempFile(con("wg_HTML_",ciTempFileCounter,".html"))
-Calculate ciTempFileCounter as ciTempFileCounter+1

@@ -1,7 +1,0 @@
-If _iorCLI.$validref()
-	Quit method _iorCLI
-End If
-
-Do $cinst.$_getCLIObjectClass().$newref() Returns _iorCLI
-
-Quit method _iorCLI

@@ -1,7 +1,0 @@
-Calculate ciContextID as ciContextID+1
-Calculate iiContextID as ciContextID
-
-Do inherited
-
-Calculate icContext as pcContext
-Calculate iiTestID as piTestID

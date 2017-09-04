@@ -1,5 +1,0 @@
-Do uoPath.$temp() Returns lcFolder
-
-Do method shellScript (lcFolder,pcScript,pfrResult,pnExecutionLevel,pbBackground,pcUserName,pcPassword) Returns lnError
-
-Quit method lnError

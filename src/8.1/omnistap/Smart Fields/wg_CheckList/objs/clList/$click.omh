@@ -1,9 +1,0 @@
-If pbShift
-	Do method shiftClick
-End If
-
-Calculate inLastLine as _ilList.$line
-
-Do $cinst.$setExternalValue()
-
-Do $cinst.$listClicked()

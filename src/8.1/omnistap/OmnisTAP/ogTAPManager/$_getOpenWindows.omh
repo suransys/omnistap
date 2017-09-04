@@ -1,8 +1,0 @@
-Do $iwindows.$makelist($ref.$name,$ref.$class().$name,$ref.$title) Returns llOpenWindows
-Calculate llOpenWindows.$cols.1.$name as "Name"
-Calculate llOpenWindows.$cols.2.$name as "Class"
-Calculate llOpenWindows.$cols.3.$name as "Title"
-
-Do llOpenWindows.$sort($ref.Name)
-
-Quit method llOpenWindows

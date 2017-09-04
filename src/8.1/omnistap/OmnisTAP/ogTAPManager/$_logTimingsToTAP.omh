@@ -1,9 +1,0 @@
-Do $cinst.$_generateNotice("Timings","Meta Header")
-
-Do $cinst.$_generateNotice(con(iiTotalDurationMillisecond," ms to run the selected tests."),"Meta Data")
-
-Do ilTimings.$sort($ref.Time,kTrue)
-
-For ilTimings.$line from 1 to ilTimings.$linecount step 1
-	Do $cinst.$_generateNotice(con(ilTimings.Time," ms for ",ilTimings.Test),"Meta Data")
-End For

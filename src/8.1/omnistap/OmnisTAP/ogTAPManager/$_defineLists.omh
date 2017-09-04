@@ -1,4 +1,0 @@
-Do ilTimings.$cols.$add("Time",kInteger,k32bitint)
-Do ilTimings.$cols.$add("Test",kCharacter,kSimplechar,10000000)
-
-Do ilMocks.$cols.$add("Mock",kObjectref)

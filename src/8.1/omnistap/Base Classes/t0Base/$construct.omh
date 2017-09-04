@@ -1,3 +1,0 @@
-Do $cinst.$setRecallColumn($cinst.$getPrimaryKeyField(kFalse))
-
-Calculate _inColcount as $cinst.$colcount

@@ -1,8 +1,0 @@
-Do $cinst.$libPath() Returns lcLibPath
-Calculate lcLibPath as FileOps.$parentdir(lcLibPath)
-
-If right(lcLibPath,1)<>pathsep()
-	Calculate lcLibPath as con(lcLibPath,pathsep())
-End If
-
-Quit method lcLibPath

@@ -1,4 +1,0 @@
-Do $cinst.$getHeightForList() Returns lnListHeight
-Calculate lnBottomBarHeight as $cinst.$objs.ppBottom.$height
-
-Quit method lnListHeight+lnBottomBarHeight

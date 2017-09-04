@@ -1,7 +1,0 @@
-Do default
-
-Do $cinst.$objs.$sendall($ref.$enabled.$assign(pbEnabled))
-
-If pbEnabled=kFalse
-	Do $cinst.$_closeOpenedWindows()
-End If

@@ -1,1 +1,0 @@
-Do $cinst.$ok(pVar1=pVar2,pMessage,con("Have: ",pVar1,kCr,"Want: ",pVar2))

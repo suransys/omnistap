@@ -1,2 +1,0 @@
-
-Quit method $cinst.$getColumnAsCSV($cinst.$getPrimaryKeyColumn())

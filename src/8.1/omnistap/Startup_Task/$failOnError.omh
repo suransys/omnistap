@@ -1,7 +1,0 @@
-If ibTestRunning=kFalse
-	Quit method kFalse
-End If
-
-Do $cinst.$getOmnisTAPWindow().$log(kFalse,"SQL error displayed outside silent mode.",pcErrorDetails)
-
-Quit method kTrue

@@ -1,3 +1,0 @@
-
-Do $extobjects.$findname(pcXcompName) Returns lirXcomp
-Do $cinst.$isnotclear(lirXcomp,pcMessage)

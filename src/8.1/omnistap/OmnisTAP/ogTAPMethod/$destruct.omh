@@ -1,3 +1,0 @@
-Do ilContexts.$sendall($ref.ContextResults.$deleteref())
-
-Do inherited

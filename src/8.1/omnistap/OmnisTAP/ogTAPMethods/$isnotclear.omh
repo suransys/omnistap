@@ -1,5 +1,0 @@
-If pos('unnamed',pRef().$fullname)=0
-	Calculate lcName as pRef().$fullname
-End If
-
-Do $cinst.$ok(not(isclear(pRef)),pMessage,con('Item is not clear: ',lcName))

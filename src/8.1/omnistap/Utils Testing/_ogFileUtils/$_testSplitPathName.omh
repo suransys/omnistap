@@ -1,6 +1,0 @@
-Do uoFile.$splitpathname(pcTestPath,lcDrive,lcPath,lcFilename,lcExtension)
-Do ioTAP.$logheader(pcMessage)
-Do ioTAP.$is_char(lcDrive,pcExpectedDrive,"Drive")
-Do ioTAP.$is_char(lcPath,pcExpectedPath,"Path")
-Do ioTAP.$is_char(lcFilename,pcExpectedFilename,"Filename")
-Do ioTAP.$is_char(lcExtension,pcExpectedExtension,"Extension")

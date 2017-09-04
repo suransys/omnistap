@@ -1,2 +1,0 @@
-Calculate $cinst.$objs.pbRunTests.$enabled as pbEnabled
-Do $imenus.mdVCS.$setRunEnabled(pbEnabled)

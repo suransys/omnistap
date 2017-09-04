@@ -1,5 +1,0 @@
-Calculate iirList.$horzscroll as pbVisible
-
-If pbVisible=kFalse
-	Calculate iirList.$hscroll as 0
-End If

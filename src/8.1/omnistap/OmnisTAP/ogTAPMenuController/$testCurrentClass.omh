@@ -1,2 +1,0 @@
-Do $cinst.$_getCurrentClass() Returns lirCurrentClass
-Do $itasks.omnistap.$openOmnisTAP().$testClass(lirCurrentClass)

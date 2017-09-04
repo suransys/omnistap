@@ -1,7 +1,0 @@
-If ilMockMethods.$line=0
-	Do ilMockMethods.$clear()
-Else
-	Do ilMockMethods.Calls.$clear()
-End If
-
-Quit method $cinst.$objref

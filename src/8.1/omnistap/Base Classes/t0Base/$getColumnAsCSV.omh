@@ -1,5 +1,0 @@
-Do $cinst.$storeLine()
-Do $cinst.$sendall(lcPrimaryKeys.$assign(con(lcPrimaryKeys,pick(isclear(lcPrimaryKeys),pcDelimiter,""),$cinst.[pcColumnName])),pick(pbIncludeClearValues,not(isclear($cinst.[pcColumnName])),kTrue)&pick(pbSelectedOnly,kTrue,$sendallref.$selected=kTrue))
-Do $cinst.$recallLine()
-
-Quit method lcPrimaryKeys

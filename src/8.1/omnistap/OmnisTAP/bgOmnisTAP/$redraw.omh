@@ -1,3 +1,0 @@
-Calculate $cinst.$objs.cbRunStartupShutdown.$checked as $cwind.ibRunStartupAndShutdown
-Calculate $cinst.$objs.cbFailFast.$checked as $cwind.ibFailFast
-Calculate $cinst.$objs.cbNoRedraw.$checked as $cwind.ibNoRedraw

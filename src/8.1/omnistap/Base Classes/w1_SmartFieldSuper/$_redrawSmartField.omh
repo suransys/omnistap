@@ -1,2 +1,0 @@
-;  This method is called to redraw the contents of the smartfield. The super class will call this on $setExternalValue.
-Redraw

@@ -1,9 +1,0 @@
-If isclear(pcMessage)
-	Calculate pcMessage as con('The method ',pcLibName,'.',pcClassName,'.',pcMethodName,' should not have parameter ',pcParamName)
-End If
-
-Do $libs.$findname(pcLibName) Returns lirLibRef
-Do lirLibRef.$classes.$findname(pcClassName) Returns lirClassRef
-Do lirClassRef.$methods.$findname(pcMethodName) Returns lirMethodRef
-Do lirMethodRef.$lvardefs.$findname(pcParamName) Returns lirParamRef
-Do $cinst.$ok(isclear(lirMethodRef),pcMessage,"method doesn't have parameter")

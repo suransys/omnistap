@@ -1,2 +1,0 @@
-Calculate _iorTAPManager as porManager
-Do $cinst.ioTAP.$setManager(porManager)

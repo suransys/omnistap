@@ -1,3 +1,0 @@
-Do inherited
-
-Do $cinst.$mock($objects.ogGreeter) Returns iorMock

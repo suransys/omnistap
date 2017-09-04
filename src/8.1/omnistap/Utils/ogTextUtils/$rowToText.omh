@@ -1,9 +1,0 @@
-For liColumn from 1 to prRow.$colcount step 1
-	If len(lcReturn)>0
-		Calculate lcReturn as con(lcReturn,pcDelimiter)
-	End If
-	
-	Calculate lcReturn as con(lcReturn,pcQuote,prRow.C[liColumn],pcQuote)
-End For
-
-Quit method lcReturn

@@ -1,5 +1,0 @@
-Calculate llCalls as ilMockMethods.Calls
-Do llCalls.$assignrow(llCalls.[piSourceCall])
-Calculate ilMockMethods.Calls as llCalls
-
-Quit method $cinst.$objref

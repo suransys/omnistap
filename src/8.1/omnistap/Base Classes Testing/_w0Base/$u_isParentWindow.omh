@@ -1,8 +1,0 @@
-Do iirMock.$objs.$add(kSubwindow,0,0,10,10) Returns lirSubwindow
-Calculate lirSubwindow.$classname as "w0Base"
-
-Do iirMock.$isParentWindow() Returns lbOK
-Do ioTAP.$is_boolean(lbOK,kTrue,"Parent window is a parent")
-
-Do lirSubwindow.$isParentWindow() Returns lbOK
-Do ioTAP.$is_boolean(lbOK,kFalse,"Subwindow is not a parent")

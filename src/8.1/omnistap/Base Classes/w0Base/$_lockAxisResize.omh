@@ -1,7 +1,0 @@
-If ($cinst.cvExtendHoriz=kFalse&$cinst.$width<>inInitialWidth)|($cinst.cbExtendHorizBelowDefault=kFalse&$cinst.$width<inInitialWidth)
-	Calculate $cinst.$width as inInitialWidth
-End If
-
-If ($cinst.cvExtendVert=kFalse&$cinst.$height<>inInitialHeight)|($cinst.cbExtendVertBelowDefault=kFalse&$cinst.$height<inInitialHeight)
-	Calculate $cinst.$height as inInitialHeight
-End If

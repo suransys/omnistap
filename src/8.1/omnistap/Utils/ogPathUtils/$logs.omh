@@ -1,9 +1,0 @@
-If tvMacVersion
-	Do $cinst.$home() Returns lcHome
-	Calculate lcLogsPath as con(lcHome,"Library",pathsep(),"Logs",pathsep(),"Suran")
-Else
-	Do $cinst.$_getSuranAppData() Returns lcLogsPath
-	Calculate lcLogsPath as con(lcLogsPath,pathsep(),"Logs")
-End If
-
-Quit method con(lcLogsPath,pathsep())

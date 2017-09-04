@@ -1,5 +1,0 @@
-If isclear(iirList.$linehtextra)
-	Quit method 0
-End If
-
-Quit method iirList.$linehtextra

@@ -1,9 +1,0 @@
-Calculate lnLine as _ilList.$line
-Do _ilList.$sendall($ref.$selected.$assign(pbSelectionValue))
-Calculate _ilList.$line as lnLine
-
-Redraw {clList}
-
-Do $cinst.$setExternalValue()
-
-Do $cinst.$listClicked()

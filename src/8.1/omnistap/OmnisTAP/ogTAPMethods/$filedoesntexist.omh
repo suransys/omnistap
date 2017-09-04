@@ -1,6 +1,0 @@
-If isclear(pcMessage)
-	Calculate pcMessage as con('The file ',pcFilePath,' should not exist')
-End If
-
-Do FileOps.$doesfileexist(pcFilePath) Returns lbOK
-Do $cinst.$ok(not(lbOK),pcMessage,con("file ",pcFilePath," doesn't exist"))

@@ -1,7 +1,0 @@
-Do iorContext.$log(pbOK,pcDescription,pcAssertion)
-
-Calculate $cinst.iiTestsRun as $cinst.iiTestsRun+1
-
-If pbOK
-	Calculate iiTestsPassed as iiTestsPassed+1
-End If

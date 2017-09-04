@@ -1,5 +1,0 @@
-Do inherited
-
-If tvDevVersion=kTrue
-	Do $menus.mgTAP.$open("*",kUsermenu) Returns iirOmnisTAPMenu
-End If

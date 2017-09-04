@@ -1,6 +1,0 @@
-If isclear(pcMessage)
-	Calculate pcMessage as con('The Library ',pcLibName,' should not be open')
-End If
-
-Do $libs.$findname(pcLibName) Returns lirLibRef
-Do $cinst.$ok(isclear(lirLibRef),pcMessage,'library not open')

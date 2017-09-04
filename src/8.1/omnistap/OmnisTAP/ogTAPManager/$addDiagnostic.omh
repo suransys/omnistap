@@ -1,3 +1,0 @@
-Do $cinst.$_getTestWindow().$diag(pcDiagnostic,pcType)
-
-Calculate icTAP as con(icTAP,pick(isclear(icTAP),$cinst.$_getTAPNewline()),"# ",pcDiagnostic)

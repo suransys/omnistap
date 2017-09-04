@@ -1,1 +1,0 @@
-Do $cinst.$ok(pnNumber>0,pcMessage,con(pnNumber," is greater than 0"))

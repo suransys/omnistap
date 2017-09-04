@@ -1,9 +1,0 @@
-If isvista()
-	Do getenv('LOCALAPPDATA') Returns lcAppData
-Else
-	Do getenv('APPDATA') Returns lcAppData
-End If
-
-Calculate lcAppData as con(lcAppData,pathsep(),"Suran")
-
-Quit method lcAppData

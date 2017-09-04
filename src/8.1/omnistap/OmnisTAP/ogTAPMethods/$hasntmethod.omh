@@ -1,8 +1,0 @@
-If isclear(pcMessage)
-	Calculate pcMessage as con('The class ',pcLibName,'.',pcClassName,' should not have the method ',pcMethodName)
-End If
-
-Do $libs.$findname(pcLibName) Returns lirLibRef
-Do lirLibRef.$classes.$findname(pcClassName) Returns lirClassRef
-Do lirClassRef.$methods.$findname(pcMethodName) Returns lirMethodRef
-Do $cinst.$ok(isclear(lirMethodRef),pcMessage,"class doesn't have method")

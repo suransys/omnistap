@@ -1,9 +1,0 @@
-If $cinst.DisplayName="<all>"
-	Quit method $ctask.$getTests()
-End If
-
-Do [$cinst.TestObjectPath].$newref() Returns lorTestObject
-Do lorTestObject.$getTestList() Returns llTests
-Do lorTestObject.$deleteref()
-
-Quit method llTests

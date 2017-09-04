@@ -1,4 +1,0 @@
-Calculate lbRunEnabled as ilTestMethods.$totc(ilTestMethods.$selected)
-
-Do $cwind.$toolbars.$first().$setRunEnabled(lbRunEnabled)
-Do $ctask.$getOmnisTAPMenu().$setRunEnabled(lbRunEnabled)

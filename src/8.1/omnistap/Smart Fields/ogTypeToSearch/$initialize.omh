@@ -1,8 +1,0 @@
-
-Set reference iirField to pirField
-
-Do $cinst.$setSearchCalculation(iirField.$calculation)
-
-Do $cinst.$_buildListRef()
-
-Calculate icDataName as pcDataName

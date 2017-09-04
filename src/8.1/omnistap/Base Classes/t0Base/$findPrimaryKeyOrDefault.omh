@@ -1,5 +1,0 @@
-Do $cinst.$findPrimaryKey(pcPrimaryKey)
-
-If $cinst.$line=0
-	Calculate $cinst.$line as $cinst.$getDefaultLine()
-End If

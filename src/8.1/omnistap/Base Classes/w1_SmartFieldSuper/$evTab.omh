@@ -1,3 +1,0 @@
-;  Add this method to the subwindow class to catch a tab event.
-;  Return true to allow the tab, false to discard it.
-Quit method kTrue

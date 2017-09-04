@@ -1,3 +1,0 @@
-Do $root.$listrefs() Returns ilBeforeRefs
-
-Calculate iiObjectReferencesBeforeCount as ilBeforeRefs.$linecount

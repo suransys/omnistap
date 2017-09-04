@@ -1,5 +1,0 @@
-If isclear(icTAPOutputDirectory)
-	Quit method kCr
-End If
-
-Quit method kLf

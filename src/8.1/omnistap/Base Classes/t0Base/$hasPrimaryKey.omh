@@ -1,7 +1,0 @@
-Do $cinst.$storeLine()
-
-Do $cinst.$findPrimaryKey(pcPrimaryKey) Returns lbHasPrimaryKey
-
-Do $cinst.$recallLine()
-
-Quit method lbHasPrimaryKey

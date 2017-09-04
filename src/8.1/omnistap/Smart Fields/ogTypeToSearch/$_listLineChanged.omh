@@ -1,9 +1,0 @@
-If ibReselectListLinesOnChange
-	Calculate lnLine as iirList.$line
-	Do iirList.$sendall($ref.$selected.$assign(kFalse))
-	Calculate iirList.$line as lnLine
-	
-	Calculate iirList.[lnLine].$selected as kTrue
-End If
-
-Do iirField.$click()

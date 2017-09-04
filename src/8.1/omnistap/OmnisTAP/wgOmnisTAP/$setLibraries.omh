@@ -1,6 +1,0 @@
-Calculate lcLibraryName as ilLibraries.Name
-Calculate ilLibraries as plLibraries
-
-If ilLibraries.Name<>lcLibraryName
-	Do $cinst.$_loadTestsFromLibrary()
-End If
