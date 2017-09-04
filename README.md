@@ -58,10 +58,9 @@ Sat Sep 2 13:47:51 2017 Notice: Starting OmnisTAP run on omnistap_example to /Us
 Sat Sep 2 13:47:51 2017 Notice: Test timing multiplier is set to 1
 Sat Sep 2 13:47:51 2017 Notice: Max timing for unit tests: 5000
 Sat Sep 2 13:47:51 2017 Notice: Max timing for integration tests: 90000
-Sat Sep 2 13:47:51 2017 Notice: ogTAPManager.$run: ilTests linecount is 2
+Sat Sep 2 13:47:51 2017 Notice: ogTAPManager.$run: ilTests linecount is 1
 Sat Sep 2 13:47:51 2017 Notice: Starting up...
 Running _oOmnisTAPExamples/$u_sampleAssertions...   [ pass ]
-Running _oHelloOmnisTAP/$u_sayHello...              [ pass ]
 Sat Sep 2 13:47:52 2017 Notice: running tests shutdown
 Sat Sep 2 13:47:52 2017 Notice: OmnisTAP run on omnistap_example complete in 1 second to /Users/aclay/Desktop/tap
 Sat Sep 2 13:47:52 2017 Notice: Temp folder for this session is /tmp/suran/omnistap25002500/
