@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 432,
+	"internalversion": 434,
 	"superclass": "w0Base",
 	"nextident": 1074,
 	"lastgroupident": 0,
@@ -133,7 +133,7 @@
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2017-09-02 12:46:00",
+		"moddate": "2017-09-08 12:31:40",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,
