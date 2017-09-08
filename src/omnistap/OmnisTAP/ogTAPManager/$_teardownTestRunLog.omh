@@ -1,0 +1,7 @@
+If not(isclear(icTAPOutputDirectory))
+	Do $cinst.$_logResultToShell(ibCurrentTestPassed)
+	Quit method
+End If
+
+Do $cinst.$_generateNotice(con(iiDurationMilliseconds," ms"),"Footer")
+Do $cinst.$_getTestWindow().$logTestFinished(ilTests)

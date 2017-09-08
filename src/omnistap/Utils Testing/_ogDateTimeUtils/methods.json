@@ -1,0 +1,38 @@
+[
+	{
+		"name": "$setup",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$u_humanReadableTime",
+		"ident": 4,
+		"order": 2,
+		"desc": "Tests converting ticks to human-readable time",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcTime",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lnTicks",
+				"order": 1,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			}
+		]
+	}
+]

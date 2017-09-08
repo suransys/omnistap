@@ -1,0 +1,3 @@
+On evClick
+	Do $cwind.$bringtofront()
+	Do $cwind.$runTests()

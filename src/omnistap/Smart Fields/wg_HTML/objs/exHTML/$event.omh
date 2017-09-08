@@ -1,0 +1,2 @@
+On evBrowserOpenUrl
+	Do $ctask.uoWeb.$openURL(pUrl)

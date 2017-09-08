@@ -1,0 +1,2 @@
+
+Quit method $cinst.$_getTemplateTAPPath('tap_results',con($cinst.$getBrandedShortName(),'omnis'))

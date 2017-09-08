@@ -1,0 +1,15 @@
+Do llList.$addValue("Apple")
+Do llList.$addValue("Banana")
+Do llList.$addValue("Coconut")
+
+Do llList.$findPrimaryKey("Banana")
+
+Do $cinst.$when("searching for an existing key")
+
+Do ioTAP.$is_boolean(llList.$hasPrimaryKey("Apple"),kTrue,"We have the primary key")
+Do ioTAP.$is_number(llList.$line,2,"We keep the current line")
+
+Do $cinst.$when("searching for a key that doesn't exist")
+
+Do ioTAP.$is_boolean(llList.$hasPrimaryKey("Daikon"),kFalse,"We don't have the primary key")
+Do ioTAP.$is_number(llList.$line,2,"We keep the current line")

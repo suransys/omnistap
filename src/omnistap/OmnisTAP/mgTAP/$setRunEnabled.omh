@@ -1,0 +1,2 @@
+Calculate $cinst.$objs.mlRunSelectedTests.$enabled as pbEnabled
+Calculate $cinst.$objs.mlEditSelectedTests.$enabled as pbEnabled

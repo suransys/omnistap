@@ -1,0 +1,2 @@
+On evClick
+	Do $cwind.$setLibraries(ilLibraries)

@@ -1,0 +1,12 @@
+Do $cinst.$_getLogFile() Returns lcPath
+
+If FileOps.$doesfileexist(lcPath)
+	Do loFile.$openfile(lcPath) Returns lnStatus
+	Calculate pcText as con(icPlatformLineEnding,pcText)
+Else
+	Do uoFile.$createEnclosingFolder(lcPath)
+	Do loFile.$createfile(lcPath) Returns lnStatus
+End If
+
+Do loFile.$writecharacter(kUniTypeUTF8,pcText,kTrue) Returns lnStatus
+Do loFile.$close()

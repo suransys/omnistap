@@ -1,0 +1,3 @@
+If not(isnull($libs.$findname(ilLibraries.Name).$classes.$findname(ilTestMethods.ObjectName)))
+	Do $libs.$findname(ilLibraries.Name).$classes.$findname(ilTestMethods.ObjectName).$methods.$findname(ilTestMethods.Method).$modify()
+End If

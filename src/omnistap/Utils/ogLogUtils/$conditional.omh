@@ -1,0 +1,5 @@
+If pbCondition=kTrue
+	Do $cinst.$notice(pcNotice,pnExtraMethodDepth)
+Else
+	Do $cinst.$error(pcNotice,pnExtraMethodDepth)
+End If

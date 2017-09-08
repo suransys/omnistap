@@ -1,0 +1,7 @@
+If not(isclear(_icDefaultColumns))
+	Quit method _icDefaultColumns
+End If
+
+Do $cinst.$_buildDefaultColumns() Returns _icDefaultColumns
+
+Quit method _icDefaultColumns

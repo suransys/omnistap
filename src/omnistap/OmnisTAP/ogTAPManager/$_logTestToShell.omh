@@ -1,0 +1,9 @@
+If isclear(pcMessage)
+	Calculate icCurrentTestMessage as con(ilTests.ObjectName,"/",ilTests.Method)
+Else
+	Calculate icCurrentTestMessage as pcMessage
+End If
+
+Calculate icCurrentTestMessage as con("Running ",icCurrentTestMessage,"...")
+
+Do $ctask.$getCLI().$writeStdout(icCurrentTestMessage,kFalse)

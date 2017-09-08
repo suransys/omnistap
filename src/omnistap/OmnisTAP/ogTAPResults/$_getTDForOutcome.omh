@@ -1,0 +1,5 @@
+Calculate lcTDTag as con('<td class="',$cinst.$_getHTMLClassForOutcome(),' ',$cinst.$_getHTMLClassForSuccess(pbPassed),'">')
+Calculate lcTDTag as con(lcTDTag,$cinst.$_cleanHTML(pcOutcome))
+Calculate lcTDTag as con(lcTDTag,"</td>")
+
+Quit method lcTDTag

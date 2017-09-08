@@ -1,0 +1,22 @@
+{
+	"ident": 1014,
+	"order": 7,
+	"properties": {
+		"cascade": "",
+		"checked": false,
+		"enabled": true,
+		"fontstyle": "kPlain",
+		"helpfile": 0,
+		"helptext": "",
+		"iconid": 0,
+		"macshortcutkey": "Cmnd+Shift+J",
+		"text": {
+			"type": 0,
+			"calc": "Jump to Counterpart"
+		},
+		"unixshortcutkey": "Ctrl+Shift+J",
+		"userinfo": "",
+		"users": "12345678",
+		"winshortcutkey": "Ctrl+Shift+J"
+	}
+}

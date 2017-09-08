@@ -1,0 +1,52 @@
+[
+	{
+		"name": "$u_addIDValue",
+		"ident": 1,
+		"order": 1,
+		"desc": "Tests adding a id/value to a hash",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llExpectedList",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llHash",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgHash",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_addValue",
+		"ident": 0,
+		"order": 2,
+		"desc": "Tests adding a value to a hash",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llExpectedList",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llHash",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgHash",
+				"sublen": 0
+			}
+		]
+	}
+]

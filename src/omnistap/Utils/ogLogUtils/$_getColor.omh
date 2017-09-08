@@ -1,0 +1,10 @@
+Switch pcLevel
+	Case "Error"
+		Quit method kRed
+	Case "Warning"
+		Quit method rgb(249,118,27)
+	Case "Debug"
+		Quit method kDarkBlue
+	Default
+		Quit method kColorWindowText
+End Switch

@@ -1,0 +1,29 @@
+{
+	"classtype": "kTask",
+	"internalversion": 35,
+	"superclass": "omnistap.kgTAPTask",
+	"tvardefs": [
+
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2017-03-27 23:37:51",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2017-09-02 13:49:00",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 3
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"classtype": "kSystemtable",
+	"internalversion": 7,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2009-06-12 10:46:29",
+		"desc": "",
+		"external": true,
+		"moddate": "2017-07-30 12:12:00",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 1
+	},
+	"fonts": [
+		"Courier New",
+		"Courier New",
+		"Arial",
+		"MS Sans Serif",
+		"MS Sans Serif",
+		"Times New Roman",
+		"Times New Roman",
+		"Arial",
+		"Postal barcode",
+		"Arial",
+		"Times New Roman",
+		"Courier New",
+		"Interleaved2of5A"
+	]
+}

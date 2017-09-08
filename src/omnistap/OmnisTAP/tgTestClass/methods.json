@@ -1,0 +1,33 @@
+[
+	{
+		"name": "$getTests",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirTestObject",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llTests",
+				"order": 2,
+				"type": "kList",
+				"subtype": "tgTestMethod",
+				"sublen": 0
+			},
+			{
+				"name": "lorTestObject",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "ogTAPSuper",
+				"sublen": 0
+			}
+		]
+	}
+]

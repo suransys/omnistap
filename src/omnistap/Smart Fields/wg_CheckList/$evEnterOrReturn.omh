@@ -1,0 +1,6 @@
+;  Add this method to the subwindow class to catch a keypress of the return or the keypad enter key
+;  If both this method and $evKeypadEnter or $evReturn are implemented, this method will only be called if the other returns kTrue
+;  Return true to allow the enter, false to discard it.
+Sound bell
+
+Quit method kTrue

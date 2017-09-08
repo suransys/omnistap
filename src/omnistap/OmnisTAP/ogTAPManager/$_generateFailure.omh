@@ -1,0 +1,1 @@
+Do $cinst.$addTestResult(kFalse,pcMessage,$cinst.$_getTestDescription())

@@ -1,0 +1,22 @@
+Do uoPath.$temp() Returns lcFolder
+
+Do uoFile.$isFolderWriteable('yada') Returns lbOk
+Do ioTAP.$is_boolean(lbOk,kFalse,'False if Folder does not Exist')
+
+Do uoFile.$isFolderWriteable(lcFolder) Returns lbOk
+Do ioTAP.$is_boolean(lbOk,kTrue,'True if Folder can be written to')
+
+If tvMacVersion=kTrue
+	Calculate lcFolder as "/private/tmp/suranfoldertest/"
+	Do uoFile.$createFolder(lcFolder)
+	Do FileOps.$setunixpermissions(lcFolder,'dr--r--r--')
+Else
+	Calculate lcFolder as "C:\Users\Admin\unwritablefolder\"
+End If
+
+Do uoFile.$isFolderWriteable(lcFolder) Returns lbOk
+Do ioTAP.$is_boolean(lbOk,kFalse,'False if Folder Cannot be Written to')
+
+If tvMacVersion=kTrue
+	Do uoFile.$deleteFolder(lcFolder)
+End If

@@ -1,0 +1,10 @@
+If isclear(ilTAPResults.$linecount)
+	Quit method ""
+End If
+
+Calculate lcID as $cinst.$_getHTMLIDForContext()
+Calculate lcSummaryDescription as icContext
+
+Do $cinst.$_getHTMLForSummaryAndResults(lcID,lcSummaryDescription,$cinst.$_getHTMLClassForContext()) Returns lcHTML
+
+Quit method lcHTML

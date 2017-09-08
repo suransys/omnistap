@@ -1,0 +1,10 @@
+Switch pcType
+	Case "Context"
+		Do $cinst.$_addContext(pcDescription)
+	Case "Meta Data","Meta Header"
+		Quit method
+	Case "Footer"
+		Calculate icFooter as pcDescription
+	Default
+		Do iorContext.$diag(pcDescription)
+End Switch

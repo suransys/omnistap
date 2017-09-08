@@ -1,0 +1,41 @@
+;  Look for the method on this class
+If pos(".",pcMethodName)
+	Calculate lcObject as mid(pcMethodName,1,rpos(".",pcMethodName)-1)
+	Calculate lcMethod as mid(pcMethodName,rpos(".",pcMethodName)+1)
+	
+	Set reference lirObject to pirClass.[lcObject].$ref
+	
+	If lirObject.$objtype=kSubwindow
+		Set reference lirLibrary to lirObject.$lib
+		Do lirLibrary.$classes.$findname(lirObject().$classname) Returns lirClass
+		If not(isnull(lirClass))
+			Quit method $cinst.$_getRealMethodOnClass(lirClass,lcMethod)
+		End If
+	End If
+	
+	Do lirObject.$methods.$findname(lcMethod) Returns lirRealMethod
+Else
+	Do pirClass.$methods.$findname(pcMethodName) Returns lirRealMethod
+End If
+
+If not(isnull(lirRealMethod))
+	Quit method lirRealMethod.$ref
+End If
+
+;  Find the superclass, which may be in another library
+Calculate lcSuperClassName as pirClass.$superclass()
+If pos(".",lcSuperClassName)>0
+	Do strtok(nam(lcSuperClassName),".") Returns lcLibraryName
+	Do $libs.$findname(lcLibraryName) Returns lirLibrary
+Else
+	Set reference lirLibrary to pirClass.$lib
+End If
+
+;  Look for the method on the superclass
+Do lirLibrary.$classes.$findname(lcSuperClassName) Returns lirSuperclass
+
+If isnull(lirSuperclass)
+	Quit method #NULL
+End If
+
+Quit method $cinst.$_getRealMethodOnClass(lirSuperclass,pcMethodName)

@@ -1,0 +1,5 @@
+Do inherited
+
+Do $cinst.$setDefaultLine(1)
+Do $cinst.$setPrimaryKeyColumn('Value')
+Do $cinst.$setRecallColumn('Value')

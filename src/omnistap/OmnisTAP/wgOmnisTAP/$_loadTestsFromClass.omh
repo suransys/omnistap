@@ -1,0 +1,11 @@
+If ilTestClasses.DisplayName="<all>"
+	Do $ctask.$getTests(ilLibraries.Name) Returns ilTestMethods
+	Do ilTestMethods.$sendall($ref.DisplayName.$assign(con($sendallref.ObjectName,"/",$sendallref.Method)))
+Else
+	Do ilTestClasses.$getTests() Returns ilTestMethods
+	Do ilTestMethods.$sort($ref.TypeSort,kFalse,low($ref.DisplayName))
+End If
+
+Calculate ilTestMethods.$line as 0
+
+Do $cinst.$objs.ppTests.$objs.clTest.$listClicked()

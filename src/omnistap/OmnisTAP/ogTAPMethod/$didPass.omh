@@ -1,0 +1,7 @@
+For ilContexts.$line from 1 to ilContexts.$linecount step 1
+	If ilContexts.Context.$didPass()=kFalse
+		Quit method kFalse
+	End If
+End For
+
+Quit method kTrue

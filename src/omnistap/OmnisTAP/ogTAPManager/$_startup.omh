@@ -1,0 +1,12 @@
+If ilTests.$linecount=0
+	Do uoLog.$error("No tests to run")
+	Quit method kFalse
+End If
+
+Do $itasks.$findname("omnistap").$setTestRunning(kTrue)
+Do uoLog.$notice(con("ogTAPManager.$run: ilTests linecount is ",ilTests.$linecount))
+
+Do $cinst.$_calculateLongestTestName()
+Do $cinst.$_executeLibraryStartup() Returns lbOK
+
+Quit method lbOK

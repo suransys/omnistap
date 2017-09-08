@@ -1,0 +1,27 @@
+Do $cinst.$store(uoPath)
+
+Do uoPath.$mock("$logs")
+
+Do $cinst.$when("constructing the method we don't hit the uoPath log, stdout, stderr methods")
+
+Do $objects.ogLogUtils.$new() Returns loLog
+Do $cinst.$assertMocks()
+
+Do $cinst.$when("should hit uoPath.$logs the first time, and cache the result")
+
+Do loLog.$setDestination("logs")
+Calculate lcExpectedPath as con("logs",low($ctask.tvProgramName),"_",dat(#D,"yMD"),".log")
+
+Do uoPath.$mock("$logs").$return_char("logs")
+
+Do loLog.$_getLogFile() Returns lcPath
+Do ioTAP.$is_char(lcPath,lcExpectedPath,"We got the right path")
+Do $cinst.$assertMocks()
+
+Do $cinst.$when("should not call uoPath.$logs the second time")
+
+Do uoPath.$mock("$logs").$reset()
+
+Do loLog.$_getLogFile() Returns lcPath
+Do ioTAP.$is_char(lcPath,lcExpectedPath,"We got the same path")
+Do $cinst.$assertMocks()

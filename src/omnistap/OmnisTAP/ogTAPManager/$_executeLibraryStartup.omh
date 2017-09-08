@@ -1,0 +1,27 @@
+If ibRunStartupAndShutdown=kFalse
+	Quit method kTrue
+End If
+
+Do uoLog.$notice("Starting up...")
+
+Do $cinst.$_instantiateLibraryStartupShutdownObject() Returns lbStartupShutdownInstantiated
+If lbStartupShutdownInstantiated=kFalse
+	Quit method kTrue
+End If
+
+Do $cinst.$_setupTimings()
+
+If not(isclear(icTAPOutputDirectory))
+	Do $cinst.$_logTestToShell("OmnisTAP Startup")
+End If
+
+Do iorStartupShutdown.$startup() Returns lbOK
+
+If not(isclear(icTAPOutputDirectory))
+	Do $cinst.$_logResultToShell(lbOK)
+	Do $cinst.$_teardownTestCase(iorStartupShutdown.$class().$name,"$startup")
+End If
+
+Do $cinst.$_teardownTimings()
+
+Quit method lbOK

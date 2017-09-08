@@ -1,0 +1,33 @@
+{
+	"classtype": "kObjectclass",
+	"internalversion": 43,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "lcText",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2011-10-24 15:43:52",
+		"desc": "",
+		"designtaskname": "Startup_Task",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2017-08-12 17:35:00",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 2
+	}
+}

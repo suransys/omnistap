@@ -1,0 +1,13 @@
+;  Enter your initialization code here
+Do inherited
+
+Do $cinst.$_getListRef() Returns iirList
+Do $cinst.$_getEmptyListTextRef() Returns iirEmptyListText
+
+Do ioTypeToSearch.$initialize(iirList,'_ilList')
+
+;  Set the default calculation
+Do $cinst.$setCalculation()
+
+;  Call any custom constructor code
+Do $cinst.$initList()

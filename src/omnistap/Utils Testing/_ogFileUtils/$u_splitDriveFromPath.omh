@@ -1,0 +1,19 @@
+Do $cinst.$mock($objects.ogFileUtils) Returns lorFileUtils
+
+Do lorFileUtils.$mock("$splitpathname").$expect("e")
+Do lorFileUtils.$mock("$splitpathname").$parameter(2).$return_char("a")
+Do lorFileUtils.$mock("$splitpathname").$parameter(3).$return_char("b")
+Do lorFileUtils.$mock("$splitpathname").$parameter(4).$return_char("c")
+Do lorFileUtils.$mock("$splitpathname").$parameter(5).$return_char("d")
+
+Do lorFileUtils.$splitDriveFromPath("e",lcDrive,lcPath)
+
+If tvMacVersion
+	Do ioTAP.$is_char(lcDrive,pathsep(),"We get back the path seperator")
+Else
+	Do ioTAP.$is_char(lcDrive,"a","We get the drive")
+End If
+
+Do ioTAP.$is_char(lcPath,con("b",pathsep(),"cd"),"We get the rest of the path back with a separator between the path and the file")
+
+Do $cinst.$assertMocks()

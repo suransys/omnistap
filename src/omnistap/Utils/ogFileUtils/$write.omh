@@ -1,0 +1,42 @@
+
+If isclear(pcPath)
+	Do uoLog.$error(con('Refusing to write to an empty path'),1)
+	Quit method kFalse
+End If
+
+Do FileOps.$getfileinfo(pcPath,kFileOpsInfoIsDirectory) Returns lrInfo
+If lrInfo.isdirectory=kTrue
+	Do uoLog.$error(con('Refusing to write to a directory: ',pcPath),1)
+	Quit method kFalse
+End If
+
+Do $cinst.$createEnclosingFolder(pcPath) Returns lbOK
+If lbOK=kFalse
+	Do uoLog.$error(con('Unable to create parent directory for ',pcPath),1)
+	Quit method kFalse
+End If
+
+If FileOps.$doesfileexist(pcPath)=kFalse&pbAppend=kTrue
+	Calculate pbAppend as kFalse
+End If
+
+If pbAppend=kTrue
+	Do loFile.$openfile(pcPath) Returns lbOK
+	Calculate lcAccessErrorMessage as con('Unable to open file for writing: ',pcPath)
+Else
+	Do loFile.$createfile(pcPath) Returns lbOK
+	Calculate lcAccessErrorMessage as con('Unable to create file: ',pcPath)
+End If
+
+If lbOK=kFalse
+	Do uoLog.$error(lcAccessErrorMessage,1)
+	Quit method kFalse
+End If
+
+Do loFile.$writecharacter(pnEncoding,pcText,pbAppend) Returns lbOK
+If lbOK=kFalse
+	Do uoLog.$error(con('Unable to write text to file: ',pcPath),1)
+End If
+Do loFile.$closefile()
+
+Quit method lbOK

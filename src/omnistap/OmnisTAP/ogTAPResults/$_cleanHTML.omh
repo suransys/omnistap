@@ -1,0 +1,8 @@
+Calculate lcCleanedText as pcText
+
+Calculate lcCleanedText as replaceall(lcCleanedText,"&","&amp;")
+Calculate lcCleanedText as replaceall(lcCleanedText,"<","&lt;")
+Calculate lcCleanedText as replaceall(lcCleanedText,">","&gt;")
+Calculate lcCleanedText as replaceall(lcCleanedText,kCr,"<br>")
+
+Quit method lcCleanedText

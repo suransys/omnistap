@@ -1,0 +1,6 @@
+For ilMethods.$line from 1 to ilMethods.$linecount step 1
+	Do ilMethods.Method.$getHTMLResults() Returns lcMethodResults
+	Calculate lcHTMLResults as con(lcHTMLResults,lcMethodResults)
+End For
+
+Quit method lcHTMLResults

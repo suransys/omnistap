@@ -1,0 +1,11 @@
+Set reference lirLibrary to pirTestClass.$lib
+
+Calculate lcClassName as mid(pirTestClass.$name,2)
+Do lirLibrary.$classes.$findname(lcClassName) Returns lirClass
+
+If isnull(lirClass)
+	Calculate pfcErrorMessage as con("Unable to find ",lcClassName,".")
+	Quit method #NULL
+End If
+
+Quit method lirClass

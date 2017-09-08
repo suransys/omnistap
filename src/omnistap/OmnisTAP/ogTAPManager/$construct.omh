@@ -1,0 +1,21 @@
+Calculate icLib as pcLib
+
+Do $cinst.$_defineLists()
+
+Calculate $cinst.$autoreset as kFalse
+Calculate $cinst.$useseconds as kFalse
+Calculate $cinst.$timervalue as 1
+Calculate $cinst.$reentrant as kFalse
+
+Calculate lnTestTimingMultiplier as getenv("OMNIS_TEST_TIMING_MULTIPLIER")
+
+If isclear(lnTestTimingMultiplier)
+	Calculate lnTestTimingMultiplier as 1.000
+End If
+
+Calculate iiMaxMilliseconds_Unit as iiMaxMilliseconds_Unit*lnTestTimingMultiplier
+Calculate iiMaxMilliseconds_Integration as iiMaxMilliseconds_Integration*lnTestTimingMultiplier
+
+Do uoLog.$notice(con("Test timing multiplier is set to ",lnTestTimingMultiplier))
+Do uoLog.$notice(con("Max timing for unit tests: ",iiMaxMilliseconds_Unit))
+Do uoLog.$notice(con("Max timing for integration tests: ",iiMaxMilliseconds_Integration))

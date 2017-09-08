@@ -1,0 +1,43 @@
+Do $cinst.$_getRealMethod($cinst.$getMockInstance().$class(),ilMockMethods.MethodName) Returns lirRealMethod
+Do lirRealMethod.$lvardefs.$makelist($ref.$name,$ref.$objtype,$ref.$objsubtype,$ref.$objsublen,$ref.$parmno) Returns llParameters
+Calculate llParameters.$cols.1.$name as "Name"
+Calculate llParameters.$cols.2.$name as "ObjType"
+Calculate llParameters.$cols.3.$name as "ObjSubType"
+Calculate llParameters.$cols.4.$name as "ObjSubLen"
+Calculate llParameters.$cols.5.$name as "ParameterNumber"
+Do llParameters.$cols.$add("Have",kRow)
+Do llParameters.$cols.$add("Want",kRow)
+Do llParameters.$cols.$add("Return",kRow)
+
+For llParameters.$line from 1 to llParameters.$linecount step 1
+	If llParameters.ParameterNumber=0
+		Calculate llParameters.0.$selected as kTrue
+		Jump to start of loop
+	End If
+	
+	Do lrHave.$define()
+	Do lrWant.$define()
+	
+	If llParameters.ObjType=kFieldreference|llParameters.ObjType=kItemref
+		Do lrHave.$cols.$add("Have",kCharacter,kSimplechar,100000000)
+		Do lrWant.$cols.$add("Want",kCharacter,kSimplechar,100000000)
+	Else If llParameters.ObjType=kObjectref
+		Do lrHave.$cols.$add("Have",kObjectref)
+		Do lrWant.$cols.$add("Want",kObjectref)
+	Else If llParameters.ObjType=kList
+		Do lrHave.$cols.$add("Have",kList)
+		Do lrWant.$cols.$add("Want",kList)
+	Else
+		Do lrHave.$cols.$add("Have",llParameters.ObjType,llParameters.ObjSubType,llParameters.ObjSubLen)
+		Do lrWant.$cols.$add("Want",llParameters.ObjType,llParameters.ObjSubType,llParameters.ObjSubLen)
+	End If
+	
+	Calculate llParameters.Have as lrHave
+	Calculate llParameters.Want as lrWant
+	Calculate llParameters.Expected as kFalse
+End For
+
+Do llParameters.$remove(kListDeleteSelected)
+Do llParameters.$sort($ref.ParameterNumber)
+
+Quit method llParameters
