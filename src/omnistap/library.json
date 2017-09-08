@@ -8,11 +8,7 @@
 		"ignoreexternal": true,
 		"nodebug": false,
 		"userinfo": "",
-		"vcsbuilddate": {
-			"type": 23,
-			"subtype": 7,
-			"data": "2017-09-04 06:55:05"
-		},
+		"vcsbuilddate": "",
 		"vcsbuildersname": "",
 		"vcsbuildnotes": ""
 	},
