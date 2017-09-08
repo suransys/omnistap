@@ -1,0 +1,10 @@
+
+If tvMacVersion=kFalse
+	Calculate lcReturn as 'Y:\%%folder%%\Win_%%name%%.txt'
+Else
+	Calculate lcReturn as '/Volumes/Deployments/%%folder%%/Mac_%%name%%.txt'
+End If
+Calculate lcReturn as replace(lcReturn,'%%name%%',pcName)
+Calculate lcReturn as replace(lcReturn,'%%folder%%',pcFolder)
+
+Quit method lcReturn

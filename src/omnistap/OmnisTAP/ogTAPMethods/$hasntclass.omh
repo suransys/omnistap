@@ -1,0 +1,7 @@
+If isclear(pcMessage)
+	Calculate pcMessage as con('The Library ',pcLibName,' should not have the class ',pcClassName)
+End If
+
+Do $libs.$findname(pcLibName) Returns lirLibRef
+Do lirLibRef.$classes.$findname(pcClassName) Returns lirClassRef
+Do $cinst.$ok(isclear(lirClassRef),pcMessage,"library doesn't have class")

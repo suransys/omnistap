@@ -1,0 +1,1 @@
+Do $cinst.$ok(pVar1<>pVar2,pMessage,con("Have: ",pVar1,kCr,"Don't want: ",pVar2))

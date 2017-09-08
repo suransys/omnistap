@@ -1,0 +1,34 @@
+[
+	{
+		"name": "$u_getWidthForText",
+		"ident": 0,
+		"order": 1,
+		"desc": "Tests get the width of text for a given font",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnExpectedWidth",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnWidth",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loFontUtils",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogFontUtils",
+				"sublen": 0
+			}
+		]
+	}
+]

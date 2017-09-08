@@ -1,0 +1,7 @@
+Calculate lnLine as ilDestinations.$line
+
+Do ilDestinations.$search(low($ref.Destination)=low(pcDestination),kTrue,kFalse,kFalse,kFalse) Returns ilDestinations.$line
+
+If ilDestinations.$line=0
+	Calculate ilDestinations.$line as lnLine
+End If

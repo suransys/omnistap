@@ -1,0 +1,13 @@
+If ibRunStartupAndShutdown=kFalse
+	Quit method
+End If
+
+Do uoLog.$notice('running tests shutdown')
+
+Do $cinst.$_setupTimings()
+
+Do iorStartupShutdown.$shutdown()
+
+Do $cinst.$_teardownTimings()
+
+Do iorStartupShutdown.$deleteref()

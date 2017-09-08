@@ -1,0 +1,13 @@
+Do $cinst.$when("condition is true")
+
+Do iirMock.$mock("$notice").$expect("Notice here",12)
+Do iirMock.$mockI("$error")
+
+Do iirMock.$conditional(kTrue,"Notice here",12)
+Do $cinst.$assertMocks()
+
+Do iirMock.$mock("$notice").$reset()
+Do iirMock.$mockI("$error").$expect("Error here",75)
+
+Do iirMock.$conditional(kFalse,"Error here",75)
+Do $cinst.$assertMocks()

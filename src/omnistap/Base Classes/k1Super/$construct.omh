@@ -1,0 +1,8 @@
+;  On Windows, startup_task opens with an uppercase name. On macOS it is lowercase. We should standardize on lowercase.
+Calculate $cinst().$name as low($cinst().$name)
+Calculate $clib().$name as low($clib().$name)
+
+Enable enter & escape keys
+Show Omnis maximized
+
+Do $cinst.$setLibraryDefaults()

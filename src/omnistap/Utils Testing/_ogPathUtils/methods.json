@@ -1,0 +1,77 @@
+[
+	{
+		"name": "$setup",
+		"ident": 4,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$u_logs",
+		"ident": 1,
+		"order": 3,
+		"desc": "Tests getting the path to the logs directory",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcExpectedPath",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPath",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$i_temp",
+		"ident": 0,
+		"order": 5,
+		"desc": "test uoPath.$temp()",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcFolder",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcFolder2",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcParentDir",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcProgramName",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

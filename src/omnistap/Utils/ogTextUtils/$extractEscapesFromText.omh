@@ -1,0 +1,31 @@
+Do llEscapes.$cols.$add("Escape",kInteger,k32bitint)
+Do llEscapes.$cols.$add("Value",kCharacter,kSimplechar,10000000)
+
+Calculate lbnEscapeHeader as binfromhex("1B")
+Calculate lcTextToParse as pcText
+
+Calculate lnBinPos as binsearch(lbnEscapeHeader,lcTextToParse)
+While lnBinPos>=0
+	If lnBinPos>0
+		Do llEscapes.$add()
+		Calculate llEscapes.$line as llEscapes.$linecount
+		
+		Calculate llEscapes.Value as mid(lcTextToParse,1,(lnBinPos/4))
+		Calculate lcTextToParse as mid(lcTextToParse,(lnBinPos/4)+1)
+	End If
+	
+	Do llEscapes.$add()
+	Calculate llEscapes.$line as llEscapes.$linecount
+	
+	Calculate lcEscape as mid(lcTextToParse,1,11)
+	Do $cinst.$decodeOmnisTextEscape(lcEscape,llEscapes.Escape,llEscapes.Value)
+	Calculate lcTextToParse as mid(lcTextToParse,12)
+	
+	Calculate lnBinPos as binsearch(lbnEscapeHeader,lcTextToParse)
+End While
+
+If not(isclear(lcTextToParse))
+	Do llEscapes.$add(0,lcTextToParse)
+End If
+
+Quit method llEscapes

@@ -1,0 +1,22 @@
+If ilLibraries.$linecount>0
+	Calculate lcLastLib as ilLibraries.Name
+End If
+
+Do $root.$libs.$makelist($ref.$name) Returns ilLibraries
+Calculate ilLibraries.$cols.1.$name as "Name"
+
+Do ilLibraries.$sendall($ref.Name.$assign(low(ilLibraries.Name)))
+Do ilLibraries.$sort($ref.Name)
+
+If len(lcLastLib)
+	Do ilLibraries.$search($ref.Name=lcLastLib,1,0,0,0) Returns ilLibraries.$line
+Else
+	Do ilLibraries.$search($ref.Name<>"omniscli"&$ref.Name<>"omnistap"&$ref.Name<>"suran_vcs",1,0,0,0) Returns ilLibraries.$line
+	If ilLibraries.$line=0
+		Calculate ilLibraries.$line as 1
+	End If
+End If
+
+Do $cwind.$toolbars.$first().$setLibraries(ilLibraries)
+
+Do $cinst.$_loadTestsFromLibrary()

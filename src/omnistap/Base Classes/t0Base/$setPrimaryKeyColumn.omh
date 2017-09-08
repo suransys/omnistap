@@ -1,0 +1,4 @@
+
+Calculate icPrimaryKeyColumn as pcPrimaryKeyColumn
+
+Do $cinst.$setRecallColumn(pcPrimaryKeyColumn)

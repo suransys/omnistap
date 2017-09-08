@@ -1,0 +1,1 @@
+Do $cinst.$ok(pos(pVar1,pVar2)=0,pMessage,con('Does Not Contain: ',pVar1,' In ',pVar2))

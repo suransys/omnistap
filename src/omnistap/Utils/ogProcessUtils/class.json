@@ -1,0 +1,34 @@
+{
+	"classtype": "kObjectclass",
+	"internalversion": 32,
+	"cvardefs": [
+		{
+			"name": "cnMyProcessID",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0,
+			"initval": "0"
+		}
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2012-01-09 10:55:54",
+		"desc": "",
+		"designtaskname": "Startup_Task",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2017-08-12 17:34:00",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 2
+	}
+}

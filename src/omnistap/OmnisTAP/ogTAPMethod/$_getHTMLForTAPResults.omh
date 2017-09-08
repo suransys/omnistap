@@ -1,0 +1,6 @@
+For ilContexts.$line from 1 to ilContexts.$linecount step 1
+	Do ilContexts.Context.$getHTMLResults() Returns lcContextResults
+	Calculate lcHTMLResults as con(lcHTMLResults,lcContextResults)
+End For
+
+Quit method lcHTMLResults

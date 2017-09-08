@@ -1,0 +1,148 @@
+{
+	"classtype": "kWindow",
+	"internalversion": 27,
+	"superclass": "w1_SmartFieldSuper",
+	"nextident": 1002,
+	"lastgroupident": 0,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "icTextForEmptyList",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "icTypeToSearchCalculation",
+			"order": 7,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iirEmptyListText",
+			"order": 4,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iirList",
+			"order": 2,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilFieldProperties",
+			"order": 8,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "inDropLine",
+			"order": 5,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "ioTypeToSearch",
+			"order": 6,
+			"type": "kObject",
+			"subtype": "ogTypeToSearch",
+			"sublen": 0
+		},
+		{
+			"name": "_ilList",
+			"order": 3,
+			"type": "kList",
+			"subtype": "t0Base",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"collectperformancedata": false,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2011-06-21 11:08:32",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"horzgrid": 8,
+		"inheritedorder": 0,
+		"issubwindow": false,
+		"issupercomponent": false,
+		"moddate": "2017-08-12 17:35:00",
+		"showascheckedout": false,
+		"showgrid": false,
+		"sizetogrid": false,
+		"userinfo": "",
+		"version": 2,
+		"vertgrid": 8
+	},
+	"inheritedproperties": [
+		"designtaskname",
+		"componenticon",
+		"title",
+		"top",
+		"left",
+		"height",
+		"width",
+		"style",
+		"closebox",
+		"growbox",
+		"zoombox",
+		"minimizebox",
+		"helpbutton",
+		"horzscroll",
+		"vertscroll",
+		"showcommands",
+		"clickbehind",
+		"keepclicks",
+		"dropmode",
+		"enablemenuandtoolbars",
+		"bringinfront",
+		"backcolor",
+		"backpattern",
+		"showtitle",
+		"modelessdata",
+		"startfield",
+		"forecolor",
+		"backgroundtheme",
+		"effect",
+		"toolbarpos",
+		"toolbarnames",
+		"hasmenus",
+		"menunames",
+		"hasstatusbar",
+		"statusbarpos",
+		"showtext",
+		"toolbaroptions",
+		"minimizeiconid",
+		"helpfile",
+		"contextmenu",
+		"menuedge",
+		"dockingedge",
+		"statusedge",
+		"edgefloat",
+		"backgroundskin",
+		"backgroundskinalign",
+		"usesheets",
+		"was_toolbarbutton",
+		"alpha"
+	],
+	"statusbar": {
+		"properties": {
+			"fieldstyle": "",
+			"font": 1,
+			"fontsize": 0,
+			"helppane": 0
+		}
+	}
+}

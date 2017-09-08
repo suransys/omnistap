@@ -1,0 +1,3 @@
+Calculate iirList.$calculation as replaceall(pcCalculation,con($cinst.$dataname,"."),"_ilList.")
+
+Do $cinst.$setTypeToSearchCalculation(iirList.$calculation)

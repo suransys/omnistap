@@ -1,0 +1,8 @@
+Do $cinst.$splitpathname(pcPath,pfrDrive,lcPath,lcFilename,lcExtension)
+
+If tvMacVersion
+	Calculate pfrDrive as pathsep()
+	Calculate lcPath as trim(lcPath,kTrue,kFalse,pathsep())
+End If
+
+Calculate pfrPath as con(lcPath,pathsep(),lcFilename,lcExtension)

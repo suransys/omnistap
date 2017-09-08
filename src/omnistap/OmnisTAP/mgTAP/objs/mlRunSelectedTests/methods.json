@@ -1,0 +1,19 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirOmnisTAP",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$iwindows.window",
+				"sublen": 0
+			}
+		]
+	}
+]

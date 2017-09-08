@@ -1,0 +1,7 @@
+For ilMethods.$line from 1 to ilMethods.$linecount step 1
+	If ilMethods.Method.$didPass()=kFalse
+		Quit method kFalse
+	End If
+End For
+
+Quit method kTrue

@@ -1,0 +1,2 @@
+;  The smartfield can optionally call this method to when setting external data.
+;  Add $dataChanged to the subwindow field to trap a data change

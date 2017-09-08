@@ -1,0 +1,4 @@
+;  $teardown is called after each test completes
+;  Use it to restore any silent modes or cleanup integration test results like temporary files
+;  By default it will restore any stored variables
+Do $cinst.$restore()

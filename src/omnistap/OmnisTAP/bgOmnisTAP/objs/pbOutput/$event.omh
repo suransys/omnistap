@@ -1,0 +1,2 @@
+On evClick
+	Do $itasks.omnistap.$openOmnisTAP()

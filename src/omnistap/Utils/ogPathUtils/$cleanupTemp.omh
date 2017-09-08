@@ -1,0 +1,11 @@
+If not(len(icTempFolder))
+	Quit method kTrue
+End If
+
+If not(FileOps.$doesfileexist(icTempFolder))
+	Quit method kTrue
+End If
+
+Do uoFile.$deleteFolder(icTempFolder)
+
+Quit method not(FileOps.$doesfileexist(icTempFolder))

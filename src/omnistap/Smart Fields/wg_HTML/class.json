@@ -1,0 +1,127 @@
+{
+	"classtype": "kWindow",
+	"internalversion": 218,
+	"superclass": "w1_SmartFieldSuper",
+	"nextident": 1007,
+	"lastgroupident": 0,
+	"cvardefs": [
+		{
+			"name": "ciTempFileCounter",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0,
+			"initval": "1"
+		}
+	],
+	"ivardefs": [
+		{
+			"name": "icTempHTMLFile",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "_icCSS",
+			"order": 3,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "_icHTML",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "_icJavaScript",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"collectperformancedata": false,
+		"componenticon": "k16x16+1630",
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2010-03-02 10:01:07",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"height": 143,
+		"horzgrid": 8,
+		"inheritedorder": 0,
+		"issubwindow": false,
+		"issupercomponent": false,
+		"left": 508,
+		"moddate": "2017-08-12 17:35:00",
+		"showascheckedout": false,
+		"showgrid": false,
+		"sizetogrid": false,
+		"top": 197,
+		"userinfo": "",
+		"version": 2,
+		"vertgrid": 8,
+		"width": 384
+	},
+	"inheritedproperties": [
+		"designtaskname",
+		"title",
+		"style",
+		"closebox",
+		"growbox",
+		"zoombox",
+		"minimizebox",
+		"helpbutton",
+		"horzscroll",
+		"vertscroll",
+		"showcommands",
+		"clickbehind",
+		"keepclicks",
+		"dropmode",
+		"enablemenuandtoolbars",
+		"bringinfront",
+		"backcolor",
+		"backpattern",
+		"showtitle",
+		"modelessdata",
+		"startfield",
+		"forecolor",
+		"backgroundtheme",
+		"effect",
+		"toolbarpos",
+		"toolbarnames",
+		"hasmenus",
+		"menunames",
+		"hasstatusbar",
+		"statusbarpos",
+		"showtext",
+		"toolbaroptions",
+		"minimizeiconid",
+		"helpfile",
+		"contextmenu",
+		"menuedge",
+		"dockingedge",
+		"statusedge",
+		"edgefloat",
+		"backgroundskin",
+		"backgroundskinalign",
+		"usesheets",
+		"was_toolbarbutton",
+		"alpha"
+	],
+	"statusbar": {
+		"properties": {
+			"fieldstyle": "",
+			"font": 1,
+			"fontsize": 0,
+			"helppane": 0
+		}
+	}
+}

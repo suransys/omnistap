@@ -1,0 +1,5 @@
+If ibTestRunning
+	Quit method kFalse
+End If
+
+Quit method kTrue

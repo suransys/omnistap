@@ -1,0 +1,9 @@
+If isclear(pcMessage)
+	Calculate pcMessage as con('The parameter ',pcLibName,'.',pcClassName,'.',pcMethodName,'.',pcParamName,' should be parameter no. ',pnParam)
+End If
+
+Do $libs.$findname(pcLibName) Returns lirLibRef
+Do lirLibRef.$classes.$findname(pcClassName) Returns lirClassRef
+Do lirClassRef.$methods.$findname(pcMethodName) Returns lirMethodRef
+Do lirMethodRef.$lvardefs.$findname(pcParamName) Returns lirParamRef
+Do $cinst.$ok(lirParamRef.$parmno=pnParam,pcMessage,"parameter is right number")

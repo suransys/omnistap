@@ -1,0 +1,227 @@
+[
+	{
+		"name": "$construct",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$canclose",
+		"ident": 7,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$failOnError",
+		"ident": 5,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pcErrorDetails",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$failOnMessage",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pcMessage",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getOmnisTAPMenu",
+		"ident": 10,
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getOmnisTAPWindow",
+		"ident": 1,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getTests",
+		"ident": 6,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pcLib",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 255,
+				"param": 1
+			},
+			{
+				"name": "pflProcessList",
+				"order": 5,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "llAllTestMethods",
+				"order": 2,
+				"type": "kList",
+				"subtype": "tgTestMethod",
+				"sublen": 0
+			},
+			{
+				"name": "llTestClasses",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgTestClass",
+				"sublen": 0
+			},
+			{
+				"name": "llTestMethods",
+				"order": 3,
+				"type": "kList",
+				"subtype": "tgTestMethod",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getTestClasses",
+		"ident": 8,
+		"order": 8,
+		"pvardefs": [
+			{
+				"name": "pcLib",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 255,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcClassDisplayName",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirLibrary",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0
+			},
+			{
+				"name": "lirObjectClass",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$objects.object",
+				"sublen": 0
+			},
+			{
+				"name": "llTestClasses",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgTestClass",
+				"sublen": 0
+			},
+			{
+				"name": "lorTest",
+				"order": 6,
+				"type": "kObjectref",
+				"subtype": "ogTAPSuper",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$openOmnisTAP",
+		"ident": 2,
+		"order": 9,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setLogObject",
+		"ident": 9,
+		"order": 10,
+		"pvardefs": [
+			{
+				"name": "porLog",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setTestRunning",
+		"ident": 4,
+		"order": 11,
+		"pvardefs": [
+			{
+				"name": "pbTestRunning",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

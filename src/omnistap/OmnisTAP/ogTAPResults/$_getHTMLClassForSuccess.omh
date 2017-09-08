@@ -1,0 +1,5 @@
+If pbPassed=kTrue
+	Quit method $cinst.$_getHTMLClassForPassing()
+End If
+
+Quit method $cinst.$_getHTMLClassForFailure()

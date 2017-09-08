@@ -1,0 +1,9 @@
+Calculate ibCurrentTestPassed as kTrue
+
+If not(isclear(icTAPOutputDirectory))
+	Do $cinst.$_logTestToShell()
+	Quit method
+End If
+
+Do $cinst.$_generateNotice(con(dat(#D,"y-M-D"),' ',tim(#T,"h:N A"),' (',ilTests.Type,") ",$cinst.$_getTestDescription()),"Method")
+Do $cinst.$_getTestWindow().$logTestStarted(ilTests)

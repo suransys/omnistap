@@ -1,0 +1,6 @@
+;  Enter your initialization code here
+Do $cinst.$_set_iirExternalVariable()
+
+If $cinst.$enabled=kFalse
+	Do $cinst.$enabled.$assign(kFalse)
+End If

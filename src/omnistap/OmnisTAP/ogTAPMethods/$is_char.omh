@@ -1,0 +1,1 @@
+Do $cinst.$ok(pick(isnull(pVar1)&isnull(pVar2),pVar1=pVar2,kTrue),pMessage,con("Have: ",pVar1,kCr,"Want: ",pVar2))

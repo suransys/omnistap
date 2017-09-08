@@ -1,0 +1,19 @@
+If pbAssign=kTrue
+	Do default
+End If
+
+Calculate _iiNoRefreshStack as _iiNoRefreshStack+pick(pbAssign=kTrue,-1,1)
+
+If _iiNoRefreshStack>0
+	Quit method
+End If
+
+Do default
+
+If ibSetDimensionsCalledDuringNoRefresh
+	Do $cinst.$setDimensions()
+End If
+
+If ibRedrawAllCalledDuringNoRefresh
+	Do $cinst.$redrawAll()
+End If

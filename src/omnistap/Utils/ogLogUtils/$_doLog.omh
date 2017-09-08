@@ -1,0 +1,8 @@
+Do ilLevels.$search($ref.level=pcLevel,1,0,0,0) Returns ilLevels.$line
+
+If ilLevels.$line>inLoggingLevel
+	Quit method
+End If
+
+Calculate inExtraMethodDepth as pnExtraMethodDepth+1
+Do $cinst.$_log(pcLevel,pcMessage)

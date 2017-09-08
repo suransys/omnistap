@@ -1,0 +1,3 @@
+Do bincompare(pVar1,pVar2) Returns lbValuesMatch
+
+Do $cinst.$ok(lbValuesMatch,pMessage,con("Have: ",bintohex(pVar1),kCr,"Want: ",bintohex(pVar2)))

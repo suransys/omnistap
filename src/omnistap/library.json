@@ -1,0 +1,60 @@
+{
+	"omnisversion": "8.1",
+	"includes": [
+		"OMNISCLI"
+	],
+	"properties": {
+		"extension": false,
+		"ignoreexternal": true,
+		"nodebug": false,
+		"userinfo": "",
+		"vcsbuilddate": {
+			"type": 23,
+			"subtype": 7,
+			"data": "2017-09-04 06:55:05"
+		},
+		"vcsbuildersname": "",
+		"vcsbuildnotes": ""
+	},
+	"prefs": {
+		"canfocusbuttons": "kNofocus",
+		"centuryrange": 1980,
+		"defaultname": "",
+		"designdpi": "96,72,75",
+		"designdpimode": "kDPIoff",
+		"designedscreensizes": "kSSZjs320x480Portrait,kSSZjs768x1024Portrait",
+		"disabledefaultcontextmenu": false,
+		"disableellipsis": false,
+		"disablewebservicelogging": false,
+		"exportcontrolcharacters": false,
+		"exportedquotes": true,
+		"fiscalyearend": "1900-12-31 00:00:00",
+		"fontscale": false,
+		"helpfoldername": "",
+		"hscale": 0,
+		"iconlib": "",
+		"iconset": "suran",
+		"initiallayoutbreakpoints": "320,768,1024",
+		"javareturnsnative": true,
+		"justifiedtextthreshold": 75,
+		"keyevents": true,
+		"mouseevents": true,
+		"reportcalculationerrors": true,
+		"reportnotationerrors": false,
+		"rmouseevents": true,
+		"screencoordinates": false,
+		"sensitivefieldnames": false,
+		"sensitivefilenames": true,
+		"serverlessclientstringtable": "",
+		"sharedpictures": "kSharedPicModeNone",
+		"sqlstripspaces": true,
+		"startuptaskname": "Startup_Task",
+		"statusevents": true,
+		"uniquefieldnames": false,
+		"userexportdelimiter": ";",
+		"v3events": false,
+		"vscale": 0,
+		"weekstart": "kMonday",
+		"windowsizeexcludesdockingarea": false
+	}
+}

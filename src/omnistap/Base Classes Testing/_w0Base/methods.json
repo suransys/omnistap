@@ -1,0 +1,88 @@
+[
+	{
+		"name": "$setup",
+		"ident": 21,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$u_cascadingsetDimensions",
+		"ident": 2,
+		"order": 3,
+		"desc": "Tests that $setDimensions cascades",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirSubinst",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirWin",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_isParentWindow",
+		"ident": 9,
+		"order": 10,
+		"desc": "Tests detecting if a window instance is a sub window or a parent window",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbOK",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lirSubwindow",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "$iwindows.window.$objs.subwindow",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_windowResizeConstraints",
+		"ident": 4,
+		"order": 15,
+		"desc": "Tests resize contraints on windows",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirWin",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	}
+]

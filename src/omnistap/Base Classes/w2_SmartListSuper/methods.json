@@ -1,0 +1,394 @@
+[
+	{
+		"name": "$construct",
+		"ident": 14,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setDimensions",
+		"ident": 7,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setExternalValue",
+		"ident": 10,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setInternalValue",
+		"ident": 9,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_getListRef",
+		"ident": 20,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Events==",
+		"ident": 11,
+		"order": 12,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evKey",
+		"ident": 36,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pKey",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pSystemKey",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbContinue",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$listClicked",
+		"ident": 12,
+		"order": 15,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$listDoubleClicked",
+		"ident": 13,
+		"order": 16,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Accessors==",
+		"ident": 8,
+		"order": 19,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setCalculation",
+		"ident": 15,
+		"order": 21,
+		"pvardefs": [
+			{
+				"name": "pcCalculation",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"initval": "\"_ilList.Description\""
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setTypeToSearchCalculation",
+		"ident": 33,
+		"order": 28,
+		"pvardefs": [
+			{
+				"name": "pcTypeToSearchCalculation",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Automatic Scrollbars==",
+		"ident": 6,
+		"order": 29,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getHeightForList",
+		"ident": 3,
+		"order": 30,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnLineHeight",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnListHeight",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getHeightForListRow",
+		"ident": 34,
+		"order": 31,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getWidthForList",
+		"ident": 4,
+		"order": 32,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcCalculation",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcSortationCalculation",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcText",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "llList",
+				"order": 6,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnIterationsWithoutResettingWidth",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnLineWidth",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnListWidth",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setHorizontalScrollbarVisible",
+		"ident": 35,
+		"order": 33,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbHorizontalScrollbarVisible",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lnListWidth",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setScrollBarsVisible",
+		"ident": 5,
+		"order": 34,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnListHeight",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnListWidth",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setVerticalScrollBarVisible",
+		"ident": 37,
+		"order": 35,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbVerticalScrollbarVisible",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lnListHeight",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_getExtraListLineHeight",
+		"ident": 0,
+		"order": 36,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setHorizontalScrollVisible",
+		"ident": 23,
+		"order": 37,
+		"pvardefs": [
+			{
+				"name": "pbVisible",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setVerticalScrollVisible",
+		"ident": 24,
+		"order": 38,
+		"pvardefs": [
+			{
+				"name": "pbVisible",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

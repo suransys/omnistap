@@ -1,0 +1,16 @@
+Do ilTAPResults.$add()
+Calculate ilTAPResults.$line as ilTAPResults.$linecount
+
+Calculate ilTAPResults.TAP as pcTAP
+Calculate ilTAPResults.Description as pcDescription
+Calculate ilTAPResults.Assertion as pcAssertion
+
+If pcTAP="#"
+	Quit method
+End If
+
+Calculate iiTestsRun as iiTestsRun+1
+
+If pcTAP="ok"
+	Calculate iiTestsPassed as iiTestsPassed+1
+End If
