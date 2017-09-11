@@ -33,6 +33,9 @@ Do llCalls.$cols.$add("Parameters",kList)
 Do llCalls.$cols.$add("ParameterSignature",kCharacter,kSimplechar,100000000)
 Calculate ilMockMethods.Calls as llCalls
 
+Do llExtraCalls.$cols.$add("Stack",kList)
+Calculate ilMockMethods.ExtraCalls as llExtraCalls
+
 ;  Setup expected parameters
 Do $cinst.$_prepareExpect()
 

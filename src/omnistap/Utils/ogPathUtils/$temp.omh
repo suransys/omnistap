@@ -5,13 +5,13 @@ End If
 Do method tempFolderName ('suran') Returns lcTempFolder
 
 If not(FileOps.$doesfileexist(lcTempFolder))
-	Do uoFile.$createFolder(lcTempFolder,kFalse)
+	Do loFileUtils.$createFolder(lcTempFolder,kFalse)
 	Do FileOps.$setunixpermissions(lcTempFolder,'drwxrwxrwx')
 	Calculate lcParentDir as FileOps.$parentdir(trim(lcTempFolder,kFalse,kTrue,pathsep()))
 	If right(lcParentDir,5)='suran'
 		Do FileOps.$setunixpermissions(lcParentDir,'drwxrwxrwx')
 	End If
-	Do uoFile.$isFolderWriteable(lcTempFolder) Returns lbOK
+	Do loFileUtils.$isFolderWriteable(lcTempFolder) Returns lbOK
 	
 	If lbOK=kFalse
 		Quit method ''

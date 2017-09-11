@@ -652,6 +652,13 @@
 				"type": "kObject",
 				"subtype": ".FileOps.FileOps",
 				"sublen": 0
+			},
+			{
+				"name": "loFileUtils",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
 			}
 		]
 	},

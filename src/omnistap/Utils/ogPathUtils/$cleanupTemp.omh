@@ -6,6 +6,6 @@ If not(FileOps.$doesfileexist(icTempFolder))
 	Quit method kTrue
 End If
 
-Do uoFile.$deleteFolder(icTempFolder)
+Do loFileUtils.$deleteFolder(icTempFolder)
 
 Quit method not(FileOps.$doesfileexist(icTempFolder))

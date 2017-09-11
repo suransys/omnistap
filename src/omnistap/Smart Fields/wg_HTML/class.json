@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 218,
+	"internalversion": 226,
 	"superclass": "w1_SmartFieldSuper",
 	"nextident": 1007,
 	"lastgroupident": 0,
@@ -21,6 +21,13 @@
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
 			"sublen": 100000000
+		},
+		{
+			"name": "loFileUtils",
+			"order": 4,
+			"type": "kObject",
+			"subtype": "ogFileUtils",
+			"sublen": 0
 		},
 		{
 			"name": "_icCSS",
@@ -60,13 +67,13 @@
 		"issubwindow": false,
 		"issupercomponent": false,
 		"left": 508,
-		"moddate": "2017-08-12 17:35:00",
+		"moddate": "2017-09-07 21:59:00",
 		"showascheckedout": false,
 		"showgrid": false,
 		"sizetogrid": false,
 		"top": 197,
 		"userinfo": "",
-		"version": 2,
+		"version": 3,
 		"vertgrid": 8,
 		"width": 384
 	},

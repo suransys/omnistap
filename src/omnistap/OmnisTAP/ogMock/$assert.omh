@@ -17,7 +17,20 @@ For ilMockMethods.$line from 1 to ilMockMethods.$linecount step 1
 		Calculate lcTestMessage as con(lcTestMessage," because ",ilMockMethods.Reason)
 	End If
 	
+	;  Log the stack for un-expected calls
+	Calculate llExtraCalls as ilMockMethods.ExtraCalls
+	For llExtraCalls.$line from 1 to llExtraCalls.$linecount step 1
+		Calculate lcTestMessage as con(lcTestMessage,kCr,"Stack for extra call ",ilMockMethods.Calls.$linecount+llExtraCalls.$line," to ",ilMockMethods.MethodName,":")
+		
+		Calculate llStack as llExtraCalls.Stack
+		For llStack.$line from 1 to llStack.$linecount step 1
+			Do $cinst.$_getStackDescription(llStack.0) Returns lcStackDescription
+			Calculate lcTestMessage as con(lcTestMessage,kCr,llStack.$line,"--> ",lcStackDescription)
+		End For
+	End For
+	
 	Do ioTAP.$is_number(ilMockMethods.Callcount,lnCallCountWant,lcTestMessage)
+	
 	Calculate ilMockMethods.Callcount as 0
 	Calculate ilMockMethods.Reason as ""
 	

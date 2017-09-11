@@ -2,7 +2,7 @@ Do uoPath.$temp() Returns lcExpectedPath
 Calculate lcExpectedPath as con(lcExpectedPath,"install.out")
 Do FileOps.$deletefile(lcExpectedPath)
 
-Do uoFile.$getTempFile("install.out") Returns lcPath
+Do iorMock.$getTempFile("install.out") Returns lcPath
 
 Do ioTAP.$is_char(right(lcPath,11),"install.out","We have the right file")
 
@@ -16,7 +16,7 @@ Do ioTAP.$filedoesntexist(lcPath,"The file doesn't exist")
 Do loFile.$createfile(lcPath)
 Do loFile.$closefile()
 
-Do uoFile.$getTempFile("install.out") Returns lcPath
+Do iorMock.$getTempFile("install.out") Returns lcPath
 Do ioTAP.$is_char(right(lcPath,11),"install.out","We have the right file even when it exists")
 
 Do uoPath.$temp() Returns lcExpectedPath

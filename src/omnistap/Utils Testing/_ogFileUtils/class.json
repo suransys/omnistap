@@ -1,12 +1,18 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 48,
+	"internalversion": 51,
 	"superclass": "omnistap.ogTAPSuper",
 	"cvardefs": [
 
 	],
 	"ivardefs": [
-
+		{
+			"name": "iorMock",
+			"order": 1,
+			"type": "kObjectref",
+			"subtype": "",
+			"sublen": 0
+		}
 	],
 	"properties": {
 		"collectperformancedata": false,
@@ -19,10 +25,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-01 14:57:00",
+		"moddate": "2017-09-07 21:59:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 3
+		"version": 4
 	}
 }

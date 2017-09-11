@@ -1,3 +1,5 @@
+Do $objects.ogLogUtils.$newref() Returns uoLog
+
 Do $cinst.$getCLI() Returns lorCLI
 If lorCLI.$isRunningFromCLI()=kTrue
 	Do lorCLI.$processCLICommand()

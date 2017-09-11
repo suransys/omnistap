@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 43,
+	"internalversion": 47,
 	"superclass": ".FileOps.FileOps",
 	"cvardefs": [
 
@@ -19,10 +19,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-02 13:11:15",
+		"moddate": "2017-09-07 21:58:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 2
+		"version": 3
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"classtype": "kTask",
-	"internalversion": 30,
+	"internalversion": 39,
 	"tvardefs": [
 		{
 			"name": "kCharacterMaxLen",
@@ -34,13 +34,6 @@
 			"sublen": 0
 		},
 		{
-			"name": "uoFile",
-			"order": 5,
-			"type": "kObject",
-			"subtype": "ogFileUtils",
-			"sublen": 0
-		},
-		{
 			"name": "uoFont",
 			"order": 6,
 			"type": "kObject",
@@ -50,7 +43,7 @@
 		{
 			"name": "uoLog",
 			"order": 7,
-			"type": "kObject",
+			"type": "kObjectref",
 			"subtype": "ogLogUtils",
 			"sublen": 0
 		},
@@ -119,9 +112,9 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-02 13:49:00",
+		"moddate": "2017-09-08 11:46:00",
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 4
+		"version": 6
 	}
 }

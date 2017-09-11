@@ -14,4 +14,4 @@ End While
 Do uoText.$listToCSV(plDataForFile,",",kLf) Returns lcCSVData
 Calculate lcCSVData as con(lcHeader,kLf,lcCSVData)
 
-Do uoFile.$write(lcCSVFilePath,lcCSVData)
+Do loFileUtils.$write(lcCSVFilePath,lcCSVData)
