@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 37,
+	"internalversion": 43,
 	"cvardefs": [
 
 	],
@@ -11,6 +11,13 @@
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
 			"sublen": 100000000
+		},
+		{
+			"name": "loFileUtils",
+			"order": 2,
+			"type": "kObject",
+			"subtype": "ogFileUtils",
+			"sublen": 0
 		}
 	],
 	"properties": {
@@ -24,10 +31,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-08-12 17:34:00",
+		"moddate": "2017-09-07 21:59:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 2
+		"version": 3
 	}
 }

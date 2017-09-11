@@ -2,6 +2,7 @@ If ilMockMethods.$line=0
 	Do ilMockMethods.$clear()
 Else
 	Do ilMockMethods.Calls.$clear()
+	Do ilMockMethods.ExtraCalls.$clear()
 End If
 
 Quit method $cinst.$objref

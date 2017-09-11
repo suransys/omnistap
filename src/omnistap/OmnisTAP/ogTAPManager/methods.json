@@ -730,6 +730,13 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loFileUtils",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -906,6 +913,13 @@
 				"order": 6,
 				"type": "kItemref",
 				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "loFileUtils",
+				"order": 7,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
 				"sublen": 0
 			}
 		]

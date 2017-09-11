@@ -1,4 +1,4 @@
-Do uoFile.$getTempFile("logging_test") Returns lcPath
+Do loFileUtils.$getTempFile("logging_test") Returns lcPath
 Calculate lcPath as con(lcPath,sys(9),"test.log")
 
 Do iirMock.$mock("$_getLogFile").$call(1).$return_char(lcPath)

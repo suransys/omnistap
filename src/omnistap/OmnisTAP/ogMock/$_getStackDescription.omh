@@ -1,0 +1,35 @@
+Calculate prStackLine.$cols.1.$name as "classitem"
+Calculate prStackLine.$cols.2.$name as "object"
+Calculate prStackLine.$cols.3.$name as "method"
+Calculate prStackLine.$cols.4.$name as "line"
+Calculate prStackLine.$cols.5.$name as "linetext"
+Calculate prStackLine.$cols.6.$name as "params"
+Calculate prStackLine.$cols.7.$name as "methoditem"
+Calculate prStackLine.$cols.8.$name as "inst"
+
+Calculate lcDescription as con("(",prStackLine.inst().$fullname,") ",prStackLine.classitem().$fullname)
+
+If not(isclear(prStackLine.object))
+	Calculate lcDescription as con(lcDescription,".",prStackLine.object)
+End If
+
+Calculate lcDescription as con(lcDescription,".",prStackLine.method,".",prStackLine.line,": ",prStackLine.linetext)
+
+If not(isclear(prStackLine.params.$linecount))
+	Calculate llParams as prStackLine.params
+	Calculate llParams.$cols.1.$name as "name"
+	Calculate llParams.$cols.2.$name as "value"
+	
+	Calculate lcDescription as con(lcDescription,"; parameters: {")
+	For llParams.$line from 1 to llParams.$linecount step 1
+		Calculate lcDescription as con(lcDescription,llParams.name,": ",llParams.value)
+		
+		If llParams.$line<llParams.$linecount
+			Calculate lcDescription as con(lcDescription,", ")
+		End If
+	End For
+	
+	Calculate lcDescription as con(lcDescription,"}")
+End If
+
+Quit method lcDescription

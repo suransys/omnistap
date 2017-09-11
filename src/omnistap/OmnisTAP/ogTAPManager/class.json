@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 289,
+	"internalversion": 294,
 	"superclass": ".Timer Library.Timer",
 	"cvardefs": [
 
@@ -223,10 +223,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-04 06:59:00",
+		"moddate": "2017-09-07 21:59:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 136
+		"version": 137
 	}
 }

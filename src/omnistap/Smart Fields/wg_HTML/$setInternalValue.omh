@@ -9,6 +9,6 @@ If pos("<html>",_icHTML)=0&pos("<body>",_icHTML)=0&pos("</html>",_icHTML)=0&pos(
 	Calculate _icHTML as con("<html><head>",$cinst.$_getStyleElement(),$cinst.$_getScriptElement(),"</head><body>",_icHTML,"</body></html>")
 End If
 
-Do uoFile.$write(icTempHTMLFile,_icHTML)
+Do loFileUtils.$write(icTempHTMLFile,_icHTML)
 
 Calculate $cinst.$objs.exHTML.$urlorcontrolname as con("file://",icTempHTMLFile)

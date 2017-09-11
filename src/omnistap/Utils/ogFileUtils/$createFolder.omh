@@ -4,7 +4,7 @@ If FileOps.$doesfileexist(pcFolder)
 	Quit method kTrue
 End If
 
-Do uoFile.$splitDriveFromPath(pcFolder,lcDrive,lcPath)
+Do $cinst.$splitDriveFromPath(pcFolder,lcDrive,lcPath)
 Calculate lcPath as trim(lcPath,kTrue,kFalse,sys(9))
 
 Do uoLog.$debug(con("Will create folder ",lcPath," on drive ",lcDrive))

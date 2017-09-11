@@ -1,4 +1,4 @@
-Do uoFile.$splitpathname(pcTestPath,lcDrive,lcPath,lcFilename,lcExtension)
+Do iorMock.$splitpathname(pcTestPath,lcDrive,lcPath,lcFilename,lcExtension)
 Do ioTAP.$logheader(pcMessage)
 Do ioTAP.$is_char(lcDrive,pcExpectedDrive,"Drive")
 Do ioTAP.$is_char(lcPath,pcExpectedPath,"Path")

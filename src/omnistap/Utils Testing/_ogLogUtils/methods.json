@@ -228,6 +228,13 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loFileUtils",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
 			}
 		]
 	}
