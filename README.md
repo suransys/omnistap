@@ -29,7 +29,7 @@ Not yet supported:
 * Marking tests as TODO (although you can add this note to your test message)
 
 ## Requirements
-* Omnis Studio 8.0 or later
+* Omnis Studio 8.1.x
 * macOS 10.9+
 * Windows 7+
 
