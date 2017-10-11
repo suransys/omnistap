@@ -1,1 +1,1 @@
-Do $cinst.$starttimer()
+Do $cinst.$timer()

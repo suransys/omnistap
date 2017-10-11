@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 149,
+	"internalversion": 155,
 	"cvardefs": [
 		{
 			"name": "cdModDate",

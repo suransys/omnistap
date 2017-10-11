@@ -225,7 +225,14 @@
 		"ident": 12,
 		"order": 7,
 		"pvardefs": [
-
+			{
+				"name": "pirLibrary",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0,
+				"param": 1
+			}
 		],
 		"lvardefs": [
 

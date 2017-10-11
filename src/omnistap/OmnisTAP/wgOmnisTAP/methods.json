@@ -139,13 +139,6 @@
 				"type": "kList",
 				"subtype": "",
 				"sublen": 0
-			},
-			{
-				"name": "llExistingTestClasses",
-				"order": 4,
-				"type": "kList",
-				"subtype": "",
-				"sublen": 0
 			}
 		]
 	},

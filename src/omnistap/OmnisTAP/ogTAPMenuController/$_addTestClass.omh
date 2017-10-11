@@ -1,12 +1,17 @@
 Set reference lirLibrary to pirClass.$lib
 
 Set reference lirClassFolder to lirLibrary.$classes.$findident(pirClass.$parentfolder)
-Calculate lcTestFolderName as con(lirClassFolder.$name," Testing")
+
+If isclear(lirClassFolder)
+	Calculate lcTestFolderName as "Testing"
+Else
+	Calculate lcTestFolderName as con(lirClassFolder.$name," Testing")
+End If
 
 Do $cinst.$_getFolderInLibrary(lirLibrary,lcTestFolderName) Returns lirTestFolder
 
 Do lirLibrary.$objects.$add(pcTestClassName) Returns lirTestClass
-Calculate lirTestClass.$superclass as $cinst.$_getSuperclassForTestClass()
+Calculate lirTestClass.$superclass as $cinst.$_getSuperclassForTestClass(lirLibrary)
 Calculate lirTestClass.$parentfolder as lirTestFolder.$ident
 Calculate lirTestClass.$showascheckedout as kTrue
 Calculate lirTestClass.$designtaskname as "Startup_Task"
