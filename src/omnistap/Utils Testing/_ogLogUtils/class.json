@@ -1,7 +1,7 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 47,
-	"superclass": "omnistap.ogTAPSuper",
+	"internalversion": 50,
+	"superclass": "ogTAPSuper",
 	"cvardefs": [
 
 	],
@@ -25,10 +25,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-07 21:59:00",
+		"moddate": "2017-10-11 10:29:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 5
+		"version": 6
 	}
 }
