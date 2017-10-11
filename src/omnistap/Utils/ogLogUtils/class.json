@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 55,
+	"internalversion": 60,
 	"cvardefs": [
 
 	],
@@ -10,8 +10,7 @@
 			"order": 9,
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
-			"sublen": 100000000,
-			"initval": "pick(tvMacVersion,con(kCr,kLf),kLf)"
+			"sublen": 100000000
 		},
 		{
 			"name": "ilDestinations",
@@ -69,10 +68,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-07 21:58:00",
+		"moddate": "2017-10-11 10:41:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 4
+		"version": 5
 	}
 }

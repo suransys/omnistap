@@ -1,3 +1,5 @@
+Calculate icPlatformLineEnding as pick(tvMacVersion,con(kCr,kLf),kLf)
+
 If isclear($libs.$findname("omniscli"))
 	Do $libs.$add(con(uoPath.$startup(),"omniscli.lbs"),"omniscli")
 	Do $libs.omniscli.$objects.oOmnisCLI.$new() Returns loCLI
