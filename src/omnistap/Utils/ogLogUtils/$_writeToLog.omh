@@ -2,7 +2,7 @@ Do $cinst.$_getLogFile() Returns lcPath
 
 If FileOps.$doesfileexist(lcPath)
 	Do loFile.$openfile(lcPath) Returns lnStatus
-	Calculate pcText as con(icPlatformLineEnding,pcText)
+	Calculate pcText as con($cinst.$_getPlatformLineEnding(),pcText)
 Else
 	Do loFileUtils.$createEnclosingFolder(lcPath)
 	Do loFile.$createfile(lcPath) Returns lnStatus
