@@ -8,6 +8,13 @@
 		],
 		"lvardefs": [
 			{
+				"name": "lbCLIRun",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
 				"name": "lorCLI",
 				"order": 1,
 				"type": "kObjectref",
@@ -53,6 +60,56 @@
 				"sublen": 0,
 				"param": 4
 			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==CLI==",
+		"ident": 2,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getCLI",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$processCLI",
+		"ident": 5,
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lorCLI",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "omniscli.oOmnisCLI",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_getCLIObjectClass",
+		"ident": 4,
+		"order": 6,
+		"pvardefs": [
+
 		],
 		"lvardefs": [
 

@@ -1,4 +1,8 @@
 ;  Send my log output to stdout
+If not(uoLog.$validref())
+	Do $objects.ogLogUtils.$newref() Returns uoLog
+End If
+
 Do uoLog.$setDestination("Stdout")
 
 ;  Verify we have a TAP output file

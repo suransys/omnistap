@@ -1,0 +1,7 @@
+Do $cinst.$getCLI() Returns lorCLI
+If lorCLI.$isRunningFromCLI()=kTrue
+	Do lorCLI.$processCLICommand()
+	Quit method kTrue
+End If
+
+Quit method kFalse
