@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 106,
+	"internalversion": 108,
 	"superclass": "omniscli.oOmnisCLI",
 	"cvardefs": [
 
@@ -39,7 +39,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-02 14:41:00",
+		"moddate": "2017-10-11 23:15:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

@@ -57,38 +57,5 @@
 		"lvardefs": [
 
 		]
-	},
-	{
-		"name": "==CLI==",
-		"ident": 2,
-		"order": 3,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
-		]
-	},
-	{
-		"name": "$getCLI",
-		"ident": 3,
-		"order": 5,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
-		]
-	},
-	{
-		"name": "$_getCLIObjectClass",
-		"ident": 4,
-		"order": 6,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
-		]
 	}
 ]
