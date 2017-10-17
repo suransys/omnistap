@@ -34,7 +34,7 @@
 		"order": 3,
 		"pvardefs": [
 			{
-				"name": "pirClass",
+				"name": "pirProductionClass",
 				"order": 9,
 				"type": "kItemref",
 				"subtype": "$libs.lib.$classes.*",
@@ -60,6 +60,13 @@
 		],
 		"lvardefs": [
 			{
+				"name": "lcFullProductionClassPath",
+				"order": 7,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
 				"name": "lcMockSetupMethodLine",
 				"order": 8,
 				"type": "kCharacter",
@@ -74,24 +81,24 @@
 				"sublen": 100000000
 			},
 			{
-				"name": "lirClassFolder",
+				"name": "lirMockVariable",
+				"order": 6,
+				"type": "kItemref",
+				"subtype": "$vardefs.variabledef",
+				"sublen": 0
+			},
+			{
+				"name": "lirProductionClassFolder",
 				"order": 11,
 				"type": "kItemref",
 				"subtype": "$libs.lib.$classes.folder",
 				"sublen": 0
 			},
 			{
-				"name": "lirLibrary",
+				"name": "lirProductionLibrary",
 				"order": 3,
 				"type": "kItemref",
 				"subtype": "$libs.lib",
-				"sublen": 0
-			},
-			{
-				"name": "lirMockVariable",
-				"order": 6,
-				"type": "kItemref",
-				"subtype": "$vardefs.variabledef",
 				"sublen": 0
 			},
 			{
@@ -111,6 +118,13 @@
 			{
 				"name": "lirTestFolder",
 				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirTestLibrary",
+				"order": 1,
 				"type": "kItemref",
 				"subtype": "",
 				"sublen": 0
@@ -155,8 +169,15 @@
 				"sublen": 0
 			},
 			{
-				"name": "lirLibrary",
+				"name": "lirProductionLibrary",
 				"order": 5,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0
+			},
+			{
+				"name": "lirTestLibrary",
+				"order": 7,
 				"type": "kItemref",
 				"subtype": "$libs.lib",
 				"sublen": 0
@@ -221,9 +242,54 @@
 		]
 	},
 	{
+		"name": "$_getProductionLibrayForTestLibrary",
+		"ident": 16,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pirTestLibrary",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbUseSeparateTestLibrary",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lcProductionLibraryName",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirProductionLibrary",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0
+			},
+			{
+				"name": "lirTestTaskInstance",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$itasks.task",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$_getSuperclassForTestClass",
 		"ident": 12,
-		"order": 7,
+		"order": 8,
 		"pvardefs": [
 			{
 				"name": "pirLibrary",
@@ -241,7 +307,7 @@
 	{
 		"name": "$_getTestClassForClass",
 		"ident": 11,
-		"order": 8,
+		"order": 9,
 		"pvardefs": [
 			{
 				"name": "pirClass",
@@ -297,17 +363,17 @@
 				"sublen": 0
 			},
 			{
-				"name": "lirLibrary",
-				"order": 5,
-				"type": "kItemref",
-				"subtype": "$libs.lib",
-				"sublen": 0
-			},
-			{
 				"name": "lirMockVariable",
 				"order": 10,
 				"type": "kItemref",
 				"subtype": "$vardefs.variabledef",
+				"sublen": 0
+			},
+			{
+				"name": "lirProductionLibrary",
+				"order": 13,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
 				"sublen": 0
 			},
 			{
@@ -330,43 +396,78 @@
 				"type": "kItemref",
 				"subtype": "",
 				"sublen": 0
+			},
+			{
+				"name": "lirTestLibrary",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0
 			}
 		]
 	},
 	{
-		"name": "$_jumpToCounterPart",
-		"ident": 3,
-		"order": 9,
+		"name": "$_getTestLibraryForProductionLibrary",
+		"ident": 15,
+		"order": 10,
 		"pvardefs": [
-
+			{
+				"name": "pirProductionLibrary",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0,
+				"param": 1
+			}
 		],
 		"lvardefs": [
 			{
-				"name": "lcErrorMessage",
+				"name": "lbUseSeparateTestLibrary",
 				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lcPathToTestLibrary",
+				"order": 6,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
 			},
 			{
-				"name": "lirCounterPart",
+				"name": "lcTestLibraryName",
 				"order": 4,
-				"type": "kItemref",
-				"subtype": "$libs.lib.$classes.*",
-				"sublen": 0
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
 			},
 			{
-				"name": "lirCurrentClass",
+				"name": "lirProductionTaskInstance",
 				"order": 2,
 				"type": "kItemref",
-				"subtype": "$libs.lib.$classes.*",
+				"subtype": "$itasks.task",
 				"sublen": 0
 			},
 			{
-				"name": "loVCS",
-				"order": 1,
-				"type": "kObject",
-				"subtype": "odVCS",
+				"name": "lirTestLibrary",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0
+			},
+			{
+				"name": "lirTestStartupTask",
+				"order": 7,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$tasks.task",
+				"sublen": 0
+			},
+			{
+				"name": "lirUseSeparateTestLibraryMethod",
+				"order": 8,
+				"type": "kItemref",
+				"subtype": "$methods.method",
 				"sublen": 0
 			}
 		]
@@ -374,7 +475,7 @@
 	{
 		"name": "============",
 		"ident": 4,
-		"order": 10,
+		"order": 12,
 		"pvardefs": [
 
 		],
@@ -385,7 +486,7 @@
 	{
 		"name": "$testManager",
 		"ident": 5,
-		"order": 11,
+		"order": 13,
 		"pvardefs": [
 
 		],
@@ -396,7 +497,7 @@
 	{
 		"name": "$runSelectedTests",
 		"ident": 6,
-		"order": 12,
+		"order": 14,
 		"pvardefs": [
 
 		],
@@ -413,7 +514,7 @@
 	{
 		"name": "$editSelectedTests",
 		"ident": 8,
-		"order": 13,
+		"order": 15,
 		"pvardefs": [
 
 		],
@@ -444,7 +545,7 @@
 	{
 		"name": "$testCurrentClass",
 		"ident": 7,
-		"order": 14,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -461,7 +562,7 @@
 	{
 		"name": "$jumpToCounterpart",
 		"ident": 9,
-		"order": 15,
+		"order": 17,
 		"pvardefs": [
 
 		],

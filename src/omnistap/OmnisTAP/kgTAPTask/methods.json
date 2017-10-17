@@ -66,9 +66,20 @@
 		]
 	},
 	{
+		"name": "$useSeparateTestLibrary",
+		"ident": 6,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "==CLI==",
 		"ident": 2,
-		"order": 3,
+		"order": 4,
 		"pvardefs": [
 
 		],
@@ -79,7 +90,7 @@
 	{
 		"name": "$getCLI",
 		"ident": 3,
-		"order": 4,
+		"order": 5,
 		"pvardefs": [
 
 		],
@@ -90,7 +101,7 @@
 	{
 		"name": "$processCLI",
 		"ident": 5,
-		"order": 5,
+		"order": 6,
 		"pvardefs": [
 
 		],
@@ -107,7 +118,7 @@
 	{
 		"name": "$_getCLIObjectClass",
 		"ident": 4,
-		"order": 6,
+		"order": 7,
 		"pvardefs": [
 
 		],

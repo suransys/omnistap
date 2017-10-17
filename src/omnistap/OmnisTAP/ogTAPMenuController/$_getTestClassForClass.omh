@@ -1,9 +1,10 @@
-Set reference lirLibrary to pirClass.$lib
+Set reference lirProductionLibrary to pirClass.$lib
+Do $cinst.$_getTestLibraryForProductionLibrary(lirProductionLibrary) Returns lirTestLibrary
 
 Calculate lcTestClassName as con("_",pirClass.$name)
 
 ;  Existing class
-Do lirLibrary.$objects.$findname(lcTestClassName) Returns lirTestClass
+Do lirTestLibrary.$objects.$findname(lcTestClassName) Returns lirTestClass
 If not(isclear(lirTestClass))
 	Quit method lirTestClass
 End If

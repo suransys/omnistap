@@ -1,15 +1,20 @@
-Calculate lcExpectedLibraryName as low(ilLibraries.Name)
-If right(lcExpectedLibraryName,6)="_tests"
-	Calculate lcExpectedLibraryName as mid(lcExpectedLibraryName,1,len(lcExpectedLibraryName)-6)
+;  Find the task for the library
+Do $cinst.$_getTaskForLibraryName(ilLibraries.Name) Returns lirTask
+If isclear(lirTask)
+	Quit method #NULL
 End If
 
-Do $itasks.$first() Returns lirTask
-While not(isclear(lirTask))
-	If low(lirTask().$name)=lcExpectedLibraryName
-		Quit method lirTask
-	End If
-	
-	Do $itasks.$next(lirTask) Returns lirTask
-End While
+;  See if we're using a separate test library
+Do lirTask.$useSeparateTestLibrary() Returns lbUseSeparateLibrary
+If lbUseSeparateLibrary=kFalse
+	Quit method lirTask
+End If
 
-Quit method #NULL
+;  Find the task for the library matching this library's name minus _test
+Calculate lcTestLibraryName as mid(ilLibraries.Name,1,len(ilLibraries.Name)-6)
+Do $cinst.$_getTaskForLibraryName(lcTestLibraryName) Returns lirTask
+If isclear(lirTask)
+	Quit method #NULL
+End If
+
+Quit method lirTask

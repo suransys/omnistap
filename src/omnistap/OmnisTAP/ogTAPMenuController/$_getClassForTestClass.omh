@@ -1,7 +1,8 @@
-Set reference lirLibrary to pirTestClass.$lib
+Set reference lirTestLibrary to pirTestClass.$lib
+Do $cinst.$_getProductionLibrayForTestLibrary(lirTestLibrary) Returns lirProductionLibrary
 
 Calculate lcClassName as mid(pirTestClass.$name,2)
-Do lirLibrary.$classes.$findname(lcClassName) Returns lirClass
+Do lirProductionLibrary.$classes.$findname(lcClassName) Returns lirClass
 
 If isnull(lirClass)
 	Calculate pfcErrorMessage as con("Unable to find ",lcClassName,".")

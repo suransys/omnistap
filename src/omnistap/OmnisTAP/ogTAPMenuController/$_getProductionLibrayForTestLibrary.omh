@@ -1,0 +1,9 @@
+Do pirTestLibrary.$tasks.$findname(pirTestLibrary.$prefs.$startuptaskname).$insts().$first() Returns lirTestTaskInstance
+Do lirTestTaskInstance.$useSeparateTestLibrary() Returns lbUseSeparateTestLibrary
+If lbUseSeparateTestLibrary=kFalse
+	Quit method pirTestLibrary
+End If
+
+Calculate lcProductionLibraryName as mid(pirTestLibrary().$name,1,len(pirTestLibrary().$name)-6)
+Do $libs.$findname(lcProductionLibraryName) Returns lirProductionLibrary
+Quit method lirProductionLibrary
