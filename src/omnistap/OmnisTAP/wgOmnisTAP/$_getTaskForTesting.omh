@@ -1,0 +1,15 @@
+Calculate lcExpectedLibraryName as low(ilLibraries.Name)
+If right(lcExpectedLibraryName,6)="_tests"
+	Calculate lcExpectedLibraryName as mid(lcExpectedLibraryName,1,len(lcExpectedLibraryName)-6)
+End If
+
+Do $itasks.$first() Returns lirTask
+While not(isclear(lirTask))
+	If low(lirTask().$name)=lcExpectedLibraryName
+		Quit method lirTask
+	End If
+	
+	Do $itasks.$next(lirTask) Returns lirTask
+End While
+
+Quit method #NULL

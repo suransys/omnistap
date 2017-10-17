@@ -277,9 +277,33 @@
 		]
 	},
 	{
+		"name": "$_getTaskForTesting",
+		"ident": 14,
+		"order": 16,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcExpectedLibraryName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirTask",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$itasks.task",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "==Test Run==",
 		"ident": 6,
-		"order": 16,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -290,7 +314,7 @@
 	{
 		"name": "$canContinue",
 		"ident": 4,
-		"order": 17,
+		"order": 18,
 		"pvardefs": [
 
 		],
@@ -301,7 +325,7 @@
 	{
 		"name": "$diag",
 		"ident": 13,
-		"order": 18,
+		"order": 19,
 		"pvardefs": [
 			{
 				"name": "pcDescription",
@@ -327,7 +351,7 @@
 	{
 		"name": "$finishTestRun",
 		"ident": 22,
-		"order": 19,
+		"order": 20,
 		"pvardefs": [
 
 		],
@@ -338,7 +362,7 @@
 	{
 		"name": "$log",
 		"ident": 0,
-		"order": 20,
+		"order": 21,
 		"pvardefs": [
 			{
 				"name": "pbOK",
@@ -441,7 +465,7 @@
 	{
 		"name": "$logTestFinished",
 		"ident": 15,
-		"order": 21,
+		"order": 22,
 		"pvardefs": [
 			{
 				"name": "plTest",
@@ -467,7 +491,7 @@
 	{
 		"name": "$logTestStarted",
 		"ident": 19,
-		"order": 22,
+		"order": 23,
 		"pvardefs": [
 			{
 				"name": "plTest",
@@ -485,7 +509,7 @@
 	{
 		"name": "$setTAPOutput",
 		"ident": 23,
-		"order": 23,
+		"order": 24,
 		"pvardefs": [
 			{
 				"name": "pcTAPOutput",

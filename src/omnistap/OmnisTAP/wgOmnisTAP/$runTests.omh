@@ -1,8 +1,5 @@
 ;  Ensure we can talk to the library's task
-Do $itasks.$first() Returns lirTask
-While not(isclear(lirTask))&low(lirTask().$name)<>low(ilLibraries.Name)
-	Do $itasks.$next(lirTask) Returns lirTask
-End While
+Do $cinst.$_getTaskForTesting() Returns lirTask
 
 If isclear(lirTask)
 	Calculate icHTMLResults as con("<h1>The library <span style='font-family: monospace'>",ilLibraries.Name,"</span> is not started</h1>")

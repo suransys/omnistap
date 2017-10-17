@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 407,
+	"internalversion": 410,
 	"cvardefs": [
 		{
 			"name": "lcReturnColumnName",
@@ -74,7 +74,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-10-11 10:19:00",
+		"moddate": "2017-10-17 12:35:59",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

@@ -725,7 +725,62 @@
 		"ident": 10,
 		"order": 21,
 		"pvardefs": [
-
+			{
+				"name": "pcDeviceURL",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcReportClassName",
+				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "plList",
+				"order": 10,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "prOptions",
+				"order": 11,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 4
+			},
+			{
+				"name": "plSorts",
+				"order": 13,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 5
+			},
+			{
+				"name": "pcWindowName",
+				"order": 14,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 6
+			},
+			{
+				"name": "pfrScreen",
+				"order": 15,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 7
+			}
 		],
 		"lvardefs": [
 			{

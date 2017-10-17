@@ -1,3 +1,3 @@
 Do _iorTestManager.$deleteref()
-Do $libs.omnistap.$objects.ogTAPManager.$newref($cinst.$lib().$name) Returns _iorTestManager
+Do $libs.omnistap.$objects.ogTAPManager.$newref(pcLibname) Returns _iorTestManager
 Do _iorTestManager.$run(pProcessList,pbRunStartupAndShutdown,pirFinishMethod.$ref)
