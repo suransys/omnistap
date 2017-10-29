@@ -1,5 +1,4 @@
-Do pirTestLibrary.$tasks.$findname(pirTestLibrary.$prefs.$startuptaskname).$insts().$first() Returns lirTestTaskInstance
-Do lirTestTaskInstance.$useSeparateTestLibrary() Returns lbUseSeparateTestLibrary
+Do $cinst.$_doesLibraryUseSeparateTestLibrary(pirTestLibrary) Returns lbUseSeparateTestLibrary
 If lbUseSeparateTestLibrary=kFalse
 	Quit method pirTestLibrary
 End If

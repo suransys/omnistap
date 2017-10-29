@@ -1,0 +1,7 @@
+Do pirLibrary.$tasks.$findname(pirLibrary.$prefs.$startuptaskname).$insts().$first() Returns lirTaskInstance
+If isclear(lirTaskInstance)
+	Quit method kFalse     ;; Assume we don't use a separate test library if the task isn't running
+End If
+
+Do lirTaskInstance.$useSeparateTestLibrary() Returns lbUseSeparateTestLibrary
+Quit method lbUseSeparateTestLibrary

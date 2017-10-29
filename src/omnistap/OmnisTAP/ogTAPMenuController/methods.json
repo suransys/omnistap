@@ -132,9 +132,40 @@
 		]
 	},
 	{
+		"name": "$_doesLibraryUseSeparateTestLibrary",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pirLibrary",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "$libs.lib",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbUseSeparateTestLibrary",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lirTaskInstance",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$itasks.task",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$_getClassForTestClass",
 		"ident": 10,
-		"order": 4,
+		"order": 5,
 		"pvardefs": [
 			{
 				"name": "pirTestClass",
@@ -194,7 +225,7 @@
 	{
 		"name": "$_getCurrentClass",
 		"ident": 0,
-		"order": 5,
+		"order": 6,
 		"pvardefs": [
 
 		],
@@ -218,7 +249,7 @@
 	{
 		"name": "$_getFolderInLibrary",
 		"ident": 14,
-		"order": 6,
+		"order": 7,
 		"pvardefs": [
 			{
 				"name": "pirLibrary",
@@ -244,7 +275,7 @@
 	{
 		"name": "$_getProductionLibrayForTestLibrary",
 		"ident": 16,
-		"order": 7,
+		"order": 8,
 		"pvardefs": [
 			{
 				"name": "pirTestLibrary",
@@ -276,20 +307,13 @@
 				"type": "kItemref",
 				"subtype": "$libs.lib",
 				"sublen": 0
-			},
-			{
-				"name": "lirTestTaskInstance",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "$itasks.task",
-				"sublen": 0
 			}
 		]
 	},
 	{
 		"name": "$_getSuperclassForTestClass",
 		"ident": 12,
-		"order": 8,
+		"order": 9,
 		"pvardefs": [
 			{
 				"name": "pirLibrary",
@@ -307,7 +331,7 @@
 	{
 		"name": "$_getTestClassForClass",
 		"ident": 11,
-		"order": 9,
+		"order": 10,
 		"pvardefs": [
 			{
 				"name": "pirClass",
@@ -409,7 +433,7 @@
 	{
 		"name": "$_getTestLibraryForProductionLibrary",
 		"ident": 15,
-		"order": 10,
+		"order": 11,
 		"pvardefs": [
 			{
 				"name": "pirProductionLibrary",
@@ -441,13 +465,6 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
-			},
-			{
-				"name": "lirProductionTaskInstance",
-				"order": 2,
-				"type": "kItemref",
-				"subtype": "$itasks.task",
-				"sublen": 0
 			},
 			{
 				"name": "lirTestLibrary",

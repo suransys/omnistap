@@ -1,5 +1,4 @@
-Do pirProductionLibrary.$tasks.$findname(pirProductionLibrary.$prefs.$startuptaskname).$insts().$first() Returns lirProductionTaskInstance
-Do lirProductionTaskInstance.$useSeparateTestLibrary() Returns lbUseSeparateTestLibrary
+Do $cinst.$_doesLibraryUseSeparateTestLibrary(pirProductionLibrary) Returns lbUseSeparateTestLibrary
 If lbUseSeparateTestLibrary=kFalse
 	Quit method pirProductionLibrary
 End If
