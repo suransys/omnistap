@@ -726,12 +726,20 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pProgressBar",
+				"name": "pfrPayRecord",
 				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
+				"type": "kFieldreference",
+				"subtype": 0,
 				"sublen": 0,
 				"param": 1
+			},
+			{
+				"name": "pdPaidDate",
+				"order": 9,
+				"type": "kDate",
+				"subtype": "kDate1980",
+				"sublen": 0,
+				"param": 2
 			}
 		],
 		"lvardefs": [

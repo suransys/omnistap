@@ -6,7 +6,14 @@ For llParameters.$line from 1 to llParameters.$linecount step 1
 		;  Assume the type of the passed variable for want
 		Calculate lrWant as llParameters.Want
 		Do lrWant.$cols.$remove(lrWant.$cols.Want)
-		Do lrWant.$cols.$add("Want",[llParameters.Name].$type,[llParameters.Name].$subtype,[llParameters.Name].$sublen)
+		
+		Switch [llParameters.Name].$type
+			Case kList,kRow,kObjectref,kItemref,kObject
+				Do lrWant.$cols.$add("Want",[llParameters.Name].$type)
+			Default
+				Do lrWant.$cols.$add("Want",[llParameters.Name].$type,[llParameters.Name].$subtype,[llParameters.Name].$sublen)
+		End Switch
+		
 		Calculate llParameters.Want as lrWant
 		
 		;  Assume the type of the passed variable for have
