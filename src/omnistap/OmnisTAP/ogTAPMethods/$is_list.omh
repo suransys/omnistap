@@ -30,6 +30,9 @@ End If
 Calculate lnList1Line as pfrList1.$line
 Calculate lnList2Line as pfrList2.$line
 
+Do lrList1Row.$copydefinition(pfrList1)
+Do lrList2Row.$copydefinition(pfrList1)
+
 For pfrList1.$line from 1 to pfrList1.$linecount step 1
 	Calculate pfrList2.$line as pfrList1.$line
 	
@@ -55,33 +58,43 @@ For pfrList1.$line from 1 to pfrList1.$linecount step 1
 		End If
 	End If
 	
-	Do pfrList1.$cols.$first() Returns lirColumn
+	Do lrList1Row.$assignrow(pfrList1.0,kFalse)
+	Calculate lbnList1Row as lrList1Row
 	
-	While not(isnull(lirColumn()))
-		If isclear(pfrList1.[lirColumn().$name])&not(isclear(pfrList2.[lirColumn().$name]))
-			Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have NULL. Want ",pfrList2.[lirColumn().$name],"."))
-			Calculate lbQuit as kTrue
-		Else If not(isclear(pfrList1.[lirColumn().$name]))&isclear(pfrList2.[lirColumn().$name])
-			Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name],". Want NULL."))
-			Calculate lbQuit as kTrue
-		Else If lirColumn.$coltype=kItemref
-			If pfrList1.[lirColumn().$name]().$fullname<>pfrList2.[lirColumn().$name]().$fullname
-				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name]().$fullname,". Want ",pfrList2.[lirColumn().$name]().$fullname,"."))
+	Do lrList2Row.$assignrow(pfrList2.0,kFalse)
+	Calculate lbnList2Row as lrList2Row
+	
+	Calculate lbRowsEqual as bincompare(lbnList1Row,lbnList2Row)
+	
+	If lbRowsEqual=kFalse
+		Do pfrList1.$cols.$first() Returns lirColumn
+		
+		While not(isnull(lirColumn()))
+			If isclear(pfrList1.[lirColumn().$name])&not(isclear(pfrList2.[lirColumn().$name]))
+				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have NULL. Want ",pfrList2.[lirColumn().$name],"."))
+				Calculate lbQuit as kTrue
+			Else If not(isclear(pfrList1.[lirColumn().$name]))&isclear(pfrList2.[lirColumn().$name])
+				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name],". Want NULL."))
+				Calculate lbQuit as kTrue
+			Else If lirColumn.$coltype=kItemref
+				If pfrList1.[lirColumn().$name]().$fullname<>pfrList2.[lirColumn().$name]().$fullname
+					Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name]().$fullname,". Want ",pfrList2.[lirColumn().$name]().$fullname,"."))
+					Calculate lbQuit as kTrue
+				End If
+			Else If pfrList1.[lirColumn().$name]<>pfrList2.[lirColumn().$name]
+				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name],". Want ",pfrList2.[lirColumn().$name],"."))
 				Calculate lbQuit as kTrue
 			End If
-		Else If pfrList1.[lirColumn().$name]<>pfrList2.[lirColumn().$name]
-			Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name],". Want ",pfrList2.[lirColumn().$name],"."))
-			Calculate lbQuit as kTrue
-		End If
-		If lbQuit
-			Calculate pfrList1.$line as lnList1Line
-			Calculate pfrList2.$line as lnList2Line
+			If lbQuit
+				Calculate pfrList1.$line as lnList1Line
+				Calculate pfrList2.$line as lnList2Line
+				
+				Quit method
+			End If
 			
-			Quit method
-		End If
-		
-		Do pfrList1.$cols.$next(lirColumn()) Returns lirColumn
-	End While
+			Do pfrList1.$cols.$next(lirColumn()) Returns lirColumn
+		End While
+	End If
 End For
 
 Calculate pfrList1.$line as lnList1Line

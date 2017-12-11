@@ -475,15 +475,29 @@
 		],
 		"lvardefs": [
 			{
-				"name": "lbOK",
-				"order": 4,
-				"type": "kBoolean",
+				"name": "lbnList1Row",
+				"order": 10,
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lbnList2Row",
+				"order": 11,
+				"type": "kBinary",
 				"subtype": 0,
 				"sublen": 0
 			},
 			{
 				"name": "lbQuit",
 				"order": 8,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lbRowsEqual",
+				"order": 12,
 				"type": "kBoolean",
 				"subtype": 0,
 				"sublen": 0
@@ -507,6 +521,20 @@
 				"order": 7,
 				"type": "kInteger",
 				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lrList1Row",
+				"order": 4,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lrList2Row",
+				"order": 13,
+				"type": "kRow",
+				"subtype": "",
 				"sublen": 0
 			}
 		]
