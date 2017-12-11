@@ -74,6 +74,13 @@
 				"sublen": 100000000
 			},
 			{
+				"name": "lcProductionClassPath",
+				"order": 14,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
 				"name": "lcTestFolderName",
 				"order": 12,
 				"type": "kCharacter",
