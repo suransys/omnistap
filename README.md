@@ -75,7 +75,7 @@ git clone https://github.com/suransys/omnistap.git
 ## Quickstart
 ### Add OmnisTAP to your library
 1. Open `omnistap/lib/[your Omnis version]/omnistap.lbs` in Omnis Studio
-1. Set your library's startup task to subclass `omnistap.ogTAPTask`
+1. Set your library's startup task to subclass `omnistap.kgTAPTask`
 1. Restart your library's startup task
 
 ### Add a test
