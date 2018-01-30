@@ -1,6 +1,7 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 155,
+	"internalversion": 157,
+	"designtaskname": "Startup_Task",
 	"cvardefs": [
 		{
 			"name": "cdModDate",
@@ -60,14 +61,13 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2009-04-06 11:13:16",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-08-12 21:10:00",
+		"moddate": "2018-01-30 15:53:11",
 		"selfcontained": false,
-		"showascheckedout": false,
+		"showascheckedout": true,
 		"userinfo": "",
 		"version": 63
 	}

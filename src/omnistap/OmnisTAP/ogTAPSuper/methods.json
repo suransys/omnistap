@@ -150,18 +150,19 @@
 	{
 		"name": "$==Mocking==",
 		"ident": 27,
-		"order": 8,
+		"order": 7,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$assertMocks",
 		"ident": 29,
-		"order": 9,
+		"order": 8,
 		"pvardefs": [
 
 		],
@@ -172,7 +173,7 @@
 	{
 		"name": "$mock",
 		"ident": 28,
-		"order": 10,
+		"order": 9,
 		"pvardefs": [
 			{
 				"name": "pirClass",
@@ -288,7 +289,7 @@
 	{
 		"name": "$when",
 		"ident": 30,
-		"order": 11,
+		"order": 10,
 		"pvardefs": [
 			{
 				"name": "pcContext",
@@ -306,7 +307,7 @@
 	{
 		"name": "$restore",
 		"ident": 32,
-		"order": 12,
+		"order": 11,
 		"pvardefs": [
 
 		],
@@ -317,7 +318,7 @@
 	{
 		"name": "$store",
 		"ident": 31,
-		"order": 13,
+		"order": 12,
 		"pvardefs": [
 			{
 				"name": "pfrInstanceToStore",
@@ -346,6 +347,81 @@
 		]
 	},
 	{
+		"name": "$insertForwardingMethod",
+		"ident": 2,
+		"order": 13,
+		"notes": "This method injects a public version of private method being called\rThis way the private method can be tested.",
+		"pvardefs": [
+			{
+				"name": "prObject",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pPrivateMethod",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcInputVars",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPublicMethod",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcTempPrivateMethod",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcTempPublicMethod",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "liVariableLineNr",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "kShortint",
+				"sublen": 0
+			},
+			{
+				"name": "llVariables",
+				"order": 5,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lrPublicMethodRef",
+				"order": 9,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$==Optional Overrides==",
 		"ident": 35,
 		"order": 14,
@@ -354,7 +430,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$setup",
