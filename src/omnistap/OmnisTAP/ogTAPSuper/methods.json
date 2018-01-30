@@ -355,11 +355,10 @@
 			{
 				"name": "prObject",
 				"order": 1,
-				"type": "kObjectref",
-				"subtype": "OmniHisSql.Contraindication",
+				"type": "kFieldreference",
+				"subtype": 0,
 				"sublen": 0,
-				"param": 1,
-				"desc": "Object waar de te private method zich in bevind"
+				"param": 1
 			},
 			{
 				"name": "pPrivateMethod",
@@ -367,8 +366,7 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000,
-				"param": 2,
-				"desc": "Naam van de private method"
+				"param": 2
 			}
 		],
 		"lvardefs": [
