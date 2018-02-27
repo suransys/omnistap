@@ -2,6 +2,7 @@
 	"classtype": "kTable",
 	"internalversion": 19,
 	"superclass": "t0Base",
+	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
 	],
@@ -27,7 +28,6 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2016-07-14 07:02:36",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"external": true,

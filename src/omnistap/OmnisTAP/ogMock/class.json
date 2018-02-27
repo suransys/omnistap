@@ -1,6 +1,7 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 426,
+	"internalversion": 462,
+	"designtaskname": "Startup_Task",
 	"cvardefs": [
 		{
 			"name": "lcReturnColumnName",
@@ -69,15 +70,14 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2015-11-30 15:50:58",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-11-02 08:39:00",
+		"moddate": "2018-02-26 16:55:39",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 43
+		"version": 44
 	}
 }

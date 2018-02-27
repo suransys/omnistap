@@ -2,6 +2,7 @@
 	"classtype": "kWindow",
 	"internalversion": 14,
 	"superclass": "w2_SmartListSuper",
+	"designtaskname": "Startup_Task",
 	"nextident": 1024,
 	"lastgroupident": 0,
 	"cvardefs": [
@@ -33,7 +34,6 @@
 		"contextmenu": "",
 		"createdate": "2009-06-01 09:35:18",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"dockingedge": "kBorderChisel",
 		"dropmode": "kAcceptNone",
 		"edgefloat": "kEFnone",

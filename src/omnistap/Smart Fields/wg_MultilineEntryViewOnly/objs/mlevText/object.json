@@ -22,6 +22,7 @@
 		"designactive": true,
 		"deslock": false,
 		"disabledefaultcontextmenu": true,
+		"disablediacriticalpopup": false,
 		"disablefocus": false,
 		"disablesystemfocus": false,
 		"dragborder": false,

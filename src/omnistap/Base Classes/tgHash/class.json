@@ -2,6 +2,7 @@
 	"classtype": "kTable",
 	"internalversion": 8,
 	"superclass": "t0Base",
+	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
 	],

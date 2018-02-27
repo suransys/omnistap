@@ -19,7 +19,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$doesValueExistInColumn",
@@ -285,7 +286,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$setDefaultLine",
@@ -374,7 +376,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$findPrimaryKey",
@@ -434,7 +437,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$recallLine",

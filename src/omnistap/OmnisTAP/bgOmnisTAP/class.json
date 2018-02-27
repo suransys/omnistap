@@ -1,6 +1,7 @@
 {
 	"classtype": "kToolbar",
 	"internalversion": 21,
+	"designtaskname": "Startup_Task",
 	"nextident": 1015,
 	"cvardefs": [
 
@@ -22,7 +23,6 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2016-07-08 20:25:44",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"enabled": true,

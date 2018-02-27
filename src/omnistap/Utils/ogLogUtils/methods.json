@@ -25,7 +25,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$conditional",
@@ -178,7 +179,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$setDestination",
@@ -213,7 +215,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$clearLog",

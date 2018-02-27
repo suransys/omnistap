@@ -2,6 +2,7 @@
 	"classtype": "kObjectclass",
 	"internalversion": 23,
 	"superclass": "ogTAPSuper",
+	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
 	],
@@ -20,7 +21,6 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2014-12-12 13:37:37",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"external": true,

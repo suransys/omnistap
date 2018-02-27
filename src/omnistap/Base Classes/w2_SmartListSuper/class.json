@@ -2,6 +2,7 @@
 	"classtype": "kWindow",
 	"internalversion": 27,
 	"superclass": "w1_SmartFieldSuper",
+	"designtaskname": "Startup_Task",
 	"nextident": 1002,
 	"lastgroupident": 0,
 	"cvardefs": [

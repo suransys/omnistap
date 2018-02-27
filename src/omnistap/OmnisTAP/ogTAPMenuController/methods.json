@@ -505,7 +505,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$testManager",

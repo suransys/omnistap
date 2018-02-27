@@ -548,7 +548,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$assert",
@@ -726,20 +727,36 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pfrPayRecord",
+				"name": "pbShowFilteredStatus",
 				"order": 1,
-				"type": "kFieldreference",
+				"type": "kBoolean",
 				"subtype": 0,
 				"sublen": 0,
 				"param": 1
 			},
 			{
-				"name": "pdPaidDate",
+				"name": "pcFilterText",
 				"order": 9,
-				"type": "kDate",
-				"subtype": "kDate1980",
-				"sublen": 0,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
 				"param": 2
+			},
+			{
+				"name": "pcFilterToolTip",
+				"order": 10,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3
+			},
+			{
+				"name": "piFilterColor",
+				"order": 11,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 4
 			}
 		],
 		"lvardefs": [

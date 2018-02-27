@@ -2,6 +2,7 @@
 	"classtype": "kWindow",
 	"internalversion": 3,
 	"superclass": "w1_SmartFieldSuper",
+	"designtaskname": "Startup_Task",
 	"nextident": 1016,
 	"lastgroupident": 0,
 	"cvardefs": [
@@ -40,7 +41,6 @@
 		"contextmenu": "",
 		"createdate": "2017-09-02 12:15:32",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"dockingedge": "kBorderChisel",
 		"dropmode": "kAcceptNone",
 		"edgefloat": "kEFnone",

@@ -1,6 +1,7 @@
 {
 	"classtype": "kMenu",
 	"internalversion": 44,
+	"designtaskname": "Startup_Task",
 	"nextident": 1016,
 	"cvardefs": [
 
@@ -20,7 +21,6 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2017-05-29 06:26:33",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"enabled": true,

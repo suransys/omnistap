@@ -49,7 +49,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$_greetEnemy",
@@ -67,7 +68,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$_nod",
@@ -78,6 +80,7 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	}
 ]

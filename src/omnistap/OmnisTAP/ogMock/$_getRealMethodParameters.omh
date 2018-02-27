@@ -1,4 +1,11 @@
 Do $cinst.$_getRealMethod($cinst.$getMockInstance().$class(),ilMockMethods.MethodName) Returns lirRealMethod
+
+;  If we can't find the method on the class, check the instance
+;  This covers the case where the test adds methods to the mocked instance
+If isclear(lirRealMethod)
+	Do $cinst.$_getRealMethod($cinst.$getMockInstance(),ilMockMethods.MethodName) Returns lirRealMethod
+End If
+
 Do lirRealMethod.$lvardefs.$makelist($ref.$name,$ref.$objtype,$ref.$objsubtype,$ref.$objsublen,$ref.$parmno) Returns llParameters
 Calculate llParameters.$cols.1.$name as "Name"
 Calculate llParameters.$cols.2.$name as "ObjType"

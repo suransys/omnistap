@@ -1,6 +1,7 @@
 {
 	"classtype": "kObjectclass",
 	"internalversion": 6,
+	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
 	],
@@ -71,7 +72,6 @@
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2013-03-15 14:29:18",
 		"desc": "",
-		"designtaskname": "Startup_Task",
 		"editor": "",
 		"editordata": "",
 		"external": true,

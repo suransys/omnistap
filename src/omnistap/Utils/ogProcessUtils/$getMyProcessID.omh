@@ -11,8 +11,8 @@ If tvMacVersion
 	
 	Calculate cnMyProcessID as trim(lcScriptResult,kTrue,kTrue,'"')
 Else
-	X250825050 ("KERNEL32.DLL","GetCurrentProcessId","JV") Returns lnErrorCode
-	X250825051 ("KERNEL32.DLL","GetCurrentProcessId") Returns cnMyProcessID
+	Register DLL ("KERNEL32.DLL","GetCurrentProcessId","JV") Returns lnErrorCode
+	Call DLL ("KERNEL32.DLL","GetCurrentProcessId") Returns cnMyProcessID
 End If
 
 Quit method cnMyProcessID
