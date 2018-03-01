@@ -2019,7 +2019,7 @@
 				{
 					"name": "kmacOS",
 					"properties": {
-						"align": 2,
+						"align": "kCenterJst",
 						"backcolor": "RGB(0,0,0)",
 						"backgroundtheme": "kBGThemeNone",
 						"backpattern": 0,
