@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 3,
+	"internalversion": 4,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
 	"nextident": 1016,
@@ -67,7 +67,7 @@
 		"menunames": "",
 		"minimizebox": false,
 		"minimizeiconid": 2006,
-		"moddate": "2017-09-02 12:45:00",
+		"moddate": "2018-03-02 15:11:28",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,

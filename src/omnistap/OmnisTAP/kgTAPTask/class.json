@@ -1,6 +1,6 @@
 {
 	"classtype": "kTask",
-	"internalversion": 69,
+	"internalversion": 70,
 	"tvardefs": [
 		{
 			"name": "kCharacterMaxLen",
@@ -112,7 +112,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-10-17 17:56:00",
+		"moddate": "2018-03-02 15:11:28",
 		"showascheckedout": false,
 		"userinfo": "",
 		"version": 10

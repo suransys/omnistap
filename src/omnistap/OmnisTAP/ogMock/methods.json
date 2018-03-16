@@ -727,36 +727,20 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pbShowFilteredStatus",
+				"name": "pfrTop",
 				"order": 1,
-				"type": "kBoolean",
+				"type": "kFieldreference",
 				"subtype": 0,
 				"sublen": 0,
 				"param": 1
 			},
 			{
-				"name": "pcFilterText",
+				"name": "pfrLeft",
 				"order": 9,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 2
-			},
-			{
-				"name": "pcFilterToolTip",
-				"order": 10,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 3
-			},
-			{
-				"name": "piFilterColor",
-				"order": 11,
-				"type": "kInteger",
-				"subtype": "k32bitint",
+				"type": "kFieldreference",
+				"subtype": 0,
 				"sublen": 0,
-				"param": 4
+				"param": 2
 			}
 		],
 		"lvardefs": [
