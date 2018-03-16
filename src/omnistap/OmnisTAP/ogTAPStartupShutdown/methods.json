@@ -1,8 +1,22 @@
 [
 	{
-		"name": "$construct",
+		"name": "$startup",
 		"ident": 1,
 		"order": 1,
+		"notes": "Called at the beginning of the test run",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$shutdown",
+		"ident": 0,
+		"order": 2,
+		"notes": "Called at the end of the test run",
 		"pvardefs": [
 
 		],

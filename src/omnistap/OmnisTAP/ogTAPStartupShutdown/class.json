@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 20,
+	"internalversion": 26,
 	"superclass": "ogTAPSuper",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -19,10 +19,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2017-09-02 13:00:41",
+		"moddate": "2018-03-16 09:14:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 7
+		"version": 8
 	}
 }
