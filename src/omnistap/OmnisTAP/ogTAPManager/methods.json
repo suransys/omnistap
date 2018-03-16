@@ -219,7 +219,7 @@
 	{
 		"name": "$_startTestRun",
 		"ident": 58,
-		"order": 16,
+		"order": 15,
 		"pvardefs": [
 
 		],
@@ -230,7 +230,7 @@
 	{
 		"name": "==Mocking==",
 		"ident": 79,
-		"order": 17,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -242,7 +242,7 @@
 	{
 		"name": "$assertMocks",
 		"ident": 83,
-		"order": 18,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -253,7 +253,7 @@
 	{
 		"name": "$registerMock",
 		"ident": 81,
-		"order": 19,
+		"order": 18,
 		"pvardefs": [
 			{
 				"name": "porMock",
@@ -271,7 +271,7 @@
 	{
 		"name": "==Results==",
 		"ident": 59,
-		"order": 20,
+		"order": 19,
 		"pvardefs": [
 
 		],
@@ -283,7 +283,7 @@
 	{
 		"name": "$addDiagnostic",
 		"ident": 61,
-		"order": 21,
+		"order": 20,
 		"pvardefs": [
 			{
 				"name": "pcDiagnostic",
@@ -315,7 +315,7 @@
 	{
 		"name": "$addTestResult",
 		"ident": 60,
-		"order": 22,
+		"order": 21,
 		"pvardefs": [
 			{
 				"name": "pbPass",
@@ -362,7 +362,7 @@
 	{
 		"name": "$_logResultToShell",
 		"ident": 74,
-		"order": 23,
+		"order": 22,
 		"pvardefs": [
 			{
 				"name": "pbPass",
@@ -393,7 +393,7 @@
 	{
 		"name": "$_logTestToShell",
 		"ident": 75,
-		"order": 24,
+		"order": 23,
 		"pvardefs": [
 			{
 				"name": "pcMessage",
@@ -411,7 +411,7 @@
 	{
 		"name": "==Startup==",
 		"ident": 47,
-		"order": 25,
+		"order": 24,
 		"pvardefs": [
 
 		],
@@ -423,7 +423,7 @@
 	{
 		"name": "$_startup",
 		"ident": 48,
-		"order": 26,
+		"order": 25,
 		"pvardefs": [
 
 		],
@@ -440,7 +440,7 @@
 	{
 		"name": "$_calculateLongestTestName",
 		"ident": 69,
-		"order": 27,
+		"order": 26,
 		"pvardefs": [
 
 		],
@@ -457,7 +457,7 @@
 	{
 		"name": "$_executeLibraryStartup",
 		"ident": 49,
-		"order": 28,
+		"order": 27,
 		"pvardefs": [
 
 		],
@@ -481,7 +481,7 @@
 	{
 		"name": "$_instantiateLibraryStartupShutdownObject",
 		"ident": 3,
-		"order": 29,
+		"order": 28,
 		"pvardefs": [
 
 		],
@@ -505,7 +505,7 @@
 	{
 		"name": "==Test Setup==",
 		"ident": 11,
-		"order": 30,
+		"order": 29,
 		"pvardefs": [
 
 		],
@@ -517,7 +517,7 @@
 	{
 		"name": "$_getOpenWindows",
 		"ident": 78,
-		"order": 31,
+		"order": 30,
 		"pvardefs": [
 
 		],
@@ -534,7 +534,7 @@
 	{
 		"name": "$_setup",
 		"ident": 23,
-		"order": 32,
+		"order": 31,
 		"pvardefs": [
 
 		],
@@ -545,7 +545,7 @@
 	{
 		"name": "$_setupObjectReferences",
 		"ident": 4,
-		"order": 33,
+		"order": 32,
 		"pvardefs": [
 
 		],
@@ -556,7 +556,7 @@
 	{
 		"name": "$_setupOpenWindows",
 		"ident": 10,
-		"order": 34,
+		"order": 33,
 		"pvardefs": [
 
 		],
@@ -567,7 +567,7 @@
 	{
 		"name": "$_setupTestRunLog",
 		"ident": 19,
-		"order": 35,
+		"order": 34,
 		"pvardefs": [
 
 		],
@@ -578,7 +578,7 @@
 	{
 		"name": "$_setupTestCase",
 		"ident": 26,
-		"order": 36,
+		"order": 35,
 		"pvardefs": [
 
 		],
@@ -595,7 +595,7 @@
 	{
 		"name": "$_setupTimings",
 		"ident": 27,
-		"order": 37,
+		"order": 36,
 		"pvardefs": [
 
 		],
@@ -606,7 +606,7 @@
 	{
 		"name": "==Test Teardown==",
 		"ident": 18,
-		"order": 38,
+		"order": 37,
 		"pvardefs": [
 
 		],
@@ -618,7 +618,7 @@
 	{
 		"name": "$_teardown",
 		"ident": 25,
-		"order": 39,
+		"order": 38,
 		"pvardefs": [
 
 		],
@@ -629,7 +629,7 @@
 	{
 		"name": "$_teardownMocks",
 		"ident": 82,
-		"order": 40,
+		"order": 39,
 		"pvardefs": [
 
 		],
@@ -667,7 +667,7 @@
 	{
 		"name": "$_teardownObjectReferences",
 		"ident": 6,
-		"order": 41,
+		"order": 40,
 		"pvardefs": [
 
 		],
@@ -684,7 +684,7 @@
 	{
 		"name": "$_teardownOpenWindows",
 		"ident": 28,
-		"order": 42,
+		"order": 41,
 		"pvardefs": [
 
 		],
@@ -701,7 +701,7 @@
 	{
 		"name": "$_teardownTestCase",
 		"ident": 66,
-		"order": 43,
+		"order": 42,
 		"pvardefs": [
 			{
 				"name": "pcObjectName",
@@ -749,7 +749,7 @@
 	{
 		"name": "$_teardownTestRunLog",
 		"ident": 42,
-		"order": 44,
+		"order": 43,
 		"pvardefs": [
 
 		],
@@ -760,7 +760,7 @@
 	{
 		"name": "$_teardownTimings",
 		"ident": 44,
-		"order": 45,
+		"order": 44,
 		"pvardefs": [
 
 		],
@@ -777,7 +777,7 @@
 	{
 		"name": "==Shutdown==",
 		"ident": 37,
-		"order": 46,
+		"order": 45,
 		"pvardefs": [
 
 		],
@@ -789,7 +789,7 @@
 	{
 		"name": "$_shutdown",
 		"ident": 45,
-		"order": 47,
+		"order": 46,
 		"pvardefs": [
 
 		],
@@ -800,7 +800,7 @@
 	{
 		"name": "$_executeLibraryShutdown",
 		"ident": 2,
-		"order": 48,
+		"order": 47,
 		"pvardefs": [
 
 		],
@@ -811,7 +811,7 @@
 	{
 		"name": "$_logTestTypesToFile",
 		"ident": 71,
-		"order": 49,
+		"order": 48,
 		"pvardefs": [
 
 		],
@@ -835,7 +835,7 @@
 	{
 		"name": "$_logTestTypesToTAP",
 		"ident": 35,
-		"order": 50,
+		"order": 49,
 		"pvardefs": [
 
 		],
@@ -846,7 +846,7 @@
 	{
 		"name": "$_logTimingsToFile",
 		"ident": 72,
-		"order": 51,
+		"order": 50,
 		"pvardefs": [
 
 		],
@@ -863,7 +863,7 @@
 	{
 		"name": "$_logTimingsToTAP",
 		"ident": 36,
-		"order": 52,
+		"order": 51,
 		"pvardefs": [
 
 		],
@@ -874,7 +874,7 @@
 	{
 		"name": "$_writeDiagnosticsFileFromList",
 		"ident": 73,
-		"order": 53,
+		"order": 52,
 		"pvardefs": [
 			{
 				"name": "plDataForFile",
@@ -934,7 +934,7 @@
 	{
 		"name": "==Logging==",
 		"ident": 5,
-		"order": 54,
+		"order": 53,
 		"pvardefs": [
 
 		],
@@ -946,7 +946,7 @@
 	{
 		"name": "$_generateFailure",
 		"ident": 21,
-		"order": 55,
+		"order": 54,
 		"pvardefs": [
 			{
 				"name": "pcMessage",
@@ -964,7 +964,7 @@
 	{
 		"name": "$_generateNotice",
 		"ident": 50,
-		"order": 56,
+		"order": 55,
 		"pvardefs": [
 			{
 				"name": "pcMessage",
@@ -990,7 +990,7 @@
 	{
 		"name": "==Paths==",
 		"ident": 9,
-		"order": 57,
+		"order": 56,
 		"pvardefs": [
 
 		],
@@ -1000,183 +1000,14 @@
 		"empty": true
 	},
 	{
-		"name": "$getBrandedShortName",
-		"ident": 17,
-		"order": 58,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "lirLib",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			},
-			{
-				"name": "lorBranding",
-				"order": 3,
-				"type": "kObjectref",
-				"subtype": "",
-				"sublen": 0
-			},
-			{
-				"name": "lorBrandingFactory",
-				"order": 2,
-				"type": "kObjectref",
-				"subtype": "",
-				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "$getOmnisTAPOutputPath",
-		"ident": 14,
-		"order": 59,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "%%program%%",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcReturn",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		]
-	},
-	{
-		"name": "$getOmnisTAPRunningPath",
+		"name": "$getTAPOutputDirectory",
 		"ident": 7,
-		"order": 60,
+		"order": 57,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
 
-		]
-	},
-	{
-		"name": "$getPGTAPLogPath",
-		"ident": 16,
-		"order": 61,
-		"pvardefs": [
-			{
-				"name": "pcDatabaseName",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 1,
-				"initval": "''"
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lcReturn",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		]
-	},
-	{
-		"name": "$getPGTAPOutputPath",
-		"ident": 13,
-		"order": 62,
-		"pvardefs": [
-			{
-				"name": "pcDatabaseName",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 1,
-				"initval": "''"
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lcReturn",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		]
-	},
-	{
-		"name": "$getPGTAPRunningPath",
-		"ident": 15,
-		"order": 63,
-		"pvardefs": [
-			{
-				"name": "pcDatabaseName",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 1,
-				"initval": "''"
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lcReturn",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		]
-	},
-	{
-		"name": "$_getTemplateTAPPath",
-		"ident": 12,
-		"order": 64,
-		"pvardefs": [
-			{
-				"name": "pcFolder",
-				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 1
-			},
-			{
-				"name": "pcName",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 2
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "%%folder%%",
-				"order": 4,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcReturn",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
 		]
 	}
 ]
