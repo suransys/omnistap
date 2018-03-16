@@ -223,5 +223,22 @@
 		"lvardefs": [
 
 		]
+	},
+	{
+		"name": "$reopenOmniscli",
+		"ident": 11,
+		"order": 12,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lvLibRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
 	}
 ]

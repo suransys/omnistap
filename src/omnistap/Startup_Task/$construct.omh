@@ -3,3 +3,5 @@ Do inherited
 If tvDevVersion=kTrue
 	Do $menus.mgTAP.$open("*",kUsermenu) Returns iirOmnisTAPMenu
 End If
+
+Do $cinst.$reopenOmniscli()     ;; <--- this will allow the omniscli's Startup_Task to construct properly.
