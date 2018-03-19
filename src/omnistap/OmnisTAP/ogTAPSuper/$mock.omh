@@ -85,11 +85,6 @@ If isnull(lirMockClass)
 	;  Add reset
 	Do lirMockClass.$methods.$add("$reset") Returns lirMockMethod
 	Do lirMockMethod.$methodlines.$add("Quit method _iorMock.$reset()")
-	
-	;  If we're going to re-use this class, save it with the extra methods in case Omnis crashes
-	If $cinst.$getManager().$isRunningFromCLI()
-		Save class {[lirLibrary().$name].[lirMockClass().$name]}
-	End If
 End If
 
 ;  Get a new mock class and register it so the test manager can remove it at the end of the run
