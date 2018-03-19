@@ -25,7 +25,7 @@ Calculate lcMockClassName as con(pirClass().$name,"_TestMock_",lcTestClassName,"
 Set reference lirLibrary to pirClass.$lib
 Do lirLibrary.$classes.$findname(lcMockClassName) Returns lirMockClass
 
-If not(isnull(lirMockClass))&lirMockClass.$createdate<idMockingStart
+If not(isnull(lirMockClass))&lirMockClass.$createdate<idMockingStart&$cinst.$getManager().$isRunningFromCLI()=kFalse
 	Do lirLibrary.$classes.$remove(lirLibrary.$classes.$findname(lcMockClassName))
 	Set reference lirMockClass to #NULL
 End If
