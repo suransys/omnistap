@@ -1,0 +1,8 @@
+Calculate llPerformance as ilPerformance
+
+If pbIncludeZeroMethods=kFalse
+	Do llPerformance.$search($ref.totalexecutiontime=0,1,0,1,1)
+	Do llPerformance.$remove(kListDeleteSelected)
+End If
+
+Quit method llPerformance

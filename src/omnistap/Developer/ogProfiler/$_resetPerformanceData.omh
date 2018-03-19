@@ -1,0 +1,6 @@
+Do $libs.$first() Returns lirLib
+
+While not(isnull(lirLib()))
+	Do lirLib.$classes.$sendall($ref.$clearperformancedata())
+	Do $libs.$next(lirLib()) Returns lirLib
+End While

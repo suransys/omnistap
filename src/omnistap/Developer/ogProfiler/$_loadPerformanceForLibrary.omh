@@ -1,0 +1,13 @@
+Do pirLib.$classes.$first() Returns lirClass
+
+While not(isnull(lirClass()))
+	Calculate lnNum as lnNum+1
+	
+	Do $cinst.$_getPerformanceForClass(lirClass()) Returns llPerformance
+	Do llPerformance.$cols.$addbefore(llPerformance.$cols.$first(),"libraryname",kCharacter,kSimplechar,10000000)
+	Do llPerformance.$sendall($ref.libraryname.$assign(pirLib().$name))
+	
+	Do ilPerformance.$merge(llPerformance)
+	
+	Do pirLib.$classes.$next(lirClass()) Returns lirClass
+End While
