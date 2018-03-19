@@ -16,6 +16,7 @@ Full documentation is available in the [wiki](https://github.com/suransys/omnist
 * Storing, mocking and automatically restoring task variables during a test run
 * Running tests in the Omnis IDE
 * Running tests from the command-line using [OmnisCLI](https://github.com/suransys/omniscli)
+* Measuring code coverage and test performance
 
 ## [TAP specification](https://testanything.org/tap-specification.html) support
 Supported:
