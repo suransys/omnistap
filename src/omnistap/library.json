@@ -1,17 +1,17 @@
 {
-	"omnisversion": "8.1.3",
+	"omnisversion": "8.1.4",
 	"includes": [
 		"OMNISCLI"
 	],
 	"properties": {
-		"extension": true,
+		"extension": false,
 		"ignoreexternal": true,
 		"nodebug": false,
 		"userinfo": "",
 		"vcsbuilddate": {
 			"type": 23,
 			"subtype": 7,
-			"data": "2018-03-16 09:13:39"
+			"data": "2018-03-17 12:47:09"
 		},
 		"vcsbuildersname": "",
 		"vcsbuildnotes": ""

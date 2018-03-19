@@ -727,20 +727,12 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pfrTop",
+				"name": "pfrRow",
 				"order": 1,
 				"type": "kFieldreference",
 				"subtype": 0,
 				"sublen": 0,
 				"param": 1
-			},
-			{
-				"name": "pfrLeft",
-				"order": 9,
-				"type": "kFieldreference",
-				"subtype": 0,
-				"sublen": 0,
-				"param": 2
 			}
 		],
 		"lvardefs": [
