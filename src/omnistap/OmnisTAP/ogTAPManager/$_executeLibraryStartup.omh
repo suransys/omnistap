@@ -11,13 +11,13 @@ End If
 
 Do $cinst.$_setupTimings()
 
-If not(isclear(icTAPOutputDirectory))
+If $cinst.$isRunningFromCLI()
 	Do $cinst.$_logTestToShell("OmnisTAP Startup")
 End If
 
 Do iorStartupShutdown.$startup() Returns lbOK
 
-If not(isclear(icTAPOutputDirectory))
+If $cinst.$isRunningFromCLI()
 	Do $cinst.$_logResultToShell(lbOK)
 	Do $cinst.$_teardownTestCase(iorStartupShutdown.$class().$name,"$startup")
 End If

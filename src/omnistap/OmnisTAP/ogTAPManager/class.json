@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 325,
+	"internalversion": 403,
 	"superclass": ".Timer Library.Timer",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -204,6 +204,13 @@
 			"type": "kObjectref",
 			"subtype": "ogTAPSuper",
 			"sublen": 0
+		},
+		{
+			"name": "ioTestRunProfiler",
+			"order": 14,
+			"type": "kObject",
+			"subtype": "ogProfiler",
+			"sublen": 0
 		}
 	],
 	"properties": {
@@ -216,10 +223,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-03-16 09:14:00",
+		"moddate": "2018-03-17 12:03:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 140
+		"version": 150
 	}
 }

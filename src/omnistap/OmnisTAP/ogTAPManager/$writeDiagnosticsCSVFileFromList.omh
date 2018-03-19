@@ -1,5 +1,3 @@
-Calculate lcCSVFilePath as con(icTAPOutputDirectory,sys(9),"diagnostics",sys(9),pcFileName,".csv")
-
 Do plDataForFile.$cols.$first() Returns lirColumn
 While not(isclear(lirColumn))
 	Calculate lcHeader as con(lcHeader,pick(isclear(lcHeader),","),'"',lirColumn().$name,'"')
@@ -14,4 +12,4 @@ End While
 Do uoText.$listToCSV(plDataForFile,",",kLf) Returns lcCSVData
 Calculate lcCSVData as con(lcHeader,kLf,lcCSVData)
 
-Do loFileUtils.$write(lcCSVFilePath,lcCSVData)
+Do $cinst.$writeDiagnosticsCSVFile(pcFileName,lcCSVData)

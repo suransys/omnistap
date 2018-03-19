@@ -7,6 +7,11 @@ Do $itasks.$findname("omnistap").$setTestRunning(kTrue)
 Do uoLog.$notice(con("ogTAPManager.$run: ilTests linecount is ",ilTests.$linecount))
 
 Do $cinst.$_calculateLongestTestName()
+
+If $cinst.$isRunningFromCLI()
+	Do $cinst.$_startupProfiling()
+End If
+
 Do $cinst.$_executeLibraryStartup() Returns lbOK
 
 Quit method lbOK

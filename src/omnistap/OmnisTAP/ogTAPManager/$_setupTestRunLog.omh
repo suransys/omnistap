@@ -1,6 +1,6 @@
 Calculate ibCurrentTestPassed as kTrue
 
-If not(isclear(icTAPOutputDirectory))
+If $cinst.$isRunningFromCLI()
 	Do $cinst.$_logTestToShell()
 	Quit method
 End If

@@ -1,5 +1,5 @@
-If isclear(icTAPOutputDirectory)
-	Quit method kCr
+If $cinst.$isRunningFromCLI()
+	Quit method kLf
 End If
 
-Quit method kLf
+Quit method kCr

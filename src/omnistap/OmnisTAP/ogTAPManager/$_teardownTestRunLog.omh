@@ -1,4 +1,4 @@
-If not(isclear(icTAPOutputDirectory))
+If $cinst.$isRunningFromCLI()
 	Do $cinst.$_logResultToShell(ibCurrentTestPassed)
 	Quit method
 End If
