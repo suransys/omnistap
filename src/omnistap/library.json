@@ -1,5 +1,5 @@
 {
-	"omnisversion": "8.1.4",
+	"omnisversion": "8.1.5",
 	"includes": [
 		"OMNISCLI"
 	],
@@ -11,7 +11,7 @@
 		"vcsbuilddate": {
 			"type": 23,
 			"subtype": 7,
-			"data": "2018-03-19 15:56:40"
+			"data": "2018-03-22 15:57:09"
 		},
 		"vcsbuildersname": "",
 		"vcsbuildnotes": ""

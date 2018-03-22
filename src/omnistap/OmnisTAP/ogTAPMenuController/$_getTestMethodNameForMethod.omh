@@ -1,0 +1,4 @@
+Calculate lcTrimmedMethod as trim(pcMethodName,kTrue,kFalse,"$")
+Calculate lcTrimmedMethod as trim(lcTrimmedMethod,kTrue,kFalse,"_")
+
+Quit method con("$u_",lcTrimmedMethod)

@@ -254,9 +254,26 @@
 		]
 	},
 	{
+		"name": "$_getCurrentMethodName",
+		"ident": 17,
+		"order": 7,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirCurrentMethod",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$_getFolderInLibrary",
 		"ident": 14,
-		"order": 7,
+		"order": 8,
 		"pvardefs": [
 			{
 				"name": "pirLibrary",
@@ -280,9 +297,48 @@
 		]
 	},
 	{
+		"name": "$_getMethodNameForTestMethod",
+		"ident": 18,
+		"order": 9,
+		"pvardefs": [
+			{
+				"name": "pirClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pcMethodName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcProtectedMethod",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPublicMethod",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
 		"name": "$_getProductionLibrayForTestLibrary",
 		"ident": 16,
-		"order": 8,
+		"order": 10,
 		"pvardefs": [
 			{
 				"name": "pirTestLibrary",
@@ -320,7 +376,7 @@
 	{
 		"name": "$_getSuperclassForTestClass",
 		"ident": 12,
-		"order": 9,
+		"order": 11,
 		"pvardefs": [
 			{
 				"name": "pirLibrary",
@@ -338,7 +394,7 @@
 	{
 		"name": "$_getTestClassForClass",
 		"ident": 11,
-		"order": 10,
+		"order": 12,
 		"pvardefs": [
 			{
 				"name": "pirClass",
@@ -440,7 +496,7 @@
 	{
 		"name": "$_getTestLibraryForProductionLibrary",
 		"ident": 15,
-		"order": 11,
+		"order": 13,
 		"pvardefs": [
 			{
 				"name": "pirProductionLibrary",
@@ -497,9 +553,33 @@
 		]
 	},
 	{
+		"name": "$_getTestMethodNameForMethod",
+		"ident": 19,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pcMethodName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcTrimmedMethod",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
 		"name": "============",
 		"ident": 4,
-		"order": 12,
+		"order": 15,
 		"pvardefs": [
 
 		],
@@ -511,7 +591,7 @@
 	{
 		"name": "$testManager",
 		"ident": 5,
-		"order": 13,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -522,7 +602,7 @@
 	{
 		"name": "$runSelectedTests",
 		"ident": 6,
-		"order": 14,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -539,7 +619,7 @@
 	{
 		"name": "$editSelectedTests",
 		"ident": 8,
-		"order": 15,
+		"order": 18,
 		"pvardefs": [
 
 		],
@@ -570,7 +650,7 @@
 	{
 		"name": "$testCurrentClass",
 		"ident": 7,
-		"order": 16,
+		"order": 19,
 		"pvardefs": [
 
 		],
@@ -587,11 +667,25 @@
 	{
 		"name": "$jumpToCounterpart",
 		"ident": 9,
-		"order": 17,
+		"order": 20,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
+			{
+				"name": "lcCounterpartMethodName",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcCurrentMethodName",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
 			{
 				"name": "lcErrorMessage",
 				"order": 3,
@@ -611,6 +705,13 @@
 				"order": 2,
 				"type": "kItemref",
 				"subtype": "$libs.lib.$classes.*",
+				"sublen": 0
+			},
+			{
+				"name": "lirMethod",
+				"order": 6,
+				"type": "kItemref",
+				"subtype": "$methods.method",
 				"sublen": 0
 			}
 		]

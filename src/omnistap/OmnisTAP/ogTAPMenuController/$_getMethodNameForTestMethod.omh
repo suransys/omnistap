@@ -1,0 +1,11 @@
+Calculate lcPublicMethod as con("$",mid(pcMethodName,4))
+If not(isclear(pirClass.$methods.$findname(lcPublicMethod)))
+	Quit method lcPublicMethod
+End If
+
+Calculate lcProtectedMethod as con("$",mid(pcMethodName,3))
+If not(isclear(pirClass.$methods.$findname(lcProtectedMethod)))
+	Quit method lcProtectedMethod
+End If
+
+Quit method ""

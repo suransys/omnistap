@@ -3,10 +3,14 @@ If isnull(lirCurrentClass)
 	Quit method
 End If
 
+Do $cinst.$_getCurrentMethodName() Returns lcCurrentMethodName
+
 If lirCurrentClass.$isa($libs.omnistap.$objects.ogTAPSuper)
 	Do $cinst.$_getClassForTestClass(lirCurrentClass,lcErrorMessage) Returns lirCounterPart
+	Do $cinst.$_getMethodNameForTestMethod(lirCounterPart,lcCurrentMethodName) Returns lcCounterpartMethodName
 Else
 	Do $cinst.$_getTestClassForClass(lirCurrentClass,lcErrorMessage) Returns lirCounterPart
+	Do $cinst.$_getTestMethodNameForMethod(lcCurrentMethodName) Returns lcCounterpartMethodName
 End If
 
 If not(isclear(lcErrorMessage))
@@ -14,4 +18,9 @@ If not(isclear(lcErrorMessage))
 	Quit method
 End If
 
-Modify methods {[lirCounterPart.$lib().$name].[lirCounterPart.$name]}
+Do lirCounterPart.$methods.$findname(lcCounterpartMethodName) Returns lirMethod
+If not(isclear(lirMethod))
+	Do lirMethod.$modify()
+Else
+	Modify methods {[lirCounterPart.$lib().$name].[lirCounterPart.$name]}
+End If
