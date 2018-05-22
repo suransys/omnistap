@@ -16,8 +16,13 @@ End If
 
 Do ilTestClasses.$search($ref.Name=lcTestClassName,1,0,0,0) Returns ilTestClasses.$line
 Do $cinst.$_loadTestsFromClass()
-Do ilTestMethods.$sendall($ref.$selected.$assign(kTrue))
-Calculate ilTestMethods.$line as 0
+
+If isclear(pcSpecificTest)
+	Do ilTestMethods.$sendall($ref.$selected.$assign(kTrue))
+	Calculate ilTestMethods.$line as 0
+Else
+	Do ilTestMethods.$search($ref.Method=pcSpecificTest,1,0,1,1) Returns ilTestMethods.$line
+End If
 
 Do $cinst.$objs.ppTests.$objs.clTest.$listClicked()
 

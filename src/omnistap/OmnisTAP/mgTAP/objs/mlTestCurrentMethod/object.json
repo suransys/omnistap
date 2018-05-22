@@ -1,6 +1,6 @@
 {
-	"ident": 1013,
-	"order": 7,
+	"ident": 1016,
+	"order": 6,
 	"properties": {
 		"cascade": "",
 		"checked": false,
@@ -9,8 +9,11 @@
 		"helpfile": 0,
 		"helptext": "",
 		"iconid": 0,
-		"macshortcutkey": "",
-		"text": "",
+		"macshortcutkey": "Cmnd+Opt+R",
+		"text": {
+			"type": 0,
+			"calc": "Test Current Method"
+		},
 		"unixshortcutkey": "",
 		"userinfo": "",
 		"users": "12345678",

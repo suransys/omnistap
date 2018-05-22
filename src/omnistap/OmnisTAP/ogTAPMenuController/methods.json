@@ -648,26 +648,9 @@
 		]
 	},
 	{
-		"name": "$testCurrentClass",
-		"ident": 7,
-		"order": 19,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "lirCurrentClass",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
-		]
-	},
-	{
 		"name": "$jumpToCounterpart",
 		"ident": 9,
-		"order": 20,
+		"order": 19,
 		"pvardefs": [
 
 		],
@@ -712,6 +695,47 @@
 				"order": 6,
 				"type": "kItemref",
 				"subtype": "$methods.method",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$testCurrentClass",
+		"ident": 7,
+		"order": 20,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirCurrentClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$testCurrentMethod",
+		"ident": 20,
+		"order": 21,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcCurrentMethodName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirCurrentClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
 				"sublen": 0
 			}
 		]

@@ -8,7 +8,7 @@ For ilMocks.$line from 1 to ilMocks.$linecount step 1
 		Calculate lorMockInstanceObjectRef as lirMockInstance.$objref
 		Do lorMockInstanceObjectRef.$deleteref()
 	Else
-		Do lirMockInstance.$close()
+		Do lirMockInstance.$group().$remove(lirMockInstance)
 	End If
 	
 	;  Delete class

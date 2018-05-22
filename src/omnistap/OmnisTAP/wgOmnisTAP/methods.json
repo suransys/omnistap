@@ -206,6 +206,14 @@
 				"subtype": "",
 				"sublen": 0,
 				"param": 1
+			},
+			{
+				"name": "pcSpecificTest",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
 			}
 		],
 		"lvardefs": [

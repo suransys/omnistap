@@ -2,11 +2,6 @@
 Calculate ibExpectedSpecificCall as kFalse
 Calculate iiParameter as 0
 
-;  If we're already mocking this method, move on
-If ilMockMethods.MethodName=pcMethodName
-	Quit method $cinst.$objref
-End If
-
 ;  Ensure this method exists
 If $cinst.$getMockInstance().[pcMethodName].$cando()=kFalse
 	Do ioTAP.$fail(con("Failed to mock ",pcMethodName," on ",$cinst.$getMockInstance().$class().$superclass,". Method does not exist."))
