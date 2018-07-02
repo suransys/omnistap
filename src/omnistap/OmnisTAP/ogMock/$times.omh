@@ -1,0 +1,8 @@
+Calculate llCalls as ilMockMethods.Calls
+Calculate liStartingCall as llCalls.$linecount
+
+For liCall from 1 to piTimes-1 step 1
+	Do $cinst.$call(liStartingCall+liCall).$copy(liStartingCall)
+End For
+
+Quit method $cinst.$objref

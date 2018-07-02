@@ -1062,5 +1062,54 @@
 		"lvardefs": [
 
 		]
+	},
+	{
+		"name": "$times",
+		"ident": 35,
+		"order": 36,
+		"pvardefs": [
+			{
+				"name": "piTimes",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "liCall",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "liStartingCall",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "llCalls",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$twice",
+		"ident": 36,
+		"order": 37,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
 	}
 ]
