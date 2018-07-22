@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 410,
+	"internalversion": 416,
 	"superclass": ".Timer Library.Timer",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -36,7 +36,7 @@
 			"sublen": 100000000
 		},
 		{
-			"name": "icLib",
+			"name": "icLibraryName",
 			"order": 1,
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
@@ -136,6 +136,13 @@
 			"sublen": 0
 		},
 		{
+			"name": "iirTaskForTesting",
+			"order": 16,
+			"type": "kItemref",
+			"subtype": "$itasks.task",
+			"sublen": 0
+		},
+		{
 			"name": "iiTestNumber",
 			"order": 49,
 			"type": "kInteger",
@@ -223,10 +230,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-03-30 17:06:48",
+		"moddate": "2018-07-22 10:25:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 151
+		"version": 152
 	}
 }

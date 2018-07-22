@@ -1,6 +1,6 @@
 {
 	"classtype": "kSchema",
-	"internalversion": 10,
+	"internalversion": 11,
 	"nextident": 32007,
 	"properties": {
 		"componenticon": 0,
@@ -11,7 +11,7 @@
 		"editor": "",
 		"editordata": "",
 		"external": true,
-		"moddate": "2018-03-02 15:11:28",
+		"moddate": "2018-07-05 16:05:25",
 		"servertablename": "fgHash",
 		"showascheckedout": false,
 		"userinfo": "",

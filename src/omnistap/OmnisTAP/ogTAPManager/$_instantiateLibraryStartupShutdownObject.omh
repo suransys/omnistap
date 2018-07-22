@@ -1,8 +1,8 @@
 Do $clib.$objects.$findname("ogTAPStartupShutdown") Returns lirStartupShutdownSuper
-Do $libs.[icLib].$objects.$first() Returns lirStartupShutdownClass
+Do $libs.[icLibraryName].$objects.$first() Returns lirStartupShutdownClass
 
 While not(lirStartupShutdownClass.$isa(lirStartupShutdownSuper))&not(isnull(lirStartupShutdownClass))
-	Do $libs.[icLib].$objects.$next(lirStartupShutdownClass) Returns lirStartupShutdownClass
+	Do $libs.[icLibraryName].$objects.$next(lirStartupShutdownClass) Returns lirStartupShutdownClass
 End While
 
 If isclear(lirStartupShutdownClass)

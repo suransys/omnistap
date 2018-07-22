@@ -1,4 +1,5 @@
-Calculate icLib as pcLib
+Calculate icLibraryName as pcLibraryName
+Do loTAPUtils.$getTaskForTesting(pcLibraryName) Returns iirTaskForTesting
 
 Do $cinst.$_defineLists()
 

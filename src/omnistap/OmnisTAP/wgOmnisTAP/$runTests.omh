@@ -1,6 +1,5 @@
 ;  Ensure we can talk to the library's task
-Do $cinst.$_getTaskForTesting() Returns lirTask
-
+Do loTAPUtils.$getTaskForTesting(ilLibraries.Name) Returns lirTask
 If isclear(lirTask)
 	Calculate icHTMLResults as con("<h1>The library <span style='font-family: monospace'>",ilLibraries.Name,"</span> is not started</h1>")
 	Do $cinst.$displayPassFail(kTestsFailed)

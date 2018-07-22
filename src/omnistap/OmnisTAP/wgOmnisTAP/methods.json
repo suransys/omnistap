@@ -284,67 +284,12 @@
 				"type": "kList",
 				"subtype": "",
 				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "$_getTaskForLibraryName",
-		"ident": 16,
-		"order": 16,
-		"pvardefs": [
+			},
 			{
-				"name": "pcLibraryName",
-				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 1
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lcExpectedLibraryName",
+				"name": "loTAPUtils",
 				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lirTask",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "$itasks.task",
-				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "$_getTaskForTesting",
-		"ident": 14,
-		"order": 17,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "lbUseSeparateLibrary",
-				"order": 3,
-				"type": "kBoolean",
-				"subtype": 0,
-				"sublen": 0
-			},
-			{
-				"name": "lcTestLibraryName",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lirTask",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "$itasks.task",
+				"type": "kObject",
+				"subtype": "ogTAPUtils",
 				"sublen": 0
 			}
 		]

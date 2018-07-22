@@ -1,0 +1,71 @@
+[
+	{
+		"name": "$getTaskForLibraryName",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pcLibraryName",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcExpectedLibraryName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirTask",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$itasks.task",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getTaskForTesting",
+		"ident": 1,
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pcLibraryName",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbUseSeparateLibrary",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lcTestLibraryName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirTask",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$itasks.task",
+				"sublen": 0
+			}
+		]
+	}
+]

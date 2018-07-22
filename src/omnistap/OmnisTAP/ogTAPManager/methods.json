@@ -5,7 +5,7 @@
 		"order": 1,
 		"pvardefs": [
 			{
-				"name": "pcLib",
+				"name": "pcLibraryName",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -19,6 +19,13 @@
 				"order": 1,
 				"type": "kNumber",
 				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "loTAPUtils",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogTAPUtils",
 				"sublen": 0
 			}
 		]

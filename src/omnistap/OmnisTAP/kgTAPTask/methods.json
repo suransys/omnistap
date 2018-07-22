@@ -24,9 +24,33 @@
 		]
 	},
 	{
+		"name": "$instantiateTestClass",
+		"ident": 7,
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pcTestClassName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "_iorCurrentTest",
+				"order": 2,
+				"type": "kObjectref",
+				"subtype": "ogTAPSuper",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$runTAPTests",
 		"ident": 0,
-		"order": 2,
+		"order": 3,
 		"pvardefs": [
 			{
 				"name": "pProcessList",
@@ -68,7 +92,7 @@
 	{
 		"name": "$useSeparateTestLibrary",
 		"ident": 6,
-		"order": 3,
+		"order": 4,
 		"pvardefs": [
 
 		],
@@ -79,7 +103,7 @@
 	{
 		"name": "==CLI==",
 		"ident": 2,
-		"order": 4,
+		"order": 5,
 		"pvardefs": [
 
 		],
@@ -91,7 +115,7 @@
 	{
 		"name": "$getCLI",
 		"ident": 3,
-		"order": 5,
+		"order": 6,
 		"pvardefs": [
 
 		],
@@ -102,7 +126,7 @@
 	{
 		"name": "$processCLI",
 		"ident": 5,
-		"order": 6,
+		"order": 7,
 		"pvardefs": [
 
 		],
@@ -119,7 +143,7 @@
 	{
 		"name": "$_getCLIObjectClass",
 		"ident": 4,
-		"order": 7,
+		"order": 8,
 		"pvardefs": [
 
 		],

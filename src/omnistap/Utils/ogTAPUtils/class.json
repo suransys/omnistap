@@ -1,37 +1,24 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 39,
+	"internalversion": 6,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
-		{
-			"name": "ccTimeZoneName",
-			"order": 1,
-			"type": "kCharacter",
-			"subtype": "kSimplechar",
-			"sublen": 100000000
-		}
+
 	],
 	"ivardefs": [
-		{
-			"name": "inFirstDayOfWeek",
-			"order": 1,
-			"type": "kInteger",
-			"subtype": "k32bitint",
-			"sublen": 0,
-			"initval": "1"
-		}
+
 	],
 	"properties": {
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
-		"createdate": "2012-01-09 10:55:50",
+		"createdate": "2018-07-22 10:02:15",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2018-07-22 10:25:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

@@ -1,5 +1,5 @@
 ;  Find the task for the library
-Do $cinst.$_getTaskForLibraryName(ilLibraries.Name) Returns lirTask
+Do $cinst.$getTaskForLibraryName(pcLibraryName) Returns lirTask
 If isclear(lirTask)
 	Quit method #NULL
 End If
@@ -11,8 +11,8 @@ If lbUseSeparateLibrary=kFalse
 End If
 
 ;  Find the task for the library matching this library's name minus _test
-Calculate lcTestLibraryName as mid(ilLibraries.Name,1,len(ilLibraries.Name)-6)
-Do $cinst.$_getTaskForLibraryName(lcTestLibraryName) Returns lirTask
+Calculate lcTestLibraryName as mid(pcLibraryName,1,len(pcLibraryName)-6)
+Do $cinst.$getTaskForLibraryName(lcTestLibraryName) Returns lirTask
 If isclear(lirTask)
 	Quit method #NULL
 End If

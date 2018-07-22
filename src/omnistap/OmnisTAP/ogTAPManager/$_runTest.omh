@@ -1,4 +1,4 @@
-Do $libs.$findname(icLib).$objects.$findname(ilTests.ObjectName).$newref() Returns iorTest
+Do iirTaskForTesting.$instantiateTestClass(ilTests.ObjectName) Returns iorTest
 Do iorTest.$setManager($cinst.$objref)
 Do iorTest.$setCurrentTest(ilTests.Method)
 
