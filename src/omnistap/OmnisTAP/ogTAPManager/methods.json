@@ -231,7 +231,13 @@
 
 		],
 		"lvardefs": [
-
+			{
+				"name": "lirTestClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$objects.object",
+				"sublen": 0
+			}
 		]
 	},
 	{

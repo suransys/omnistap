@@ -1,6 +1,6 @@
 {
 	"classtype": "kTask",
-	"internalversion": 94,
+	"internalversion": 114,
 	"tvardefs": [
 		{
 			"name": "kCharacterMaxLen",
@@ -95,6 +95,13 @@
 			"sublen": 0
 		},
 		{
+			"name": "_iorCurrentTest",
+			"order": 3,
+			"type": "kObjectref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
 			"name": "_iorTestManager",
 			"order": 1,
 			"type": "kObjectref",
@@ -112,9 +119,9 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-22 10:25:00",
+		"moddate": "2018-07-30 13:42:00",
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 11
+		"version": 12
 	}
 }

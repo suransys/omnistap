@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 416,
+	"internalversion": 422,
 	"superclass": ".Timer Library.Timer",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -40,7 +40,7 @@
 			"order": 1,
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
-			"sublen": 100
+			"sublen": 100000000
 		},
 		{
 			"name": "icMasterTAP",
@@ -230,10 +230,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-22 10:25:00",
+		"moddate": "2018-07-30 13:42:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 152
+		"version": 153
 	}
 }

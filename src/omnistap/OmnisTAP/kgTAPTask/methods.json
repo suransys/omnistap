@@ -29,22 +29,16 @@
 		"order": 2,
 		"pvardefs": [
 			{
-				"name": "pcTestClassName",
+				"name": "pirTestClass",
 				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
 				"param": 1
 			}
 		],
 		"lvardefs": [
-			{
-				"name": "_iorCurrentTest",
-				"order": 2,
-				"type": "kObjectref",
-				"subtype": "ogTAPSuper",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
