@@ -727,12 +727,20 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pcWhere",
+				"name": "porStatementObject",
 				"order": 1,
+				"type": "kObjectref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pcSQL",
+				"order": 9,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000,
-				"param": 1
+				"param": 2
 			}
 		],
 		"lvardefs": [

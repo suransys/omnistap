@@ -1,4 +1,5 @@
 Do iorTest.$teardown()
+Do iorTest.$deleteref()
 
 Do $cinst.$_teardownMocks()
 Do $cinst.$_teardownObjectReferences()
