@@ -13,4 +13,4 @@ Calculate lcCoverageCSV as con("Total Methods,Methods Executed,Percent Coverage"
 
 Do $cinst.$writeDiagnosticsCSVFile("coverage",lcCoverageCSV)
 
-Do uoLog.$notice(con("Coverage logged in ",uoDateTime.$humanReadableTime(#CT-lnCT)))
+Do uoLog.$notice(con("Coverage logged in ",loDateTime.$humanReadableTime(#CT-lnCT)))

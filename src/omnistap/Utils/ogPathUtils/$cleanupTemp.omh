@@ -1,11 +1,11 @@
-If not(len(icTempFolder))
+If not(len(ccTempFolder))
 	Quit method kTrue
 End If
 
-If not(FileOps.$doesfileexist(icTempFolder))
+If not(FileOps.$doesfileexist(ccTempFolder))
 	Quit method kTrue
 End If
 
-Do loFileUtils.$deleteFolder(icTempFolder)
+Do loFile.$deleteFolder(ccTempFolder)
 
-Quit method not(FileOps.$doesfileexist(icTempFolder))
+Quit method not(FileOps.$doesfileexist(ccTempFolder))

@@ -1,7 +1,7 @@
-Do uoText.$textLinesToList(pcText) Returns llList
+Do loText.$textLinesToList(pcText) Returns llList
 
 For llList.$line from 1 to llList.$linecount step 1
-	Do uoText.$extractEscapesFromText(llList.Value) Returns llEscapes
+	Do loText.$extractEscapesFromText(llList.Value) Returns llEscapes
 	Do $cinst.$_sizeEscapedText(llEscapes,pcFontName,pnFontSize,pnFontStyle) Returns lnWidth
 	
 	If lnWidth>lnMaxWidth

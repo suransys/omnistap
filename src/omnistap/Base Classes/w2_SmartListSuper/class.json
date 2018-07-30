@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 29,
+	"internalversion": 33,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
 	"nextident": 1002,
@@ -79,12 +79,12 @@
 		"inheritedorder": 0,
 		"issubwindow": false,
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2018-07-30 15:46:00",
 		"showascheckedout": false,
 		"showgrid": false,
 		"sizetogrid": false,
 		"userinfo": "",
-		"version": 2,
+		"version": 3,
 		"vertgrid": 8
 	},
 	"inheritedproperties": [

@@ -1,9 +1,4 @@
-Do ioTAP.$isclear(iirMock.icTempFolder,'Path object should not yet have a writeable folder saved')
-
 Do iirMock.$temp() Returns lcFolder
-
-Do ioTAP.$isnotclear(iirMock.icTempFolder,'Path object should now have a writeable folder saved')
-
 Do ioTAP.$fileexists(lcFolder)
 
 If tvMacVersion=kTrue
@@ -18,7 +13,7 @@ Do ioTAP.$ispositive(pos($clib().$name,lcFolder),con("should have the current li
 Do ioTAP.$is_char(right(lcFolder,1),sys(9),'last character should be a sys(9)')
 
 If tvMacVersion
-	Do ioTAP.$is_char(right(lcFolder,len(uoProcess.$getMyProcessID())+1),con(uoProcess.$getMyProcessID(),sys(9)),"last chars before last sys(9) should be process ID on macOS")
+	Do ioTAP.$is_char(right(lcFolder,len(loProcess.$getMyProcessID())+1),con(loProcess.$getMyProcessID(),sys(9)),"last chars before last sys(9) should be process ID on macOS")
 Else
 	Do ioTAP.$isnumber(left(right(lcFolder,11),10),'last 10 chars before last sys(9) should be number - tick count')
 End If
@@ -35,5 +30,3 @@ End If
 Do iirMock.$cleanupTemp()
 
 Do ioTAP.$filedoesntexist(lcFolder)
-
-Do ioTAP.$isnotclear(iirMock.icTempFolder,'Path object should still have a writeable folder saved')

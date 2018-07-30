@@ -726,22 +726,7 @@
 		"ident": 10,
 		"order": 21,
 		"pvardefs": [
-			{
-				"name": "porStatementObject",
-				"order": 1,
-				"type": "kObjectref",
-				"subtype": "",
-				"sublen": 0,
-				"param": 1
-			},
-			{
-				"name": "pcSQL",
-				"order": 9,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 2
-			}
+
 		],
 		"lvardefs": [
 			{

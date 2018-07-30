@@ -216,6 +216,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loShell",
+				"order": 12,
+				"type": "kObject",
+				"subtype": "ogShellUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -307,7 +314,13 @@
 			}
 		],
 		"lvardefs": [
-
+			{
+				"name": "loPath",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
+			}
 		]
 	},
 	{

@@ -11,7 +11,7 @@ End For
 Do llList.$add('Lorem','ipsum','dolor','sit','amet','consectetur','adipiscing','elit','Mauris','volutpat')
 Do llList.$add('nunc','nec','purus','consectetur','convallis','Suspendisse','potenti','Nulla')
 
-Do uoText.$csvToList(lcCSV,',',kCr) Returns llCSVReturn
+Do iorMock.$csvToList(lcCSV,',',kCr) Returns llCSVReturn
 Do ioTAP.$is_list(llCSVReturn,llList,'returned correct list')
 
 Begin text block
@@ -20,5 +20,5 @@ Text: {nunc[kTab]nec[kTab]purus[kTab]consectetur[kTab]convallis[kTab]Suspendisse
 End text block
 Get text block lcTab
 
-Do uoText.$csvToList(lcTab,kTab,'*') Returns llTabReturn
+Do iorMock.$csvToList(lcTab,kTab,'*') Returns llTabReturn
 Do ioTAP.$is_list(llTabReturn,llList,'returned correct list')

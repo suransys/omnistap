@@ -5,4 +5,4 @@ Calculate lcProfileData as replaceall(lcProfileData,kCr,kLf)
 
 Do $cinst.$writeDiagnosticsCSVFile("profile",lcProfileData)
 
-Do uoLog.$notice(con("Profile logged in ",uoDateTime.$humanReadableTime(#CT-lnCT)))
+Do uoLog.$notice(con("Profile logged in ",loDateTime.$humanReadableTime(#CT-lnCT)))

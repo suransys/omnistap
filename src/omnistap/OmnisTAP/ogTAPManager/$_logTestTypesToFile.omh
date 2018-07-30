@@ -6,4 +6,4 @@ Do llTestTypes.$add(iiUnitTests,iiIntegrationTests)
 
 Do $cinst.$writeDiagnosticsCSVFileFromList(llTestTypes,"test_types")
 
-Do uoLog.$notice(con("Test types logged in ",uoDateTime.$humanReadableTime(#CT-lnCT)))
+Do uoLog.$notice(con("Test types logged in ",loDateTime.$humanReadableTime(#CT-lnCT)))

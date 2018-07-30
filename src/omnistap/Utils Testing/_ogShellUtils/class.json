@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 45,
+	"internalversion": 59,
 	"superclass": "ogTAPSuper",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -15,10 +15,10 @@
 			"sublen": 100000000
 		},
 		{
-			"name": "iirMock",
+			"name": "iorMock",
 			"order": 2,
-			"type": "kItemref",
-			"subtype": "",
+			"type": "kObjectref",
+			"subtype": "ogShellUtils",
 			"sublen": 0
 		}
 	],
@@ -32,10 +32,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2018-07-30 15:46:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 4
+		"version": 5
 	}
 }

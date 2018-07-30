@@ -62,6 +62,13 @@
 				"sublen": 0
 			},
 			{
+				"name": "loText",
+				"order": 6,
+				"type": "kObject",
+				"subtype": "ogTextUtils",
+				"sublen": 0
+			},
+			{
 				"name": "lrHeader",
 				"order": 1,
 				"type": "kRow",

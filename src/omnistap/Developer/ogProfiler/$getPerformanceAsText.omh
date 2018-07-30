@@ -1,7 +1,7 @@
 Do $cinst.$_getHeaderRow() Returns lrHeader
 Do $cinst.$getPerformance(pbIncludeZeroMethods) Returns llPerformance
 
-Do uoText.$listToCSV(lrHeader) Returns lcHeaderText
-Do uoText.$listToCSV(llPerformance) Returns lcPerformanceText
+Do loText.$listToCSV(lrHeader) Returns lcHeaderText
+Do loText.$listToCSV(llPerformance) Returns lcPerformanceText
 
 Quit method con(lcHeaderText,kCr,lcPerformanceText)

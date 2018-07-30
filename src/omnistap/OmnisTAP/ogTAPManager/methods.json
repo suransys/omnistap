@@ -887,6 +887,13 @@
 				"sublen": 0
 			},
 			{
+				"name": "loDateTime",
+				"order": 7,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			},
+			{
 				"name": "lorTAPManager",
 				"order": 3,
 				"type": "kObjectref",
@@ -915,6 +922,13 @@
 				"order": 3,
 				"type": "kInteger",
 				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 4,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
 				"sublen": 0
 			},
 			{
@@ -947,6 +961,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -975,6 +996,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -1002,6 +1030,13 @@
 				"order": 1,
 				"type": "kInteger",
 				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
 				"sublen": 0
 			}
 		]
@@ -1143,6 +1178,13 @@
 				"order": 6,
 				"type": "kItemref",
 				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "loText",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogTextUtils",
 				"sublen": 0
 			}
 		]

@@ -139,6 +139,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loUI",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogUIUtils",
+				"sublen": 0
 			}
 		]
 	},

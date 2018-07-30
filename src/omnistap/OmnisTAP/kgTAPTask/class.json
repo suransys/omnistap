@@ -1,15 +1,7 @@
 {
 	"classtype": "kTask",
-	"internalversion": 114,
+	"internalversion": 121,
 	"tvardefs": [
-		{
-			"name": "kCharacterMaxLen",
-			"order": 2,
-			"type": "kInteger",
-			"subtype": "k32bitint",
-			"sublen": 0,
-			"initval": "100000000"
-		},
 		{
 			"name": "tvDevVersion",
 			"order": 3,
@@ -27,59 +19,10 @@
 			"initval": "sys(6)=\"X\""
 		},
 		{
-			"name": "uoDateTime",
-			"order": 4,
-			"type": "kObject",
-			"subtype": "ogDateTimeUtils",
-			"sublen": 0
-		},
-		{
-			"name": "uoFont",
-			"order": 6,
-			"type": "kObject",
-			"subtype": "ogFontUtils",
-			"sublen": 0
-		},
-		{
 			"name": "uoLog",
 			"order": 7,
 			"type": "kObjectref",
 			"subtype": "ogLogUtils",
-			"sublen": 0
-		},
-		{
-			"name": "uoPath",
-			"order": 8,
-			"type": "kObject",
-			"subtype": "ogPathUtils",
-			"sublen": 0
-		},
-		{
-			"name": "uoProcess",
-			"order": 9,
-			"type": "kObject",
-			"subtype": "ogProcessUtils",
-			"sublen": 0
-		},
-		{
-			"name": "uoShell",
-			"order": 10,
-			"type": "kObject",
-			"subtype": "ogShellUtils",
-			"sublen": 0
-		},
-		{
-			"name": "uoText",
-			"order": 11,
-			"type": "kObject",
-			"subtype": "ogTextUtils",
-			"sublen": 0
-		},
-		{
-			"name": "uoUI",
-			"order": 12,
-			"type": "kObject",
-			"subtype": "ogUIUtils",
 			"sublen": 0
 		}
 	],
@@ -119,9 +62,9 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-30 13:42:00",
+		"moddate": "2018-07-30 15:46:00",
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 12
+		"version": 13
 	}
 }

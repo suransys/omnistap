@@ -150,38 +150,6 @@
 		]
 	},
 	{
-		"name": "$u_logFilePath",
-		"ident": 2,
-		"order": 5,
-		"desc": "Tests getting the path to the log file",
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "lcExpectedPath",
-				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcPath",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "loLog",
-				"order": 1,
-				"type": "kObject",
-				"subtype": "ogLogUtils",
-				"sublen": 0
-			}
-		]
-	},
-	{
 		"name": "$u_verbosity",
 		"ident": 4,
 		"order": 7,

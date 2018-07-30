@@ -11,9 +11,20 @@
 		]
 	},
 	{
+		"name": "$destruct",
+		"ident": 13,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$canclose",
 		"ident": 7,
-		"order": 2,
+		"order": 3,
 		"pvardefs": [
 
 		],
@@ -24,7 +35,7 @@
 	{
 		"name": "$failOnError",
 		"ident": 5,
-		"order": 3,
+		"order": 4,
 		"pvardefs": [
 			{
 				"name": "pcErrorDetails",
@@ -42,7 +53,7 @@
 	{
 		"name": "$failOnMessage",
 		"ident": 3,
-		"order": 4,
+		"order": 5,
 		"pvardefs": [
 			{
 				"name": "pcMessage",
@@ -60,7 +71,7 @@
 	{
 		"name": "$getOmnisTAPMenu",
 		"ident": 10,
-		"order": 5,
+		"order": 6,
 		"pvardefs": [
 
 		],
@@ -71,7 +82,7 @@
 	{
 		"name": "$getOmnisTAPWindow",
 		"ident": 1,
-		"order": 6,
+		"order": 7,
 		"pvardefs": [
 
 		],
@@ -82,7 +93,7 @@
 	{
 		"name": "$getTests",
 		"ident": 6,
-		"order": 7,
+		"order": 8,
 		"pvardefs": [
 			{
 				"name": "pcLib",
@@ -128,7 +139,7 @@
 	{
 		"name": "$getTestClasses",
 		"ident": 8,
-		"order": 8,
+		"order": 9,
 		"pvardefs": [
 			{
 				"name": "pcLib",
@@ -180,7 +191,7 @@
 	{
 		"name": "$openOmnisTAP",
 		"ident": 2,
-		"order": 9,
+		"order": 10,
 		"pvardefs": [
 
 		],
@@ -189,9 +200,26 @@
 		]
 	},
 	{
+		"name": "$reopenOmniscli",
+		"ident": 11,
+		"order": 11,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lvLibRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$setLogObject",
 		"ident": 9,
-		"order": 10,
+		"order": 12,
 		"pvardefs": [
 			{
 				"name": "porLog",
@@ -207,9 +235,20 @@
 		]
 	},
 	{
+		"name": "$setLibraryDefaults",
+		"ident": 12,
+		"order": 13,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$setTestRunning",
 		"ident": 4,
-		"order": 11,
+		"order": 14,
 		"pvardefs": [
 			{
 				"name": "pbTestRunning",
@@ -222,23 +261,6 @@
 		],
 		"lvardefs": [
 
-		]
-	},
-	{
-		"name": "$reopenOmniscli",
-		"ident": 11,
-		"order": 12,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "lvLibRef",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
 		]
 	}
 ]

@@ -364,6 +364,13 @@
 				"type": "kList",
 				"subtype": "",
 				"sublen": 0
+			},
+			{
+				"name": "loText",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogTextUtils",
+				"sublen": 0
 			}
 		]
 	},

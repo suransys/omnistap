@@ -1,2 +1,2 @@
 
-Quit method $cinst.$_getTempFile(pcFileName,uoPath.$temp())
+Quit method $cinst.$_getTempFile(pcFileName,loPath.$temp())

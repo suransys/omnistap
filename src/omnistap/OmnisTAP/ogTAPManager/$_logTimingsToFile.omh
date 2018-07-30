@@ -4,4 +4,4 @@ Do ilTimings.$sort($ref.Time,kTrue)
 
 Do $cinst.$writeDiagnosticsCSVFileFromList(ilTimings,"timings")
 
-Do uoLog.$notice(con("Timings logged in ",uoDateTime.$humanReadableTime(#CT-lnCT)))
+Do uoLog.$notice(con("Timings logged in ",loDateTime.$humanReadableTime(#CT-lnCT)))

@@ -94,7 +94,13 @@
 
 		],
 		"lvardefs": [
-
+			{
+				"name": "loFile",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
+			}
 		]
 	},
 	{
@@ -129,13 +135,6 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "%test",
-				"order": 9,
-				"type": "kNumber",
-				"subtype": "kFloatdp",
-				"sublen": 0
-			},
 			{
 				"name": "lbOK",
 				"order": 5,
@@ -198,6 +197,13 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loFile",
+				"order": 11,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -226,6 +232,13 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loProcess",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogProcessUtils",
+				"sublen": 0
 			}
 		]
 	},

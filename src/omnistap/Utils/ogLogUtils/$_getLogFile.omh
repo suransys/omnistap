@@ -4,11 +4,11 @@ End If
 
 Switch ilDestinations.Destination
 	Case "Log"
-		Calculate ilDestinations.Path as con(uoPath.$logs(),low($ctask.uoBranding.$getProgramName()),"_",dat(#D,"yMD"),".log")
+		Calculate ilDestinations.Path as con(loPath.$logs(),"omnistap_",dat(#D,"yMD"),".log")
 	Case "Stdout"
-		Calculate ilDestinations.Path as uoPath.$stdout()
+		Calculate ilDestinations.Path as loPath.$stdout()
 	Case "Stderr"
-		Calculate ilDestinations.Path as uoPath.$stderr()
+		Calculate ilDestinations.Path as loPath.$stderr()
 End Switch
 
 Quit method ilDestinations.Path

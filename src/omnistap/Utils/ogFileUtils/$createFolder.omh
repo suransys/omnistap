@@ -42,12 +42,12 @@ For llFolders.$line from 1 to llFolders.$linecount step 1
 			Calculate lcMkdir as con('MD "',pcFolder,'"')
 		End If
 		
-		Do uoShell.$run(lcMkdir,lcResults,pbAsRoot) Returns lnExitCode
+		Do loShell.$run(lcMkdir,lcResults,pbAsRoot) Returns lnExitCode
 		
 		If lnExitCode<>0
-			Do uoLog.$error(con("   Error ",lnExitCode," when attempting to create ",pcFolder," using uoShell with ",pick(pbAsRoot,"standard","elevated")," privileges. Results: lcResults"))
+			Do uoLog.$error(con("   Error ",lnExitCode," when attempting to create ",pcFolder," using shell utiles with ",pick(pbAsRoot,"standard","elevated")," privileges. Results: lcResults"))
 		Else
-			Do uoLog.$notice(con("   Successfully created ",pcFolder," using uoShell."))
+			Do uoLog.$notice(con("   Successfully created ",pcFolder," using shell utils."))
 		End If
 	Else
 		Do uoLog.$error(con("   Error ",lnResult," when attempting to create ",lcPath))

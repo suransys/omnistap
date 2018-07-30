@@ -1,5 +1,5 @@
 If tvMacVersion
-	Quit method uoProcess.$getMyProcessID()
+	Quit method loProcess.$getMyProcessID()
 End If
 
 ;  add in a #CT, just for randomness' sake

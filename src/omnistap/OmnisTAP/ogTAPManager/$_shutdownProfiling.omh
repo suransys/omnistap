@@ -2,4 +2,4 @@ Calculate lnCT as #CT
 
 Do ioTestRunProfiler.$stopProfiling()
 
-Do uoLog.$notice(con("Profiling stopped in ",uoDateTime.$humanReadableTime(#CT-lnCT)))
+Do uoLog.$notice(con("Profiling stopped in ",loDateTime.$humanReadableTime(#CT-lnCT)))

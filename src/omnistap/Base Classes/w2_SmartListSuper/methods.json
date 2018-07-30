@@ -275,6 +275,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loFont",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogFontUtils",
+				"sublen": 0
 			}
 		]
 	},

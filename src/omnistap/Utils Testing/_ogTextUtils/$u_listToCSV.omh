@@ -23,11 +23,11 @@ End For
 Do llList.$add('Lorem','ipsum','dolor','sit','amet','consectetur','adipiscing','elit','Mauris','volutpat')
 Do llList.$add('nunc','nec','purus','consectetur','convallis','Suspendisse','potenti','Nulla')
 
-Do uoText.$listToCSV(llList,',',kCr) Returns lcCSVReturnText
+Do iorMock.$listToCSV(llList,',',kCr) Returns lcCSVReturnText
 Do ioTAP.$is_char(lcCSVReturnText,lcCSV,'converting List to text works')
 
-Do uoText.$listToCSV(llList,kTab,'*') Returns lcTabReturnText
+Do iorMock.$listToCSV(llList,kTab,'*') Returns lcTabReturnText
 Do ioTAP.$is_char(lcTabReturnText,lcTab,'converting List to text works')
 
-Do uoText.$listToCSV(llList,",",kCr,kSq) Returns lcTabReturnText
+Do iorMock.$listToCSV(llList,",",kCr,kSq) Returns lcTabReturnText
 Do ioTAP.$is_char(lcTabReturnText,lcQuote,'converting List to text works')

@@ -9,7 +9,7 @@ While not(isclear(lirColumn))
 	Do plDataForFile.$cols.$next(lirColumn) Returns lirColumn
 End While
 
-Do uoText.$listToCSV(plDataForFile,",",kLf) Returns lcCSVData
+Do loText.$listToCSV(plDataForFile,",",kLf) Returns lcCSVData
 Calculate lcCSVData as con(lcHeader,kLf,lcCSVData)
 
 Do $cinst.$writeDiagnosticsCSVFile(pcFileName,lcCSVData)

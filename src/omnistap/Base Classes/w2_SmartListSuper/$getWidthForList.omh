@@ -19,7 +19,7 @@ Do eval(lcSortationCalculation)
 
 For llList.$line from 1 to llList.$linecount step 1
 	Do eval(lcCalculation)
-	Calculate lnLineWidth as $ctask.uoFont.$getWidthForText(lcText,iirList.$font,iirList.$fontsize,iirList.$fontstyle)
+	Calculate lnLineWidth as loFont.$getWidthForText(lcText,iirList.$font,iirList.$fontsize,iirList.$fontstyle)
 	
 	If lnLineWidth>lnListWidth
 		Calculate lnListWidth as lnLineWidth

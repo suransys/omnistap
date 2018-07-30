@@ -201,6 +201,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 9,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},

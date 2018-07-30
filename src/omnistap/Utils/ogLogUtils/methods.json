@@ -13,6 +13,13 @@
 				"type": "kObject",
 				"subtype": "omniscli.oOmnisCLI",
 				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -183,9 +190,20 @@
 		"empty": true
 	},
 	{
+		"name": "$getDestination",
+		"ident": 32,
+		"order": 9,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$setDestination",
 		"ident": 27,
-		"order": 9,
+		"order": 10,
 		"pvardefs": [
 			{
 				"name": "pcDestination",
@@ -209,7 +227,7 @@
 	{
 		"name": "==Supporting==",
 		"ident": 22,
-		"order": 10,
+		"order": 11,
 		"pvardefs": [
 
 		],
@@ -221,7 +239,7 @@
 	{
 		"name": "$clearLog",
 		"ident": 14,
-		"order": 11,
+		"order": 12,
 		"pvardefs": [
 
 		],
@@ -232,7 +250,7 @@
 	{
 		"name": "$getLevels",
 		"ident": 24,
-		"order": 12,
+		"order": 13,
 		"pvardefs": [
 
 		],
@@ -243,7 +261,7 @@
 	{
 		"name": "$getLog",
 		"ident": 5,
-		"order": 13,
+		"order": 14,
 		"pvardefs": [
 
 		],
@@ -254,7 +272,7 @@
 	{
 		"name": "$getLogLevelSinceReference",
 		"ident": 31,
-		"order": 14,
+		"order": 15,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -286,7 +304,7 @@
 	{
 		"name": "$getLogReference",
 		"ident": 30,
-		"order": 15,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -297,7 +315,7 @@
 	{
 		"name": "$getLogText",
 		"ident": 15,
-		"order": 16,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -336,7 +354,7 @@
 	{
 		"name": "$getVerbosity",
 		"ident": 23,
-		"order": 17,
+		"order": 18,
 		"pvardefs": [
 
 		],
@@ -347,7 +365,7 @@
 	{
 		"name": "$setVerbosity",
 		"ident": 19,
-		"order": 18,
+		"order": 19,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -365,7 +383,7 @@
 	{
 		"name": "$_doLog",
 		"ident": 21,
-		"order": 19,
+		"order": 20,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -400,7 +418,7 @@
 	{
 		"name": "$_getColor",
 		"ident": 10,
-		"order": 20,
+		"order": 21,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -418,7 +436,7 @@
 	{
 		"name": "$_getIconID",
 		"ident": 11,
-		"order": 21,
+		"order": 22,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -436,7 +454,7 @@
 	{
 		"name": "$_getLogFile",
 		"ident": 17,
-		"order": 22,
+		"order": 23,
 		"pvardefs": [
 
 		],
@@ -447,13 +465,20 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loPath",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},
 	{
 		"name": "$_getMethod",
 		"ident": 6,
-		"order": 23,
+		"order": 24,
 		"pvardefs": [
 
 		],
@@ -484,7 +509,7 @@
 	{
 		"name": "$_getMethodLine",
 		"ident": 12,
-		"order": 24,
+		"order": 25,
 		"pvardefs": [
 
 		],
@@ -501,7 +526,7 @@
 	{
 		"name": "$_getMethodRef",
 		"ident": 8,
-		"order": 25,
+		"order": 26,
 		"pvardefs": [
 
 		],
@@ -518,7 +543,7 @@
 	{
 		"name": "$_getMethodStackLine",
 		"ident": 9,
-		"order": 26,
+		"order": 27,
 		"pvardefs": [
 
 		],
@@ -535,7 +560,7 @@
 	{
 		"name": "$_getPlatformLineEnding",
 		"ident": 13,
-		"order": 27,
+		"order": 28,
 		"pvardefs": [
 
 		],
@@ -546,7 +571,7 @@
 	{
 		"name": "$_getShellColor",
 		"ident": 28,
-		"order": 28,
+		"order": 29,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -564,7 +589,7 @@
 	{
 		"name": "$_getTextVersion",
 		"ident": 16,
-		"order": 29,
+		"order": 30,
 		"pvardefs": [
 
 		],
@@ -588,7 +613,7 @@
 	{
 		"name": "$_log",
 		"ident": 7,
-		"order": 30,
+		"order": 31,
 		"pvardefs": [
 			{
 				"name": "pcLevel",
@@ -634,7 +659,7 @@
 	{
 		"name": "$_writeToLog",
 		"ident": 29,
-		"order": 31,
+		"order": 32,
 		"pvardefs": [
 			{
 				"name": "pcText",
@@ -679,7 +704,7 @@
 	{
 		"name": "$_writeToFile",
 		"ident": 18,
-		"order": 32,
+		"order": 33,
 		"pvardefs": [
 
 		],

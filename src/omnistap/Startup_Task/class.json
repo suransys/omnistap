@@ -1,7 +1,7 @@
 {
 	"classtype": "kTask",
-	"internalversion": 101,
-	"superclass": "k1Super",
+	"internalversion": 106,
+	"superclass": "kgTAPTask",
 	"tvardefs": [
 
 	],
@@ -41,9 +41,9 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-02-28 22:24:00",
+		"moddate": "2018-07-30 15:46:00",
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 48
+		"version": 49
 	}
 }

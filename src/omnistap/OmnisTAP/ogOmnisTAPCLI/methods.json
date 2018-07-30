@@ -111,6 +111,27 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loDateTime",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			},
+			{
+				"name": "loProcess",
+				"order": 6,
+				"type": "kObject",
+				"subtype": "ogProcessUtils",
+				"sublen": 0
+			},
+			{
+				"name": "loShell",
+				"order": 7,
+				"type": "kObject",
+				"subtype": "ogShellUtils",
+				"sublen": 0
 			}
 		]
 	},

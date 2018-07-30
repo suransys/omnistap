@@ -122,6 +122,13 @@
 				"type": "kObject",
 				"subtype": ".FileOps.FileOps",
 				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -147,6 +154,13 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loPath",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -203,6 +217,13 @@
 				"order": 4,
 				"type": "kObject",
 				"subtype": ".FileOps.FileOps",
+				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
 				"sublen": 0
 			}
 		]

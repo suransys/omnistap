@@ -66,6 +66,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loText",
+				"order": 9,
+				"type": "kObject",
+				"subtype": "ogTextUtils",
+				"sublen": 0
 			}
 		]
 	},

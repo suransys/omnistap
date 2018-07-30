@@ -1,9 +1,0 @@
-Do $cinst.$_getFieldStyleForField(pirField) Returns lirFieldStyle
-
-Calculate lcFontName as lirFieldStyle.$fontname
-
-If isclear(lcFontName)
-	Calculate lcFontName as lirFieldStyle.$font
-End If
-
-Quit method uoFont.$getWidthForText(pcText,lcFontName,lirFieldStyle.$fontsize,lirFieldStyle.$fontstyle)+3

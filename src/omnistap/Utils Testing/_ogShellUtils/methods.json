@@ -61,6 +61,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 6,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -129,6 +136,13 @@
 				"type": "kInteger",
 				"subtype": "k32bitint",
 				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 9,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
 			}
 		]
 	},
@@ -157,23 +171,6 @@
 			{
 				"name": "lcSleepCommand",
 				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		]
-	},
-	{
-		"name": "copyTestPing",
-		"ident": 4,
-		"order": 7,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "lcPathToPing",
-				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000

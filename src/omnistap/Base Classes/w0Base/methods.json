@@ -204,45 +204,6 @@
 		]
 	},
 	{
-		"name": "$getTextWidthForField",
-		"ident": 39,
-		"order": 30,
-		"pvardefs": [
-			{
-				"name": "pirField",
-				"order": 2,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0,
-				"param": 1
-			},
-			{
-				"name": "pcText",
-				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 2
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lcFontName",
-				"order": 4,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lirFieldStyle",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
-		]
-	},
-	{
 		"name": "$_getFieldStyleForField",
 		"ident": 38,
 		"order": 35,

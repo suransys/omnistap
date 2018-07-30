@@ -39,7 +39,6 @@
 		"name": "$i_temp",
 		"ident": 0,
 		"order": 5,
-		"desc": "test uoPath.$temp()",
 		"pvardefs": [
 
 		],
@@ -71,6 +70,13 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "loProcess",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogProcessUtils",
+				"sublen": 0
 			}
 		]
 	}

@@ -2,7 +2,7 @@ Do $cinst.$storeLine()
 
 Do $cinst.$sendall($ref.$selected.$assign(kFalse))
 
-Do uoText.$textToList(pcSelection) Returns llLines
+Do loText.$textToList(pcSelection) Returns llLines
 
 For llLines.$line from 1 to llLines.$linecount step 1
 	Do $cinst.$findPrimaryKey(llLines.Value)

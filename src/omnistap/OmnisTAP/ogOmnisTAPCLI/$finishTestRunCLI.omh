@@ -1,4 +1,4 @@
-Calculate lcTestRunDuration as uoDateTime.$humanReadableTime(#CT-_inTestRunStartup)
+Calculate lcTestRunDuration as loDateTime.$humanReadableTime(#CT-_inTestRunStartup)
 Do uoLog.$notice(con("OmnisTAP run on ",$ctask.$lib().$name," complete in ",lcTestRunDuration," to ",_icPathToTAPOutput))
 
 If tvDevVersion=kTrue
@@ -9,11 +9,11 @@ Do $cinst.$_writeExitStatus(0)
 
 ;  Get kill command
 If tvMacVersion
-	Calculate lcKillCommand as con("kill ",uoProcess.$getMyProcessID())
+	Calculate lcKillCommand as con("kill ",loProcess.$getMyProcessID())
 Else
-	Calculate lcKillCommand as con("taskkill /PID ",uoProcess.$getMyProcessID()," /F")
+	Calculate lcKillCommand as con("taskkill /PID ",loProcess.$getMyProcessID()," /F")
 End If
 
 ;  Kill Omnis. If we try to die gracefully, there is a long hang
 ;  Since we've written the return code file, the cli wrapper will return that value instead of an error code from the unexpected application termination
-Do uoShell.$run(lcKillCommand,lcResult,1,kTrue)
+Do loShell.$run(lcKillCommand,lcResult,1,kTrue)

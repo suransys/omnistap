@@ -1,25 +1,18 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 45,
+	"internalversion": 53,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
-
-	],
-	"ivardefs": [
 		{
-			"name": "icTempFolder",
+			"name": "ccTempFolder",
 			"order": 1,
 			"type": "kCharacter",
 			"subtype": "kSimplechar",
 			"sublen": 100000000
-		},
-		{
-			"name": "loFileUtils",
-			"order": 2,
-			"type": "kObject",
-			"subtype": "ogFileUtils",
-			"sublen": 0
 		}
+	],
+	"ivardefs": [
+
 	],
 	"properties": {
 		"collectperformancedata": false,
@@ -31,10 +24,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2018-07-30 15:46:00",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 3
+		"version": 4
 	}
 }

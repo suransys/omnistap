@@ -2,7 +2,7 @@
 Do iorMock.$write('') Returns lbOK
 Do ioTAP.$is_boolean(lbOK,kFalse,'trying to write to an empty path fails')
 
-Do iorMock.$write(uoPath.$temp()) Returns lbOK
+Do iorMock.$write(loPath.$temp()) Returns lbOK
 Do ioTAP.$is_boolean(lbOK,kFalse,'trying to write to a directory fails')
 
 Do iorMock.$getTempFile() Returns lcTemp

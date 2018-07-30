@@ -1,4 +1,4 @@
-Do uoPath.$temp() Returns lcFolder
+Do loPath.$temp() Returns lcFolder
 
 Do iorMock.$isFolderWriteable('yada') Returns lbOk
 Do ioTAP.$is_boolean(lbOk,kFalse,'False if Folder does not Exist')

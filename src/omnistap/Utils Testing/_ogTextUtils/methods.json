@@ -1,5 +1,16 @@
 [
 	{
+		"name": "$setup",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$u_csvToList",
 		"ident": 2,
 		"order": 2,
@@ -101,7 +112,7 @@
 	{
 		"name": "$u_extractEscapesFromText",
 		"ident": 8,
-		"order": 5,
+		"order": 4,
 		"desc": "Test extracting all Omnis escapes from a string to text into a list",
 		"pvardefs": [
 
@@ -140,7 +151,7 @@
 	{
 		"name": "$u_listToCSV",
 		"ident": 13,
-		"order": 8,
+		"order": 5,
 		"desc": "test ogTextUtils.$ListToCSV()",
 		"pvardefs": [
 

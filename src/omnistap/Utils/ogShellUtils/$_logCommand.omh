@@ -1,6 +1,6 @@
 Begin text block
 Text: (Carriage return)
-Text: {====== uoShell.[pcMethod]() ======} (Carriage return)
+Text: {====== ogShellUtils.[pcMethod]() ======} (Carriage return)
 Text: {   Command: [pcScript]} (Carriage return)
 Text: {   Execution level: [pnExecutionLevel]} (Carriage return)
 Text: {   Background: [pbBackground]} (Carriage return)
