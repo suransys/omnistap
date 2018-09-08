@@ -1,35 +1,14 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 228,
+	"internalversion": 234,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
 	"nextident": 1007,
 	"lastgroupident": 0,
 	"cvardefs": [
-		{
-			"name": "ciTempFileCounter",
-			"order": 1,
-			"type": "kInteger",
-			"subtype": "k64bitint",
-			"sublen": 0,
-			"initval": "1"
-		}
+
 	],
 	"ivardefs": [
-		{
-			"name": "icTempHTMLFile",
-			"order": 1,
-			"type": "kCharacter",
-			"subtype": "kSimplechar",
-			"sublen": 100000000
-		},
-		{
-			"name": "loFileUtils",
-			"order": 4,
-			"type": "kObject",
-			"subtype": "ogFileUtils",
-			"sublen": 0
-		},
 		{
 			"name": "_icCSS",
 			"order": 3,
@@ -68,13 +47,13 @@
 		"issubwindow": false,
 		"issupercomponent": false,
 		"left": 508,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2018-09-08 07:47:00",
 		"showascheckedout": false,
 		"showgrid": false,
 		"sizetogrid": false,
 		"top": 197,
 		"userinfo": "",
-		"version": 3,
+		"version": 4,
 		"vertgrid": 8,
 		"width": 384
 	},

@@ -1,33 +1,5 @@
 [
 	{
-		"name": "$construct",
-		"ident": 1,
-		"order": 1,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-			{
-				"name": "loFileUtils",
-				"order": 1,
-				"type": "kObject",
-				"subtype": "ogFileUtils",
-				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "$destruct",
-		"ident": 2,
-		"order": 2,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
-		]
-	},
-	{
 		"name": "$setCSS",
 		"ident": 7,
 		"order": 3,
