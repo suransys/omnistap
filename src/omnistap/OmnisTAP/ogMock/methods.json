@@ -727,12 +727,68 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pcFilePath",
+				"name": "pcTypeCode",
 				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000,
 				"param": 1
+			},
+			{
+				"name": "piTypeCodeID",
+				"order": 9,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pbShowType",
+				"order": 10,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pbShowDescription",
+				"order": 11,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			},
+			{
+				"name": "pcServerTableName",
+				"order": 13,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 5
+			},
+			{
+				"name": "pcDescription",
+				"order": 14,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 6
+			},
+			{
+				"name": "pbShowAddress",
+				"order": 15,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 7
+			},
+			{
+				"name": "pbShowOtherIndividuals",
+				"order": 16,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 8
 			}
 		],
 		"lvardefs": [

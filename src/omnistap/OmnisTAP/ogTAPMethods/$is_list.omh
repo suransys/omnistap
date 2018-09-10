@@ -70,11 +70,17 @@ For pfrList1.$line from 1 to pfrList1.$linecount step 1
 		Do pfrList1.$cols.$first() Returns lirColumn
 		
 		While not(isnull(lirColumn()))
-			If isclear(pfrList1.[lirColumn().$name])&not(isclear(pfrList2.[lirColumn().$name]))
+			If isnull(pfrList1.[lirColumn().$name])&not(isnull(pfrList2.[lirColumn().$name]))
 				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have NULL. Want ",pfrList2.[lirColumn().$name],"."))
 				Calculate lbQuit as kTrue
-			Else If not(isclear(pfrList1.[lirColumn().$name]))&isclear(pfrList2.[lirColumn().$name])
+			Else If not(isnull(pfrList1.[lirColumn().$name]))&isnull(pfrList2.[lirColumn().$name])
 				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name],". Want NULL."))
+				Calculate lbQuit as kTrue
+			Else If isclear(pfrList1.[lirColumn().$name])&not(isclear(pfrList2.[lirColumn().$name]))
+				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have clear. Want ",pfrList2.[lirColumn().$name],"."))
+				Calculate lbQuit as kTrue
+			Else If not(isclear(pfrList1.[lirColumn().$name]))&isclear(pfrList2.[lirColumn().$name])
+				Do $cinst.$ok(kFalse,pcMessage,con("For column '",lirColumn().$name,"' line ",pfrList1.$line,", have ",pfrList1.[lirColumn().$name],". Want clear."))
 				Calculate lbQuit as kTrue
 			Else If lirColumn.$coltype=kItemref
 				If pfrList1.[lirColumn().$name]().$fullname<>pfrList2.[lirColumn().$name]().$fullname
