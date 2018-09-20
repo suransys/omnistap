@@ -76,7 +76,8 @@ If isnull(lirMockClass)
 	
 	;  Add new
 	Do lirMockClass.$methods.$add("$new") Returns lirMockMethod
-	Do lirMockMethod.$methodlines.$add("Quit method _iorMock.$new()")
+	Do lirMockMethod.$lvardefs.$add("pfoObject",kFieldreference,,,kTrue)
+	Do lirMockMethod.$methodlines.$add("Do _iorMock.$new(pfoObject)")
 	
 	;  Add assert
 	Do lirMockClass.$methods.$add("$assert") Returns lirMockMethod
@@ -99,8 +100,7 @@ Else If lirMockClass.$classtype=kReport
 Else If lirMockClass.$classtype=kTable
 	Do pfrMockInstance.$definefromsqlclass(lirMockClass)
 	Calculate pfrMockInstance._iorMock as lorMock
-	Do lorMock.$setMockInstance(pfrMockInstance.$ref.$ref.$ref)
-	Quit method
+	Do lorMock.$setMockInstance(pfrMockInstance.$ref)
 End If
 
 Quit method lirMockClass.$open("*",kWindowCenter,lorMock)

@@ -1,3 +1,5 @@
 Do $cinst.$class().$newref(iorTAPManager,ioTAP) Returns lorMock
 Do lorMock.$setMockClass(iirMockClass)
-Quit method iirMockClass.$new(lorMock)
+
+Do iirMockClass.$new(lorMock) Returns pfoMock
+Do lorMock.$setMockInstanceName(pfoMock.$fullname)

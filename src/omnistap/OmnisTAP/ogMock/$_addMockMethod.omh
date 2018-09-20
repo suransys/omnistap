@@ -10,7 +10,6 @@ Else
 End If
 
 Do lirObject.$methods.$remove(lirObject.$methods.$findname(lcMethod))
-
 Do lirObject.$methods.$add(lcMethod) Returns lirMethod
 
 ;  Callcount

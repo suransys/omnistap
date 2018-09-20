@@ -24,7 +24,7 @@ Do _ilStoredInstances.$add(pfrInstanceToStore.$fullname,lrStoredData)
 Set reference lirClassToMock to pfrInstanceToStore.$class
 Switch pfrInstanceToStore.$type
 	Case kObject
-		Do $cinst.$mock(lirClassToMock).$new() Returns pfrInstanceToStore
+		Do $cinst.$mock(lirClassToMock).$new(pfrInstanceToStore)
 	Case kObjectref
 		Do $cinst.$mock(lirClassToMock) Returns pfrInstanceToStore
 	Case kRow,kList

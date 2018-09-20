@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 647,
+	"internalversion": 685,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
 		{
@@ -19,6 +19,13 @@
 			"subtype": 0,
 			"sublen": 0,
 			"initval": "kFalse"
+		},
+		{
+			"name": "icMockInstanceName",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
 		},
 		{
 			"name": "iiParameter",
@@ -74,10 +81,10 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-09-09 16:07:23",
+		"moddate": "2018-09-19 17:33:01",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
-		"version": 46
+		"version": 49
 	}
 }
