@@ -49,7 +49,7 @@
 		"objlink": 65539,
 		"parameters": {
 			"type": 9,
-			"calc": "\"con(style(kESCBmp,ilTestMethods.IconID),' ',ilTestMethods.DisplayName)\",\"ilTestMethods.DisplayName\""
+			"calc": "con(\"con(style(kESCBmp\",sys(93),\"ilTestMethods.IconID)\",sys(93),\"' '\",sys(93),\"ilTestMethods.DisplayName)\"),\"ilTestMethods.DisplayName\""
 		},
 		"rmouseevents": false,
 		"statusevents": false,
