@@ -91,7 +91,13 @@ git clone https://github.com/suransys/omnistap.git
 
 ### Run from the command line
 1. Follow the [OmnisCLI](https://github.com/suransys/omniscli) guide to install OmnisCLI
-1. Ensure your startup task's construct calls `Do inherited`
+1. Ensure your startup task's construct has this code:
+    ```omnis
+    Do $cinst.$processCLI() Returns lbCLIRun
+    If lbCLIRun=kTrue
+    	Quit method
+    End If
+    ```
 1. Ensure `omnistap.lbs`, `omniscli.lbs`, and your library are opened at startup
 1. Run this command from a command prompt:
 
