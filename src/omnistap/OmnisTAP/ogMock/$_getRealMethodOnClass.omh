@@ -1,7 +1,14 @@
+;  Map $open to $construct
+If pcMethodName="$open"
+	Calculate lcMethodName as "$construct"
+Else
+	Calculate lcMethodName as pcMethodName
+End If
+
 ;  Look for the method on this class
-If pos(".",pcMethodName)
-	Calculate lcObject as mid(pcMethodName,1,rpos(".",pcMethodName)-1)
-	Calculate lcMethod as mid(pcMethodName,rpos(".",pcMethodName)+1)
+If pos(".",lcMethodName)
+	Calculate lcObject as mid(lcMethodName,1,rpos(".",lcMethodName)-1)
+	Calculate lcMethod as mid(lcMethodName,rpos(".",lcMethodName)+1)
 	
 	Set reference lirObject to pirClass.[lcObject].$ref
 	
@@ -15,7 +22,12 @@ If pos(".",pcMethodName)
 	
 	Do lirObject.$methods.$findname(lcMethod) Returns lirRealMethod
 Else
-	Do pirClass.$methods.$findname(pcMethodName) Returns lirRealMethod
+	Do pirClass.$methods.$findname(lcMethodName) Returns lirRealMethod
+End If
+
+;  When mocking $open, don't see the method on mock since it's overridden
+If pcMethodName="$open"
+	Set reference lirRealMethod to #NULL
 End If
 
 If not(isnull(lirRealMethod))
@@ -38,4 +50,4 @@ If isnull(lirSuperclass)
 	Quit method #NULL
 End If
 
-Quit method $cinst.$_getRealMethodOnClass(lirSuperclass,pcMethodName)
+Quit method $cinst.$_getRealMethodOnClass(lirSuperclass,lcMethodName)

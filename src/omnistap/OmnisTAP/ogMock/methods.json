@@ -384,6 +384,13 @@
 				"sublen": 100000000
 			},
 			{
+				"name": "lcMethodName",
+				"order": 13,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
 				"name": "lcMethodPath",
 				"order": 7,
 				"type": "kCharacter",
@@ -744,7 +751,38 @@
 		"ident": 10,
 		"order": 22,
 		"pvardefs": [
-
+			{
+				"name": "InstanceName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "WindowPosition",
+				"order": 9,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pEnabled",
+				"order": 10,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pLoad",
+				"order": 11,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			}
 		],
 		"lvardefs": [
 			{

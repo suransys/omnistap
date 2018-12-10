@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 234,
+	"internalversion": 229,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
 	"nextident": 1007,
