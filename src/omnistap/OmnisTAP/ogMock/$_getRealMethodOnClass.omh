@@ -1,5 +1,5 @@
-;  Map $open to $construct
-If pcMethodName="$open"
+;  Map $open and $openonce to $construct
+If $cinst.$_isConstructMethod(pcMethodName)
 	Calculate lcMethodName as "$construct"
 Else
 	Calculate lcMethodName as pcMethodName
@@ -25,8 +25,8 @@ Else
 	Do pirClass.$methods.$findname(lcMethodName) Returns lirRealMethod
 End If
 
-;  When mocking $open, don't see the method on mock since it's overridden
-If pcMethodName="$open"
+;  When mocking $open or $openonce, don't see the method on mock since it's overridden
+If $cinst.$_isConstructMethod(pcMethodName)
 	Set reference lirRealMethod to #NULL
 End If
 

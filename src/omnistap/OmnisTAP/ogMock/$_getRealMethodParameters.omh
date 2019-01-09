@@ -16,7 +16,7 @@ Do llParameters.$cols.$add("Have",kRow)
 Do llParameters.$cols.$add("Want",kRow)
 Do llParameters.$cols.$add("Return",kRow)
 
-If ilMockMethods.MethodName="$open"
+If $cinst.$_isConstructMethod(ilMockMethods.MethodName)
 	Do llParameters.$addbefore(1,"InstanceName",kCharacter,kSimplechar,100000000,1)
 	Do llParameters.$addbefore(2,"WindowPosition",kInteger,k32bitint,#NULL,1)
 End If

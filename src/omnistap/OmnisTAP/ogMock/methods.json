@@ -370,6 +370,13 @@
 		],
 		"lvardefs": [
 			{
+				"name": "lbMockingConstruct",
+				"order": 14,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
 				"name": "lcLibraryName",
 				"order": 6,
 				"type": "kCharacter",
@@ -527,9 +534,27 @@
 		]
 	},
 	{
+		"name": "$_isConstructMethod",
+		"ident": 38,
+		"order": 15,
+		"pvardefs": [
+			{
+				"name": "pcMethodName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
 		"name": "$_prepareExpect",
 		"ident": 11,
-		"order": 15,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -567,7 +592,7 @@
 	{
 		"name": "==Mocking==",
 		"ident": 9,
-		"order": 16,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -579,7 +604,7 @@
 	{
 		"name": "$assert",
 		"ident": 13,
-		"order": 17,
+		"order": 18,
 		"pvardefs": [
 
 		],
@@ -659,7 +684,7 @@
 	{
 		"name": "$because",
 		"ident": 24,
-		"order": 18,
+		"order": 19,
 		"pvardefs": [
 			{
 				"name": "pcReason",
@@ -677,7 +702,7 @@
 	{
 		"name": "$call",
 		"ident": 20,
-		"order": 19,
+		"order": 20,
 		"pvardefs": [
 			{
 				"name": "pnCall",
@@ -701,7 +726,7 @@
 	{
 		"name": "$callcount",
 		"ident": 15,
-		"order": 20,
+		"order": 21,
 		"pvardefs": [
 			{
 				"name": "pnExpectedCallcount",
@@ -725,7 +750,7 @@
 	{
 		"name": "$copy",
 		"ident": 33,
-		"order": 21,
+		"order": 22,
 		"pvardefs": [
 			{
 				"name": "piSourceCall",
@@ -749,10 +774,10 @@
 	{
 		"name": "$expect",
 		"ident": 10,
-		"order": 22,
+		"order": 23,
 		"pvardefs": [
 			{
-				"name": "InstanceName",
+				"name": "pcRecordFrameName",
 				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -760,28 +785,12 @@
 				"param": 1
 			},
 			{
-				"name": "WindowPosition",
+				"name": "pbDisableInitialFind",
 				"order": 9,
-				"type": "kInteger",
-				"subtype": "k32bitint",
+				"type": "kBoolean",
+				"subtype": 0,
 				"sublen": 0,
 				"param": 2
-			},
-			{
-				"name": "pEnabled",
-				"order": 10,
-				"type": "kBoolean",
-				"subtype": 0,
-				"sublen": 0,
-				"param": 3
-			},
-			{
-				"name": "pLoad",
-				"order": 11,
-				"type": "kBoolean",
-				"subtype": 0,
-				"sublen": 0,
-				"param": 4
 			}
 		],
 		"lvardefs": [
@@ -846,7 +855,7 @@
 	{
 		"name": "$mock",
 		"ident": 4,
-		"order": 23,
+		"order": 24,
 		"pvardefs": [
 			{
 				"name": "pcMethodName",
@@ -884,7 +893,7 @@
 	{
 		"name": "$new",
 		"ident": 26,
-		"order": 24,
+		"order": 25,
 		"pvardefs": [
 			{
 				"name": "pfoMock",
@@ -908,7 +917,7 @@
 	{
 		"name": "$parameter",
 		"ident": 32,
-		"order": 25,
+		"order": 26,
 		"pvardefs": [
 			{
 				"name": "piParameter",
@@ -926,7 +935,7 @@
 	{
 		"name": "$reset",
 		"ident": 14,
-		"order": 26,
+		"order": 27,
 		"pvardefs": [
 
 		],
@@ -937,7 +946,7 @@
 	{
 		"name": "$return",
 		"ident": 0,
-		"order": 27,
+		"order": 28,
 		"pvardefs": [
 			{
 				"name": "pbReturn",
@@ -961,7 +970,7 @@
 	{
 		"name": "$return_binary",
 		"ident": 31,
-		"order": 28,
+		"order": 29,
 		"pvardefs": [
 			{
 				"name": "pbnBinary",
@@ -979,7 +988,7 @@
 	{
 		"name": "$return_boolean",
 		"ident": 19,
-		"order": 29,
+		"order": 30,
 		"pvardefs": [
 			{
 				"name": "pbReturn",
@@ -997,7 +1006,7 @@
 	{
 		"name": "$return_char",
 		"ident": 3,
-		"order": 30,
+		"order": 31,
 		"pvardefs": [
 			{
 				"name": "pcReturn",
@@ -1021,7 +1030,7 @@
 	{
 		"name": "$return_datetime",
 		"ident": 30,
-		"order": 31,
+		"order": 32,
 		"pvardefs": [
 			{
 				"name": "pdReturn",
@@ -1039,7 +1048,7 @@
 	{
 		"name": "$return_itemref",
 		"ident": 28,
-		"order": 32,
+		"order": 33,
 		"pvardefs": [
 			{
 				"name": "pirReturn",
@@ -1057,7 +1066,7 @@
 	{
 		"name": "$return_list",
 		"ident": 18,
-		"order": 33,
+		"order": 34,
 		"pvardefs": [
 			{
 				"name": "plReturn",
@@ -1075,7 +1084,7 @@
 	{
 		"name": "$return_number",
 		"ident": 21,
-		"order": 34,
+		"order": 35,
 		"pvardefs": [
 			{
 				"name": "pnReturn",
@@ -1093,7 +1102,7 @@
 	{
 		"name": "$return_objectref",
 		"ident": 25,
-		"order": 35,
+		"order": 36,
 		"pvardefs": [
 			{
 				"name": "porReturn",
@@ -1111,7 +1120,7 @@
 	{
 		"name": "$return_row",
 		"ident": 27,
-		"order": 36,
+		"order": 37,
 		"pvardefs": [
 			{
 				"name": "prReturn",
@@ -1129,7 +1138,7 @@
 	{
 		"name": "$times",
 		"ident": 35,
-		"order": 37,
+		"order": 38,
 		"pvardefs": [
 			{
 				"name": "piTimes",
@@ -1167,7 +1176,7 @@
 	{
 		"name": "$twice",
 		"ident": 36,
-		"order": 38,
+		"order": 39,
 		"pvardefs": [
 
 		],

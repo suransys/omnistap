@@ -1,0 +1,9 @@
+If low(pcMethodName)="$open"
+	Quit method kTrue
+End If
+
+If low(pcMethodName)="$openonce"
+	Quit method kTrue
+End If
+
+Quit method kFalse
