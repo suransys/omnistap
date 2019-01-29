@@ -1,1 +1,1 @@
-Do $cinst.$ok(pos(pVar1,pVar2)<>0,pMessage,con('Contains: ',pVar1,' In ',pVar2))
+Do $cinst.$ok(pos(pHave,pWant)<>0,pMessage,con('Contains: ',pHave,' In ',pWant))
