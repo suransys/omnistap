@@ -20,7 +20,7 @@ Do ioTAP.$is_number(llHash.$line,llExpectedList.$line,"Adding another value and 
 Do llHash.$addIDValue()
 
 Do llExpectedList.$add()
-Calculate llExpectedList.3.ID as 0
-Calculate llExpectedList.3.Value as ""
+Calculate llExpectedList.3.ID as #NULL
+Calculate llExpectedList.3.Value as #NULL
 
 Do ioTAP.$is_list(llHash,llExpectedList,"Adding a blank ID/value pair works")
