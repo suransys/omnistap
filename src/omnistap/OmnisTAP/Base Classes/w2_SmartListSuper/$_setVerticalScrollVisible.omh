@@ -1,5 +1,0 @@
-Calculate iirList.$vertscroll as pbVisible
-
-If pbVisible=kFalse
-	Calculate iirList.$vscroll as 0
-End If

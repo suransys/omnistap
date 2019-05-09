@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "==Getters==",
-		"ident": 18,
 		"order": 2,
 		"pvardefs": [
 
@@ -24,7 +22,6 @@
 	},
 	{
 		"name": "$doesValueExistInColumn",
-		"ident": 4,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -56,7 +53,6 @@
 	},
 	{
 		"name": "$getColumnAsCSV",
-		"ident": 7,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -107,7 +103,6 @@
 	},
 	{
 		"name": "$getDefaultColumns",
-		"ident": 24,
 		"order": 5,
 		"pvardefs": [
 
@@ -118,7 +113,6 @@
 	},
 	{
 		"name": "$getDefaultLine",
-		"ident": 8,
 		"order": 6,
 		"pvardefs": [
 
@@ -129,7 +123,6 @@
 	},
 	{
 		"name": "$getPrimaryKey",
-		"ident": 22,
 		"order": 7,
 		"pvardefs": [
 
@@ -140,7 +133,6 @@
 	},
 	{
 		"name": "$getPrimaryKeys",
-		"ident": 9,
 		"order": 8,
 		"pvardefs": [
 
@@ -157,7 +149,6 @@
 	},
 	{
 		"name": "$getPrimaryKeyColumn",
-		"ident": 10,
 		"order": 9,
 		"pvardefs": [
 
@@ -168,7 +159,6 @@
 	},
 	{
 		"name": "$getRecallColumn",
-		"ident": 15,
 		"order": 10,
 		"pvardefs": [
 
@@ -179,7 +169,6 @@
 	},
 	{
 		"name": "$getSelectedLines",
-		"ident": 16,
 		"order": 11,
 		"pvardefs": [
 
@@ -196,7 +185,6 @@
 	},
 	{
 		"name": "$getWhereClauseForColumn",
-		"ident": 23,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -220,7 +208,6 @@
 	},
 	{
 		"name": "$hasPrimaryKey",
-		"ident": 11,
 		"order": 13,
 		"pvardefs": [
 			{
@@ -244,7 +231,6 @@
 	},
 	{
 		"name": "$isRow",
-		"ident": 12,
 		"order": 14,
 		"pvardefs": [
 
@@ -255,7 +241,6 @@
 	},
 	{
 		"name": "$_buildDefaultColumns",
-		"ident": 25,
 		"order": 15,
 		"pvardefs": [
 
@@ -279,7 +264,6 @@
 	},
 	{
 		"name": "==Setters==",
-		"ident": 19,
 		"order": 16,
 		"pvardefs": [
 
@@ -291,7 +275,6 @@
 	},
 	{
 		"name": "$setDefaultLine",
-		"ident": 17,
 		"order": 17,
 		"pvardefs": [
 			{
@@ -309,7 +292,6 @@
 	},
 	{
 		"name": "$setPrimaryKeyColumn",
-		"ident": 13,
 		"order": 18,
 		"pvardefs": [
 			{
@@ -327,7 +309,6 @@
 	},
 	{
 		"name": "$setRecallColumn",
-		"ident": 0,
 		"order": 19,
 		"pvardefs": [
 			{
@@ -345,7 +326,6 @@
 	},
 	{
 		"name": "$setSelectedLines",
-		"ident": 14,
 		"order": 20,
 		"pvardefs": [
 			{
@@ -376,7 +356,6 @@
 	},
 	{
 		"name": "==Primary Keys==",
-		"ident": 20,
 		"order": 21,
 		"pvardefs": [
 
@@ -388,7 +367,6 @@
 	},
 	{
 		"name": "$findPrimaryKey",
-		"ident": 5,
 		"order": 22,
 		"pvardefs": [
 			{
@@ -419,7 +397,6 @@
 	},
 	{
 		"name": "$findPrimaryKeyOrDefault",
-		"ident": 6,
 		"order": 23,
 		"pvardefs": [
 			{
@@ -437,7 +414,6 @@
 	},
 	{
 		"name": "==Current Line==",
-		"ident": 21,
 		"order": 24,
 		"pvardefs": [
 
@@ -449,7 +425,6 @@
 	},
 	{
 		"name": "$recallLine",
-		"ident": 2,
 		"order": 25,
 		"pvardefs": [
 
@@ -460,7 +435,6 @@
 	},
 	{
 		"name": "$storeLine",
-		"ident": 3,
 		"order": 26,
 		"pvardefs": [
 

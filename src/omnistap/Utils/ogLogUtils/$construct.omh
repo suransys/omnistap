@@ -1,6 +1,12 @@
-If isclear($libs.$findname("omniscli"))
-	Do $libs.$add(con(loPath.$startup(),"omniscli.lbs"),"omniscli")
+Calculate lcPathToOmnisCLI as con(loPath.$startup(),"omniscli.lbs")
+
+If isclear($libs.$findname("omniscli"))&FileOps.$doesfileexist(lcPathToOmnisCLI)
+	Do $libs.$add(lcPathToOmnisCLI,"omniscli")
 	Do $libs.omniscli.$objects.oOmnisCLI.$new() Returns loCLI
+	Calculate lcRed as loCLI.$kRed()
+	Calculate lcYellow as loCLI.$kYellow()
+	Calculate lcCyan as loCLI.$kCyan()
+	Calculate lcLightBlue as loCLI.$kLightBlue()
 End If
 
 Do ilLog.$cols.$add("ID",kInteger,k32bitint)
@@ -17,10 +23,10 @@ Do ilLog.$cols.$add("ShellColor",kCharacter,kSimplechar,100000000)
 Do ilLevels.$cols.$add("Level",kCharacter,kSimplechar,10000000)
 Do ilLevels.$cols.$add("IconID",kInteger,k32bitint)
 Do ilLevels.$cols.$add("ShellColor",kCharacter,kSimplechar,100000000)
-Do ilLevels.$add("Error",1681,loCLI.$kRed())
-Do ilLevels.$add("Warning",1682,loCLI.$kYellow())
-Do ilLevels.$add("Notice",1694,loCLI.$kCyan())
-Do ilLevels.$add("Debug",2024,loCLI.$kLightBlue())
+Do ilLevels.$add("Error",1681,lcRed)
+Do ilLevels.$add("Warning",1682,lcYellow)
+Do ilLevels.$add("Notice",1694,lcCyan)
+Do ilLevels.$add("Debug",2024,lcLightBlue)
 
 If tvDevVersion
 	Do $cinst.$setVerbosity("Debug")

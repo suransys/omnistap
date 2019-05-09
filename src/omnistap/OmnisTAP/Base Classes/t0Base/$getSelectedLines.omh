@@ -1,5 +1,0 @@
-Do $cinst.$storeLine()
-Do $cinst.$sendall(lcSelection.$assign(con(lcSelection,pick(len(lcSelection)>0,"",","),$cinst.$getPrimaryKey())),$cinst.$selected=kTrue)
-Do $cinst.$recallLine()
-
-Quit method lcSelection

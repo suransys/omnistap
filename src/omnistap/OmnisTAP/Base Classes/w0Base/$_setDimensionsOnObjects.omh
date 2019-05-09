@@ -1,5 +1,0 @@
-If $cinst.$isParentWindow()=kFalse
-	Quit method
-End If
-
-Do $cinst.$_cascadeMessage($cinst,"$setDimensions()",kFalse)

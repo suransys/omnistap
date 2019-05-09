@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$destruct",
-		"ident": 13,
 		"order": 2,
 		"pvardefs": [
 
@@ -23,7 +21,6 @@
 	},
 	{
 		"name": "$canclose",
-		"ident": 7,
 		"order": 3,
 		"pvardefs": [
 
@@ -34,7 +31,6 @@
 	},
 	{
 		"name": "$failOnError",
-		"ident": 5,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -52,7 +48,6 @@
 	},
 	{
 		"name": "$failOnMessage",
-		"ident": 3,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -70,7 +65,6 @@
 	},
 	{
 		"name": "$getOmnisTAPMenu",
-		"ident": 10,
 		"order": 6,
 		"pvardefs": [
 
@@ -81,7 +75,6 @@
 	},
 	{
 		"name": "$getOmnisTAPWindow",
-		"ident": 1,
 		"order": 7,
 		"pvardefs": [
 
@@ -92,7 +85,6 @@
 	},
 	{
 		"name": "$getTests",
-		"ident": 6,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -138,7 +130,6 @@
 	},
 	{
 		"name": "$getTestClasses",
-		"ident": 8,
 		"order": 9,
 		"pvardefs": [
 			{
@@ -190,7 +181,6 @@
 	},
 	{
 		"name": "$openOmnisTAP",
-		"ident": 2,
 		"order": 10,
 		"pvardefs": [
 
@@ -201,7 +191,6 @@
 	},
 	{
 		"name": "$reopenOmniscli",
-		"ident": 11,
 		"order": 11,
 		"pvardefs": [
 
@@ -218,7 +207,6 @@
 	},
 	{
 		"name": "$setLogObject",
-		"ident": 9,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -236,7 +224,6 @@
 	},
 	{
 		"name": "$setLibraryDefaults",
-		"ident": 12,
 		"order": 13,
 		"pvardefs": [
 
@@ -247,7 +234,6 @@
 	},
 	{
 		"name": "$setTestRunning",
-		"ident": 4,
 		"order": 14,
 		"pvardefs": [
 			{

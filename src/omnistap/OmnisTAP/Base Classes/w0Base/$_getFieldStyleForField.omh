@@ -1,8 +1,0 @@
-
-If isclear(pirField.$fieldstyle)
-	Quit method pirField
-End If
-
-Do $fieldstyles.$findname(pirField.$fieldstyle).$platforms.[pick(tvMacVersion,kMSWindows,kmacOS)] Returns lirFieldStyle
-
-Quit method lirFieldStyle

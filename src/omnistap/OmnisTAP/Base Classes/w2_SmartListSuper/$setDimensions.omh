@@ -1,5 +1,0 @@
-Do inherited
-
-Do $cinst.$setScrollBarsVisible()
-
-Calculate iirEmptyListText.$top as (iirEmptyListText.$container().$height-iirEmptyListText.$height)/2

@@ -1,9 +1,0 @@
-If len(icDataName)
-	Calculate lcDataname as replaceall(icSearchCalc,icDataName,'iirList')
-Else
-	Calculate lcDataname as replaceall(icSearchCalc,iirField.$dataname,'iirList')
-End If
-
-Calculate lcSearchCalculation as con('iirList.$search(low(left(',lcDataname,',',len(icBuffer),'))=low(icBuffer),1,0,0,0)')
-
-Quit method lcSearchCalculation

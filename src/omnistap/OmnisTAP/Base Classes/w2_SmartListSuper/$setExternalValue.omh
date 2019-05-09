@@ -1,7 +1,0 @@
-# Set iirExternalVariable to internal variables.
-# ==Uncomment these==
-Do inherited
-
-Calculate iirExternalVariable as _ilList
-
-Do $cinst.$dataChanged()

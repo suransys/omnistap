@@ -1,4 +1,4 @@
-;  Load defaults
+# Load defaults
 Calculate $clib.$prefs.$canfocusbuttons as kNofocus
 Calculate $clib.$prefs.$keyevents as kTrue
 Calculate $clib.$prefs.$mouseevents as kTrue

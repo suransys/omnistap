@@ -13,9 +13,8 @@ Do ioTAP.$is_char(lcGreeting,"Hail","We greet a non-maid normally")
 Do iorMock.$greet("Prince John","Enemy") Returns lcGreeting
 Do ioTAP.$is_char(lcGreeting,"En garde","We greet an enemy as an enemy")
 
-Do iorMock.$assert()
+Do $cinst.$assertMocks()
 
-Do $cinst.$when("greeting people we don't know")
 
 Do iorMock.$reset()
 Do iorMock.$mock("$_nod").$call(1).$return_char("'Sup.").$because("we don't know them")
@@ -27,4 +26,4 @@ Do ioTAP.$is_char(lcGreeting,"'Sup.","We greet the first unknown relationship pr
 Do iorMock.$greet("A barkeep","NPC") Returns lcGreeting
 Do ioTAP.$is_char(lcGreeting,"Hey.","We greet the second unknown relationship properly")
 
-Do lorGreeter.$assert()
+Do $cinst.$assertMocks()

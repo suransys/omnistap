@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$libPath",
-		"ident": 19,
 		"order": 8,
 		"pvardefs": [
 
@@ -18,7 +17,6 @@
 	},
 	{
 		"name": "$logs",
-		"ident": 12,
 		"order": 9,
 		"pvardefs": [
 
@@ -42,7 +40,6 @@
 	},
 	{
 		"name": "$startup",
-		"ident": 1,
 		"order": 14,
 		"pvardefs": [
 
@@ -59,7 +56,6 @@
 	},
 	{
 		"name": "$_getSuranAppData",
-		"ident": 13,
 		"order": 18,
 		"pvardefs": [
 
@@ -76,7 +72,6 @@
 	},
 	{
 		"name": "==Temp==",
-		"ident": 8,
 		"order": 19,
 		"pvardefs": [
 
@@ -88,7 +83,6 @@
 	},
 	{
 		"name": "$cleanupTemp",
-		"ident": 7,
 		"order": 20,
 		"pvardefs": [
 
@@ -105,7 +99,6 @@
 	},
 	{
 		"name": "$home",
-		"ident": 15,
 		"order": 21,
 		"pvardefs": [
 
@@ -129,7 +122,6 @@
 	},
 	{
 		"name": "$temp",
-		"ident": 10,
 		"order": 22,
 		"pvardefs": [
 
@@ -209,7 +201,6 @@
 	},
 	{
 		"name": "$_getHomeFolder",
-		"ident": 14,
 		"order": 25,
 		"pvardefs": [
 
@@ -220,7 +211,6 @@
 	},
 	{
 		"name": "$_getUniqueIdentifier",
-		"ident": 25,
 		"order": 26,
 		"pvardefs": [
 
@@ -244,7 +234,6 @@
 	},
 	{
 		"name": "tempFolderName",
-		"ident": 11,
 		"order": 27,
 		"pvardefs": [
 			{

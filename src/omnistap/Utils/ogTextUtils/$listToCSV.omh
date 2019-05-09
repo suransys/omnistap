@@ -1,4 +1,4 @@
-;  Assign pcQuote as kSq or kDq to wrap each value in the list in single or double. Default "" for no quotes.
+# Assign pcQuote as kSq or kDq to wrap each value in the list in single or double. Default "" for no quotes.
 
 For plList.$line from 1 to plList.$linecount step 1
 	If len(lcReturn)>0

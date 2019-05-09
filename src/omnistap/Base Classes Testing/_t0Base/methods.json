@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$u_buildDefaultColumns",
-		"ident": 4,
 		"order": 1,
 		"desc": "Tests building a list of the default columns on a table class instance that will existing in the database",
 		"pvardefs": [
@@ -33,7 +32,6 @@
 	},
 	{
 		"name": "$u_getColumnAsCSV",
-		"ident": 17,
 		"order": 2,
 		"desc": "Tests getting the values of a column on a list as a csv",
 		"pvardefs": [
@@ -58,7 +56,6 @@
 	},
 	{
 		"name": "$u_getPrimaryKeys",
-		"ident": 16,
 		"order": 3,
 		"desc": "Tests getting the primary keys on a list in a csv format",
 		"pvardefs": [
@@ -83,7 +80,6 @@
 	},
 	{
 		"name": "$u_getSelectedLines",
-		"ident": 13,
 		"order": 4,
 		"desc": "Tests getting a comma-separated string of selected lines on a list",
 		"pvardefs": [
@@ -108,7 +104,6 @@
 	},
 	{
 		"name": "$u_hasPrimaryKey",
-		"ident": 0,
 		"order": 5,
 		"pvardefs": [
 
@@ -125,7 +120,6 @@
 	},
 	{
 		"name": "$u_setRecallColumn",
-		"ident": 2,
 		"order": 7,
 		"desc": "Tests the ability of table classes to recall lines based on the value in a column",
 		"pvardefs": [
@@ -143,7 +137,6 @@
 	},
 	{
 		"name": "$u_setSelectedLines",
-		"ident": 3,
 		"order": 8,
 		"desc": "Tests setting selected lines in a list from a comma-separated list",
 		"pvardefs": [

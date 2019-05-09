@@ -1,9 +1,0 @@
-Calculate lnCT as #CT
-
-Do llTestTypes.$cols.$add("Unit",kInteger,k32bitint)
-Do llTestTypes.$cols.$add("Integration",kInteger,k32bitint)
-Do llTestTypes.$add(iiUnitTests,iiIntegrationTests)
-
-Do $cinst.$writeDiagnosticsCSVFileFromList(llTestTypes,"test_types")
-
-Do uoLog.$notice(con("Test types logged in ",loDateTime.$humanReadableTime(#CT-lnCT)))

@@ -4,7 +4,7 @@ Do lirLibrary.$objects.$first() Returns lirObjectClass
 
 While not(isclear(lirObjectClass))
 	If lirObjectClass.$isa($objects.ogTAPSuper)&lirObjectClass<>$objects.ogTAPSuper
-		;  Get a new test list
+		# Get a new test list
 		Do lirObjectClass.$newref() Returns lorTest
 		Do lorTest.$getDisplayName() Returns lcClassDisplayName
 		Do lorTest.$deleteref()

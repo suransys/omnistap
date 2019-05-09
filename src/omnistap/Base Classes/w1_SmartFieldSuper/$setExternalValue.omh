@@ -1,8 +1,8 @@
-;  Set iirExternalVariable to internal variables.
-;  ==Uncomment these==
-;  Do inherited
-;  Calculate iirExternalVariable as
-;  Do $cinst.$dataChanged()
+# Set iirExternalVariable to internal variables.
+# ==Uncomment these==
+# Do inherited
+# Calculate iirExternalVariable as
+# Do $cinst.$dataChanged()
 Do $cinst.$_set_iirExternalVariable()
 
 Do $cinst.$_redrawSmartField()

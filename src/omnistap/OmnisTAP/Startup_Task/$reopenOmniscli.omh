@@ -1,5 +1,0 @@
-If $itasks.$findname('omniscli')
-	Do $itasks.omniscli.$close()
-	Do $libs.omniscli.$tasks.Startup_Task.$open() Returns lvLibRef
-	Do lvLibRef.$name.$assign(low(lvLibRef.$lib().$name))
-End If

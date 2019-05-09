@@ -1,7 +1,0 @@
-Calculate lnCT as #CT
-
-Do ilTimings.$sort($ref.Time,kTrue)
-
-Do $cinst.$writeDiagnosticsCSVFileFromList(ilTimings,"timings")
-
-Do uoLog.$notice(con("Timings logged in ",loDateTime.$humanReadableTime(#CT-lnCT)))

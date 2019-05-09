@@ -34,7 +34,7 @@ End If
 Do $cinst.$_getSearchCalculation() Returns lcSearchCalculation
 Calculate lnLine as iirList.$line
 
-Test for valid calculation {eval(lcSearchCalculation)}
+Test for valid calculation eval(lcSearchCalculation)
 If flag true
 	Do eval(lcSearchCalculation) Returns iirList.$line
 	

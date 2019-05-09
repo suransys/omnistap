@@ -1,5 +1,0 @@
-Calculate $prefs.$collectperformancedata as kCPDnone
-
-Do $cinst.$_loadPerformanceData()
-
-Do ilPerformance.$sort($ref.totalexecutiontime,kTrue)

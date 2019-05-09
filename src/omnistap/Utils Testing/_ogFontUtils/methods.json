@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$u_getWidthForText",
-		"ident": 0,
 		"order": 1,
 		"desc": "Tests get the width of text for a given font",
 		"pvardefs": [

@@ -1,3 +1,0 @@
-# Add this method to the subwindow class to catch a keypress of the keypad enter key
-# Return true to allow the enter, false to discard it.
-Quit method kTrue

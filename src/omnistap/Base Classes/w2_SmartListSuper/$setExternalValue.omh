@@ -1,5 +1,5 @@
-;  Set iirExternalVariable to internal variables.
-;  ==Uncomment these==
+# Set iirExternalVariable to internal variables.
+# ==Uncomment these==
 Do inherited
 
 Calculate iirExternalVariable as _ilList

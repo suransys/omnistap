@@ -1,7 +1,0 @@
-Do $cinst.$_setupTestCase()
-Do $cinst.$_setupTestRunLog()
-Do $cinst.$_setupTimings()
-Do $cinst.$_setupObjectReferences()
-Do $cinst.$_setupOpenWindows()
-
-Do iorTest.$setup()

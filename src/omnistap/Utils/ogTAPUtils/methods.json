@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$getTaskForLibraryName",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -32,7 +31,6 @@
 	},
 	{
 		"name": "$getTaskForTesting",
-		"ident": 1,
 		"order": 2,
 		"pvardefs": [
 			{

@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$getPerformance",
-		"ident": 0,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -26,7 +25,6 @@
 	},
 	{
 		"name": "$getPerformanceAsText",
-		"ident": 11,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -79,7 +77,6 @@
 	},
 	{
 		"name": "$startProfiling",
-		"ident": 12,
 		"order": 6,
 		"pvardefs": [
 
@@ -96,7 +93,6 @@
 	},
 	{
 		"name": "$stopProfiling",
-		"ident": 8,
 		"order": 7,
 		"pvardefs": [
 
@@ -107,7 +103,6 @@
 	},
 	{
 		"name": "$_definePerformanceList",
-		"ident": 3,
 		"order": 8,
 		"pvardefs": [
 
@@ -118,7 +113,6 @@
 	},
 	{
 		"name": "$_getClassCount",
-		"ident": 1,
 		"order": 9,
 		"pvardefs": [
 
@@ -142,7 +136,6 @@
 	},
 	{
 		"name": "$_getHeaderRow",
-		"ident": 4,
 		"order": 10,
 		"pvardefs": [
 
@@ -173,7 +166,6 @@
 	},
 	{
 		"name": "$_getPerformanceForClass",
-		"ident": 6,
 		"order": 11,
 		"pvardefs": [
 			{
@@ -197,7 +189,6 @@
 	},
 	{
 		"name": "$_loadPerformanceDataWithoutProgress",
-		"ident": 13,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -222,7 +213,6 @@
 	},
 	{
 		"name": "$_loadPerformanceData",
-		"ident": 5,
 		"order": 13,
 		"pvardefs": [
 			{
@@ -247,7 +237,6 @@
 	},
 	{
 		"name": "$_loadPerformanceForLibrary",
-		"ident": 10,
 		"order": 14,
 		"pvardefs": [
 			{
@@ -285,7 +274,6 @@
 	},
 	{
 		"name": "$_resetPerformanceData",
-		"ident": 9,
 		"order": 15,
 		"pvardefs": [
 

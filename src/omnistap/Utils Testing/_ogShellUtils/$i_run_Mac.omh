@@ -13,7 +13,7 @@ Do $cinst.$when("running a background command")
 Do loPath.$temp() Returns lcTempFile
 Calculate lcTempFile as con(lcTempFile,"temp.txt")
 
-;  Test background command
+# Test background command
 Do $cinst.$_getDelayScript(lnDelay) Returns lcScript
 Calculate lcScript as con(lcScript,kLf,'echo done > "',lcTempFile,'"')
 

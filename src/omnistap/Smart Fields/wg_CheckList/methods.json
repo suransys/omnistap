@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -27,7 +26,6 @@
 	},
 	{
 		"name": "$getINClause",
-		"ident": 9,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -59,7 +57,6 @@
 	},
 	{
 		"name": "$getHeightForField",
-		"ident": 12,
 		"order": 3,
 		"pvardefs": [
 
@@ -83,7 +80,6 @@
 	},
 	{
 		"name": "$listDoubleClicked",
-		"ident": 5,
 		"order": 4,
 		"pvardefs": [
 
@@ -94,7 +90,6 @@
 	},
 	{
 		"name": "$showEmptyListPane",
-		"ident": 1,
 		"order": 5,
 		"pvardefs": [
 
@@ -105,7 +100,6 @@
 	},
 	{
 		"name": "$showPopulatedListPane",
-		"ident": 2,
 		"order": 6,
 		"pvardefs": [
 
@@ -116,7 +110,6 @@
 	},
 	{
 		"name": "$_getEmptyListTextRef",
-		"ident": 6,
 		"order": 7,
 		"pvardefs": [
 
@@ -127,7 +120,6 @@
 	},
 	{
 		"name": "$_getExtraListLineHeight",
-		"ident": 16,
 		"order": 8,
 		"pvardefs": [
 
@@ -151,7 +143,6 @@
 	},
 	{
 		"name": "$_getListRef",
-		"ident": 7,
 		"order": 9,
 		"pvardefs": [
 
@@ -162,7 +153,6 @@
 	},
 	{
 		"name": "$_redrawSmartField",
-		"ident": 13,
 		"order": 10,
 		"pvardefs": [
 
@@ -173,7 +163,6 @@
 	},
 	{
 		"name": "setListSelection",
-		"ident": 3,
 		"order": 11,
 		"pvardefs": [
 			{
@@ -197,7 +186,6 @@
 	},
 	{
 		"name": "$evEnterOrReturn",
-		"ident": 4,
 		"order": 12,
 		"pvardefs": [
 
@@ -208,7 +196,6 @@
 	},
 	{
 		"name": "$evKey",
-		"ident": 8,
 		"order": 13,
 		"pvardefs": [
 			{
@@ -234,7 +221,6 @@
 	},
 	{
 		"name": "$showAuxillaryButton",
-		"ident": 10,
 		"order": 14,
 		"pvardefs": [
 			{
@@ -252,7 +238,6 @@
 	},
 	{
 		"name": "$setAuxillaryText",
-		"ident": 11,
 		"order": 15,
 		"pvardefs": [
 			{

@@ -1,7 +1,0 @@
-Do $cinst.$getHeightForList() Returns lnListHeight
-
-Calculate lbVerticalScrollbarVisible as iirList.$height<lnListHeight
-
-If iirList.$vertscroll<>lbVerticalScrollbarVisible
-	Do $cinst.$_setVerticalScrollVisible(lbVerticalScrollbarVisible)
-End If

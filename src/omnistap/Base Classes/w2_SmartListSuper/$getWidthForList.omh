@@ -7,7 +7,7 @@ Calculate llList as _ilList
 Calculate lcCalculation as con("lcText.$assign(",iirList.$calculation,")")
 Calculate lcCalculation as replaceall(lcCalculation,"_ilList","llList")
 
-Test for valid calculation {eval(lcCalculation)}
+Test for valid calculation eval(lcCalculation)
 If flag false
 	Quit method iirList.$width
 End If

@@ -1,6 +1,6 @@
 Calculate lcExpectedLibraryName as low(pcLibraryName)
 
-;  Find a task matching the library's name, case-insensitive
+# Find a task matching the library's name, case-insensitive
 Do $itasks.$first() Returns lirTask
 While not(isclear(lirTask))
 	If low(lirTask().$name)=lcExpectedLibraryName
@@ -10,5 +10,5 @@ While not(isclear(lirTask))
 	Do $itasks.$next(lirTask) Returns lirTask
 End While
 
-;  If we didn't a task, bail
+# If we didn't a task, bail
 Quit method #NULL

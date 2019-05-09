@@ -1,5 +1,0 @@
-If pbHorizontalScroll=kFalse&$cfield.$hscroll>1
-	Calculate $cfield.$hscroll as 1
-End If
-
-Do default

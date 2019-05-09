@@ -1,3 +1,0 @@
-Do $windows.wgOmnisTAP.$openonce("*",kWindowCenter) Returns iirOmnisTAPWindow
-
-Quit method iirOmnisTAPWindow

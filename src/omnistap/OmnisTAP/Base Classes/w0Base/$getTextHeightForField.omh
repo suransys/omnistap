@@ -1,3 +1,0 @@
-Do $cinst.$_getFieldStyleForField(pirField) Returns lirFieldStyle
-
-Quit method FontOps.$wintextheight(lirFieldStyle.$fontname,lirFieldStyle.$fontsize,lirFieldStyle.$fontstyle)

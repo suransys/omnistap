@@ -1,25 +1,25 @@
-;  This method builds a SQL where clause fragment to find records where the passed column matches the selected lines in this list
-;  This method relies on the primary key column to build the where clause
-;  If there is a line where the primary key is 0 this method will return differently when all or no items are selected
-;  If all or none are selected and there is a line with a 0 primary key, then there is no contraint
-;  If all or none are selected and there is one 0 primary key line, then the contstrain is that the column is non-zero
-;  This method is implicitly tested by omTAPGroupSearch_Anniversaries_GetWhereClauseForAnniversaries
-;  It was developed for CDM-1780
+# This method builds a SQL where clause fragment to find records where the passed column matches the selected lines in this list
+# This method relies on the primary key column to build the where clause
+# If there is a line where the primary key is 0 this method will return differently when all or no items are selected
+# If all or none are selected and there is a line with a 0 primary key, then there is no contraint
+# If all or none are selected and there is one 0 primary key line, then the contstrain is that the column is non-zero
+# This method is implicitly tested by omTAPGroupSearch_Anniversaries_GetWhereClauseForAnniversaries
+# It was developed for CDM-1780
 
-;  If only some are selected, constrain on those
+# If only some are selected, constrain on those
 If tot($cinst,#LSEL)<>$cinst.$linecount&tot($cinst,#LSEL)<>0
 	Quit method con(pcColumn," IN (",$cinst.$getSelectedLines(),")")
 End If
 
-;  See if we have a zero value line
+# See if we have a zero value line
 Do $cinst.$storeLine()
 Do $cinst.$findPrimaryKey(0) Returns lbHasZeroValue
 Do $cinst.$recallLine()
 
-;  If we have a zero value then don't constrain on this column at all
+# If we have a zero value then don't constrain on this column at all
 If lbHasZeroValue=kTrue
 	Quit method ""
 End If
 
-;  If we don't have a zero column and everything is selected, return a constrain that the column is non-zero
+# If we don't have a zero column and everything is selected, return a constrain that the column is non-zero
 Quit method con(pcColumn,"<>0")

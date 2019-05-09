@@ -7,7 +7,7 @@ Do llUnits.$add("hour",60*60*60)
 Do llUnits.$add("minute",60*60)
 Do llUnits.$add("second",60)
 
-;  Parse out time units
+# Parse out time units
 For llUnits.$line from 1 to llUnits.$linecount step 1
 	If pnTicks>=llUnits.Break
 		Calculate lnValue as int(pnTicks/llUnits.Break)

@@ -1,8 +1,8 @@
-On evClick     ;; Event Parameters - pRow ( Itemreference )
+On evClick      ## Event Parameters - pRow ( Itemreference )
 	If pLineNumber>0|#COMMAND|#CTRL
 		Do $cfield.$click(#SHIFT)
 	End If
 	
-On evDoubleClick     ;; Event Parameters - pRow ( Itemreference )
+On evDoubleClick      ## Event Parameters - pRow ( Itemreference )
 	Do $cinst.$setExternalValue()
 	Do $cinst.$listDoubleClicked()

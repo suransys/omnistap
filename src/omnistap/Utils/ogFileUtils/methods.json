@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$deletefile",
-		"ident": 42,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -25,7 +24,6 @@
 	},
 	{
 		"name": "$splitpathname",
-		"ident": 24,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -81,7 +79,6 @@
 	},
 	{
 		"name": "==Custom==",
-		"ident": 3,
 		"order": 3,
 		"pvardefs": [
 
@@ -93,7 +90,6 @@
 	},
 	{
 		"name": "$createEnclosingFolder",
-		"ident": 11,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -132,7 +128,6 @@
 	},
 	{
 		"name": "$createFolder",
-		"ident": 12,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -228,7 +223,6 @@
 	},
 	{
 		"name": "$deleteFileIfExists",
-		"ident": 14,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -260,7 +254,6 @@
 	},
 	{
 		"name": "$deleteFolder",
-		"ident": 13,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -300,7 +293,6 @@
 	},
 	{
 		"name": "$getTempFile",
-		"ident": 20,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -325,7 +317,6 @@
 	},
 	{
 		"name": "$isFolderWriteable",
-		"ident": 17,
 		"order": 9,
 		"pvardefs": [
 			{
@@ -370,7 +361,6 @@
 	},
 	{
 		"name": "$read",
-		"ident": 26,
 		"order": 10,
 		"pvardefs": [
 			{
@@ -401,7 +391,6 @@
 	},
 	{
 		"name": "$splitDriveFromPath",
-		"ident": 25,
 		"order": 11,
 		"pvardefs": [
 			{
@@ -455,7 +444,6 @@
 	},
 	{
 		"name": "$write",
-		"ident": 23,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -526,7 +514,6 @@
 	},
 	{
 		"name": "$_getTempFile",
-		"ident": 28,
 		"order": 13,
 		"pvardefs": [
 			{

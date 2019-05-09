@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$i_checkList",
-		"ident": 1,
 		"order": 2,
 		"desc": "Test the wg_CheckList smart window",
 		"pvardefs": [

@@ -1,7 +1,0 @@
-Do $cinst.$_getString(pcString) Returns lcString
-
-If pos('[',lcString)=0
-	Quit method lcString
-End If
-
-Quit method $cinst.$_evaluateString(lcString)

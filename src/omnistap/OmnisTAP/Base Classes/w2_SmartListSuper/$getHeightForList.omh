@@ -1,4 +1,0 @@
-Calculate lnLineHeight as $cinst.$getHeightForListRow()
-Calculate lnListHeight as _ilList.$linecount*lnLineHeight
-
-Quit method lnListHeight

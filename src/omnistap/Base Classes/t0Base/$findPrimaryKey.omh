@@ -6,12 +6,12 @@ If isclear(pcPrimaryKey)
 	Calculate pcPrimaryKey as $cinst.$getPrimaryKey()
 End If
 
-If icPrimaryKeyColumn="ID"     ;; This is an optimization to avoid the dynamic column reference in the search.
+If icPrimaryKeyColumn="ID"      ## This is an optimization to avoid the dynamic column reference in the search.
 	If $cinst.ID=pcPrimaryKey
 		Quit method kTrue
 	End If
 	
-	Calculate lnID as pcPrimaryKey     ;; Casting the primary key to an integer also provides a measurable speed boost
+	Calculate lnID as pcPrimaryKey      ## Casting the primary key to an integer also provides a measurable speed boost
 	Do $cinst.$search($ref.ID=lnID,1,0,0,0) Returns $cinst.$line
 Else
 	Calculate lcPrimaryKeyColumn as $cinst.$getPrimaryKeyColumn()

@@ -1,8 +1,0 @@
-Do $cinst.$add()
-
-Calculate $cinst.[$cinst.$linecount].ID as pnID
-Calculate $cinst.[$cinst.$linecount].Value as pcValue
-
-If pbSetAsCurrentLine=kTrue
-	Calculate $cinst.$line as $cinst.$linecount
-End If

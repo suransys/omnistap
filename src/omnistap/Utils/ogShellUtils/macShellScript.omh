@@ -5,12 +5,12 @@ If FileOps.$doesfileexist(lcScriptFilePath)
 End If
 
 Begin text block
-Text: {[pcCommand]}
+Text:[pcCommand]
 
 If pbBackground=kFalse
-	Text: (Linefeed)
-	Text: {liOmnisShellResult=$?} (Linefeed)
-	Text: {echo ${liOmnisShellResult}} (Linefeed)
+	Text:(Linefeed)
+	Text:liOmnisShellResult=$?(Linefeed)
+	Text:echo ${liOmnisShellResult}(Linefeed)
 End If
 
 End text block
@@ -24,12 +24,12 @@ Do loFile.$closefile()
 Do FileOps.$setunixpermissions(lcScriptFilePath,"-rwxrwxrwx")
 
 Begin text block
-Text: {do shell script "/bin/bash [lcScriptFilePath] [pick(pbBackground,"2>&1;","> /dev/null 2>&1 & echo $!")]"}
+Text:do shell script "/bin/bash [lcScriptFilePath] [pick(pbBackground,"2>&1;","> /dev/null 2>&1 & echo $!")]"
 If pbAdminPriviledges
 	If $ctask.tbTestMode&tvDevVersion=kFalse
-		Text: { user name "[pcUserName]" password "[pcPassword]" with administrator privileges}
+		Text: user name "[pcUserName]" password "[pcPassword]" with administrator privileges
 	Else
-		Text: { with administrator privileges}
+		Text: with administrator privileges
 	End If
 End If
 End text block

@@ -1,4 +1,4 @@
-;  Note that we exclude columns marked $excludefromwhere as this in enabled on dynamically added columns
+# Note that we exclude columns marked $excludefromwhere as this in enabled on dynamically added columns
 If isclear(_inColcount)
 	Calculate lnColcount as $cinst.$colcount
 Else

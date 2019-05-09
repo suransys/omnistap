@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$event",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$click",
-		"ident": 1,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -31,7 +29,6 @@
 	},
 	{
 		"name": "shiftClick",
-		"ident": 2,
 		"order": 4,
 		"pvardefs": [
 
@@ -70,7 +67,6 @@
 	},
 	{
 		"name": "$horzscroll.$assign",
-		"ident": 4,
 		"order": 5,
 		"pvardefs": [
 			{

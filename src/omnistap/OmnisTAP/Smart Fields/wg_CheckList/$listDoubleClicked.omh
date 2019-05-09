@@ -1,5 +1,0 @@
-Do inherited
-
-Calculate _ilList.0.$selected as not(_ilList.0.$selected)
-
-Do $cinst.$setExternalValue()

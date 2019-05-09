@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$greet",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -27,7 +26,6 @@
 	},
 	{
 		"name": "$_greetFriend",
-		"ident": 0,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -54,7 +52,6 @@
 	},
 	{
 		"name": "$_greetEnemy",
-		"ident": 2,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -73,7 +70,6 @@
 	},
 	{
 		"name": "$_nod",
-		"ident": 3,
 		"order": 4,
 		"pvardefs": [
 

@@ -1,4 +1,0 @@
-Calculate llTests as ilTests
-Do llTests.$cols.$add("NameLength",kInteger,k32bitint)
-Do llTests.$sendall($ref.NameLength.$assign(len(con(llTests.ObjectName,llTests.Method))))
-Calculate iiLongestTestNameLength as llTests.$cols.NameLength.$maximum()

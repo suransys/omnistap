@@ -1,12 +1,12 @@
-On evBefore     ;; Event Parameters - pRow ( Itemreference )
+On evBefore      ## Event Parameters - pRow ( Itemreference )
 	Do $menus.mgEdit.$insts.$sendall($ref.$setReadOnly(kTrue))
 	
-	;  Do $imenus.mgEdit.$setReadOnly(kTrue)
+	# Do $imenus.mgEdit.$setReadOnly(kTrue)
 	
-On evAfter     ;; Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
+On evAfter      ## Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
 	Do $menus.mgEdit.$insts.$sendall($ref.$setReadOnly(kFalse))
 	
-	;  Do $imenus.mgEdit.$setReadOnly(kFalse)
+	# Do $imenus.mgEdit.$setReadOnly(kFalse)
 	
 On evKey
 	If pSystemKey=27

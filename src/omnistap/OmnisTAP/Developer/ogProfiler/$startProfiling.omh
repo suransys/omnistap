@@ -1,5 +1,0 @@
-Calculate ibShowProgress as kFalse
-
-Do $cinst.$_resetPerformanceData()
-
-Calculate $prefs.$collectperformancedata as kCPDallMethods
