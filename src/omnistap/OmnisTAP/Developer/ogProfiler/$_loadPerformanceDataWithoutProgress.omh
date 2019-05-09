@@ -1,0 +1,9 @@
+Do $cinst.$_definePerformanceList()
+
+Do $libs.$first() Returns lirLib
+
+While not(isnull(lirLib()))
+	Do $cinst.$_loadPerformanceForLibrary(lirLib)
+	
+	Do $libs.$next(lirLib()) Returns lirLib
+End While

@@ -1,0 +1,17 @@
+Do iorMock.$read(lcPath) Returns lcContents
+Do ioTAP.$isclear(lcContents,"We don't get any contents for a blank path")
+
+Do iorMock.$read("fdshgfsklghda") Returns lcContents
+Do ioTAP.$isclear(lcContents,"We don't get any contents for an invalid path")
+
+Do iorMock.$getTempFile() Returns lcPath
+Do iorMock.$read(lcPath) Returns lcContents
+Do ioTAP.$isclear(lcContents,"We don't get any contents for a blank file")
+
+Do iorMock.$write(lcPath,"spike")
+Do iorMock.$read(lcPath) Returns lcContents
+Do ioTAP.$is_char(lcContents,"spike","We get basic contents")
+
+Do iorMock.$write(lcPath,"delight",kFalse,kUniTypeAnsiTurkish)
+Do iorMock.$read(lcPath) Returns lcContents
+Do ioTAP.$is_char(lcContents,"delight","We get basic contents from a turkish file")

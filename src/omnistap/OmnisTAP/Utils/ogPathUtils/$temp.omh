@@ -1,0 +1,25 @@
+If not(isclear(ccTempFolder))&FileOps.$doesfileexist(ccTempFolder)
+	Quit method ccTempFolder
+End If
+
+Do method tempFolderName ('suran') Returns lcTempFolder
+
+If not(FileOps.$doesfileexist(lcTempFolder))
+	Do loFile.$createFolder(lcTempFolder,kFalse)
+	Do FileOps.$setunixpermissions(lcTempFolder,'drwxrwxrwx')
+	Calculate lcParentDir as FileOps.$parentdir(trim(lcTempFolder,kFalse,kTrue,pathsep()))
+	If right(lcParentDir,5)='suran'
+		Do FileOps.$setunixpermissions(lcParentDir,'drwxrwxrwx')
+	End If
+	Do loFile.$isFolderWriteable(lcTempFolder) Returns lbOK
+	
+	If lbOK=kFalse
+		Quit method ''
+	End If
+End If
+
+Calculate ccTempFolder as lcTempFolder
+
+Do uoLog.$notice(con("Temp folder for this session is ",ccTempFolder))
+
+Quit method ccTempFolder

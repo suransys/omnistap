@@ -1,0 +1,19 @@
+Do loFileUtils.$getTempFile("logging_test") Returns lcPath
+Calculate lcPath as con(lcPath,sys(9),"test.log")
+
+Do iirMock.$mock("$_getLogFile").$call(1).$return_char(lcPath)
+Do iirMock.$mock("$_getLogFile").$call(2).$return_char(lcPath)
+
+Do iirMock.$_writeToLog("foo")
+Do iirMock.$getLogText() Returns lcContents
+Do ioTAP.$is_char(lcContents,"foo","Contents are right")
+Do $cinst.$assertMocks()
+
+Calculate lcLineEnding as pick(tvMacVersion,con(kCr,kLf),kLf)
+
+Do iirMock.$_writeToLog("bar")
+Do iirMock.$getLogText() Returns lcContents
+Do ioTAP.$is_char(lcContents,con("foo",lcLineEnding,"bar"),"Contents are right")
+Do $cinst.$assertMocks()
+
+Do FileOps.$deletefile(lcPath)

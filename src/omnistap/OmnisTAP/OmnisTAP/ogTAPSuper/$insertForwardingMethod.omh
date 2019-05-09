@@ -1,0 +1,41 @@
+# This method injects a public version of private method being called
+# This way the private method can be tested.
+
+Calculate lcPublicMethod as con('$',pPrivateMethod)
+
+Do prObject.$methods.$add(lcPublicMethod) Returns lrPublicMethodRef
+
+Calculate lcTempPrivateMethod as con("//",pPrivateMethod,"//")
+Calculate lcTempPublicMethod as con("//",lcPublicMethod,"//")
+
+Calculate llVariables as prObject.$methods.[lcTempPrivateMethod].$lvardefs.$makelist($ref.$name,$ref.$objtype,$ref.$objsubtype,$ref.$objsublen,$ref.$parmno)
+
+If llVariables.$linecount>0      ## Check present local/parameter vars. This will prevent errors in the test result
+	Calculate llVariables.$cols.1.$name as 'name'
+	Calculate llVariables.$cols.2.$name as 'objtype'
+	Calculate llVariables.$cols.3.$name as 'objsubtype'
+	Calculate llVariables.$cols.4.$name as 'objsublength'
+	Calculate llVariables.$cols.5.$name as 'parmno'
+	
+	Do llVariables.$sort($ref.parmno,kTrue)
+	
+	For liVariableLineNr from llVariables.$linecount to 1 step -1
+		If llVariables.[liVariableLineNr].parmno=0      ## filter out local variables
+			Do llVariables.$remove(liVariableLineNr)
+		End If
+	End For
+	
+	For llVariables.$line from llVariables.$linecount to 1 step -1
+		If llVariables.parmno>0
+			If llVariables.$line<>llVariables.$linecount
+				Calculate lcInputVars as con(lcInputVars,",")
+			End If
+			Do prObject.$methods.[lcTempPublicMethod].$lvardefs.$add(llVariables.name,llVariables.objtype,llVariables.objsubtype,llVariables.objsublength,kTrue)
+			Calculate lcInputVars as con(lcInputVars,llVariables.name)
+		End If
+	End For
+End If
+Do prObject.$methods.[lcTempPublicMethod].$lvardefs.$add('output',kItemref,,,kFalse)
+
+Do prObject.$methods.[lcTempPublicMethod].$methodlines.$add(con("Do method ",pPrivateMethod,"(",lcInputVars,") Returns output"))
+Do prObject.$methods.[lcTempPublicMethod].$methodlines.$add("Quit method output")

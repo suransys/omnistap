@@ -1,0 +1,26 @@
+Do $cinst.$_doesLibraryUseSeparateTestLibrary(pirProductionLibrary) Returns lbUseSeparateTestLibrary
+If lbUseSeparateTestLibrary=kFalse
+	Quit method pirProductionLibrary
+End If
+
+Calculate lcTestLibraryName as con(pirProductionLibrary().$name,"_tests")
+Do $libs.$findname(lcTestLibraryName) Returns lirTestLibrary
+If not(isclear(lirTestLibrary))
+	Quit method lirTestLibrary
+End If
+
+# Open the library if it exists
+Calculate lcPathToTestLibrary as con(FileOps.$parentdir(pirProductionLibrary.$pathname),pathsep(),pirProductionLibrary().$name,"_tests.lbs")
+Do $libs.$add(lcPathToTestLibrary) Returns lirTestLibrary
+If not(isclear(lirTestLibrary))
+	Quit method lirTestLibrary
+End If
+
+# Create a new library
+Do $libs.$add(lcPathToTestLibrary,kTrue) Returns lirTestLibrary
+Do lirTestLibrary.$tasks.$findname("Startup_Task") Returns lirTestStartupTask
+Calculate lirTestStartupTask.$superclass as "omnistap.kgTAPTask"
+Do lirTestStartupTask.$methods.$add("$useSeparateTestLibrary") Returns lirUseSeparateTestLibraryMethod
+Do lirUseSeparateTestLibraryMethod.$methodlines.$add("Quit method kTrue")
+
+Quit method lirTestLibrary

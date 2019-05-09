@@ -1,0 +1,14 @@
+#Set the mock to a specific call. This doesn't do much on its own, but chained with a $return lets us set a specific call's return value
+Calculate llCalls as ilMockMethods.Calls
+
+While llCalls.$linecount<pnCall
+	Do llCalls.$add()
+End While
+
+Calculate llCalls.$line as pnCall
+
+Calculate ilMockMethods.Calls as llCalls
+
+Calculate ibExpectedSpecificCall as kTrue
+
+Quit method $cinst.$objref

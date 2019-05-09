@@ -1,0 +1,63 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
+	"internalversion": 302,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ibFailureReceived",
+			"order": 7,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		},
+		{
+			"name": "iiTestID",
+			"order": 2,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iiTestsPassed",
+			"order": 11,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iiTestsRun",
+			"order": 10,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "ilTAPResults",
+			"order": 1,
+			"type": "kList",
+			"subtype": "tgTAPResult",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2016-07-09 22:17:31",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2019-02-26 14:59:50",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 3
+	}
+}

@@ -1,0 +1,27 @@
+# Load defaults
+Calculate $clib.$prefs.$canfocusbuttons as kNofocus
+Calculate $clib.$prefs.$keyevents as kTrue
+Calculate $clib.$prefs.$mouseevents as kTrue
+Calculate $clib.$prefs.$reportcalculationerrors as kTrue
+Calculate $clib.$prefs.$rmouseevents as kTrue
+Calculate $clib.$prefs.$statusevents as kTrue
+Calculate $clib.$prefs.$weekstart as kMonday
+Calculate $modes.$stacklimit as 100
+Calculate $root.$prefs.$collectperformancedata as kCPDnone
+Calculate $root.$prefs.$exportencoding as kUniTypeAnsiLatin1
+Calculate $root.$prefs.$exportnullsasempty as kTrue
+Calculate $root.$prefs.$helpbaron as kFalse
+Calculate $root.$prefs.$hideuntilcomplete as kFalse
+Calculate $root.$prefs.$importencoding as kUniTypeUTF8
+Calculate $root.$prefs.$listsearchtimeout as 120
+Calculate $root.$prefs.$maxcachedclasses as 2500
+Calculate $root.$prefs.$printernotify as kFalse
+Calculate $root.$prefs.$printernotify as kPrtNoteAuto
+Calculate $root.$prefs.$showsystemfocus as kFalse
+Calculate $root.$prefs.$usecms as kFalse
+Calculate $root.$prefs.$waitforuser as kFalse
+Calculate $root.$prefs.$macosvalidatepapersize as kTrue
+
+Do fmtdatetime("m D y h:N A")
+Do fmtshortdate("m D y")
+Do fmtshorttime("h:N A")

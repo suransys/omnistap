@@ -1,0 +1,6 @@
+Do $cinst.$objs.swTitle.$setText(pcText)
+If len(pcText)
+	Calculate $cinst.$objs.swTitle.$visible as kTrue
+Else
+	Calculate $cinst.$objs.swTitle.$visible as kFalse
+End If

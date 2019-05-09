@@ -1,0 +1,53 @@
+Calculate $modes.$fixedcursor as kTrue
+Calculate $cinst.$alpha as 100
+
+If ilLibraries.Name=icLastLibName
+	Calculate llExistingProcess as ilTestMethods
+	Calculate liExistingProcessLine as llExistingProcess.$line
+	Calculate llExistingProcess.$line as 1
+	
+	Calculate liExistingTestClassLine as ilTestClasses.$line
+End If
+
+# Process list
+Do $ctask.$getTestClasses(ilLibraries.Name) Returns ilTestClasses
+
+Do ilTestClasses.$add()
+Calculate ilTestClasses.$line as ilTestClasses.$linecount
+Calculate ilTestClasses.DisplayName as "<all>"
+
+# Re-select test classes
+Calculate ilTestClasses.$line as pick(liExistingTestClassLine>ilTestClasses.$linecount|liExistingTestClassLine=0,liExistingTestClassLine,1)
+Do $cinst.$_loadTestsFromClass()
+
+# Re-select processes
+If llExistingProcess.$linecount>0
+	For ilTestMethods.$line from 1 to ilTestMethods.$linecount step 1
+		While llExistingProcess.Test<ilTestMethods.Test&llExistingProcess.$line<llExistingProcess.$linecount
+			Calculate llExistingProcess.$line as llExistingProcess.$line+1
+		End While
+		
+		If llExistingProcess.$line>llExistingProcess.$linecount
+			Break to end of loop
+		End If
+		
+		Calculate ilTestMethods.0.$selected as llExistingProcess.0.$selected
+		
+		If llExistingProcess.$line=liExistingProcessLine
+			Calculate liProcessLine as ilTestMethods.$line
+		End If
+		
+		Calculate llExistingProcess.$line as llExistingProcess.$line+1
+	End For
+End If
+
+Calculate ilTestMethods.$line as liProcessLine
+
+Do $cinst.$objs.ppTests.$objs.clTest.$listClicked()
+
+Calculate icLastLibName as ilLibraries.Name
+
+Do $cinst.$redrawAll()
+
+Calculate $cinst.$alpha as 255
+Calculate $modes.$fixedcursor as kFalse

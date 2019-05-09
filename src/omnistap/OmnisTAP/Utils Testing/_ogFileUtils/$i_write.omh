@@ -1,0 +1,28 @@
+
+Do iorMock.$write('') Returns lbOK
+Do ioTAP.$is_boolean(lbOK,kFalse,'trying to write to an empty path fails')
+
+Do iorMock.$write(loPath.$temp()) Returns lbOK
+Do ioTAP.$is_boolean(lbOK,kFalse,'trying to write to a directory fails')
+
+Do iorMock.$getTempFile() Returns lcTemp
+Calculate lcTemp as con(lcTemp,sys(9),'foo',sys(9),'bar',sys(9),'baz')
+Do iorMock.$write(lcTemp,'file contents',kFalse,kUniTypeUTF32) Returns lbOK
+Do ioTAP.$is_boolean(lbOK,kTrue,'writing a valid file succeeds')
+Do ioTAP.$fileexists(lcTemp,'file exists')
+
+Do loFile.$openfile(lcTemp,kTrue)
+Do loFile.$readcharacter(kUniTypeUTF32,lcContents)
+Do loFile.$closefile()
+
+Do ioTAP.$is_char(lcContents,'file contents','file contents are correct')
+
+Do iorMock.$write(lcTemp,'more stuff',kTrue,kUniTypeUTF32)
+
+Do loFile.$openfile(lcTemp,kTrue)
+Do loFile.$readcharacter(kUniTypeUTF32,lcContents)
+Do loFile.$closefile()
+
+Do ioTAP.$is_char(lcContents,'file contentsmore stuff','file contents are correct')
+
+Do FileOps.$deletefile(lcTemp)

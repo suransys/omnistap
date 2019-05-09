@@ -1,0 +1,26 @@
+Do llExpectedEscapes.$cols.$add("Escape",kInteger,k32bitint)
+Do llExpectedEscapes.$cols.$add("Value",kCharacter,kSimplechar,10000000)
+
+Calculate lcText as "abc"
+Do iorMock.$extractEscapesFromText(lcText) Returns llEscapes
+
+Do llExpectedEscapes.$add(0,"abc")
+Do ioTAP.$is_list(llEscapes,llExpectedEscapes,"Basic text works")
+
+Calculate lcText as con(style(kEscBmp,692),"abc")
+Do iorMock.$extractEscapesFromText(lcText) Returns llEscapes
+
+Do llExpectedEscapes.$addbefore(1,kEscBmp,692)
+Do ioTAP.$is_list(llEscapes,llExpectedEscapes,"Icon then text works")
+
+Calculate lcText as con("def",style(kEscBmp,692),"abc")
+Do iorMock.$extractEscapesFromText(lcText) Returns llEscapes
+
+Do llExpectedEscapes.$addbefore(1,0,"def")
+Do ioTAP.$is_list(llEscapes,llExpectedEscapes,"text then Icon then text works")
+
+Calculate lcText as con("def",style(kEscBmp,692),"abc",style(kEscStyle,kUnderline))
+Do iorMock.$extractEscapesFromText(lcText) Returns llEscapes
+
+Do llExpectedEscapes.$add(kEscStyle,kUnderline*1)
+Do ioTAP.$is_list(llEscapes,llExpectedEscapes,"text then Icon then text then style works")

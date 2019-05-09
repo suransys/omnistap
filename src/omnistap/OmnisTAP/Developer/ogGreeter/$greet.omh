@@ -1,0 +1,9 @@
+If pcRelationship="Friend"&left(pcName,4)="Maid"
+	Quit method $cinst.$_greetFriend(pcName,"Formal")
+Else If pcRelationship="Friend"
+	Quit method $cinst.$_greetFriend(pcName,"Normal")
+Else If pcRelationship="Enemy"
+	Quit method $cinst.$_greetEnemy(pcName)
+End If
+
+Quit method $cinst.$_nod()

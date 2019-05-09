@@ -1,0 +1,6 @@
+On evClick      ## Event Parameters - pRow ( Itemreference )
+	Do $cinst.$_loadTestsFromClass()
+	Do $cinst.$redrawAll()
+	
+On evDoubleClick      ## Event Parameters - pRow ( Itemreference )
+	Modify class [ilLibraries.Name].[ilTestClasses.Name]

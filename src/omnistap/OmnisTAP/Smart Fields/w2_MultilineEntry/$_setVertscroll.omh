@@ -1,0 +1,8 @@
+Calculate lnLineheight as $cinst.$getTextHeightForField(iirField)
+Calculate lnLines as iirField.$add(21)
+
+Calculate iirField.$vertscroll as (lnLineheight*lnLines)>$cinst.$height
+
+If iirField.$vertscroll=kFalse&iirField.$vscroll>0
+	Calculate iirField.$vscroll as 0
+End If

@@ -1,0 +1,3 @@
+Calculate ilTests.$line as iiCurrentTest
+Do $cinst.$_runTest()
+Calculate iiCurrentTest as iiCurrentTest+1

@@ -1,0 +1,60 @@
+If len(pFolderPath)=0
+	Quit method kFalse
+End If
+
+If FileOps.$doesfileexist(pick(tvMacVersion=kTrue,pick(right(pFolderPath,1)=sys(9),pFolderPath,mid(pFolderPath,1,len(pFolderPath)-1)),pFolderPath))=kFalse
+	Quit method kTrue
+End If
+
+# Delete .DS_Store
+If FileOps.$doesfileexist(con(pFolderPath,".DS_Store"))
+	If FileOps.$deletefile(con(pFolderPath,".DS_Store"))<>0
+		Quit method kFalse
+	End If
+End If
+
+# Delete files
+If pOnlyIfEmpty=kFalse
+	Do FileOps.$filelist(kFileOpsIncludeFiles,pFolderPath,kFileOpsInfoFullName) Returns llFiles
+	Calculate llFiles.$cols.1.$name as "Path"
+	
+	For llFiles.$line from 1 to llFiles.$linecount step 1
+		If FileOps.$doesfileexist(llFiles.Path)
+			If FileOps.$deletefile(llFiles.Path)<>0
+				Quit method kFalse
+			End If
+		End If
+	End For
+End If
+
+# Delete folders
+Do FileOps.$filelist(kFileOpsIncludeDirectories,pFolderPath,kFileOpsInfoFullName) Returns llFiles
+Calculate llFiles.$cols.1.$name as "Path"
+
+For llFiles.$line from 1 to llFiles.$linecount step 1
+	Do $cinst.$deleteFolder(llFiles.Path,pOnlyIfEmpty) Returns lbSuccess
+	If lbSuccess=kFalse
+		Quit method kFalse
+	End If
+End For
+
+If pOnlyIfEmpty=kTrue
+	Do FileOps.$filelist(kFileOpsIncludeDirectories+kFileOpsIncludeFiles,pFolderPath,kFileOpsInfoFullName) Returns llFiles
+	
+	If llFiles.$linecount=0
+		If FileOps.$deletefile(pFolderPath)<>0
+			Quit method kFalse
+		End If
+	End If
+Else
+	
+	If right(pFolderPath,1)=sys(9)
+		Calculate pFolderPath as trim(pFolderPath,kFalse,kTrue,sys(9))
+	End If
+	
+	If FileOps.$deletefile(pFolderPath)<>0
+		Quit method kFalse
+	End If
+End If
+
+Quit method kTrue

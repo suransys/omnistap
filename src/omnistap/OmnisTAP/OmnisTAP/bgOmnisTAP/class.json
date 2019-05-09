@@ -1,0 +1,42 @@
+{
+	"classtype": "kToolbar",
+	"omnisversion": "10.0",
+	"internalversion": 25,
+	"designtaskname": "Startup_Task",
+	"nextident": 1015,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ilLibraries",
+			"order": 1,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"allowdrag": false,
+		"allowresize": false,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2016-07-08 20:25:44",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"enabled": true,
+		"external": true,
+		"helpfile": 0,
+		"inheritedorder": 0,
+		"initialdockingarea": "kDockingAreaTop",
+		"issupercomponent": false,
+		"moddate": "2019-02-26 14:59:50",
+		"showascheckedout": false,
+		"title": "",
+		"userinfo": "",
+		"users": "12345678",
+		"version": 2
+	}
+}

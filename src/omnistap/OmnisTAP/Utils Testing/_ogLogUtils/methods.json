@@ -1,0 +1,203 @@
+[
+	{
+		"name": "$setup",
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$u_conditional",
+		"order": 2,
+		"desc": "Test conditional logging feature (notice on true, error on false)",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$u_getTextVersion",
+		"order": 3,
+		"desc": "Tests getting a plain-text version of a log message",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcExpectedText",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcText",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "llLog",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "loLog",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogLogUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_levels",
+		"order": 4,
+		"desc": "Tests logging at various levels",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcMethodLine",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "ldTimeStamp",
+				"order": 5,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "llLog",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llLogToCompare",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnColor",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnDiff",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnExpectedColor",
+				"order": 8,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnExpectedIconID",
+				"order": 10,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lnIconID",
+				"order": 9,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loCLI",
+				"order": 11,
+				"type": "kObject",
+				"subtype": "omniscli.oOmnisCLI",
+				"sublen": 0
+			},
+			{
+				"name": "loLog",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogLogUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_verbosity",
+		"order": 7,
+		"desc": "Test setting the verbosity of the logger",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcVerbosity",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$u_writeToLog",
+		"order": 8,
+		"desc": "Tests writing to the log file",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcContents",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcLineEnding",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPath",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loFileUtils",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
+			}
+		]
+	}
+]

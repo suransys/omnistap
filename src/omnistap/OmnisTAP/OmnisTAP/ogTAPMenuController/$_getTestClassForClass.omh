@@ -1,0 +1,15 @@
+Set reference lirProductionLibrary to pirClass.$lib
+Do $cinst.$_getTestLibraryForProductionLibrary(lirProductionLibrary) Returns lirTestLibrary
+
+Calculate lcTestClassName as con("_",pirClass.$name)
+
+# Existing class
+Do lirTestLibrary.$objects.$findname(lcTestClassName) Returns lirTestClass
+If not(isclear(lirTestClass))
+	Quit method lirTestClass
+End If
+
+# New testing class
+Do $cinst.$_addTestClass(pirClass,pfcErrorMessage,lcTestClassName) Returns lirTestClass
+
+Quit method lirTestClass

@@ -1,0 +1,9 @@
+
+Calculate lcPath as con(pcTempPath,pcFileName)
+
+While FileOps.$doesfileexist(lcPath)
+	Calculate lnNum as lnNum+1
+	Calculate lcPath as con(pcTempPath,lnNum,"_",pcFileName)
+End While
+
+Quit method lcPath

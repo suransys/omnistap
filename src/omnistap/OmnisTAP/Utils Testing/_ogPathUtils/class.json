@@ -1,0 +1,35 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
+	"internalversion": 41,
+	"superclass": "ogTAPSuper",
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iirMock",
+			"order": 1,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2016-12-27 10:10:24",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2018-07-30 15:48:00",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 8
+	}
+}

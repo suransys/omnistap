@@ -1,0 +1,8 @@
+Do $cinst.$storeLine()
+
+Do $cinst.$search($ref.[pcColumn]=pcValue,1,0,0,0) Returns $cinst.$line
+Calculate lbValueExists as $cinst.$line<>0
+
+Do $cinst.$recallLine()
+
+Quit method lbValueExists

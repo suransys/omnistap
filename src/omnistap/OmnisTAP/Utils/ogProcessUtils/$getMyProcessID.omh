@@ -1,0 +1,18 @@
+If cnMyProcessID<>0
+	Quit method cnMyProcessID
+End If
+
+If tvMacVersion
+	Do $root.$runapplescript('do shell script "ps -p $$ -o ppid="',lcScriptResult) Returns lnReturn
+	If lnReturn<>0
+		Do uoLog.$error(con("Error ",lnReturn," trying to find my process ID. Result is: ",lcPathToMe))
+		Quit method 0
+	End If
+	
+	Calculate cnMyProcessID as trim(lcScriptResult,kTrue,kTrue,'"')
+Else
+	Register DLL ("KERNEL32.DLL","GetCurrentProcessId","JV") Returns lnErrorCode
+	Call DLL ("KERNEL32.DLL","GetCurrentProcessId") Returns cnMyProcessID
+End If
+
+Quit method cnMyProcessID

@@ -1,0 +1,15 @@
+Do plDataForFile.$cols.$first() Returns lirColumn
+While not(isclear(lirColumn))
+	Calculate lcHeader as con(lcHeader,pick(isclear(lcHeader),","),'"',lirColumn().$name,'"')
+	
+	If lirColumn.$coltype=kCharacter
+		Do plDataForFile.$sendall(plDataForFile.[lirColumn().$name].$assign(con('"',replaceall(plDataForFile.[lirColumn().$name],'"','""'),'"')))
+	End If
+	
+	Do plDataForFile.$cols.$next(lirColumn) Returns lirColumn
+End While
+
+Do loText.$listToCSV(plDataForFile,",",kLf) Returns lcCSVData
+Calculate lcCSVData as con(lcHeader,kLf,lcCSVData)
+
+Do $cinst.$writeDiagnosticsCSVFile(pcFileName,lcCSVData)

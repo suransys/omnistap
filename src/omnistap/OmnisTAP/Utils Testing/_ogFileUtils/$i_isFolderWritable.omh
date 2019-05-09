@@ -1,0 +1,22 @@
+Do loPath.$temp() Returns lcFolder
+
+Do iorMock.$isFolderWriteable('yada') Returns lbOk
+Do ioTAP.$is_boolean(lbOk,kFalse,'False if Folder does not Exist')
+
+Do iorMock.$isFolderWriteable(lcFolder) Returns lbOk
+Do ioTAP.$is_boolean(lbOk,kTrue,'True if Folder can be written to')
+
+If tvMacVersion=kTrue
+	Calculate lcFolder as "/private/tmp/suranfoldertest/"
+	Do iorMock.$createFolder(lcFolder)
+	Do FileOps.$setunixpermissions(lcFolder,'dr--r--r--')
+Else
+	Calculate lcFolder as "C:\Users\Admin\unwritablefolder\"
+End If
+
+Do iorMock.$isFolderWriteable(lcFolder) Returns lbOk
+Do ioTAP.$is_boolean(lbOk,kFalse,'False if Folder Cannot be Written to')
+
+If tvMacVersion=kTrue
+	Do iorMock.$deleteFolder(lcFolder)
+End If

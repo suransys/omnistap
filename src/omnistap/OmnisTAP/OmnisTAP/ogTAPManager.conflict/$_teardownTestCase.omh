@@ -1,0 +1,16 @@
+Calculate icTAP as con("1..",iiTestNumber,$cinst.$_getTAPNewline(),icTAP)
+
+If $cinst.$isRunningFromCLI()=kFalse
+	Calculate icMasterTAP as con(icMasterTAP,pick(isclear(icMasterTAP),$cinst.$_getTAPNewline()),icTAP)
+	Quit method
+End If
+
+#Replace invalid characters in the file name
+Calculate lcDescription as con(pcObjectName,"_",pcMethod)
+Calculate lcDescription as con(replaceall(lcDescription,"/","_"))
+Calculate lcDescription as con(replaceall(lcDescription,":","_"))
+Calculate lcDescription as con(replaceall(lcDescription,"\","_"))
+
+Calculate lcTAPFilePath as con($cinst.$getTAPOutputDirectory(),pathsep(),lcDescription,".tap")
+
+Do loFileUtils.$write(lcTAPFilePath,icTAP)

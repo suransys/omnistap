@@ -1,0 +1,2 @@
+On evResized,evRestored,evMaximized
+	Do $cinst().$setDimensions()

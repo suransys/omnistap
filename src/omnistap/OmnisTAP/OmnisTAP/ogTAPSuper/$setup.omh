@@ -1,0 +1,3 @@
+# $setup is called at the start of each test method
+# This is a good place to setup common mocked objects and keeps references to them in instance variables
+# You might also set messaging or error silent modes here or setup fixture data for integration tests

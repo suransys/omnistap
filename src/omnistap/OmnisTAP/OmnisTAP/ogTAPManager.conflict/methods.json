@@ -1,0 +1,1162 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pcLibraryName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lnTestTimingMultiplier",
+				"order": 1,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "loTAPUtils",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogTAPUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setTAPOutputDirectory",
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pcTAPOutputDirectory",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$timer",
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_defineLists",
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_getTAPNewline",
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Test Run==",
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$run",
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "plTests",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pbRunStartupAndShutdown",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kFalse"
+			},
+			{
+				"name": "pirFinishMethod",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbOK",
+				"order": 10,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$isRunningFromCLI",
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_canContinueTestRun",
+		"order": 9,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirTestWindow",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_finishTestRun",
+		"order": 10,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_getTestDescription",
+		"order": 11,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_getTestTask",
+		"order": 12,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_getTestWindow",
+		"order": 13,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_runNextTest",
+		"order": 14,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbOK",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_runTest",
+		"order": 15,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirTestClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "$libs.lib.$objects.object",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_startTestRun",
+		"order": 16,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Mocking==",
+		"order": 17,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$assertMocks",
+		"order": 18,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$registerMock",
+		"order": 19,
+		"pvardefs": [
+			{
+				"name": "porMock",
+				"order": 2,
+				"type": "kObjectref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Results==",
+		"order": 20,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$addDiagnostic",
+		"order": 21,
+		"pvardefs": [
+			{
+				"name": "pcDiagnostic",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcType",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lorTestDiagnostic",
+				"order": 2,
+				"type": "kObjectref",
+				"subtype": "odTestDiagnostic",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$addTestResult",
+		"order": 22,
+		"pvardefs": [
+			{
+				"name": "pbPass",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pcMessage",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pcTestDescription",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcTAPLine",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lorTestResult",
+				"order": 4,
+				"type": "kObjectref",
+				"subtype": "odTestResult",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_logResultToShell",
+		"order": 23,
+		"pvardefs": [
+			{
+				"name": "pbPass",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcMessage",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loCLI",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "omniscli.oOmnisCLI",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_logTestToShell",
+		"order": 24,
+		"pvardefs": [
+			{
+				"name": "pcMessage",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Startup==",
+		"order": 25,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$_startup",
+		"order": 26,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbOK",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_calculateLongestTestName",
+		"order": 27,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llTests",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_executeLibraryStartup",
+		"order": 28,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbOK",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lbStartupShutdownInstantiated",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_instantiateLibraryStartupShutdownObject",
+		"order": 29,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirStartupShutdownClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirStartupShutdownSuper",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_startupProfiling",
+		"order": 30,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Test Setup==",
+		"order": 31,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$_getOpenWindows",
+		"order": 32,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llOpenWindows",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_setup",
+		"order": 33,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setupObjectReferences",
+		"order": 34,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setupOpenWindows",
+		"order": 35,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setupTestRunLog",
+		"order": 36,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_setupTestCase",
+		"order": 37,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcDescription",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$_setupTimings",
+		"order": 38,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==Test Teardown==",
+		"order": 39,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$_teardown",
+		"order": 40,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_teardownMocks",
+		"order": 41,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lirLibrary",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirMockClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirMockInstance",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lorMockInstanceObjectRef",
+				"order": 4,
+				"type": "kObjectref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_teardownObjectReferences",
+		"order": 42,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llObjectReferencesAfter",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_teardownOpenWindows",
+		"order": 43,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llOpenWindowsAfter",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_teardownTestCase",
+		"order": 44,
+		"pvardefs": [
+			{
+				"name": "pcObjectName",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"initval": "ilTests.ObjectName"
+			},
+			{
+				"name": "pcMethod",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"initval": "ilTests.Method"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcDescription",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcTAPFilePath",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loFileUtils",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_teardownTestRunLog",
+		"order": 45,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_teardownTimings",
+		"order": 46,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnCTAfter",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "==Shutdown==",
+		"order": 47,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$_shutdown",
+		"order": 48,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_executeLibraryShutdown",
+		"order": 49,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_logCoverageToFile",
+		"order": 50,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcCoverageCSV",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "liMethodsExecuted",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "llPerformance",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnCoverage",
+				"order": 2,
+				"type": "kNumber",
+				"subtype": "k2dp",
+				"sublen": 0
+			},
+			{
+				"name": "lnCT",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 7,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			},
+			{
+				"name": "lorTAPManager",
+				"order": 3,
+				"type": "kObjectref",
+				"subtype": "omnistap.ogTAPManager",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_logProfilingToFile",
+		"order": 51,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcProfileData",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lnCT",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 4,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			},
+			{
+				"name": "lorTAPManager",
+				"order": 2,
+				"type": "kObjectref",
+				"subtype": "omnistap.ogTAPManager",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_logTestTypesToFile",
+		"order": 52,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llTestTypes",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnCT",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_logTestTypesToTAP",
+		"order": 53,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_logTimingsToFile",
+		"order": 54,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnCT",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_logTimingsToTAP",
+		"order": 55,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_shutdownProfiling",
+		"order": 56,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnCT",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "loDateTime",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogDateTimeUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "==Logging==",
+		"order": 57,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$_generateFailure",
+		"order": 58,
+		"pvardefs": [
+			{
+				"name": "pcMessage",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_generateNotice",
+		"order": 59,
+		"pvardefs": [
+			{
+				"name": "pcMessage",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcType",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$writeDiagnosticsCSVFile",
+		"order": 60,
+		"pvardefs": [
+			{
+				"name": "pcFileName",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcFileData",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcCSVFilePath",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loFileUtils",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "ogFileUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$writeDiagnosticsCSVFileFromList",
+		"order": 61,
+		"pvardefs": [
+			{
+				"name": "plDataForFile",
+				"order": 3,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pcFileName",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcCSVData",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcHeader",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirColumn",
+				"order": 6,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "loText",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "ogTextUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "==Paths==",
+		"order": 62,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$getDiagnosticsDirectory",
+		"order": 63,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getTAPOutputDirectory",
+		"order": 64,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

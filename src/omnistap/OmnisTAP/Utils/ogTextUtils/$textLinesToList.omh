@@ -1,0 +1,34 @@
+Calculate lcTextToChop as pcText
+Do llList.$cols.$add("Value",kCharacter,kSimplechar,10000000)
+
+While not(isclear(lcTextToChop))
+	Calculate lnCRPos as pos(kCr,lcTextToChop)
+	Calculate lnLFPos as pos(kLf,lcTextToChop)
+	
+	If lnCRPos>0&(lnCRPos<lnLFPos|lnLFPos=0)
+		Calculate lnPos as lnCRPos
+	Else
+		Calculate lnPos as lnLFPos
+	End If
+	
+	If lnPos=0
+		Calculate lnPos as len(lcTextToChop)+1
+	End If
+	
+	Do llList.$add()
+	Calculate llList.$line as llList.$linecount
+	
+	Calculate llList.Value as mid(lcTextToChop,1,lnPos-1)
+	
+	If lnPos=len(lcTextToChop)
+		Do llList.$add()
+	End If
+	
+	Calculate lcTextToChop as mid(lcTextToChop,lnPos+1)
+	
+	If lnPos=lnCRPos
+		Calculate lcTextToChop as trim(lcTextToChop,kTrue,kFalse,kLf)
+	End If
+End While
+
+Quit method llList

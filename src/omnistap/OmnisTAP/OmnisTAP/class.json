@@ -1,0 +1,17 @@
+{
+	"classtype": "kFolder",
+	"omnisversion": "10.0",
+	"internalversion": 9,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2014-10-11 15:00:32",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"moddate": "2018-07-05 16:05:25",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 1
+	}
+}

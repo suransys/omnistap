@@ -1,0 +1,42 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
+	"internalversion": 28,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ibShowProgress",
+			"order": 4,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		},
+		{
+			"name": "ilPerformance",
+			"order": 2,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-03-16 15:05:10",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2019-02-26 14:59:50",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 2
+	}
+}

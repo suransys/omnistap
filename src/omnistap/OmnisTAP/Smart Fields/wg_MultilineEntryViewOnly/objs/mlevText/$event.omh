@@ -1,0 +1,25 @@
+On evBefore      ## Event Parameters - pRow ( Itemreference )
+	Do $menus.mgEdit.$insts.$sendall($ref.$setReadOnly(kTrue))
+	
+	# Do $imenus.mgEdit.$setReadOnly(kTrue)
+	
+On evAfter      ## Event Parameters - pClickedField, pClickedWindow, pMenuLine, pCommandNumber, pRow
+	Do $menus.mgEdit.$insts.$sendall($ref.$setReadOnly(kFalse))
+	
+	# Do $imenus.mgEdit.$setReadOnly(kFalse)
+	
+On evKey
+	If pSystemKey=27
+		Quit event handler
+	End If
+	
+	If not(pick(tvMacVersion,#CTRL,#COMMAND))
+		Quit event handler (Discard event)
+	End If
+	
+	If pKey<>"c"&pKey<>"a"
+		Quit event handler (Discard event)
+	End If
+	
+On evOpenContextMenu
+	Do pContextMenu.$setReadOnly(kTrue)

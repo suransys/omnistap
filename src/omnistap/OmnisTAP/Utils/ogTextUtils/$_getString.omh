@@ -1,0 +1,11 @@
+If pos('StringTable.$gettext',pcString)=0
+	Calculate lcReturnString as StringTable.$gettext(pcString)
+	
+	If lcReturnString="-14"|lcReturnString="-22"
+		Calculate lcReturnString as pcString
+	End If
+Else
+	Calculate lcReturnString as pcString
+End If
+
+Quit method lcReturnString

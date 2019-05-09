@@ -1,0 +1,31 @@
+# Send my log output to stdout
+If not(uoLog.$validref())
+	Do $objects.ogLogUtils.$newref() Returns uoLog
+End If
+
+Do uoLog.$setDestination("Stdout")
+
+# Verify we have a TAP output file
+Do $cinst.$getCLIArgument(2) Returns _icPathToTAPOutput
+If isclear(_icPathToTAPOutput)
+	Do uoLog.$error("No TAP output folder provided")
+	Quit method 1
+End If
+
+# Setup testing environment
+Calculate $ctask.tbTestMode as kTrue
+Set reference lirLibrary to $ctask.$lib
+Do uoLog.$notice(con("Starting OmnisTAP run on ",lirLibrary().$name," to ",_icPathToTAPOutput))
+
+# Run tests
+Calculate _inTestRunStartup as #CT
+
+Do $libs.omnistap.$objects.ogTAPManager.$newref(lirLibrary().$name) Returns _iorTestManager
+Do _iorTestManager.$setTAPOutputDirectory(_icPathToTAPOutput)
+
+Do $cinst.$getCLIArgument(3) Returns lcTestsToRunExpression
+Do $cinst.$_getTests(lcTestsToRunExpression) Returns llTests
+Do _iorTestManager.$run(llTests,kTrue,$cinst().$finishTestRunCLI.$ref)
+
+# Keep Omnis open for now. We'll exit Omnis in $finishTestRunCLI
+Quit method $cinst.$kOmnisCLIKeepOmnisOpen()

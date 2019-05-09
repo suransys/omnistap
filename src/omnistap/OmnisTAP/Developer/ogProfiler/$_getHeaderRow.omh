@@ -1,0 +1,11 @@
+Do ilPerformance.$cols.$first() Returns lirColumn
+
+While not(isnull(lirColumn()))
+	Calculate lcColumnName as con("Column",lirColumn().$ident)
+	Do lrHeader.$cols.$add(lcColumnName,kCharacter,kSimplechar,10000000000)
+	Calculate lrHeader.[lcColumnName] as lirColumn().$name
+	
+	Do ilPerformance.$cols.$next(lirColumn) Returns lirColumn
+End While
+
+Quit method lrHeader

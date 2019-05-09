@@ -1,0 +1,24 @@
+Calculate lcResultsID as con(pcID,"_results")
+Calculate lcSummaryID as con(pcID,"_summary")
+Calculate lcSummaryOutcome as con(iiTestsPassed,"/",iiTestsRun)
+
+Do $cinst.$_getHTMLForSummary(pcSummaryDescription,lcSummaryOutcome,lcSummaryID,lcResultsID,pcClass) Returns lcHTMLForSummary
+Do $cinst.$_getHTMLForTAPResults() Returns lcHTMLForTAPResults
+
+Begin text block
+Text:<div id="[pcID]" class="[pcClass] wrapper [$cinst.$_getHTMLClassForSuccess($cinst.$didPass())]">
+Text:[lcHTMLForSummary]
+Text:<div class="results" id="[lcResultsID]">
+Text:[lcHTMLForTAPResults]
+If not(isclear(pcFooter))
+	Text:<div id="[pcID]_footer" class="[$cinst.$_getHTMLClassForFooter()]">
+	Text:[$cinst.$_cleanHTML(pcFooter)]
+	Text:</div>
+End If
+Text:</div>
+Text:</div>
+End text block
+
+Get text block lcHTML
+
+Quit method lcHTML

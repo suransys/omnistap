@@ -1,0 +1,24 @@
+Calculate lcOmnisEscape as style(kEscBmp,1702)
+Do iorMock.$decodeOmnisTextEscape(lcOmnisEscape,lnConstant,lnValue)
+Do ioTAP.$is_number(lnConstant,kEscBmp,"This is a BMP escape")
+Do ioTAP.$is_number(lnValue,1702,"Icon ID is 1702")
+
+Calculate lcOmnisEscape as style(kEscBmp,1702+k48x48)
+Do iorMock.$decodeOmnisTextEscape(lcOmnisEscape,lnConstant,lnValue)
+Do ioTAP.$is_number(lnConstant,kEscBmp,"This is a BMP escape")
+Do ioTAP.$is_number(lnValue,1702+k48x48,"Icon ID is 48x48 1702")
+
+Calculate lcOmnisEscape as style(kEscColor,kRed)
+Do iorMock.$decodeOmnisTextEscape(lcOmnisEscape,lnConstant,lnValue)
+Do ioTAP.$is_number(lnConstant,kEscColor,"This is a color escape")
+Do ioTAP.$is_number(lnValue,kRed,"The color is red")
+
+Calculate lcOmnisEscape as style(kEscStyle,kBold+kItalic)
+Do iorMock.$decodeOmnisTextEscape(lcOmnisEscape,lnConstant,lnValue)
+Do ioTAP.$is_number(lnConstant,kEscStyle,"This is a style escape")
+Do ioTAP.$is_number(lnValue,kBold+kItalic,"The style is bold italic")
+
+Calculate lcOmnisEscape as style(kEscLTab,19)
+Do iorMock.$decodeOmnisTextEscape(lcOmnisEscape,lnConstant,lnValue)
+Do ioTAP.$is_number(lnConstant,kEscLTab,"This is a left tab escape")
+Do ioTAP.$is_number(lnValue,19,"The tab stop is 19")

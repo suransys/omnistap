@@ -1,0 +1,3 @@
+Do ilLevels.$search($ref.Level=pcLevel,1,0,0,0) Returns ilLevels.$line
+
+Quit method ilLevels.ShellColor

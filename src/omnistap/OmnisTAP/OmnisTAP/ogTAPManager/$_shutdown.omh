@@ -1,0 +1,15 @@
+Do $cinst.$_executeLibraryShutdown()
+
+If $cinst.$isRunningFromCLI()
+	Do $cinst.$_shutdownProfiling()
+	
+	Do $cinst.$_logTestTypesToFile()
+	Do $cinst.$_logTimingsToFile()
+	Do $cinst.$_logProfilingToFile()
+	Do $cinst.$_logCoverageToFile()
+Else
+	Do $cinst.$_logTimingsToTAP()
+	Do $cinst.$_logTestTypesToTAP()
+End If
+
+Do $itasks.$findname("omnistap").$setTestRunning(kFalse)

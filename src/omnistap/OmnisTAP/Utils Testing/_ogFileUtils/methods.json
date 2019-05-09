@@ -1,0 +1,307 @@
+[
+	{
+		"name": "$setup",
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$u_read",
+		"order": 2,
+		"desc": "Tests reading a file",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcContents",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPath",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$u_splitDriveFromPath",
+		"order": 3,
+		"desc": "Tests splitting the drive from a path",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcDrive",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPath",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirF",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lorFileUtils",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "ogFileUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_splitPathNameWin",
+		"order": 4,
+		"desc": "Tests split path name",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$i_getTempFile",
+		"order": 5,
+		"desc": "Tests getting a temporary file",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcExpectedPath",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcParentDir",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPath",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loFile",
+				"order": 4,
+				"type": "kObject",
+				"subtype": ".FileOps.FileOps",
+				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$i_isFolderWritable",
+		"order": 6,
+		"desc": "test $isFolderWritable.",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbOk",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lcFolder",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loPath",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$i_splitPathNameMac",
+		"order": 7,
+		"desc": "Tests split path name",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcStartupDisk",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$i_write",
+		"order": 8,
+		"desc": "test uoFile.$write()",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbOK",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lcContents",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcTemp",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "loFile",
+				"order": 4,
+				"type": "kObject",
+				"subtype": ".FileOps.FileOps",
+				"sublen": 0
+			},
+			{
+				"name": "loPath",
+				"order": 5,
+				"type": "kObject",
+				"subtype": "ogPathUtils",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_testSplitPathName",
+		"order": 9,
+		"pvardefs": [
+			{
+				"name": "pcTestPath",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcExpectedDrive",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pcExpectedPath",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3
+			},
+			{
+				"name": "pcExpectedFilename",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 4
+			},
+			{
+				"name": "pcExpectedExtension",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 5
+			},
+			{
+				"name": "pcMessage",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 6
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcDrive",
+				"order": 7,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcExtension",
+				"order": 10,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcFilename",
+				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPath",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

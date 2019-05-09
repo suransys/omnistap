@@ -1,0 +1,84 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$redraw",
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setRunEnabled",
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pbEnabled",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setOutputStatus",
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pnPassed",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "kShortint",
+				"sublen": 0,
+				"param": 1,
+				"desc": "0=Fail, 1=Pass, 2=In Progress"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setLibraries",
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "plLibraries",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

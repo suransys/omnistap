@@ -1,0 +1,15 @@
+Calculate lnMax as pick(_ilList.$line>inLastLine,inLastLine,_ilList.$line)
+Calculate lnMin as pick(inLastLine>_ilList.$line,inLastLine,_ilList.$line)
+Calculate lnLine as lnMin
+
+While lnLine<=lnMax&lbHasUnSelected=kFalse
+	Calculate lbHasUnSelected as _ilList.[lnLine].$selected=kFalse
+	Calculate lnLine as lnLine+1
+End While
+
+Calculate lnLine as lnMin
+
+While lnLine<=lnMax
+	Calculate _ilList.[lnLine].$selected as lbHasUnSelected
+	Calculate lnLine as lnLine+1
+End While

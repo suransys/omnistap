@@ -1,0 +1,4 @@
+Do $cinst.$_generateNotice("Test Types","Meta Header")
+
+Do $cinst.$_generateNotice(con(iiUnitTests," unit test",pick(iiUnitTests=1,"s","")),"Meta Data")
+Do $cinst.$_generateNotice(con(iiIntegrationTests," integration test",pick(iiIntegrationTests=1,"s","")),"Meta Data")

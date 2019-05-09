@@ -1,0 +1,91 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
+	"internalversion": 693,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+		{
+			"name": "lcReturnColumnName",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"ivardefs": [
+		{
+			"name": "ibExpectedSpecificCall",
+			"order": 5,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		},
+		{
+			"name": "icMockInstanceName",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iiParameter",
+			"order": 7,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0,
+			"initval": "0"
+		},
+		{
+			"name": "iirMockClass",
+			"order": 1,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iirMockInstance",
+			"order": 4,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilMockMethods",
+			"order": 2,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iorTAPManager",
+			"order": 3,
+			"type": "kObjectref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ioTAP",
+			"order": 6,
+			"type": "kObject",
+			"subtype": "ogTAPMethods",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2015-11-30 15:50:58",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2019-05-08 22:35:33",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 52
+	}
+}

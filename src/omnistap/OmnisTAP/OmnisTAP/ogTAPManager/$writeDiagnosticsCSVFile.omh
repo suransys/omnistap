@@ -1,0 +1,2 @@
+Calculate lcCSVFilePath as con($cinst.$getDiagnosticsDirectory(),pathsep(),pcFileName,".csv")
+Do loFileUtils.$write(lcCSVFilePath,pcFileData)

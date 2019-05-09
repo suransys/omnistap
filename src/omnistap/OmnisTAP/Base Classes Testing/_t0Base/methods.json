@@ -1,0 +1,169 @@
+[
+	{
+		"name": "$u_buildDefaultColumns",
+		"order": 1,
+		"desc": "Tests building a list of the default columns on a table class instance that will existing in the database",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcColumns",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lrTest",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "tgHash",
+				"sublen": 0
+			},
+			{
+				"name": "lrTestCopyDef",
+				"order": 3,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_getColumnAsCSV",
+		"order": 2,
+		"desc": "Tests getting the values of a column on a list as a csv",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcPrimaryKeys",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "llList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgHash",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_getPrimaryKeys",
+		"order": 3,
+		"desc": "Tests getting the primary keys on a list in a csv format",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcPrimaryKeys",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "llList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgHash",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_getSelectedLines",
+		"order": 4,
+		"desc": "Tests getting a comma-separated string of selected lines on a list",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcSelectedLines",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "llList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_hasPrimaryKey",
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "tgHash",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_setRecallColumn",
+		"order": 7,
+		"desc": "Tests the ability of table classes to recall lines based on the value in a column",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "t0Base",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$u_setSelectedLines",
+		"order": 8,
+		"desc": "Tests setting selected lines in a list from a comma-separated list",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lcSelectedLines",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "llExpectedList",
+				"order": 3,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	}
+]

@@ -1,0 +1,11 @@
+If FileOps.$doesfileexist(pcPath)=kFalse
+	Quit method kTrue
+End If
+
+Do FileOps.$deletefile(pcPath) Returns lnStatus
+
+If lnStatus<0
+	Quit method kFalse
+End If
+
+Quit method kTrue

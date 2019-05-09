@@ -1,0 +1,21 @@
+{
+	"classtype": "kSchema",
+	"omnisversion": "10.0",
+	"internalversion": 11,
+	"nextident": 32007,
+	"properties": {
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2014-12-17 16:52:48",
+		"createinstancewhensubtype": true,
+		"desc": "gs:",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"moddate": "2018-07-05 16:05:25",
+		"servertablename": "fgHash",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 1
+	}
+}

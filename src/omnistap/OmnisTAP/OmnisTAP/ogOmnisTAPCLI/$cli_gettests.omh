@@ -1,0 +1,16 @@
+# Get tests
+Do $cinst.$getCLIArgument(2) Returns lcTestsToRunExpression
+Do $cinst.$_getTests(lcTestsToRunExpression) Returns llTests
+
+# Write tests to stdout
+For llTests.$line from 1 to llTests.$linecount step 1
+	If not(isclear(lcTests))
+		Calculate lcTests as con(lcTests,$cinst.$getLineEnding())
+	End If
+	
+	Calculate lcTests as con(lcTests,llTests.Test)
+End For
+
+Do $cinst.$writeStdout(lcTests)
+
+Quit method 0

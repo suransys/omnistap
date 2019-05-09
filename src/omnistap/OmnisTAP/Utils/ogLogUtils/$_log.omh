@@ -1,0 +1,22 @@
+Do ilLog.$add()
+Calculate ilLog.$line as ilLog.$linecount
+
+Calculate ilLog.ID as inID
+
+Calculate lcFDT as #FDT
+Calculate #FDT as "y-M-D H:N:S"
+Calculate ilLog.TimeStamp as #D
+Calculate #FDT as lcFDT
+
+Calculate ilLog.Level as pcLevel
+Calculate ilLog.Message as pcMessage
+Do $cinst.$_getMethodRef() Returns ilLog.Method
+Do $cinst.$_getMethodLine() Returns ilLog.MethodLine
+Do $cinst.$_getMethod() Returns ilLog.Location
+Do $cinst.$_getColor(pcLevel) Returns ilLog.Color
+Do $cinst.$_getShellColor(pcLevel) Returns ilLog.ShellColor
+Do $cinst.$_getIconID(pcLevel) Returns ilLog.IconID
+
+Calculate inID as inID+1
+
+Do $cinst.$_writeToFile()

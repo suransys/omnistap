@@ -1,0 +1,5 @@
+If $cinst.$isRunningFromCLI()
+	Quit method kLf
+End If
+
+Quit method kCr

@@ -1,0 +1,9 @@
+Do $libs.$first() Returns lirLib
+
+While not(isnull(lirLib()))
+	Calculate lnCount as lnCount+lirLib.$classes.$count()
+	
+	Do $libs.$next(lirLib()) Returns lirLib
+End While
+
+Quit method lnCount

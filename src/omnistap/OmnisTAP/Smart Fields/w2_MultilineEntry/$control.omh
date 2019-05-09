@@ -1,0 +1,12 @@
+
+Do inherited
+
+On evKey
+	Process event and continue
+	
+	Calculate [$cobj.$dataname] as $cobj.$contents
+	
+	Do $cinst.$_setVertscroll()
+	
+On evAfter
+	Do $cinst.$setExternalValue()

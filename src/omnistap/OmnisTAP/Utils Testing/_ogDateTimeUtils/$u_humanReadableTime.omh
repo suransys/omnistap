@@ -1,0 +1,38 @@
+Do iorMock.$humanReadableTime(60*.47) Returns lcTime
+Do ioTAP.$is_char(lcTime,"0 seconds")
+
+Do iorMock.$humanReadableTime(60) Returns lcTime
+Do ioTAP.$is_char(lcTime,"1 second")
+
+Do iorMock.$humanReadableTime(60*3.382) Returns lcTime
+Do ioTAP.$is_char(lcTime,"3 seconds")
+
+Do iorMock.$humanReadableTime(60*59.903) Returns lcTime
+Do ioTAP.$is_char(lcTime,"59 seconds")
+
+Do iorMock.$humanReadableTime(3600) Returns lcTime
+Do ioTAP.$is_char(lcTime,"1 minute")
+
+Do iorMock.$humanReadableTime((60*18.6)+(3600*1)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"1 minute, 18 seconds")
+
+Do iorMock.$humanReadableTime((60*54.3)+(3600*39)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"39 minutes, 54 seconds")
+
+Do iorMock.$humanReadableTime((60*54.3)+(3600*39)+(216000*1)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"1 hour, 39 minutes, 54 seconds")
+
+Do iorMock.$humanReadableTime((60*54.3)+(3600*39)+(216000*18)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"18 hours, 39 minutes, 54 seconds")
+
+Do iorMock.$humanReadableTime(5184000) Returns lcTime
+Do ioTAP.$is_char(lcTime,"1 day")
+
+Do iorMock.$humanReadableTime((60*54.3)+(3600*39)+(216000*18)+(5184000*6)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"6 days, 18 hours, 39 minutes, 54 seconds")
+
+Do iorMock.$humanReadableTime((60*54.3)+(3600*39)+(216000*18)+(5184000*8)+(36288000*40)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"41 weeks, 1 day, 18 hours, 39 minutes, 54 seconds")
+
+Do iorMock.$humanReadableTime((60*54.3)+(3600*39)+(216000*18)+(5184000*6)+(36288000*40)+(1886976000*87)) Returns lcTime
+Do ioTAP.$is_char(lcTime,"87 years, 40 weeks, 6 days, 18 hours, 39 minutes, 54 seconds")

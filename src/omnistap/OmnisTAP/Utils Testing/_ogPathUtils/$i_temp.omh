@@ -1,0 +1,32 @@
+Do iirMock.$temp() Returns lcFolder
+Do ioTAP.$fileexists(lcFolder)
+
+If tvMacVersion=kTrue
+	Calculate lcParentDir as FileOps.$parentdir(trim(lcFolder,kFalse,kTrue,sys(9)))
+	Do ioTAP.$is_char(FileOps.$getunixpermissions(lcParentDir),'drwxrwxrwx','parents of temp folders created should be 777')
+End If
+
+Do ioTAP.$ispositive(pos('suran',lcFolder),"should have 'suran' in the returned folder name")
+
+Do ioTAP.$ispositive(pos($clib().$name,lcFolder),con("should have the current library name in the returned folder name"))
+
+Do ioTAP.$is_char(right(lcFolder,1),sys(9),'last character should be a sys(9)')
+
+If tvMacVersion
+	Do ioTAP.$is_char(right(lcFolder,len(loProcess.$getMyProcessID())+1),con(loProcess.$getMyProcessID(),sys(9)),"last chars before last sys(9) should be process ID on macOS")
+Else
+	Do ioTAP.$isnumber(left(right(lcFolder,11),10),'last 10 chars before last sys(9) should be number - tick count')
+End If
+
+Do iirMock.$temp() Returns lcFolder2
+
+Do ioTAP.$is_char(lcFolder,lcFolder2,'$temp() should return the same thing every time for the same instance of ogPathUtils')
+
+If tvMacVersion=kTrue
+	Calculate lcParentDir as FileOps.$parentdir(trim(lcFolder,kFalse,kTrue,sys(9)))
+	Do ioTAP.$is_char(FileOps.$getunixpermissions(lcParentDir),'drwxrwxrwx','parents of temp folders created should be 777')
+End If
+
+Do iirMock.$cleanupTemp()
+
+Do ioTAP.$filedoesntexist(lcFolder)

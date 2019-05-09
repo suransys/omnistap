@@ -1,0 +1,140 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lbCLIRun",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lorCLI",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "omniscli.oOmnisCLI",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$instantiateTestClass",
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pirTestClass",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$runTAPTests",
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pProcessList",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pbRunStartupAndShutdown",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pcLibname",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3
+			},
+			{
+				"name": "pirFinishMethod",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 4
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$useSeparateTestLibrary",
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "==CLI==",
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$getCLI",
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$processCLI",
+		"order": 7,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lorCLI",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "omniscli.oOmnisCLI",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$_getCLIObjectClass",
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

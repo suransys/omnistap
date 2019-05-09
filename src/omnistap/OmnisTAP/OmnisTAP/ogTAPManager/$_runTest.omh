@@ -1,0 +1,10 @@
+Do $libs.$findname(icLibraryName).$objects.$findname(ilTests.ObjectName) Returns lirTestClass
+Do iirTaskForTesting.$instantiateTestClass(lirTestClass) Returns iorTest
+Do iorTest.$setManager($cinst.$objref)
+Do iorTest.$setCurrentTest(ilTests.Method)
+
+Do $cinst.$_setup()
+
+Do iorTest.[ilTests.Method]
+
+Do $cinst.$_teardown()

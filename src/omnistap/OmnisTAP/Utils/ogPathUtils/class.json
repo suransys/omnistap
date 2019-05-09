@@ -1,0 +1,34 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
+	"internalversion": 54,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+		{
+			"name": "ccTempFolder",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2011-03-30 11:52:55",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2019-02-08 23:52:06",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 4
+	}
+}

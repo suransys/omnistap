@@ -1,0 +1,20 @@
+Do $cinst.$methods.$findname("$expect") Returns lirExpectMethod
+
+#Clear existing parameters
+Do lirExpectMethod.$lvardefs.$first() Returns lirExpectParameter
+While not(isnull(lirExpectParameter))
+	If lirExpectParameter.$parmno>0
+		Do lirExpectMethod.$lvardefs.$remove(lirExpectParameter)
+	End If
+	
+	Do lirExpectMethod.$lvardefs.$next(lirExpectParameter) Returns lirExpectParameter
+End While
+
+#Add parameters
+For ilMockMethods.Parameters.$line from 1 to ilMockMethods.Parameters.$linecount step 1
+	If ilMockMethods.Parameters.ObjType=kObjectref|ilMockMethods.Parameters.ObjType=kList|ilMockMethods.Parameters.ObjType=kRow
+		Do lirExpectMethod.$lvardefs.$add(ilMockMethods.Parameters.Name,ilMockMethods.Parameters.ObjType,#NULL,#NULL,kTrue) Returns lirExpectParameter
+	Else
+		Do lirExpectMethod.$lvardefs.$add(ilMockMethods.Parameters.Name,ilMockMethods.Parameters.ObjType,ilMockMethods.Parameters.ObjSubType,ilMockMethods.Parameters.ObjSubLen,kTrue) Returns lirExpectParameter
+	End If
+End For

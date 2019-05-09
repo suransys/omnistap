@@ -1,0 +1,49 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
+	"internalversion": 154,
+	"superclass": "omniscli.oOmnisCLI",
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "_icPathToTAPOutput",
+			"order": 4,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "_inTestRunStartup",
+			"order": 3,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "_iorTestManager",
+			"order": 1,
+			"type": "kObjectref",
+			"subtype": "omnistap.ogTAPManager",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2017-03-18 11:38:31",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2019-02-08 23:52:06",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": 18
+	}
+}
