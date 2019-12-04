@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$getWidthForText",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -78,7 +77,6 @@
 	},
 	{
 		"name": "$_sizeEscapedText",
-		"ident": 2,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -140,7 +138,6 @@
 	},
 	{
 		"name": "$_winTextWidth",
-		"ident": 1,
 		"order": 3,
 		"pvardefs": [
 			{

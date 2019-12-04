@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$setCSS",
-		"ident": 7,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -19,7 +18,6 @@
 	},
 	{
 		"name": "$setInternalValue",
-		"ident": 0,
 		"order": 4,
 		"pvardefs": [
 
@@ -36,7 +34,6 @@
 	},
 	{
 		"name": "$setJavaScript",
-		"ident": 6,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -54,7 +51,6 @@
 	},
 	{
 		"name": "$setTitle",
-		"ident": 5,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -72,7 +68,6 @@
 	},
 	{
 		"name": "$_getStyleElement",
-		"ident": 3,
 		"order": 7,
 		"pvardefs": [
 
@@ -89,7 +84,6 @@
 	},
 	{
 		"name": "$_getScriptElement",
-		"ident": 4,
 		"order": 8,
 		"pvardefs": [
 

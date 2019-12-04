@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -32,7 +31,6 @@
 	},
 	{
 		"name": "$setTAPOutputDirectory",
-		"ident": 68,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -50,7 +48,6 @@
 	},
 	{
 		"name": "$timer",
-		"ident": 55,
 		"order": 3,
 		"pvardefs": [
 
@@ -61,7 +58,6 @@
 	},
 	{
 		"name": "$_defineLists",
-		"ident": 80,
 		"order": 4,
 		"pvardefs": [
 
@@ -72,7 +68,6 @@
 	},
 	{
 		"name": "$_getTAPNewline",
-		"ident": 65,
 		"order": 5,
 		"pvardefs": [
 
@@ -83,7 +78,6 @@
 	},
 	{
 		"name": "==Test Run==",
-		"ident": 20,
 		"order": 6,
 		"pvardefs": [
 
@@ -95,7 +89,6 @@
 	},
 	{
 		"name": "$run",
-		"ident": 1,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -136,7 +129,6 @@
 	},
 	{
 		"name": "$isRunningFromCLI",
-		"ident": 17,
 		"order": 8,
 		"pvardefs": [
 
@@ -147,7 +139,6 @@
 	},
 	{
 		"name": "$_canContinueTestRun",
-		"ident": 67,
 		"order": 9,
 		"pvardefs": [
 
@@ -164,7 +155,6 @@
 	},
 	{
 		"name": "$_finishTestRun",
-		"ident": 54,
 		"order": 10,
 		"pvardefs": [
 
@@ -175,7 +165,6 @@
 	},
 	{
 		"name": "$_getTestDescription",
-		"ident": 22,
 		"order": 11,
 		"pvardefs": [
 
@@ -186,7 +175,6 @@
 	},
 	{
 		"name": "$_getTestTask",
-		"ident": 33,
 		"order": 12,
 		"pvardefs": [
 
@@ -197,7 +185,6 @@
 	},
 	{
 		"name": "$_getTestWindow",
-		"ident": 52,
 		"order": 13,
 		"pvardefs": [
 
@@ -208,7 +195,6 @@
 	},
 	{
 		"name": "$_runNextTest",
-		"ident": 53,
 		"order": 14,
 		"pvardefs": [
 
@@ -225,7 +211,6 @@
 	},
 	{
 		"name": "$_runTest",
-		"ident": 24,
 		"order": 15,
 		"pvardefs": [
 
@@ -242,7 +227,6 @@
 	},
 	{
 		"name": "$_startTestRun",
-		"ident": 58,
 		"order": 16,
 		"pvardefs": [
 
@@ -253,7 +237,6 @@
 	},
 	{
 		"name": "==Mocking==",
-		"ident": 79,
 		"order": 17,
 		"pvardefs": [
 
@@ -265,7 +248,6 @@
 	},
 	{
 		"name": "$assertMocks",
-		"ident": 83,
 		"order": 18,
 		"pvardefs": [
 
@@ -276,7 +258,6 @@
 	},
 	{
 		"name": "$registerMock",
-		"ident": 81,
 		"order": 19,
 		"pvardefs": [
 			{
@@ -294,7 +275,6 @@
 	},
 	{
 		"name": "==Results==",
-		"ident": 59,
 		"order": 20,
 		"pvardefs": [
 
@@ -306,7 +286,6 @@
 	},
 	{
 		"name": "$addDiagnostic",
-		"ident": 61,
 		"order": 21,
 		"pvardefs": [
 			{
@@ -338,7 +317,6 @@
 	},
 	{
 		"name": "$addTestResult",
-		"ident": 60,
 		"order": 22,
 		"pvardefs": [
 			{
@@ -385,7 +363,6 @@
 	},
 	{
 		"name": "$_logResultToShell",
-		"ident": 74,
 		"order": 23,
 		"pvardefs": [
 			{
@@ -416,7 +393,6 @@
 	},
 	{
 		"name": "$_logTestToShell",
-		"ident": 75,
 		"order": 24,
 		"pvardefs": [
 			{
@@ -434,7 +410,6 @@
 	},
 	{
 		"name": "==Startup==",
-		"ident": 47,
 		"order": 25,
 		"pvardefs": [
 
@@ -446,7 +421,6 @@
 	},
 	{
 		"name": "$_startup",
-		"ident": 48,
 		"order": 26,
 		"pvardefs": [
 
@@ -463,7 +437,6 @@
 	},
 	{
 		"name": "$_calculateLongestTestName",
-		"ident": 69,
 		"order": 27,
 		"pvardefs": [
 
@@ -480,7 +453,6 @@
 	},
 	{
 		"name": "$_executeLibraryStartup",
-		"ident": 49,
 		"order": 28,
 		"pvardefs": [
 
@@ -504,7 +476,6 @@
 	},
 	{
 		"name": "$_instantiateLibraryStartupShutdownObject",
-		"ident": 3,
 		"order": 29,
 		"pvardefs": [
 
@@ -528,7 +499,6 @@
 	},
 	{
 		"name": "$_startupProfiling",
-		"ident": 13,
 		"order": 30,
 		"pvardefs": [
 
@@ -539,7 +509,6 @@
 	},
 	{
 		"name": "==Test Setup==",
-		"ident": 11,
 		"order": 31,
 		"pvardefs": [
 
@@ -551,7 +520,6 @@
 	},
 	{
 		"name": "$_getOpenWindows",
-		"ident": 78,
 		"order": 32,
 		"pvardefs": [
 
@@ -568,7 +536,6 @@
 	},
 	{
 		"name": "$_setup",
-		"ident": 23,
 		"order": 33,
 		"pvardefs": [
 
@@ -579,7 +546,6 @@
 	},
 	{
 		"name": "$_setupObjectReferences",
-		"ident": 4,
 		"order": 34,
 		"pvardefs": [
 
@@ -590,7 +556,6 @@
 	},
 	{
 		"name": "$_setupOpenWindows",
-		"ident": 10,
 		"order": 35,
 		"pvardefs": [
 
@@ -601,7 +566,6 @@
 	},
 	{
 		"name": "$_setupTestRunLog",
-		"ident": 19,
 		"order": 36,
 		"pvardefs": [
 
@@ -612,7 +576,6 @@
 	},
 	{
 		"name": "$_setupTestCase",
-		"ident": 26,
 		"order": 37,
 		"pvardefs": [
 
@@ -629,7 +592,6 @@
 	},
 	{
 		"name": "$_setupTimings",
-		"ident": 27,
 		"order": 38,
 		"pvardefs": [
 
@@ -640,7 +602,6 @@
 	},
 	{
 		"name": "==Test Teardown==",
-		"ident": 18,
 		"order": 39,
 		"pvardefs": [
 
@@ -652,7 +613,6 @@
 	},
 	{
 		"name": "$_teardown",
-		"ident": 25,
 		"order": 40,
 		"pvardefs": [
 
@@ -663,7 +623,6 @@
 	},
 	{
 		"name": "$_teardownMocks",
-		"ident": 82,
 		"order": 41,
 		"pvardefs": [
 
@@ -701,7 +660,6 @@
 	},
 	{
 		"name": "$_teardownObjectReferences",
-		"ident": 6,
 		"order": 42,
 		"pvardefs": [
 
@@ -718,7 +676,6 @@
 	},
 	{
 		"name": "$_teardownOpenWindows",
-		"ident": 28,
 		"order": 43,
 		"pvardefs": [
 
@@ -735,7 +692,6 @@
 	},
 	{
 		"name": "$_teardownTestCase",
-		"ident": 66,
 		"order": 44,
 		"pvardefs": [
 			{
@@ -783,7 +739,6 @@
 	},
 	{
 		"name": "$_teardownTestRunLog",
-		"ident": 42,
 		"order": 45,
 		"pvardefs": [
 
@@ -794,7 +749,6 @@
 	},
 	{
 		"name": "$_teardownTimings",
-		"ident": 44,
 		"order": 46,
 		"pvardefs": [
 
@@ -811,7 +765,6 @@
 	},
 	{
 		"name": "==Shutdown==",
-		"ident": 37,
 		"order": 47,
 		"pvardefs": [
 
@@ -823,7 +776,6 @@
 	},
 	{
 		"name": "$_shutdown",
-		"ident": 45,
 		"order": 48,
 		"pvardefs": [
 
@@ -834,7 +786,6 @@
 	},
 	{
 		"name": "$_executeLibraryShutdown",
-		"ident": 2,
 		"order": 49,
 		"pvardefs": [
 
@@ -845,7 +796,6 @@
 	},
 	{
 		"name": "$_logCoverageToFile",
-		"ident": 15,
 		"order": 50,
 		"pvardefs": [
 
@@ -904,7 +854,6 @@
 	},
 	{
 		"name": "$_logProfilingToFile",
-		"ident": 16,
 		"order": 51,
 		"pvardefs": [
 
@@ -942,7 +891,6 @@
 	},
 	{
 		"name": "$_logTestTypesToFile",
-		"ident": 71,
 		"order": 52,
 		"pvardefs": [
 
@@ -973,7 +921,6 @@
 	},
 	{
 		"name": "$_logTestTypesToTAP",
-		"ident": 35,
 		"order": 53,
 		"pvardefs": [
 
@@ -984,7 +931,6 @@
 	},
 	{
 		"name": "$_logTimingsToFile",
-		"ident": 72,
 		"order": 54,
 		"pvardefs": [
 
@@ -1008,7 +954,6 @@
 	},
 	{
 		"name": "$_logTimingsToTAP",
-		"ident": 36,
 		"order": 55,
 		"pvardefs": [
 
@@ -1019,7 +964,6 @@
 	},
 	{
 		"name": "$_shutdownProfiling",
-		"ident": 14,
 		"order": 56,
 		"pvardefs": [
 
@@ -1043,7 +987,6 @@
 	},
 	{
 		"name": "==Logging==",
-		"ident": 5,
 		"order": 57,
 		"pvardefs": [
 
@@ -1055,7 +998,6 @@
 	},
 	{
 		"name": "$_generateFailure",
-		"ident": 21,
 		"order": 58,
 		"pvardefs": [
 			{
@@ -1073,7 +1015,6 @@
 	},
 	{
 		"name": "$_generateNotice",
-		"ident": 50,
 		"order": 59,
 		"pvardefs": [
 			{
@@ -1099,7 +1040,6 @@
 	},
 	{
 		"name": "$writeDiagnosticsCSVFile",
-		"ident": 12,
 		"order": 60,
 		"pvardefs": [
 			{
@@ -1138,7 +1078,6 @@
 	},
 	{
 		"name": "$writeDiagnosticsCSVFileFromList",
-		"ident": 73,
 		"order": 61,
 		"pvardefs": [
 			{
@@ -1191,7 +1130,6 @@
 	},
 	{
 		"name": "==Paths==",
-		"ident": 9,
 		"order": 62,
 		"pvardefs": [
 
@@ -1203,7 +1141,6 @@
 	},
 	{
 		"name": "$getDiagnosticsDirectory",
-		"ident": 8,
 		"order": 63,
 		"pvardefs": [
 
@@ -1214,7 +1151,6 @@
 	},
 	{
 		"name": "$getTAPOutputDirectory",
-		"ident": 7,
 		"order": 64,
 		"pvardefs": [
 

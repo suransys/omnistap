@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$setup",
-		"ident": 12,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$i_run_Mac",
-		"ident": 0,
 		"order": 3,
 		"desc": "Tests running shell scripts on the Mac",
 		"pvardefs": [
@@ -73,7 +71,6 @@
 	},
 	{
 		"name": "$i_run_Windows",
-		"ident": 9,
 		"order": 4,
 		"desc": "Tests running shell scripts on Windows that require administrative privileges",
 		"pvardefs": [
@@ -148,7 +145,6 @@
 	},
 	{
 		"name": "$_getDelayScript",
-		"ident": 1,
 		"order": 6,
 		"pvardefs": [
 			{

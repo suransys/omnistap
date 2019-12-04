@@ -1,6 +1,7 @@
 {
 	"classtype": "kMenu",
-	"internalversion": 54,
+	"omnisversion": "10.0",
+	"internalversion": 50,
 	"designtaskname": "Startup_Task",
 	"nextident": 1017,
 	"cvardefs": [

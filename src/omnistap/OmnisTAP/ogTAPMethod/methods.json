@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -19,7 +18,6 @@
 	},
 	{
 		"name": "$destruct",
-		"ident": 4,
 		"order": 2,
 		"pvardefs": [
 
@@ -30,7 +28,6 @@
 	},
 	{
 		"name": "$didPass",
-		"ident": 5,
 		"order": 3,
 		"pvardefs": [
 
@@ -41,7 +38,6 @@
 	},
 	{
 		"name": "$diag",
-		"ident": 2,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -67,7 +63,6 @@
 	},
 	{
 		"name": "$getHTMLResults",
-		"ident": 6,
 		"order": 5,
 		"pvardefs": [
 
@@ -119,7 +114,6 @@
 	},
 	{
 		"name": "$log",
-		"ident": 0,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -153,7 +147,6 @@
 	},
 	{
 		"name": "$_addContext",
-		"ident": 3,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -172,7 +165,6 @@
 	},
 	{
 		"name": "$_getHTMLForTAPResults",
-		"ident": 7,
 		"order": 9,
 		"pvardefs": [
 

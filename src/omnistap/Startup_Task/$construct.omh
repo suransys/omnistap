@@ -1,6 +1,6 @@
 Do inherited
 
-;  On Windows, startup_task opens with an uppercase name. On macOS it is lowercase. We should standardize on lowercase.
+# On Windows, startup_task opens with an uppercase name. On macOS it is lowercase. We should standardize on lowercase.
 Calculate $cinst().$name as low($cinst().$name)
 Calculate $clib().$name as low($clib().$name)
 
@@ -13,4 +13,4 @@ If tvDevVersion=kTrue
 	Do $menus.mgTAP.$open("*",kUsermenu) Returns iirOmnisTAPMenu
 End If
 
-Do $cinst.$reopenOmniscli()     ;; <--- this will allow the omniscli's Startup_Task to construct properly.
+Do $cinst.$reopenOmniscli()      ## <--- this will allow the omniscli's Startup_Task to construct properly.

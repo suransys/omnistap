@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$humanReadableTime",
-		"ident": 10,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -46,7 +45,6 @@
 	},
 	{
 		"name": "$wait",
-		"ident": 8,
 		"order": 22,
 		"pvardefs": [
 			{

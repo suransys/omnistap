@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$setup",
-		"ident": 7,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$u_conditional",
-		"ident": 5,
 		"order": 2,
 		"desc": "Test conditional logging feature (notice on true, error on false)",
 		"pvardefs": [
@@ -24,7 +22,6 @@
 	},
 	{
 		"name": "$u_getTextVersion",
-		"ident": 1,
 		"order": 3,
 		"desc": "Tests getting a plain-text version of a log message",
 		"pvardefs": [
@@ -63,7 +60,6 @@
 	},
 	{
 		"name": "$u_levels",
-		"ident": 0,
 		"order": 4,
 		"desc": "Tests logging at various levels",
 		"pvardefs": [
@@ -151,7 +147,6 @@
 	},
 	{
 		"name": "$u_verbosity",
-		"ident": 4,
 		"order": 7,
 		"desc": "Test setting the verbosity of the logger",
 		"pvardefs": [
@@ -169,7 +164,6 @@
 	},
 	{
 		"name": "$u_writeToLog",
-		"ident": 3,
 		"order": 8,
 		"desc": "Tests writing to the log file",
 		"pvardefs": [

@@ -1,2 +1,2 @@
-;  Return kTrue if you want tests stored in a separate library. Return kFalse to store tests in the current library. Defaults to kFalse.
+# Return kTrue if you want tests stored in a separate library. Return kFalse to store tests in the current library. Defaults to kFalse.
 Quit method kFalse

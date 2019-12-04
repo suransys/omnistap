@@ -1,16 +1,16 @@
 Do $cinst.$_getTDForOutcome(pcOutcome,$cinst.$didPass()) Returns lcTDForOutcome
 
 Begin text block
-Text: {<div id="[pcSummaryID]" class="[$cinst.$_getHTMLClassForSummary()] [pcClass]">}
-Text: {<table>}
-Text: {<tr>}
-Text: {<td class="[$cinst.$_getHTMLClassForDescription()]" onClick="toggleResultsDisplay('[pcResultsID]');">}
-Text: {[$cinst.$_cleanHTML(pcSummary)]}
-Text: {</td>}
-Text: {[lcTDForOutcome]}
-Text: {</tr>}
-Text: {</table>}
-Text: {</div>}
+Text:<div id="[pcSummaryID]" class="[$cinst.$_getHTMLClassForSummary()] [pcClass]">
+Text:<table>
+Text:<tr>
+Text:<td class="[$cinst.$_getHTMLClassForDescription()]" onClick="toggleResultsDisplay['(']'[pcResultsID]');">
+Text:[$cinst.$_cleanHTML(pcSummary)]
+Text:</td>
+Text:[lcTDForOutcome]
+Text:</tr>
+Text:</table>
+Text:</div>
 End text block
 
 Get text block lcHTMLForSummary

@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$control",
-		"ident": 5,
 		"order": 2,
 		"pvardefs": [
 
@@ -23,7 +21,6 @@
 	},
 	{
 		"name": "$setDimensions",
-		"ident": 2,
 		"order": 3,
 		"pvardefs": [
 
@@ -34,7 +31,6 @@
 	},
 	{
 		"name": "$setExternalValue",
-		"ident": 4,
 		"order": 4,
 		"pvardefs": [
 
@@ -45,7 +41,6 @@
 	},
 	{
 		"name": "$setInternalValue",
-		"ident": 1,
 		"order": 5,
 		"pvardefs": [
 
@@ -76,7 +71,6 @@
 	},
 	{
 		"name": "$_setVertscroll",
-		"ident": 3,
 		"order": 6,
 		"pvardefs": [
 

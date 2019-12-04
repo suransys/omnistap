@@ -52,6 +52,7 @@
 		"objlink": 0,
 		"righttoleft": false,
 		"rmouseevents": false,
+		"showcontrolcharacters": false,
 		"shownulls": false,
 		"statusevents": false,
 		"subwindowstyle": false,

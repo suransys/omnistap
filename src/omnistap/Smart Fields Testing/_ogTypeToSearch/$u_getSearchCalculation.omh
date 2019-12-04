@@ -1,4 +1,4 @@
-;  No custom dataname
+# No custom dataname
 Do loTypeToSearch.$initialize($cinst())
 Do loTypeToSearch.$setSearchCalculation("con(field_dataname.col1,' - ',field_dataname.col2)")
 Calculate loTypeToSearch.icBuffer as "foo"
@@ -7,7 +7,7 @@ Do loTypeToSearch.$_getSearchCalculation() Returns lcSearchCaclulation
 Calculate lcExpectedSearchCalculation as "iirList.$search(low(left(con(iirList.col1,' - ',iirList.col2),3))=low(icBuffer),1,0,0,0)"
 Do ioTAP.$is_char(lcSearchCaclulation,lcExpectedSearchCalculation,"We built the correct search calculation using the field's $dataname")
 
-;  With a custom dataname
+# With a custom dataname
 Do loTypeToSearch.$initialize($cinst(),"custom_dataname")
 Do loTypeToSearch.$setSearchCalculation("con(custom_dataname.col1,' - ',custom_dataname.col2)")
 

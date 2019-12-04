@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$cli_gettests",
-		"ident": 1,
 		"order": 2,
 		"desc": "Returns a list of OmnisTAP tests. Usage: gettests [test regex (optional)]",
 		"pvardefs": [
@@ -33,7 +32,6 @@
 	},
 	{
 		"name": "$cli_runtests",
-		"ident": 4,
 		"order": 4,
 		"desc": "Runs OmnisTAP. Usage: runtests [path to tap output directory] [test regex (optional)]",
 		"pvardefs": [
@@ -65,7 +63,6 @@
 	},
 	{
 		"name": "==OmnisTAP==",
-		"ident": 7,
 		"order": 7,
 		"pvardefs": [
 
@@ -77,7 +74,6 @@
 	},
 	{
 		"name": "$finishTestRunCLI",
-		"ident": 9,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -137,7 +133,6 @@
 	},
 	{
 		"name": "$_getTests",
-		"ident": 6,
 		"order": 9,
 		"pvardefs": [
 			{

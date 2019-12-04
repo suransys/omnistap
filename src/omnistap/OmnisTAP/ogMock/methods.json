@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -33,7 +32,6 @@
 	},
 	{
 		"name": "$getMockClass",
-		"ident": 23,
 		"order": 2,
 		"pvardefs": [
 
@@ -44,7 +42,6 @@
 	},
 	{
 		"name": "$getMockInstance",
-		"ident": 6,
 		"order": 3,
 		"pvardefs": [
 
@@ -55,7 +52,6 @@
 	},
 	{
 		"name": "$setMockClass",
-		"ident": 22,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -73,7 +69,6 @@
 	},
 	{
 		"name": "$setMockInstance",
-		"ident": 5,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -91,7 +86,6 @@
 	},
 	{
 		"name": "$setMockInstanceName",
-		"ident": 37,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -109,7 +103,6 @@
 	},
 	{
 		"name": "$_addMockMethod",
-		"ident": 16,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -162,7 +155,6 @@
 	},
 	{
 		"name": "$_addReturn",
-		"ident": 2,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -232,7 +224,6 @@
 	},
 	{
 		"name": "$_addReturnItemRef",
-		"ident": 29,
 		"order": 9,
 		"pvardefs": [
 			{
@@ -277,7 +268,6 @@
 	},
 	{
 		"name": "$_getAssertionForType",
-		"ident": 12,
 		"order": 10,
 		"pvardefs": [
 			{
@@ -295,7 +285,6 @@
 	},
 	{
 		"name": "$_getRealMethod",
-		"ident": 7,
 		"order": 11,
 		"pvardefs": [
 			{
@@ -348,7 +337,6 @@
 	},
 	{
 		"name": "$_getRealMethodOnClass",
-		"ident": 8,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -458,7 +446,6 @@
 	},
 	{
 		"name": "$_getRealMethodParameters",
-		"ident": 17,
 		"order": 13,
 		"pvardefs": [
 
@@ -503,7 +490,6 @@
 	},
 	{
 		"name": "$_getStackDescription",
-		"ident": 34,
 		"order": 14,
 		"pvardefs": [
 			{
@@ -535,7 +521,6 @@
 	},
 	{
 		"name": "$_isConstructMethod",
-		"ident": 38,
 		"order": 15,
 		"pvardefs": [
 			{
@@ -553,7 +538,6 @@
 	},
 	{
 		"name": "$_prepareExpect",
-		"ident": 11,
 		"order": 16,
 		"pvardefs": [
 
@@ -591,7 +575,6 @@
 	},
 	{
 		"name": "==Mocking==",
-		"ident": 9,
 		"order": 17,
 		"pvardefs": [
 
@@ -603,7 +586,6 @@
 	},
 	{
 		"name": "$assert",
-		"ident": 13,
 		"order": 18,
 		"pvardefs": [
 
@@ -683,7 +665,6 @@
 	},
 	{
 		"name": "$because",
-		"ident": 24,
 		"order": 19,
 		"pvardefs": [
 			{
@@ -701,7 +682,6 @@
 	},
 	{
 		"name": "$call",
-		"ident": 20,
 		"order": 20,
 		"pvardefs": [
 			{
@@ -725,7 +705,6 @@
 	},
 	{
 		"name": "$callcount",
-		"ident": 15,
 		"order": 21,
 		"pvardefs": [
 			{
@@ -749,7 +728,6 @@
 	},
 	{
 		"name": "$copy",
-		"ident": 33,
 		"order": 22,
 		"pvardefs": [
 			{
@@ -773,25 +751,9 @@
 	},
 	{
 		"name": "$expect",
-		"ident": 10,
 		"order": 23,
 		"pvardefs": [
-			{
-				"name": "pcRecordFrameName",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 1
-			},
-			{
-				"name": "pbDisableInitialFind",
-				"order": 9,
-				"type": "kBoolean",
-				"subtype": 0,
-				"sublen": 0,
-				"param": 2
-			}
+
 		],
 		"lvardefs": [
 			{
@@ -854,7 +816,6 @@
 	},
 	{
 		"name": "$mock",
-		"ident": 4,
 		"order": 24,
 		"pvardefs": [
 			{
@@ -892,7 +853,6 @@
 	},
 	{
 		"name": "$new",
-		"ident": 26,
 		"order": 25,
 		"pvardefs": [
 			{
@@ -916,7 +876,6 @@
 	},
 	{
 		"name": "$parameter",
-		"ident": 32,
 		"order": 26,
 		"pvardefs": [
 			{
@@ -934,7 +893,6 @@
 	},
 	{
 		"name": "$reset",
-		"ident": 14,
 		"order": 27,
 		"pvardefs": [
 
@@ -945,7 +903,6 @@
 	},
 	{
 		"name": "$return",
-		"ident": 0,
 		"order": 28,
 		"pvardefs": [
 			{
@@ -969,7 +926,6 @@
 	},
 	{
 		"name": "$return_binary",
-		"ident": 31,
 		"order": 29,
 		"pvardefs": [
 			{
@@ -987,7 +943,6 @@
 	},
 	{
 		"name": "$return_boolean",
-		"ident": 19,
 		"order": 30,
 		"pvardefs": [
 			{
@@ -1005,7 +960,6 @@
 	},
 	{
 		"name": "$return_char",
-		"ident": 3,
 		"order": 31,
 		"pvardefs": [
 			{
@@ -1029,7 +983,6 @@
 	},
 	{
 		"name": "$return_datetime",
-		"ident": 30,
 		"order": 32,
 		"pvardefs": [
 			{
@@ -1037,7 +990,7 @@
 				"order": 1,
 				"type": "kDate",
 				"subtype": "kDatetime",
-				"sublen": 0,
+				"sublen": 8,
 				"param": 1
 			}
 		],
@@ -1047,7 +1000,6 @@
 	},
 	{
 		"name": "$return_itemref",
-		"ident": 28,
 		"order": 33,
 		"pvardefs": [
 			{
@@ -1065,7 +1017,6 @@
 	},
 	{
 		"name": "$return_list",
-		"ident": 18,
 		"order": 34,
 		"pvardefs": [
 			{
@@ -1083,7 +1034,6 @@
 	},
 	{
 		"name": "$return_number",
-		"ident": 21,
 		"order": 35,
 		"pvardefs": [
 			{
@@ -1101,7 +1051,6 @@
 	},
 	{
 		"name": "$return_objectref",
-		"ident": 25,
 		"order": 36,
 		"pvardefs": [
 			{
@@ -1119,7 +1068,6 @@
 	},
 	{
 		"name": "$return_row",
-		"ident": 27,
 		"order": 37,
 		"pvardefs": [
 			{
@@ -1137,7 +1085,6 @@
 	},
 	{
 		"name": "$times",
-		"ident": 35,
 		"order": 38,
 		"pvardefs": [
 			{
@@ -1175,7 +1122,6 @@
 	},
 	{
 		"name": "$twice",
-		"ident": 36,
 		"order": 39,
 		"pvardefs": [
 

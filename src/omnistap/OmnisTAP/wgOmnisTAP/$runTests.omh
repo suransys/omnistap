@@ -1,4 +1,4 @@
-;  Ensure we can talk to the library's task
+# Ensure we can talk to the library's task
 Do loTAPUtils.$getTaskForTesting(ilLibraries.Name) Returns lirTask
 If isclear(lirTask)
 	Calculate icHTMLResults as con("<h1>The library <span style='font-family: monospace'>",ilLibraries.Name,"</span> is not started</h1>")
@@ -7,13 +7,13 @@ If isclear(lirTask)
 	Quit method
 End If
 
-;  Show tests running
+# Show tests running
 Calculate $cinst.$objs.tpOutput.$currenttab as 1
 Do $cinst.$displayPassFail(kTestsRunning)
 
 Do $cinst.$redrawAll()
 
-;  Get tests to run
+# Get tests to run
 Calculate llProcess as ilTestMethods
 Do llProcess.$remove(kListKeepSelected)
 
@@ -21,9 +21,9 @@ If isclear(llProcess.$linecount)
 	Quit method
 End If
 
-;  Reset result tracking
+# Reset result tracking
 Do iorTestRun.$deleteref()
 Do $objects.ogTAPRun.$newref() Returns iorTestRun
 
-;  Kick off the test run
+# Kick off the test run
 Do lirTask.$runTAPTests(llProcess,kFalse,ilLibraries.Name,$cinst().$finishTestRun.$ref)

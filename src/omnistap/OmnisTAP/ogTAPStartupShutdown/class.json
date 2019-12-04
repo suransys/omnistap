@@ -1,5 +1,6 @@
 {
 	"classtype": "kObjectclass",
+	"omnisversion": "10.0",
 	"internalversion": 28,
 	"superclass": "ogTAPSuper",
 	"designtaskname": "Startup_Task",

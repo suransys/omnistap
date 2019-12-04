@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$setManager",
-		"ident": 61,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -19,7 +18,6 @@
 	},
 	{
 		"name": "$_addDiagnostic",
-		"ident": 64,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -45,7 +43,6 @@
 	},
 	{
 		"name": "$_addTestResult",
-		"ident": 63,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -79,7 +76,6 @@
 	},
 	{
 		"name": "==Basic Assertions==",
-		"ident": 62,
 		"order": 4,
 		"pvardefs": [
 
@@ -91,7 +87,6 @@
 	},
 	{
 		"name": "$fail",
-		"ident": 52,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -109,7 +104,6 @@
 	},
 	{
 		"name": "$ok",
-		"ident": 0,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -143,7 +137,6 @@
 	},
 	{
 		"name": "$notok",
-		"ident": 21,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -169,7 +162,6 @@
 	},
 	{
 		"name": "$pass",
-		"ident": 51,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -187,7 +179,6 @@
 	},
 	{
 		"name": "==== IS ====",
-		"ident": 12,
 		"order": 9,
 		"pvardefs": [
 
@@ -199,7 +190,6 @@
 	},
 	{
 		"name": "$is_char",
-		"ident": 2,
 		"order": 10,
 		"pvardefs": [
 			{
@@ -254,7 +244,6 @@
 	},
 	{
 		"name": "$is_date",
-		"ident": 6,
 		"order": 11,
 		"pvardefs": [
 			{
@@ -302,7 +291,6 @@
 	},
 	{
 		"name": "$is_number",
-		"ident": 7,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -350,7 +338,6 @@
 	},
 	{
 		"name": "$is_boolean",
-		"ident": 8,
 		"order": 13,
 		"pvardefs": [
 			{
@@ -398,7 +385,6 @@
 	},
 	{
 		"name": "$is_binary",
-		"ident": 54,
 		"order": 14,
 		"pvardefs": [
 			{
@@ -438,7 +424,6 @@
 	},
 	{
 		"name": "$is_list",
-		"ident": 55,
 		"order": 15,
 		"pvardefs": [
 			{
@@ -543,7 +528,6 @@
 	},
 	{
 		"name": "$is_row",
-		"ident": 65,
 		"order": 16,
 		"pvardefs": [
 			{
@@ -577,7 +561,6 @@
 	},
 	{
 		"name": "$is_smartlist",
-		"ident": 60,
 		"order": 17,
 		"pvardefs": [
 			{
@@ -611,7 +594,6 @@
 	},
 	{
 		"name": "$is_time",
-		"ident": 1,
 		"order": 19,
 		"pvardefs": [
 			{
@@ -645,7 +627,6 @@
 	},
 	{
 		"name": "$is_itemref",
-		"ident": 53,
 		"order": 21,
 		"pvardefs": [
 			{
@@ -685,7 +666,6 @@
 	},
 	{
 		"name": "$is_objectref",
-		"ident": 57,
 		"order": 22,
 		"pvardefs": [
 			{
@@ -725,7 +705,6 @@
 	},
 	{
 		"name": "==== ISNT ====",
-		"ident": 13,
 		"order": 24,
 		"pvardefs": [
 
@@ -737,7 +716,6 @@
 	},
 	{
 		"name": "$isnt_char",
-		"ident": 3,
 		"order": 25,
 		"pvardefs": [
 			{
@@ -771,7 +749,6 @@
 	},
 	{
 		"name": "$isnt_date",
-		"ident": 9,
 		"order": 26,
 		"pvardefs": [
 			{
@@ -805,7 +782,6 @@
 	},
 	{
 		"name": "$isnt_number",
-		"ident": 10,
 		"order": 27,
 		"pvardefs": [
 			{
@@ -839,7 +815,6 @@
 	},
 	{
 		"name": "$isnt_boolean",
-		"ident": 11,
 		"order": 28,
 		"pvardefs": [
 			{
@@ -873,7 +848,6 @@
 	},
 	{
 		"name": "===Contains===",
-		"ident": 14,
 		"order": 29,
 		"pvardefs": [
 
@@ -885,7 +859,6 @@
 	},
 	{
 		"name": "$contains",
-		"ident": 4,
 		"order": 30,
 		"pvardefs": [
 			{
@@ -919,7 +892,6 @@
 	},
 	{
 		"name": "$doesnotcontain",
-		"ident": 5,
 		"order": 31,
 		"pvardefs": [
 			{
@@ -953,7 +925,6 @@
 	},
 	{
 		"name": "===Clear===",
-		"ident": 15,
 		"order": 32,
 		"pvardefs": [
 
@@ -965,7 +936,6 @@
 	},
 	{
 		"name": "$isclear",
-		"ident": 16,
 		"order": 33,
 		"pvardefs": [
 			{
@@ -991,7 +961,6 @@
 	},
 	{
 		"name": "$isnotclear",
-		"ident": 17,
 		"order": 34,
 		"pvardefs": [
 			{
@@ -1023,7 +992,6 @@
 	},
 	{
 		"name": "==Null==",
-		"ident": 41,
 		"order": 35,
 		"pvardefs": [
 
@@ -1035,7 +1003,6 @@
 	},
 	{
 		"name": "$isnull",
-		"ident": 40,
 		"order": 36,
 		"pvardefs": [
 			{
@@ -1061,7 +1028,6 @@
 	},
 	{
 		"name": "$isnotnull",
-		"ident": 42,
 		"order": 37,
 		"pvardefs": [
 			{
@@ -1093,7 +1059,6 @@
 	},
 	{
 		"name": "===Misc===",
-		"ident": 18,
 		"order": 38,
 		"pvardefs": [
 
@@ -1105,7 +1070,6 @@
 	},
 	{
 		"name": "$isnumber",
-		"ident": 19,
 		"order": 39,
 		"pvardefs": [
 			{
@@ -1147,7 +1111,6 @@
 	},
 	{
 		"name": "$isnotnumber",
-		"ident": 20,
 		"order": 40,
 		"pvardefs": [
 			{
@@ -1189,7 +1152,6 @@
 	},
 	{
 		"name": "===Omnis class introspection===",
-		"ident": 22,
 		"order": 41,
 		"pvardefs": [
 
@@ -1201,7 +1163,6 @@
 	},
 	{
 		"name": "$hasclass",
-		"ident": 23,
 		"order": 42,
 		"pvardefs": [
 			{
@@ -1248,7 +1209,6 @@
 	},
 	{
 		"name": "$hasntclass",
-		"ident": 24,
 		"order": 43,
 		"pvardefs": [
 			{
@@ -1295,7 +1255,6 @@
 	},
 	{
 		"name": "$hasmethod",
-		"ident": 25,
 		"order": 44,
 		"pvardefs": [
 			{
@@ -1357,7 +1316,6 @@
 	},
 	{
 		"name": "$hasntmethod",
-		"ident": 26,
 		"order": 45,
 		"pvardefs": [
 			{
@@ -1419,7 +1377,6 @@
 	},
 	{
 		"name": "$hasparam",
-		"ident": 27,
 		"order": 46,
 		"pvardefs": [
 			{
@@ -1496,7 +1453,6 @@
 	},
 	{
 		"name": "$hasntparam",
-		"ident": 28,
 		"order": 47,
 		"pvardefs": [
 			{
@@ -1581,7 +1537,6 @@
 	},
 	{
 		"name": "$isparamnumber",
-		"ident": 29,
 		"order": 48,
 		"pvardefs": [
 			{
@@ -1666,7 +1621,6 @@
 	},
 	{
 		"name": "$isntparamnumber",
-		"ident": 30,
 		"order": 49,
 		"pvardefs": [
 			{
@@ -1751,7 +1705,6 @@
 	},
 	{
 		"name": "$libopen",
-		"ident": 31,
 		"order": 50,
 		"pvardefs": [
 			{
@@ -1790,7 +1743,6 @@
 	},
 	{
 		"name": "$libnotopen",
-		"ident": 32,
 		"order": 51,
 		"pvardefs": [
 			{
@@ -1822,7 +1774,6 @@
 	},
 	{
 		"name": "$hasobj",
-		"ident": 38,
 		"order": 52,
 		"pvardefs": [
 			{
@@ -1884,7 +1835,6 @@
 	},
 	{
 		"name": "$hasntobj",
-		"ident": 39,
 		"order": 53,
 		"pvardefs": [
 			{
@@ -1946,7 +1896,6 @@
 	},
 	{
 		"name": "=== File system ===",
-		"ident": 37,
 		"order": 54,
 		"pvardefs": [
 
@@ -1958,7 +1907,6 @@
 	},
 	{
 		"name": "$fileexists",
-		"ident": 33,
 		"order": 55,
 		"pvardefs": [
 			{
@@ -1990,7 +1938,6 @@
 	},
 	{
 		"name": "$filedoesntexist",
-		"ident": 34,
 		"order": 56,
 		"pvardefs": [
 			{
@@ -2022,7 +1969,6 @@
 	},
 	{
 		"name": "===Log Messages===",
-		"ident": 35,
 		"order": 57,
 		"pvardefs": [
 
@@ -2034,7 +1980,6 @@
 	},
 	{
 		"name": "$diag",
-		"ident": 50,
 		"order": 59,
 		"pvardefs": [
 			{
@@ -2061,7 +2006,6 @@
 	},
 	{
 		"name": "=== Xcomp ===",
-		"ident": 43,
 		"order": 60,
 		"pvardefs": [
 
@@ -2073,7 +2017,6 @@
 	},
 	{
 		"name": "$xcompexists",
-		"ident": 44,
 		"order": 61,
 		"pvardefs": [
 			{
@@ -2105,7 +2048,6 @@
 	},
 	{
 		"name": "==Comparison==",
-		"ident": 45,
 		"order": 62,
 		"pvardefs": [
 
@@ -2117,7 +2059,6 @@
 	},
 	{
 		"name": "$ispositive",
-		"ident": 46,
 		"order": 63,
 		"pvardefs": [
 			{
@@ -2143,7 +2084,6 @@
 	},
 	{
 		"name": "$isnotpositive",
-		"ident": 47,
 		"order": 64,
 		"pvardefs": [
 			{
@@ -2169,7 +2109,6 @@
 	},
 	{
 		"name": "$isnegative",
-		"ident": 48,
 		"order": 65,
 		"pvardefs": [
 			{
@@ -2195,7 +2134,6 @@
 	},
 	{
 		"name": "$isnotnegative",
-		"ident": 49,
 		"order": 66,
 		"pvardefs": [
 			{

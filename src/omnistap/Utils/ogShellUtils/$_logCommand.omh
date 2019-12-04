@@ -1,12 +1,12 @@
 Begin text block
-Text: (Carriage return)
-Text: {====== ogShellUtils.[pcMethod]() ======} (Carriage return)
-Text: {   Command: [pcScript]} (Carriage return)
-Text: {   Execution level: [pnExecutionLevel]} (Carriage return)
-Text: {   Background: [pbBackground]} (Carriage return)
-Text: {   Return Code: [pnReturnCode]} (Carriage return)
-Text: {   Results: [pfrResult]} (Carriage return)
-Text: {============================} (Carriage return)
+Text:(Carriage return)
+Text:====== ogShellUtils.[pcMethod]() ======(Carriage return)
+Text:   Command: [pcScript](Carriage return)
+Text:   Execution level: [pnExecutionLevel](Carriage return)
+Text:   Background: [pbBackground](Carriage return)
+Text:   Return Code: [pnReturnCode](Carriage return)
+Text:   Results: [pfrResult](Carriage return)
+Text:============================(Carriage return)
 End text block
 
 Get text block lcLog

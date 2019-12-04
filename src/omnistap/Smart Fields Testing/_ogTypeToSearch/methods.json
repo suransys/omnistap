@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$u_getSearchCalculation",
-		"ident": 0,
 		"order": 1,
 		"desc": "Tests getting the search calculation for a type-to-search",
 		"pvardefs": [
@@ -33,7 +32,6 @@
 	},
 	{
 		"name": "$u_listLineChanged",
-		"ident": 3,
 		"order": 2,
 		"desc": "Tests that when the list line changes we either de-select or retain the selection of the list's lines based on a preference",
 		"pvardefs": [
@@ -58,7 +56,6 @@
 	},
 	{
 		"name": "==Fakes==",
-		"ident": 1,
 		"order": 3,
 		"pvardefs": [
 
@@ -70,7 +67,6 @@
 	},
 	{
 		"name": "$click",
-		"ident": 4,
 		"order": 4,
 		"pvardefs": [
 
@@ -81,7 +77,6 @@
 	},
 	{
 		"name": "$dataname",
-		"ident": 2,
 		"order": 5,
 		"pvardefs": [
 

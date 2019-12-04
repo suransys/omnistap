@@ -1,12 +1,46 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
+			{
+				"name": "lcCyan",
+				"order": 7,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcLightBlue",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcPathToOmnisCLI",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcRed",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcYellow",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
 			{
 				"name": "loCLI",
 				"order": 1,
@@ -25,7 +59,6 @@
 	},
 	{
 		"name": "==Levels==",
-		"ident": 20,
 		"order": 2,
 		"pvardefs": [
 
@@ -37,7 +70,6 @@
 	},
 	{
 		"name": "$conditional",
-		"ident": 25,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -71,7 +103,6 @@
 	},
 	{
 		"name": "$debug",
-		"ident": 4,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -98,7 +129,6 @@
 	},
 	{
 		"name": "$error",
-		"ident": 0,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -125,7 +155,6 @@
 	},
 	{
 		"name": "$notice",
-		"ident": 3,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -152,7 +181,6 @@
 	},
 	{
 		"name": "$warning",
-		"ident": 2,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -179,7 +207,6 @@
 	},
 	{
 		"name": "==Destination==",
-		"ident": 26,
 		"order": 8,
 		"pvardefs": [
 
@@ -191,7 +218,6 @@
 	},
 	{
 		"name": "$getDestination",
-		"ident": 32,
 		"order": 9,
 		"pvardefs": [
 
@@ -202,7 +228,6 @@
 	},
 	{
 		"name": "$setDestination",
-		"ident": 27,
 		"order": 10,
 		"pvardefs": [
 			{
@@ -226,7 +251,6 @@
 	},
 	{
 		"name": "==Supporting==",
-		"ident": 22,
 		"order": 11,
 		"pvardefs": [
 
@@ -238,7 +262,6 @@
 	},
 	{
 		"name": "$clearLog",
-		"ident": 14,
 		"order": 12,
 		"pvardefs": [
 
@@ -249,7 +272,6 @@
 	},
 	{
 		"name": "$getLevels",
-		"ident": 24,
 		"order": 13,
 		"pvardefs": [
 
@@ -260,7 +282,6 @@
 	},
 	{
 		"name": "$getLog",
-		"ident": 5,
 		"order": 14,
 		"pvardefs": [
 
@@ -271,7 +292,6 @@
 	},
 	{
 		"name": "$getLogLevelSinceReference",
-		"ident": 31,
 		"order": 15,
 		"pvardefs": [
 			{
@@ -303,7 +323,6 @@
 	},
 	{
 		"name": "$getLogReference",
-		"ident": 30,
 		"order": 16,
 		"pvardefs": [
 
@@ -314,7 +333,6 @@
 	},
 	{
 		"name": "$getLogText",
-		"ident": 15,
 		"order": 17,
 		"pvardefs": [
 
@@ -353,7 +371,6 @@
 	},
 	{
 		"name": "$getVerbosity",
-		"ident": 23,
 		"order": 18,
 		"pvardefs": [
 
@@ -364,7 +381,6 @@
 	},
 	{
 		"name": "$setVerbosity",
-		"ident": 19,
 		"order": 19,
 		"pvardefs": [
 			{
@@ -382,7 +398,6 @@
 	},
 	{
 		"name": "$_doLog",
-		"ident": 21,
 		"order": 20,
 		"pvardefs": [
 			{
@@ -417,7 +432,6 @@
 	},
 	{
 		"name": "$_getColor",
-		"ident": 10,
 		"order": 21,
 		"pvardefs": [
 			{
@@ -435,7 +449,6 @@
 	},
 	{
 		"name": "$_getIconID",
-		"ident": 11,
 		"order": 22,
 		"pvardefs": [
 			{
@@ -453,7 +466,6 @@
 	},
 	{
 		"name": "$_getLogFile",
-		"ident": 17,
 		"order": 23,
 		"pvardefs": [
 
@@ -477,7 +489,6 @@
 	},
 	{
 		"name": "$_getMethod",
-		"ident": 6,
 		"order": 24,
 		"pvardefs": [
 
@@ -508,7 +519,6 @@
 	},
 	{
 		"name": "$_getMethodLine",
-		"ident": 12,
 		"order": 25,
 		"pvardefs": [
 
@@ -525,7 +535,6 @@
 	},
 	{
 		"name": "$_getMethodRef",
-		"ident": 8,
 		"order": 26,
 		"pvardefs": [
 
@@ -542,7 +551,6 @@
 	},
 	{
 		"name": "$_getMethodStackLine",
-		"ident": 9,
 		"order": 27,
 		"pvardefs": [
 
@@ -559,7 +567,6 @@
 	},
 	{
 		"name": "$_getPlatformLineEnding",
-		"ident": 13,
 		"order": 28,
 		"pvardefs": [
 
@@ -570,7 +577,6 @@
 	},
 	{
 		"name": "$_getShellColor",
-		"ident": 28,
 		"order": 29,
 		"pvardefs": [
 			{
@@ -588,7 +594,6 @@
 	},
 	{
 		"name": "$_getTextVersion",
-		"ident": 16,
 		"order": 30,
 		"pvardefs": [
 
@@ -612,7 +617,6 @@
 	},
 	{
 		"name": "$_log",
-		"ident": 7,
 		"order": 31,
 		"pvardefs": [
 			{
@@ -658,7 +662,6 @@
 	},
 	{
 		"name": "$_writeToLog",
-		"ident": 29,
 		"order": 32,
 		"pvardefs": [
 			{
@@ -703,7 +706,6 @@
 	},
 	{
 		"name": "$_writeToFile",
-		"ident": 18,
 		"order": 33,
 		"pvardefs": [
 

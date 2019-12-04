@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -27,7 +26,6 @@
 	},
 	{
 		"name": "$getHTMLResults",
-		"ident": 0,
 		"order": 2,
 		"pvardefs": [
 
@@ -65,7 +63,6 @@
 	},
 	{
 		"name": "$_getHTMLIDForContext",
-		"ident": 2,
 		"order": 3,
 		"pvardefs": [
 

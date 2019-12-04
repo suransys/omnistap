@@ -1,5 +1,6 @@
 {
 	"classtype": "kTable",
+	"omnisversion": "10.0",
 	"internalversion": 10,
 	"superclass": "t0Base",
 	"designtaskname": "Startup_Task",

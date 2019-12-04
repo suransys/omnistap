@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$run",
-		"ident": 1,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -67,7 +66,6 @@
 	},
 	{
 		"name": "$_logCommand",
-		"ident": 7,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -133,7 +131,6 @@
 	},
 	{
 		"name": "$_runCommand",
-		"ident": 8,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -213,7 +210,6 @@
 	},
 	{
 		"name": "macShellScript",
-		"ident": 3,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -329,7 +325,6 @@
 	},
 	{
 		"name": "shellScript",
-		"ident": 4,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -403,7 +398,6 @@
 	},
 	{
 		"name": "winShellScript",
-		"ident": 5,
 		"order": 9,
 		"pvardefs": [
 			{

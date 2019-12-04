@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$startup",
-		"ident": 1,
 		"order": 1,
 		"notes": "Called at the beginning of the test run",
 		"pvardefs": [
@@ -14,7 +13,6 @@
 	},
 	{
 		"name": "$shutdown",
-		"ident": 0,
 		"order": 2,
 		"notes": "Called at the end of the test run",
 		"pvardefs": [

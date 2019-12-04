@@ -1,4 +1,4 @@
-;  Assert methods
+#Assert methods
 For ilMockMethods.$line from 1 to ilMockMethods.$linecount step 1
 	Calculate lnCallCountWant as pick(isclear(ilMockMethods.Calls.$linecount),ilMockMethods.Calls.$linecount,0)
 	
@@ -17,7 +17,7 @@ For ilMockMethods.$line from 1 to ilMockMethods.$linecount step 1
 		Calculate lcTestMessage as con(lcTestMessage," because ",ilMockMethods.Reason)
 	End If
 	
-	;  Log the stack for un-expected calls
+	#Log the stack for un-expected calls
 	Calculate llExtraCalls as ilMockMethods.ExtraCalls
 	For llExtraCalls.$line from 1 to llExtraCalls.$linecount step 1
 		Calculate lcTestMessage as con(lcTestMessage,kCr,"Stack for extra call ",ilMockMethods.Calls.$linecount+llExtraCalls.$line," to ",ilMockMethods.MethodName,":")
@@ -34,7 +34,7 @@ For ilMockMethods.$line from 1 to ilMockMethods.$linecount step 1
 	Calculate ilMockMethods.Callcount as 0
 	Calculate ilMockMethods.Reason as ""
 	
-	;  Assert parameters for each call to the method
+	#Assert parameters for each call to the method
 	Calculate llCalls as ilMockMethods.Calls
 	
 	For llCalls.$line from 1 to llCalls.$linecount step 1
@@ -43,7 +43,7 @@ For ilMockMethods.$line from 1 to ilMockMethods.$linecount step 1
 				Jump to start of loop
 			End If
 			
-			;  Ignore $files.$vals. Omnis returns this as the $fullname of a null item reference
+			#Ignore $files.$vals. Omnis returns this as the $fullname of a null item reference
 			If right(llCalls.Parameters.Have.Have,13)=".$files.$vals"&right(llCalls.Parameters.Want.Want,13)=".$files.$vals"
 				Jump to start of loop
 			End If

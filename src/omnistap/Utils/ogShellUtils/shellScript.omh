@@ -1,8 +1,8 @@
-;  pnAdminPriviledges definition
-;  0 - Elevate if necessary (default)
-;  1 - Same as 0
-;  2 - Only run elevated
-;  3 - Only run standard
+# pnAdminPriviledges definition
+# 0 - Elevate if necessary (default)
+# 1 - Same as 0
+# 2 - Only run elevated
+# 3 - Only run standard
 
 If tvMacVersion=kFalse&isvista()=kFalse&pnAdminPriviledges=2
 	Calculate pnAdminPriviledges as 1

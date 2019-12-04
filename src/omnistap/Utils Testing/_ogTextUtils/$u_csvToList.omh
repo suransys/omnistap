@@ -1,7 +1,7 @@
 
 Begin text block
-Text: {Lorem,ipsum,dolor,sit,amet,consectetur,adipiscing,elit,Mauris,volutpat,} (Carriage return)
-Text: {nunc,nec,purus,consectetur,convallis,Suspendisse,potenti,Nulla,} (Carriage return)
+Text:Lorem,ipsum,dolor,sit,amet,consectetur,adipiscing,elit,Mauris,volutpat,(Carriage return)
+Text:nunc,nec,purus,consectetur,convallis,Suspendisse,potenti,Nulla,(Carriage return)
 End text block
 Get text block lcCSV
 
@@ -15,8 +15,8 @@ Do iorMock.$csvToList(lcCSV,',',kCr) Returns llCSVReturn
 Do ioTAP.$is_list(llCSVReturn,llList,'returned correct list')
 
 Begin text block
-Text: {Lorem[kTab]ipsum[kTab]dolor[kTab]sit[kTab]amet[kTab]consectetur[kTab]adipiscing[kTab]elit[kTab]Mauris[kTab]volutpat[kTab]*}
-Text: {nunc[kTab]nec[kTab]purus[kTab]consectetur[kTab]convallis[kTab]Suspendisse[kTab]potenti[kTab]Nulla[kTab]*}
+Text:Lorem[kTab]ipsum[kTab]dolor[kTab]sit[kTab]amet[kTab]consectetur[kTab]adipiscing[kTab]elit[kTab]Mauris[kTab]volutpat[kTab]*
+Text:nunc[kTab]nec[kTab]purus[kTab]consectetur[kTab]convallis[kTab]Suspendisse[kTab]potenti[kTab]Nulla[kTab]*
 End text block
 Get text block lcTab
 

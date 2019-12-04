@@ -1,5 +1,6 @@
 {
 	"classtype": "kSystemtable",
+	"omnisversion": "10.0",
 	"internalversion": 13,
 	"properties": {
 		"componenttype": "kCompStoreHidden",

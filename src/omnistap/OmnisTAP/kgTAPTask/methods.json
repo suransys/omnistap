@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 
@@ -25,7 +24,6 @@
 	},
 	{
 		"name": "$instantiateTestClass",
-		"ident": 7,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -43,7 +41,6 @@
 	},
 	{
 		"name": "$runTAPTests",
-		"ident": 0,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -85,7 +82,6 @@
 	},
 	{
 		"name": "$useSeparateTestLibrary",
-		"ident": 6,
 		"order": 4,
 		"pvardefs": [
 
@@ -96,7 +92,6 @@
 	},
 	{
 		"name": "==CLI==",
-		"ident": 2,
 		"order": 5,
 		"pvardefs": [
 
@@ -108,7 +103,6 @@
 	},
 	{
 		"name": "$getCLI",
-		"ident": 3,
 		"order": 6,
 		"pvardefs": [
 
@@ -119,7 +113,6 @@
 	},
 	{
 		"name": "$processCLI",
-		"ident": 5,
 		"order": 7,
 		"pvardefs": [
 
@@ -136,7 +129,6 @@
 	},
 	{
 		"name": "$_getCLIObjectClass",
-		"ident": 4,
 		"order": 8,
 		"pvardefs": [
 

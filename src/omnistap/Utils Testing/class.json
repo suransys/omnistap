@@ -1,5 +1,6 @@
 {
 	"classtype": "kFolder",
+	"omnisversion": "10.0",
 	"internalversion": 9,
 	"properties": {
 		"componenttype": "kCompStoreHidden",

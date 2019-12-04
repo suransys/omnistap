@@ -6,17 +6,17 @@ Do $cinst.$_getHTMLForSummary(pcSummaryDescription,lcSummaryOutcome,lcSummaryID,
 Do $cinst.$_getHTMLForTAPResults() Returns lcHTMLForTAPResults
 
 Begin text block
-Text: {<div id="[pcID]" class="[pcClass] wrapper [$cinst.$_getHTMLClassForSuccess($cinst.$didPass())]">}
-Text: {[lcHTMLForSummary]}
-Text: {<div class="results" id="[lcResultsID]">}
-Text: {[lcHTMLForTAPResults]}
+Text:<div id="[pcID]" class="[pcClass] wrapper [$cinst.$_getHTMLClassForSuccess($cinst.$didPass())]">
+Text:[lcHTMLForSummary]
+Text:<div class="results" id="[lcResultsID]">
+Text:[lcHTMLForTAPResults]
 If not(isclear(pcFooter))
-	Text: {<div id="[pcID]_footer" class="[$cinst.$_getHTMLClassForFooter()]">}
-	Text: {[$cinst.$_cleanHTML(pcFooter)]}
-	Text: {</div>}
+	Text:<div id="[pcID]_footer" class="[$cinst.$_getHTMLClassForFooter()]">
+	Text:[$cinst.$_cleanHTML(pcFooter)]
+	Text:</div>
 End If
-Text: {</div>}
-Text: {</div>}
+Text:</div>
+Text:</div>
 End text block
 
 Get text block lcHTML

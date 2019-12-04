@@ -1,5 +1,6 @@
 {
 	"classtype": "kWindow",
+	"omnisversion": "10.0",
 	"internalversion": 77,
 	"designtaskname": "Startup_Task",
 	"nextident": 1020,
@@ -191,6 +192,7 @@
 		"minimizeiconid": 2006,
 		"moddate": "2018-07-30 15:46:00",
 		"modelessdata": true,
+		"movebehind": true,
 		"showascheckedout": false,
 		"showcommands": false,
 		"showgrid": false,

@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 
@@ -18,7 +17,6 @@
 	},
 	{
 		"name": "$event",
-		"ident": 5,
 		"order": 2,
 		"pvardefs": [
 
@@ -35,7 +33,6 @@
 	},
 	{
 		"name": "$runSelectedTests",
-		"ident": 2,
 		"order": 3,
 		"pvardefs": [
 
@@ -46,7 +43,6 @@
 	},
 	{
 		"name": "==Test Lists==",
-		"ident": 10,
 		"order": 4,
 		"pvardefs": [
 
@@ -58,7 +54,6 @@
 	},
 	{
 		"name": "$setLibraries",
-		"ident": 27,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -82,7 +77,6 @@
 	},
 	{
 		"name": "$_loadLibraries",
-		"ident": 3,
 		"order": 6,
 		"pvardefs": [
 
@@ -106,7 +100,6 @@
 	},
 	{
 		"name": "$_loadTestsFromLibrary",
-		"ident": 26,
 		"order": 7,
 		"pvardefs": [
 
@@ -145,7 +138,6 @@
 	},
 	{
 		"name": "$_loadTestsFromClass",
-		"ident": 12,
 		"order": 8,
 		"pvardefs": [
 
@@ -156,7 +148,6 @@
 	},
 	{
 		"name": "==VCS Integration==",
-		"ident": 8,
 		"order": 9,
 		"pvardefs": [
 
@@ -168,7 +159,6 @@
 	},
 	{
 		"name": "$getLibraryName",
-		"ident": 25,
 		"order": 10,
 		"pvardefs": [
 
@@ -179,7 +169,6 @@
 	},
 	{
 		"name": "$getSelectedTests",
-		"ident": 24,
 		"order": 11,
 		"pvardefs": [
 
@@ -196,7 +185,6 @@
 	},
 	{
 		"name": "$testClass",
-		"ident": 18,
 		"order": 12,
 		"pvardefs": [
 			{
@@ -235,7 +223,6 @@
 	},
 	{
 		"name": "==Testing==",
-		"ident": 7,
 		"order": 13,
 		"pvardefs": [
 
@@ -247,7 +234,6 @@
 	},
 	{
 		"name": "$displayPassFail",
-		"ident": 11,
 		"order": 14,
 		"pvardefs": [
 			{
@@ -265,7 +251,6 @@
 	},
 	{
 		"name": "$runTests",
-		"ident": 9,
 		"order": 15,
 		"pvardefs": [
 
@@ -296,7 +281,6 @@
 	},
 	{
 		"name": "==Test Run==",
-		"ident": 6,
 		"order": 18,
 		"pvardefs": [
 
@@ -308,7 +292,6 @@
 	},
 	{
 		"name": "$canContinue",
-		"ident": 4,
 		"order": 19,
 		"pvardefs": [
 
@@ -319,7 +302,6 @@
 	},
 	{
 		"name": "$diag",
-		"ident": 13,
 		"order": 20,
 		"pvardefs": [
 			{
@@ -345,7 +327,6 @@
 	},
 	{
 		"name": "$finishTestRun",
-		"ident": 22,
 		"order": 21,
 		"pvardefs": [
 
@@ -356,7 +337,6 @@
 	},
 	{
 		"name": "$log",
-		"ident": 0,
 		"order": 22,
 		"pvardefs": [
 			{
@@ -459,7 +439,6 @@
 	},
 	{
 		"name": "$logTestFinished",
-		"ident": 15,
 		"order": 23,
 		"pvardefs": [
 			{
@@ -485,7 +464,6 @@
 	},
 	{
 		"name": "$logTestStarted",
-		"ident": 19,
 		"order": 24,
 		"pvardefs": [
 			{
@@ -503,7 +481,6 @@
 	},
 	{
 		"name": "$setTAPOutput",
-		"ident": 23,
 		"order": 25,
 		"pvardefs": [
 			{

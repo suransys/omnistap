@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$construct",
-		"ident": 1,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$destruct",
-		"ident": 2,
 		"order": 2,
 		"pvardefs": [
 
@@ -23,7 +21,6 @@
 	},
 	{
 		"name": "$redraw",
-		"ident": 0,
 		"order": 3,
 		"pvardefs": [
 
@@ -34,7 +31,6 @@
 	},
 	{
 		"name": "$setRunEnabled",
-		"ident": 3,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -52,7 +48,6 @@
 	},
 	{
 		"name": "$setOutputStatus",
-		"ident": 4,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -71,7 +66,6 @@
 	},
 	{
 		"name": "$setLibraries",
-		"ident": 5,
 		"order": 6,
 		"pvardefs": [
 			{

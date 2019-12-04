@@ -1,6 +1,7 @@
 {
 	"classtype": "kTask",
-	"internalversion": 121,
+	"omnisversion": "10.0",
+	"internalversion": 123,
 	"tvardefs": [
 		{
 			"name": "tvDevVersion",
@@ -62,7 +63,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-30 15:46:00",
+		"moddate": "2019-02-26 14:59:50",
 		"showascheckedout": false,
 		"userinfo": "",
 		"version": 13

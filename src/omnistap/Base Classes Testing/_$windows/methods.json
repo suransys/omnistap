@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$i_subwindowClassesExist",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 
@@ -40,7 +39,6 @@
 	},
 	{
 		"name": "$_testSubwindowClassesExist",
-		"ident": 1,
 		"order": 2,
 		"pvardefs": [
 			{

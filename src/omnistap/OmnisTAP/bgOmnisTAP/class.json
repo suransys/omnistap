@@ -1,6 +1,7 @@
 {
 	"classtype": "kToolbar",
-	"internalversion": 23,
+	"omnisversion": "10.0",
+	"internalversion": 25,
 	"designtaskname": "Startup_Task",
 	"nextident": 1015,
 	"cvardefs": [
@@ -31,7 +32,7 @@
 		"inheritedorder": 0,
 		"initialdockingarea": "kDockingAreaTop",
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2019-02-26 14:59:50",
 		"showascheckedout": false,
 		"title": "",
 		"userinfo": "",

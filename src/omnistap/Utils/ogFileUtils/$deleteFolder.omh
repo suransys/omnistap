@@ -6,14 +6,14 @@ If FileOps.$doesfileexist(pick(tvMacVersion=kTrue,pick(right(pFolderPath,1)=sys(
 	Quit method kTrue
 End If
 
-;  Delete .DS_Store
+# Delete .DS_Store
 If FileOps.$doesfileexist(con(pFolderPath,".DS_Store"))
 	If FileOps.$deletefile(con(pFolderPath,".DS_Store"))<>0
 		Quit method kFalse
 	End If
 End If
 
-;  Delete files
+# Delete files
 If pOnlyIfEmpty=kFalse
 	Do FileOps.$filelist(kFileOpsIncludeFiles,pFolderPath,kFileOpsInfoFullName) Returns llFiles
 	Calculate llFiles.$cols.1.$name as "Path"
@@ -27,7 +27,7 @@ If pOnlyIfEmpty=kFalse
 	End For
 End If
 
-;  Delete folders
+# Delete folders
 Do FileOps.$filelist(kFileOpsIncludeDirectories,pFolderPath,kFileOpsInfoFullName) Returns llFiles
 Calculate llFiles.$cols.1.$name as "Path"
 

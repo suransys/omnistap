@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$disableListReselectionOnChange",
-		"ident": 7,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$keyTyped",
-		"ident": 0,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -69,7 +67,6 @@
 	},
 	{
 		"name": "$initialize",
-		"ident": 2,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -96,7 +93,6 @@
 	},
 	{
 		"name": "$setSearchCalculation",
-		"ident": 3,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -114,7 +110,6 @@
 	},
 	{
 		"name": "$_buildListRef",
-		"ident": 4,
 		"order": 5,
 		"pvardefs": [
 
@@ -145,7 +140,6 @@
 	},
 	{
 		"name": "$_getSearchCalculation",
-		"ident": 5,
 		"order": 6,
 		"pvardefs": [
 
@@ -169,7 +163,6 @@
 	},
 	{
 		"name": "$_listLineChanged",
-		"ident": 6,
 		"order": 7,
 		"pvardefs": [
 
@@ -186,7 +179,6 @@
 	},
 	{
 		"name": "$_resetBuffer",
-		"ident": 1,
 		"order": 8,
 		"pvardefs": [
 

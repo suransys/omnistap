@@ -9,18 +9,18 @@ If ilLibraries.Name=icLastLibName
 	Calculate liExistingTestClassLine as ilTestClasses.$line
 End If
 
-;  Process list
+# Process list
 Do $ctask.$getTestClasses(ilLibraries.Name) Returns ilTestClasses
 
 Do ilTestClasses.$add()
 Calculate ilTestClasses.$line as ilTestClasses.$linecount
 Calculate ilTestClasses.DisplayName as "<all>"
 
-;  Re-select test classes
+# Re-select test classes
 Calculate ilTestClasses.$line as pick(liExistingTestClassLine>ilTestClasses.$linecount|liExistingTestClassLine=0,liExistingTestClassLine,1)
 Do $cinst.$_loadTestsFromClass()
 
-;  Re-select processes
+# Re-select processes
 If llExistingProcess.$linecount>0
 	For ilTestMethods.$line from 1 to ilTestMethods.$linecount step 1
 		While llExistingProcess.Test<ilTestMethods.Test&llExistingProcess.$line<llExistingProcess.$linecount

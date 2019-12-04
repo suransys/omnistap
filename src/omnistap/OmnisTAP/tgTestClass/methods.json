@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$getTests",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 

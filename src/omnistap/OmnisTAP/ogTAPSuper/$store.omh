@@ -20,7 +20,7 @@ Calculate lrStoredData.Data as pfrInstanceToStore
 
 Do _ilStoredInstances.$add(pfrInstanceToStore.$fullname,lrStoredData)
 
-;  Mock classes
+# Mock classes
 Set reference lirClassToMock to pfrInstanceToStore.$class
 Switch pfrInstanceToStore.$type
 	Case kObject

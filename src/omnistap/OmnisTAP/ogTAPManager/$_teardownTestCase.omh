@@ -5,7 +5,7 @@ If $cinst.$isRunningFromCLI()=kFalse
 	Quit method
 End If
 
-;  Replace invalid characters in the file name
+#Replace invalid characters in the file name
 Calculate lcDescription as con(pcObjectName,"_",pcMethod)
 Calculate lcDescription as con(replaceall(lcDescription,"/","_"))
 Calculate lcDescription as con(replaceall(lcDescription,":","_"))

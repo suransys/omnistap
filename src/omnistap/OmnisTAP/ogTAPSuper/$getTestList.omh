@@ -21,7 +21,7 @@ For llMethods.$line from 1 to llMethods.$linecount step 1
 	
 	Calculate lcTestName as mid(llMethods.Name,4)
 	
-	If left(lcTestName,len(lcClassDisplayName)+1)=con(lcClassDisplayName,"_")     ;; Classic $u_[application name minus prefix]_[method]
+	If left(lcTestName,len(lcClassDisplayName)+1)=con(lcClassDisplayName,"_")      ## Classic $u_[application name minus prefix]_[method]
 		Calculate lcTestMethodDisplayName as mid(lcTestName,len(lcClassDisplayName)+2)
 	Else
 		Calculate lcTestMethodDisplayName as lcTestName

@@ -1,9 +1,9 @@
-;  Add parameters
+#Add parameters
 Calculate llParameters as ilMockMethods.Parameters
 
 For llParameters.$line from 1 to llParameters.$linecount step 1
 	If llParameters.ObjType=kFieldreference
-		;  Assume the type of the passed variable for want
+		#Assume the type of the passed variable for want
 		Calculate lrWant as llParameters.Want
 		Do lrWant.$cols.$remove(lrWant.$cols.Want)
 		
@@ -16,14 +16,14 @@ For llParameters.$line from 1 to llParameters.$linecount step 1
 		
 		Calculate llParameters.Want as lrWant
 		
-		;  Assume the type of the passed variable for have
+		#Assume the type of the passed variable for have
 		Calculate lrHave as lrWant
 		Calculate lrHave.$cols.Want.$name as "Have"
 		Calculate llParameters.Have as lrHave
 		
-		;  Assume the type of the passed variable for the return
-		;  By default, return what we expect so we don't change the value
-		;  We can set this separately using $paramater(1).$return_[type]
+		#Assume the type of the passed variable for the return
+		#By default, return what we expect so we don't change the value
+		#We can set this separately using $paramater(1).$return_[type]
 		Calculate lrReturn as lrWant
 		Calculate lrReturn.$cols.Want.$name as "Return"
 		Calculate lrReturn.Return as [llParameters.Name]
@@ -36,7 +36,7 @@ For llParameters.$line from 1 to llParameters.$linecount step 1
 		Calculate llParameters.Want.Want as [llParameters.Name]
 	End If
 	
-	;  Build signature
+	#Build signature
 	If not(isclear(lcParameterSignature))
 		Calculate lcParameterSignature as con(lcParameterSignature,",")
 	End If

@@ -1,4 +1,4 @@
-;  Set a specific number of expect calls to a method
+#Set a specific number of expect calls to a method
 Calculate llCalls as ilMockMethods.Calls
 Do llCalls.$clear()
 

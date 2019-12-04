@@ -1,18 +1,18 @@
 Begin text block
-Text: {Lorem,ipsum,dolor,sit,amet,consectetur,adipiscing,elit,Mauris,volutpat} (Carriage return)
-Text: {nunc,nec,purus,consectetur,convallis,Suspendisse,potenti,Nulla,,}
+Text:Lorem,ipsum,dolor,sit,amet,consectetur,adipiscing,elit,Mauris,volutpat(Carriage return)
+Text:nunc,nec,purus,consectetur,convallis,Suspendisse,potenti,Nulla,,
 End text block
 Get text block lcCSV
 
 Begin text block
-Text: {Lorem[kTab]ipsum[kTab]dolor[kTab]sit[kTab]amet[kTab]consectetur[kTab]adipiscing[kTab]elit[kTab]Mauris[kTab]volutpat*}
-Text: {nunc[kTab]nec[kTab]purus[kTab]consectetur[kTab]convallis[kTab]Suspendisse[kTab]potenti[kTab]Nulla[kTab][kTab]}
+Text:Lorem[kTab]ipsum[kTab]dolor[kTab]sit[kTab]amet[kTab]consectetur[kTab]adipiscing[kTab]elit[kTab]Mauris[kTab]volutpat*
+Text:nunc[kTab]nec[kTab]purus[kTab]consectetur[kTab]convallis[kTab]Suspendisse[kTab]potenti[kTab]Nulla[kTab][kTab]
 End text block
 Get text block lcTab
 
 Begin text block
-Text: {'Lorem','ipsum','dolor','sit','amet','consectetur','adipiscing','elit','Mauris','volutpat'} (Carriage return)
-Text: {'nunc','nec','purus','consectetur','convallis','Suspendisse','potenti','Nulla','',''}
+Text:'Lorem','ipsum','dolor','sit','amet','consectetur','adipiscing','elit','Mauris','volutpat'(Carriage return)
+Text:'nunc','nec','purus','consectetur','convallis','Suspendisse','potenti','Nulla','',''
 End text block
 Get text block lcQuote
 

@@ -1,2 +1,2 @@
-;  Enter your initialization code here
+# Enter your initialization code here
 Do $cinst.$redraw()

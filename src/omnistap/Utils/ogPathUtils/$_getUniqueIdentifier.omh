@@ -2,7 +2,7 @@ If tvMacVersion
 	Quit method loProcess.$getMyProcessID()
 End If
 
-;  add in a #CT, just for randomness' sake
+# add in a #CT, just for randomness' sake
 Calculate lcCT as abs(#CT)
 If len(lcCT)>10
 	Calculate lcCT as right(abs(#CT),10)

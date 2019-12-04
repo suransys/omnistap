@@ -3,13 +3,13 @@ Do $cinst.$_getTestLibraryForProductionLibrary(lirProductionLibrary) Returns lir
 
 Calculate lcTestClassName as con("_",pirClass.$name)
 
-;  Existing class
+# Existing class
 Do lirTestLibrary.$objects.$findname(lcTestClassName) Returns lirTestClass
 If not(isclear(lirTestClass))
 	Quit method lirTestClass
 End If
 
-;  New testing class
+# New testing class
 Do $cinst.$_addTestClass(pirClass,pfcErrorMessage,lcTestClassName) Returns lirTestClass
 
 Quit method lirTestClass

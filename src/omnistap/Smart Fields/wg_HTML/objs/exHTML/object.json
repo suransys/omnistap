@@ -40,6 +40,7 @@
 		"helpfile": 0,
 		"hiliteline": false,
 		"htmlcontroloptions": null,
+		"isentryfield": false,
 		"keyevents": false,
 		"left": 0,
 		"nodropcursor": 0,

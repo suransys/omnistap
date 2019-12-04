@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$setup",
-		"ident": 0,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "$u_read",
-		"ident": 10,
 		"order": 2,
 		"desc": "Tests reading a file",
 		"pvardefs": [
@@ -37,7 +35,6 @@
 	},
 	{
 		"name": "$u_splitDriveFromPath",
-		"ident": 9,
 		"order": 3,
 		"desc": "Tests splitting the drive from a path",
 		"pvardefs": [
@@ -76,7 +73,6 @@
 	},
 	{
 		"name": "$u_splitPathNameWin",
-		"ident": 6,
 		"order": 4,
 		"desc": "Tests split path name",
 		"pvardefs": [
@@ -88,7 +84,6 @@
 	},
 	{
 		"name": "$i_getTempFile",
-		"ident": 1,
 		"order": 5,
 		"desc": "Tests getting a temporary file",
 		"pvardefs": [
@@ -134,7 +129,6 @@
 	},
 	{
 		"name": "$i_isFolderWritable",
-		"ident": 2,
 		"order": 6,
 		"desc": "test $isFolderWritable.",
 		"pvardefs": [
@@ -166,7 +160,6 @@
 	},
 	{
 		"name": "$i_splitPathNameMac",
-		"ident": 8,
 		"order": 7,
 		"desc": "Tests split path name",
 		"pvardefs": [
@@ -184,7 +177,6 @@
 	},
 	{
 		"name": "$i_write",
-		"ident": 5,
 		"order": 8,
 		"desc": "test uoFile.$write()",
 		"pvardefs": [
@@ -230,7 +222,6 @@
 	},
 	{
 		"name": "$_testSplitPathName",
-		"ident": 7,
 		"order": 9,
 		"pvardefs": [
 			{

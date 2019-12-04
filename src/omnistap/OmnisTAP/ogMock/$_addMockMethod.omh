@@ -1,4 +1,4 @@
-;  Adds the overridden method to the mock object
+#Adds the overridden method to the mock object
 If pos(".",ilMockMethods.MethodName)
 	Calculate lcObject as mid(ilMockMethods.MethodName,1,rpos(".",ilMockMethods.MethodName)-1)
 	Calculate lcMethod as mid(ilMockMethods.MethodName,rpos(".",ilMockMethods.MethodName)+1)
@@ -12,14 +12,14 @@ End If
 Do lirObject.$methods.$remove(lirObject.$methods.$findname(lcMethod))
 Do lirObject.$methods.$add(lcMethod) Returns lirMethod
 
-;  Callcount
+#Callcount
 Do lirMethod.$methodlines.$add(con("Calculate _iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount as _iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount+1"))
 
 Do lirMethod.$methodlines.$add(con("If _iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount>_iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.$linecount"))
 Do lirMethod.$methodlines.$add(con("Do _iorMock.ilMockMethods.",ilMockMethods.$line,".ExtraCalls.$add(sys(192))"))
 Do lirMethod.$methodlines.$add("End if")
 
-;  Add calls to the mock to set expected values
+#Add calls to the mock to set expected values
 For ilMockMethods.Parameters.$line from 1 to ilMockMethods.Parameters.$linecount step 1
 	Do lirMethod.$lvardefs.$add(ilMockMethods.Parameters.Name,ilMockMethods.Parameters.ObjType,ilMockMethods.Parameters.ObjSubType,ilMockMethods.Parameters.ObjSubLen,kTrue)
 	
@@ -34,5 +34,5 @@ For ilMockMethods.Parameters.$line from 1 to ilMockMethods.Parameters.$linecount
 	End If
 End For
 
-;  Return
+#Return
 Do lirMethod.$methodlines.$add(con("Quit method _iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.[_iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount].Return"))

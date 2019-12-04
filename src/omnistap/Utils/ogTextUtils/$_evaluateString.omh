@@ -9,7 +9,7 @@ While len(lcChunk)>0
 	Do strtok('lcChunk',"]") Returns lcCalculation
 	Do strtok('lcChunk',"[") Returns lcAfterText
 	
-	Test for valid calculation {eval(lcCalculation)}
+	Test for valid calculation eval(lcCalculation)
 	If flag false
 		Quit method ""
 	End If

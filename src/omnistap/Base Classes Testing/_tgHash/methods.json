@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$u_addIDValue",
-		"ident": 1,
 		"order": 1,
 		"desc": "Tests adding a id/value to a hash",
 		"pvardefs": [
@@ -26,7 +25,6 @@
 	},
 	{
 		"name": "$u_addValue",
-		"ident": 0,
 		"order": 2,
 		"desc": "Tests adding a value to a hash",
 		"pvardefs": [

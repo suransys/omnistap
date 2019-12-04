@@ -15,7 +15,11 @@ Calculate llLogToCompare.Location as lcMethodLine
 Calculate llLogToCompare.Message as "Sample error"
 Calculate llLogToCompare.Color as kRed
 Calculate llLogToCompare.IconID as 1681
-Calculate llLogToCompare.ShellColor as loCLI.$kRed()
+Calculate llLogToCompare.TimeStamp as #NULL
+
+If not(isnull($libs.$findname("omniscli")))
+	Calculate llLogToCompare.ShellColor as loCLI.$kRed()
+End If
 
 Do loLog.$getLog() Returns llLog
 
@@ -54,7 +58,7 @@ Do loLog.$clearLog()
 Do loLog.$getLog() Returns llLog
 Calculate llLog.1.TimeStamp as #NULL
 
-Calculate lcMethodLine as con($cmethod().$fullname," line 53")
+Calculate lcMethodLine as con($cmethod().$fullname," line 57")
 Calculate lcMethodLine as replaceall(lcMethodLine,"//","")
 
 Do llLogToCompare.$clear()
@@ -63,11 +67,15 @@ Calculate llLogToCompare.$line as 1
 Calculate llLogToCompare.ID as 1
 Calculate llLogToCompare.Level as "Notice"
 Calculate llLogToCompare.Method as $cmethod()
-Calculate llLogToCompare.MethodLine as 53
+Calculate llLogToCompare.MethodLine as 57
 Calculate llLogToCompare.Location as lcMethodLine
 Calculate llLogToCompare.Message as "**Log cleared**"
 Calculate llLogToCompare.Color as kColorWindowText
 Calculate llLogToCompare.IconID as 1694
-Calculate llLogToCompare.ShellColor as loCLI.$kCyan()
+Calculate llLogToCompare.TimeStamp as #NULL
+
+If not(isnull($libs.$findname("omniscli")))
+	Calculate llLogToCompare.ShellColor as loCLI.$kCyan()
+End If
 
 Do ioTAP.$is_list(llLog,llLogToCompare,"We cleared the log correctly")

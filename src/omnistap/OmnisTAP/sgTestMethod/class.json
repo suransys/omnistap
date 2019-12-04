@@ -1,5 +1,6 @@
 {
 	"classtype": "kSchema",
+	"omnisversion": "10.0",
 	"internalversion": 8,
 	"nextident": 32008,
 	"properties": {

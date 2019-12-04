@@ -1,11 +1,11 @@
-;  Map $open and $openonce to $construct
+#Map $open and $openonce to $construct
 If $cinst.$_isConstructMethod(pcMethodName)
 	Calculate lcMethodName as "$construct"
 Else
 	Calculate lcMethodName as pcMethodName
 End If
 
-;  Look for the method on this class
+#Look for the method on this class
 If pos(".",lcMethodName)
 	Calculate lcObject as mid(lcMethodName,1,rpos(".",lcMethodName)-1)
 	Calculate lcMethod as mid(lcMethodName,rpos(".",lcMethodName)+1)
@@ -25,7 +25,7 @@ Else
 	Do pirClass.$methods.$findname(lcMethodName) Returns lirRealMethod
 End If
 
-;  When mocking $open or $openonce, don't see the method on mock since it's overridden
+#When mocking $open or $openonce, don't see the method on mock since it's overridden
 If $cinst.$_isConstructMethod(pcMethodName)
 	Set reference lirRealMethod to #NULL
 End If
@@ -34,7 +34,7 @@ If not(isnull(lirRealMethod))
 	Quit method lirRealMethod.$ref
 End If
 
-;  Find the superclass, which may be in another library
+#Find the superclass, which may be in another library
 Calculate lcSuperClassName as pirClass.$superclass()
 If pos(".",lcSuperClassName)>0
 	Do strtok(nam(lcSuperClassName),".") Returns lcLibraryName
@@ -43,7 +43,7 @@ Else
 	Set reference lirLibrary to pirClass.$lib
 End If
 
-;  Look for the method on the superclass
+#Look for the method on the superclass
 Do lirLibrary.$classes.$findname(lcSuperClassName) Returns lirSuperclass
 
 If isnull(lirSuperclass)

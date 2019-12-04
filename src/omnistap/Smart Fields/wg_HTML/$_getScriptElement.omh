@@ -1,7 +1,7 @@
 Begin text block
-Text: {<script language="javascript">}
-Text: {[_icJavaScript]}
-Text: {</script>}
+Text:<script language="javascript">
+Text:[_icJavaScript]
+Text:</script>
 End text block
 
 Get text block lcScriptElement

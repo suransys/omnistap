@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$didPass",
-		"ident": 9,
 		"order": 1,
 		"pvardefs": [
 
@@ -12,7 +11,6 @@
 	},
 	{
 		"name": "==Test Run==",
-		"ident": 2,
 		"order": 2,
 		"pvardefs": [
 
@@ -24,7 +22,6 @@
 	},
 	{
 		"name": "$diag",
-		"ident": 5,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -42,7 +39,6 @@
 	},
 	{
 		"name": "$log",
-		"ident": 6,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -82,7 +78,6 @@
 	},
 	{
 		"name": "$logTestFinished",
-		"ident": 7,
 		"order": 5,
 		"pvardefs": [
 
@@ -94,7 +89,6 @@
 	},
 	{
 		"name": "$logTestStarted",
-		"ident": 8,
 		"order": 6,
 		"pvardefs": [
 
@@ -106,7 +100,6 @@
 	},
 	{
 		"name": "$_addTAP",
-		"ident": 3,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -154,7 +147,6 @@
 	},
 	{
 		"name": "==HTML Resources==",
-		"ident": 1,
 		"order": 8,
 		"pvardefs": [
 
@@ -166,7 +158,6 @@
 	},
 	{
 		"name": "$getJavaScript",
-		"ident": 16,
 		"order": 9,
 		"pvardefs": [
 
@@ -183,7 +174,6 @@
 	},
 	{
 		"name": "$getCSS",
-		"ident": 17,
 		"order": 10,
 		"pvardefs": [
 
@@ -200,7 +190,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForContext",
-		"ident": 21,
 		"order": 11,
 		"pvardefs": [
 
@@ -211,7 +200,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForDescription",
-		"ident": 26,
 		"order": 12,
 		"pvardefs": [
 
@@ -222,7 +210,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForFailure",
-		"ident": 20,
 		"order": 13,
 		"pvardefs": [
 
@@ -233,7 +220,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForFooter",
-		"ident": 25,
 		"order": 14,
 		"pvardefs": [
 
@@ -244,7 +230,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForMethod",
-		"ident": 22,
 		"order": 15,
 		"pvardefs": [
 
@@ -255,7 +240,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForOutcome",
-		"ident": 18,
 		"order": 16,
 		"pvardefs": [
 
@@ -266,7 +250,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForPassing",
-		"ident": 19,
 		"order": 17,
 		"pvardefs": [
 
@@ -277,7 +260,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForSuccess",
-		"ident": 4,
 		"order": 18,
 		"pvardefs": [
 			{
@@ -295,7 +277,6 @@
 	},
 	{
 		"name": "$_getHTMLClassForSummary",
-		"ident": 24,
 		"order": 19,
 		"pvardefs": [
 
@@ -306,7 +287,6 @@
 	},
 	{
 		"name": "$_getHTMLIDForTest",
-		"ident": 11,
 		"order": 20,
 		"pvardefs": [
 
@@ -317,7 +297,6 @@
 	},
 	{
 		"name": "==HTML Content==",
-		"ident": 23,
 		"order": 21,
 		"pvardefs": [
 
@@ -329,7 +308,6 @@
 	},
 	{
 		"name": "$getHTMLResults",
-		"ident": 10,
 		"order": 22,
 		"pvardefs": [
 
@@ -402,7 +380,6 @@
 	},
 	{
 		"name": "$_cleanHTML",
-		"ident": 0,
 		"order": 23,
 		"pvardefs": [
 			{
@@ -426,7 +403,6 @@
 	},
 	{
 		"name": "$_getHTMLForTAPResults",
-		"ident": 14,
 		"order": 24,
 		"pvardefs": [
 
@@ -450,7 +426,6 @@
 	},
 	{
 		"name": "$_getHTMLForSummary",
-		"ident": 13,
 		"order": 25,
 		"pvardefs": [
 			{
@@ -513,7 +488,6 @@
 	},
 	{
 		"name": "$_getHTMLForSummaryAndResults",
-		"ident": 15,
 		"order": 26,
 		"pvardefs": [
 			{
@@ -604,7 +578,6 @@
 	},
 	{
 		"name": "$_getTDForOutcome",
-		"ident": 12,
 		"order": 27,
 		"pvardefs": [
 			{

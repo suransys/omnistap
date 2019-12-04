@@ -14,7 +14,7 @@ Else
 End If
 
 If not(isclear(lcErrorMessage))
-	OK message  {[lcErrorMessage]}
+	OK message {[lcErrorMessage]}
 	Quit method
 End If
 
@@ -22,5 +22,5 @@ Do lirCounterPart.$methods.$findname(lcCounterpartMethodName) Returns lirMethod
 If not(isclear(lirMethod))
 	Do lirMethod.$modify()
 Else
-	Modify methods {[lirCounterPart.$lib().$name].[lirCounterPart.$name]}
+	Modify methods [lirCounterPart.$lib().$name].[lirCounterPart.$name]
 End If

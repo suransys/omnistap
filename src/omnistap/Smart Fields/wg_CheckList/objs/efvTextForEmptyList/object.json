@@ -53,6 +53,7 @@
 		"passwordchar": "",
 		"righttoleft": false,
 		"rmouseevents": false,
+		"showcontrolcharacters": false,
 		"shownulls": false,
 		"statusevents": false,
 		"stripspaces": true,

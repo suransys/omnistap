@@ -1,7 +1,6 @@
 [
 	{
 		"name": "$csvToList",
-		"ident": 2,
 		"order": 1,
 		"pvardefs": [
 			{
@@ -64,7 +63,6 @@
 	},
 	{
 		"name": "$decodeOmnisTextEscape",
-		"ident": 20,
 		"order": 2,
 		"pvardefs": [
 			{
@@ -132,7 +130,6 @@
 	},
 	{
 		"name": "$extractEscapesFromText",
-		"ident": 21,
 		"order": 3,
 		"pvardefs": [
 			{
@@ -184,7 +181,6 @@
 	},
 	{
 		"name": "$getStringWithCalc",
-		"ident": 26,
 		"order": 4,
 		"pvardefs": [
 			{
@@ -208,7 +204,6 @@
 	},
 	{
 		"name": "$listToCSV",
-		"ident": 5,
 		"order": 5,
 		"pvardefs": [
 			{
@@ -259,7 +254,6 @@
 	},
 	{
 		"name": "$rowToText",
-		"ident": 7,
 		"order": 6,
 		"pvardefs": [
 			{
@@ -308,7 +302,6 @@
 	},
 	{
 		"name": "$textLinesToList",
-		"ident": 19,
 		"order": 7,
 		"pvardefs": [
 			{
@@ -360,7 +353,6 @@
 	},
 	{
 		"name": "$textToList",
-		"ident": 10,
 		"order": 8,
 		"pvardefs": [
 			{
@@ -407,7 +399,6 @@
 	},
 	{
 		"name": "$_evaluateString",
-		"ident": 28,
 		"order": 9,
 		"pvardefs": [
 			{
@@ -460,7 +451,6 @@
 	},
 	{
 		"name": "$_getString",
-		"ident": 27,
 		"order": 10,
 		"pvardefs": [
 			{
