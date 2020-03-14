@@ -1,0 +1,24 @@
+Calculate lcUnitTestMethodName as con("$u_",lcMethodToTestName)
+Calculate lcIntegrationTestMethodName as con("$i_",lcMethodToTestName)
+Do $objects.$add("TestClass") Returns lirTestClass
+
+Do lirTestClass.$methods.$add(lcUnitTestMethodName) Returns lirUnitTestMethod
+Do iorMock.$_getTestMethodNameForMethod(lcMethodToTestName,lirTestClass) Returns lcTestMethod
+Do ioTAP.$is_char(lcTestMethod,lcUnitTestMethodName,"Unit test method name is returned")
+
+Do lirTestClass.$methods.$remove(lirUnitTestMethod)
+Do lirTestClass.$methods.$add(lcIntegrationTestMethodName) Returns lirIntegrationTestMethod
+Do iorMock.$_getTestMethodNameForMethod(lcMethodToTestName,lirTestClass) Returns lcTestMethod
+Do ioTAP.$is_char(lcTestMethod,lcIntegrationTestMethodName,"Integration test method name is returned")
+
+Do $cinst.$when("unit test and integration methods do not exist in test class")
+Do lirTestClass.$methods.$remove(lirIntegrationTestMethod)
+Do iorMock.$_getTestMethodNameForMethod(lcMethodToTestName,lirTestClass) Returns lcTestMethod
+Do ioTAP.$is_char(lcTestMethod,lcUnitTestMethodName,"Both test methods do not exist in test class. Unit test is returned")
+
+Do $cinst.$when("unit test and integration methods both exist in test class")
+Do lirTestClass.$methods.$add(lcUnitTestMethodName) Returns lirUnitTestMethod
+Do lirTestClass.$methods.$add(lcIntegrationTestMethodName) Returns lirIntegrationTestMethod
+Do ioTAP.$is_char(lcTestMethod,lcUnitTestMethodName,"Unit test method name is returned if both test methods exist")
+
+Do $objects.$remove(lirTestClass)

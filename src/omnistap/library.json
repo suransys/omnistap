@@ -1,5 +1,5 @@
 {
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"includes": [
 		"OMNISCLI"
 	],
@@ -17,6 +17,7 @@
 		"vcsbuildnotes": ""
 	},
 	"prefs": {
+		"animateui": true,
 		"canfocusbuttons": "kNofocus",
 		"centuryrange": 1980,
 		"defaultname": "",
@@ -55,6 +56,7 @@
 		"statusevents": true,
 		"uniquefieldnames": false,
 		"userexportdelimiter": ";",
+		"v3events": false,
 		"vscale": 0,
 		"weekstart": "kMonday",
 		"windowsizeexcludesdockingarea": false

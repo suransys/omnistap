@@ -1,17 +1,18 @@
 {
 	"classtype": "kObjectclass",
 	"omnisversion": "10.1",
-	"internalversion": 143,
+	"internalversion": 12,
+	"superclass": "omnistap.ogTAPSuper",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
 	],
 	"ivardefs": [
 		{
-			"name": "iirMenu",
+			"name": "iorMock",
 			"order": 1,
-			"type": "kItemref",
-			"subtype": "$imenus.menu",
+			"type": "kObjectref",
+			"subtype": "ogTAPMenuController",
 			"sublen": 0
 		}
 	],
@@ -20,16 +21,16 @@
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
-		"createdate": "2017-05-29 06:57:05",
+		"createdate": "2020-03-14 23:19:43",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2020-03-14 23:43:35",
+		"moddate": "2020-03-14 23:43:34",
 		"selfcontained": false,
-		"showascheckedout": false,
+		"showascheckedout": true,
 		"userinfo": "",
-		"version": 10
+		"version": ""
 	}
 }
