@@ -1,15 +1,15 @@
 {
-	"classtype": "kMenu",
-	"omnisversion": "10.0",
-	"internalversion": 50,
+	"classtype": "kObjectclass",
+	"omnisversion": "10.1",
+	"internalversion": 12,
+	"superclass": "omnistap.ogTAPSuper",
 	"designtaskname": "Startup_Task",
-	"nextident": 1017,
 	"cvardefs": [
 
 	],
 	"ivardefs": [
 		{
-			"name": "iorMenuController",
+			"name": "iorMock",
 			"order": 1,
 			"type": "kObjectref",
 			"subtype": "ogTAPMenuController",
@@ -17,27 +17,20 @@
 		}
 	],
 	"properties": {
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
-		"createdate": "2017-05-29 06:26:33",
+		"createdate": "2020-03-14 23:19:43",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
-		"enabled": true,
 		"external": true,
-		"helpfile": 0,
-		"helptext": "",
-		"inheritedorder": 0,
 		"issupercomponent": false,
-		"moddate": "2019-01-22 18:31:30",
-		"showascheckedout": false,
-		"title": {
-			"type": 0,
-			"calc": "TAP"
-		},
+		"moddate": "2020-03-14 23:43:34",
+		"selfcontained": false,
+		"showascheckedout": true,
 		"userinfo": "",
-		"users": "12345678",
-		"version": 4
+		"version": ""
 	}
 }

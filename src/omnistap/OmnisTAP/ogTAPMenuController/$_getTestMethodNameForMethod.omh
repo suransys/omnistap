@@ -1,4 +1,11 @@
 Calculate lcTrimmedMethod as trim(pcMethodName,kTrue,kFalse,"$")
 Calculate lcTrimmedMethod as trim(lcTrimmedMethod,kTrue,kFalse,"_")
 
-Quit method con("$u_",lcTrimmedMethod)
+Calculate lcUnitTestMethod as con("$u_",lcTrimmedMethod)
+Do pirClass.$methods.$findname(lcUnitTestMethod) Returns lirFoundTestMethod
+If isclear(lirFoundTestMethod)
+	Calculate lcIntegrationTestMethod as con("$i_",lcTrimmedMethod)
+	Do pirClass.$methods.$findname(lcIntegrationTestMethod) Returns lirFoundTestMethod
+End If
+
+Quit method pick(isclear(lirFoundTestMethod),lirFoundTestMethod.$name(),lcUnitTestMethod)

@@ -193,7 +193,7 @@
 		"order": 10,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -201,7 +201,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -247,7 +247,7 @@
 		"order": 11,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kDate",
 				"subtype": "kDatetime",
@@ -255,7 +255,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kDate",
 				"subtype": "kDatetime",
@@ -294,7 +294,7 @@
 		"order": 12,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kNumber",
 				"subtype": "kFloatdp",
@@ -302,7 +302,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kNumber",
 				"subtype": "kFloatdp",
@@ -341,7 +341,7 @@
 		"order": 13,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kBoolean",
 				"subtype": 0,
@@ -349,7 +349,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kBoolean",
 				"subtype": 0,
@@ -388,7 +388,7 @@
 		"order": 14,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kBinary",
 				"subtype": 0,
@@ -396,7 +396,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kBinary",
 				"subtype": 0,
@@ -597,7 +597,7 @@
 		"order": 19,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kDate",
 				"subtype": "kDatetime",
@@ -605,7 +605,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kDate",
 				"subtype": "kDatetime",
@@ -630,7 +630,7 @@
 		"order": 21,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kItemref",
 				"subtype": "",
@@ -638,7 +638,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kItemref",
 				"subtype": "",
@@ -669,7 +669,7 @@
 		"order": 22,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kObjectref",
 				"subtype": "",
@@ -677,7 +677,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kObjectref",
 				"subtype": "",
@@ -719,7 +719,7 @@
 		"order": 25,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -727,7 +727,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -752,7 +752,7 @@
 		"order": 26,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kDate",
 				"subtype": "kDatetime",
@@ -760,7 +760,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kDate",
 				"subtype": "kDatetime",
@@ -785,7 +785,7 @@
 		"order": 27,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kNumber",
 				"subtype": "kFloatdp",
@@ -793,7 +793,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kNumber",
 				"subtype": "kFloatdp",
@@ -818,7 +818,7 @@
 		"order": 28,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kBoolean",
 				"subtype": 0,
@@ -826,7 +826,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kBoolean",
 				"subtype": 0,
@@ -862,7 +862,7 @@
 		"order": 30,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -870,7 +870,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -895,7 +895,7 @@
 		"order": 31,
 		"pvardefs": [
 			{
-				"name": "pVar1",
+				"name": "pHave",
 				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
@@ -903,7 +903,7 @@
 				"param": 1
 			},
 			{
-				"name": "pVar2",
+				"name": "pWant",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",

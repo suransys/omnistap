@@ -550,15 +550,44 @@
 				"subtype": "kSimplechar",
 				"sublen": 100000000,
 				"param": 1
+			},
+			{
+				"name": "pirClass",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2
 			}
 		],
 		"lvardefs": [
+			{
+				"name": "lcIntegrationTestMethod",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
 			{
 				"name": "lcTrimmedMethod",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "lcUnitTestMethod",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lirFoundTestMethod",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
 			}
 		]
 	},

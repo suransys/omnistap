@@ -1,9 +1,9 @@
-If len(pVar1)=0
-	Calculate pVar1 as #NULL
+If len(pHave)=0
+	Calculate pHave as #NULL
 End If
 
-If len(pVar2)=0
-	Calculate pVar2 as #NULL
+If len(pWant)=0
+	Calculate pWant as #NULL
 End If
 
-Do $cinst.$ok(pVar1<>pVar2,pMessage,con("Have: ",pVar1,kCr,"Don't want: ",pVar2))
+Do $cinst.$ok(pHave<>pWant,pMessage,con("Have: ",pHave,kCr,"Don't want: ",pWant))

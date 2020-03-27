@@ -9,7 +9,7 @@
 		"helpfile": 0,
 		"helptext": "",
 		"iconid": 0,
-		"macshortcutkey": "Cmnd+Opt+R",
+		"macshortcutkey": "Cmnd+Opt+C",
 		"text": {
 			"type": 0,
 			"calc": "Test Current Method"

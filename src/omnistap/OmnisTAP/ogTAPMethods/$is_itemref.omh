@@ -1,9 +1,9 @@
-If isclear(pVar1)
+If isclear(pHave)
 	Calculate lbOK as kFalse
-Else If isclear(pVar2)
+Else If isclear(pWant)
 	Calculate lbOK as kFalse
 Else
-	Calculate lbOK as pVar1=pVar2
+	Calculate lbOK as pHave=pWant
 End If
 
-Do $cinst.$ok(lbOK,pMessage,con("Have: ",pVar1().$fullname,kCr,"Want: ",pVar2().$fullname))
+Do $cinst.$ok(lbOK,pMessage,con("Have: ",pHave().$fullname,kCr,"Want: ",pWant().$fullname))
