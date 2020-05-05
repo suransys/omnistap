@@ -1,7 +1,7 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.0",
-	"internalversion": 482,
+	"omnisversion": "10.1",
+	"internalversion": 485,
 	"superclass": ".Timer Library.Timer",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -222,6 +222,7 @@
 		}
 	],
 	"properties": {
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
@@ -231,7 +232,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2019-05-08 22:35:00",
+		"moddate": "2020-05-05 17:02:28",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

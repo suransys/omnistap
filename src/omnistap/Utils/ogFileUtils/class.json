@@ -1,7 +1,7 @@
 {
 	"classtype": "kObjectclass",
 	"omnisversion": "10.0",
-	"internalversion": 58,
+	"internalversion": 62,
 	"superclass": ".FileOps.FileOps",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -20,7 +20,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2020-05-05 15:45:39",
+		"moddate": "2020-05-05 17:02:28",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
