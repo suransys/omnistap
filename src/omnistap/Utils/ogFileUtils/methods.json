@@ -483,6 +483,20 @@
 		],
 		"lvardefs": [
 			{
+				"name": "Bin",
+				"order": 7,
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 100000000
+			},
+			{
+				"name": "Error",
+				"order": 10,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
 				"name": "lbOK",
 				"order": 8,
 				"type": "kBoolean",
