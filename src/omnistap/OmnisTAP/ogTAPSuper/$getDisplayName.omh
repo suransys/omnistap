@@ -1,6 +1,6 @@
 Calculate lcClassName as $cinst.$class().$name
 
-If left(lcClassName,1)="_"      ## (leading underscore)
+If left(lcClassName,1)="_" ## (leading underscore)
 	Quit method mid(lcClassName,2)
 End If
 
