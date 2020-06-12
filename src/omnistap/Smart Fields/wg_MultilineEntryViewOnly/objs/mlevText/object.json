@@ -24,6 +24,7 @@
 		"disabledefaultcontextmenu": true,
 		"disablediacriticalpopup": false,
 		"disablefocus": false,
+		"disablefontsizekeys": false,
 		"disablesystemfocus": false,
 		"dragborder": false,
 		"dragiconid": 0,

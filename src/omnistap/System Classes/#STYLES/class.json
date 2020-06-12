@@ -1,6 +1,6 @@
 {
 	"classtype": "kSystemtable",
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"internalversion": 58,
 	"nextident": 376,
 	"properties": {
@@ -2020,7 +2020,7 @@
 				{
 					"name": "kmacOS",
 					"properties": {
-						"align": "kCenterJst",
+						"align": 2,
 						"backcolor": "RGB(0,0,0)",
 						"backgroundtheme": "kBGThemeNone",
 						"backpattern": 0,

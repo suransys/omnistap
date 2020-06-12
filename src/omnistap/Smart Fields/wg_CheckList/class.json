@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"internalversion": 20,
 	"superclass": "w2_SmartListSuper",
 	"designtaskname": "Startup_Task",
@@ -27,6 +27,7 @@
 		"backgroundtheme": "kBGThemeWindow",
 		"backpattern": 0,
 		"bringinfront": false,
+		"canremotedebugwhenlocked": false,
 		"clickbehind": true,
 		"closebox": true,
 		"collectperformancedata": false,

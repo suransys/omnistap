@@ -10,7 +10,7 @@ Calculate lcTempPublicMethod as con("//",lcPublicMethod,"//")
 
 Calculate llVariables as prObject.$methods.[lcTempPrivateMethod].$lvardefs.$makelist($ref.$name,$ref.$objtype,$ref.$objsubtype,$ref.$objsublen,$ref.$parmno)
 
-If llVariables.$linecount>0      ## Check present local/parameter vars. This will prevent errors in the test result
+If llVariables.$linecount>0 ## Check present local/parameter vars. This will prevent errors in the test result
 	Calculate llVariables.$cols.1.$name as 'name'
 	Calculate llVariables.$cols.2.$name as 'objtype'
 	Calculate llVariables.$cols.3.$name as 'objsubtype'
@@ -20,7 +20,7 @@ If llVariables.$linecount>0      ## Check present local/parameter vars. This wil
 	Do llVariables.$sort($ref.parmno,kTrue)
 	
 	For liVariableLineNr from llVariables.$linecount to 1 step -1
-		If llVariables.[liVariableLineNr].parmno=0      ## filter out local variables
+		If llVariables.[liVariableLineNr].parmno=0 ## filter out local variables
 			Do llVariables.$remove(liVariableLineNr)
 		End If
 	End For

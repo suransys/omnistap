@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"internalversion": 7,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
@@ -34,6 +34,7 @@
 		"backgroundtheme": "kBGThemeWindow",
 		"backpattern": 0,
 		"bringinfront": false,
+		"canremotedebugwhenlocked": false,
 		"clickbehind": true,
 		"closebox": true,
 		"collectperformancedata": false,

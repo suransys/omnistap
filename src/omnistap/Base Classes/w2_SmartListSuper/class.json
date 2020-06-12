@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"internalversion": 35,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
@@ -69,6 +69,7 @@
 	],
 	"properties": {
 		"aligntogrid": false,
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2011-06-21 11:08:32",

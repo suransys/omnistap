@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"internalversion": 77,
 	"designtaskname": "Startup_Task",
 	"nextident": 1020,
@@ -156,6 +156,7 @@
 		"backgroundtheme": "kBGThemeWindow",
 		"backpattern": 0,
 		"bringinfront": false,
+		"canremotedebugwhenlocked": false,
 		"clickbehind": true,
 		"closebox": true,
 		"collectperformancedata": false,

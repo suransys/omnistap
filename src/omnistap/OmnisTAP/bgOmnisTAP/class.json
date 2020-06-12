@@ -1,6 +1,6 @@
 {
 	"classtype": "kToolbar",
-	"omnisversion": "10.0",
+	"omnisversion": "10.1",
 	"internalversion": 25,
 	"designtaskname": "Startup_Task",
 	"nextident": 1015,
@@ -19,6 +19,7 @@
 	"properties": {
 		"allowdrag": false,
 		"allowresize": false,
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
