@@ -1,7 +1,7 @@
 {
 	"classtype": "kMenu",
 	"omnisversion": "10.1",
-	"internalversion": 50,
+	"internalversion": 55,
 	"designtaskname": "Startup_Task",
 	"nextident": 1017,
 	"cvardefs": [
@@ -31,7 +31,7 @@
 		"helptext": "",
 		"inheritedorder": 0,
 		"issupercomponent": false,
-		"moddate": "2019-01-22 18:31:30",
+		"moddate": "2020-06-12 14:35:00",
 		"showascheckedout": false,
 		"title": {
 			"type": 0,
@@ -39,6 +39,6 @@
 		},
 		"userinfo": "",
 		"users": "12345678",
-		"version": 4
+		"version": 5
 	}
 }

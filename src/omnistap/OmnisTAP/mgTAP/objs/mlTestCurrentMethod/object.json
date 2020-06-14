@@ -9,14 +9,14 @@
 		"helpfile": 0,
 		"helptext": "",
 		"iconid": 0,
-		"macshortcutkey": "Cmnd+Opt+C",
+		"macshortcutkey": "Cmnd+Opt+R",
 		"text": {
 			"type": 0,
 			"calc": "Test Current Method"
 		},
-		"unixshortcutkey": "",
+		"unixshortcutkey": "Ctrl+R",
 		"userinfo": "",
 		"users": "12345678",
-		"winshortcutkey": ""
+		"winshortcutkey": "Ctrl+R"
 	}
 }

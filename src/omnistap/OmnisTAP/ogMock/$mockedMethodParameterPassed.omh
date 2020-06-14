@@ -4,5 +4,5 @@ Calculate ilMockMethods.Parameters.$line as piParameterNumber
 Calculate ilMockMethods.Calls.[ilMockMethods.Callcount].Parameters.[piParameterNumber].Have.Have as pirHave
 
 If ilMockMethods.Parameters.ObjType=kFieldreference
-	Quit method ilMockMethods.Calls.[ilMockMethods.Callcount].Parameters.[piParameterNumber].Return.Return
+	Calculate pfrFieldReferece as ilMockMethods.Calls.[ilMockMethods.Callcount].Parameters.[piParameterNumber].Return.Return
 End If

@@ -25,13 +25,7 @@ For ilMockMethods.Parameters.$line from 1 to ilMockMethods.Parameters.$linecount
 		Calculate lcHaveVariable as con(ilMockMethods.Parameters.Name,".$ref")
 	End If
 	
-	Calculate lcParameterMethodText as con("_iorMock.$mockedMethodParameterPassed(",ilMockMethods.$line,",",ilMockMethods.Parameters.$line,",",lcHaveVariable,")")
-	
-	If ilMockMethods.Parameters.ObjType=kFieldreference
-		Do lirMethod.$methodlines.$add(con("Calculate ",ilMockMethods.Parameters.Name," as ",lcParameterMethodText))
-	Else
-		Do lirMethod.$methodlines.$add(con("Do ",lcParameterMethodText))
-	End If
+	Do lirMethod.$methodlines.$add(con("Do _iorMock.$mockedMethodParameterPassed(",ilMockMethods.$line,",",ilMockMethods.Parameters.$line,",",lcHaveVariable,",",ilMockMethods.Parameters.Name,")"))
 End For
 
 #Return

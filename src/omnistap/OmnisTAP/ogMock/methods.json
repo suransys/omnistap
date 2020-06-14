@@ -656,6 +656,14 @@
 				"subtype": "",
 				"sublen": 0,
 				"param": 3
+			},
+			{
+				"name": "pfrFieldReferece",
+				"order": 5,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
 			}
 		],
 		"lvardefs": [
@@ -881,7 +889,22 @@
 		"name": "$expect",
 		"order": 28,
 		"pvardefs": [
-
+			{
+				"name": "pfVar",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pbAutoCast",
+				"order": 9,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
 		],
 		"lvardefs": [
 			{
