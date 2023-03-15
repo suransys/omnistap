@@ -142,6 +142,41 @@
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
+			},
+			{
+				"name": "llStack",
+				"order": 3,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvClass",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lvLibrary",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lvLine",
+				"order": 10,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lvMethod",
+				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
 			}
 		]
 	},
@@ -418,6 +453,13 @@
 			{
 				"name": "lcHTMLForTAPResults",
 				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lvURL",
+				"order": 1,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000

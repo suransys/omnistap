@@ -1,6 +1,6 @@
 {
 	"classtype": "kTable",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 21,
 	"superclass": "t0Base",
 	"designtaskname": "Startup_Task",
@@ -38,6 +38,7 @@
 		"showascheckedout": false,
 		"sqlclassname": "sgTestClass",
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 5
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 482,
 	"superclass": ".Timer Library.Timer",
 	"designtaskname": "Startup_Task",
@@ -236,6 +236,7 @@
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 161
 	}
 }

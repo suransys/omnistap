@@ -1,9 +1,23 @@
 Do ilTAPResults.$add()
 Calculate ilTAPResults.$line as ilTAPResults.$linecount
 
+# Search for the calling method which initated the assertion
+Calculate llStack as sys(192)
+For llStack.$line from 1 to llStack.$linecount() step 1
+	Calculate lvLibrary as llStack.classitem.$class.$lib().$name()
+	If lvLibrary<>$clib().$name()
+		Break to end of loop
+	End If
+End For
+
+
 Calculate ilTAPResults.TAP as pcTAP
 Calculate ilTAPResults.Description as pcDescription
 Calculate ilTAPResults.Assertion as pcAssertion
+# Add caller info for click to functionality in the TAP view
+Calculate ilTAPResults.Class as llStack.classitem().$fullname()
+Calculate ilTAPResults.Method as llStack.method
+Calculate ilTAPResults.Line as llStack.line
 
 If pcTAP="#"
 	Quit method

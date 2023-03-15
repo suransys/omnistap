@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 20,
 	"superclass": "w2_SmartListSuper",
 	"designtaskname": "Startup_Task",
@@ -65,6 +65,7 @@
 		"moddate": "2019-02-08 23:52:06",
 		"modelessdata": true,
 		"movebehind": true,
+		"osdropflags": "kOSDROPnone",
 		"showascheckedout": false,
 		"showcommands": false,
 		"showgrid": false,
@@ -81,6 +82,7 @@
 		"top": 103,
 		"userinfo": "",
 		"usesheets": false,
+		"vcsrevision": 0,
 		"version": 3,
 		"vertgrid": 8,
 		"vertscroll": false,
