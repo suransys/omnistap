@@ -1,6 +1,6 @@
 {
 	"classtype": "kTask",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 123,
 	"tvardefs": [
 		{
@@ -67,6 +67,7 @@
 		"moddate": "2019-02-26 14:59:50",
 		"showascheckedout": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 13
 	}
 }

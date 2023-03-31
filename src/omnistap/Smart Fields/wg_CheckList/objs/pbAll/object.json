@@ -29,6 +29,7 @@
 		"edgefloat": "kEFnone",
 		"enabled": true,
 		"fieldstyle": "CtrlHeadingButton",
+		"fieldstylefocused": "",
 		"font": 4,
 		"fontsize": 9,
 		"fontstyle": "kPlain",
@@ -43,7 +44,10 @@
 		"nodropcursor": 0,
 		"nogray": false,
 		"objlink": 65540,
+		"osdropflags": "kOSDROPnone",
 		"rmouseevents": false,
+		"sidepanel": false,
+		"sidepanelmode": "kSidePanelModeNone",
 		"statusevents": false,
 		"subwindowstyle": false,
 		"text": {
@@ -55,6 +59,7 @@
 			"type": 0,
 			"calc": "Mark all list lines checked"
 		},
+		"tooltippos": "kTooltipPosMouse",
 		"top": 4,
 		"userinfo": "",
 		"visible": true,

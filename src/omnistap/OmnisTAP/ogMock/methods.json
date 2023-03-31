@@ -890,12 +890,36 @@
 		"order": 28,
 		"pvardefs": [
 			{
-				"name": "porSessionObject",
+				"name": "pTableClass",
 				"order": 1,
-				"type": "kObjectref",
+				"type": "kItemref",
 				"subtype": "",
 				"sublen": 0,
 				"param": 1
+			},
+			{
+				"name": "pRequiredColumns",
+				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pRecordUniqueID",
+				"order": 10,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pWhereClause",
+				"order": 11,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 4
 			}
 		],
 		"lvardefs": [

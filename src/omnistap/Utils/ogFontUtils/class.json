@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 24,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -24,6 +24,7 @@
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 3
 	}
 }

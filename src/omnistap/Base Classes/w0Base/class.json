@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 77,
 	"designtaskname": "Startup_Task",
 	"nextident": 1020,
@@ -194,6 +194,7 @@
 		"moddate": "2018-07-30 15:46:00",
 		"modelessdata": true,
 		"movebehind": true,
+		"osdropflags": "kOSDROPnone",
 		"showascheckedout": false,
 		"showcommands": false,
 		"showgrid": false,
@@ -210,6 +211,7 @@
 		"top": 138,
 		"userinfo": "",
 		"usesheets": false,
+		"vcsrevision": 0,
 		"version": 3,
 		"vertgrid": 8,
 		"vertscroll": false,

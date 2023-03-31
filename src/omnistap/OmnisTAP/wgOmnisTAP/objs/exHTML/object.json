@@ -30,12 +30,13 @@
 		"effect": "kBorderInset",
 		"enabled": true,
 		"fieldstyle": "CtrlSubWindow",
+		"fieldstylefocused": "",
 		"fixedsize": false,
 		"font": 6,
 		"fontsize": 0,
 		"fontstyle": "kPlain",
 		"forecolor": "kColorWindow",
-		"height": 458,
+		"height": 430,
 		"helpfile": 0,
 		"horzscroll": false,
 		"keyevents": false,
@@ -47,19 +48,23 @@
 		"nobackground": false,
 		"nodropcursor": 0,
 		"objlink": 65540,
+		"osdropflags": "kOSDROPnone",
 		"parameters": {
 			"type": 9,
 			"calc": "kTrue"
 		},
 		"rmouseevents": false,
+		"sidepanel": false,
+		"sidepanelmode": "kSidePanelModeNone",
 		"statusevents": false,
 		"subwindowstyle": false,
 		"textcolor": "kColorWindowText",
 		"tooltip": "",
+		"tooltippos": "kTooltipPosMouse",
 		"top": 0,
 		"userinfo": "",
 		"vertscroll": false,
 		"visible": true,
-		"width": 558
+		"width": 556
 	}
 }

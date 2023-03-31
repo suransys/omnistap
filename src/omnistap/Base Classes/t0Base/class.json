@@ -1,6 +1,6 @@
 {
 	"classtype": "kTable",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 38,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -81,6 +81,7 @@
 		"showascheckedout": false,
 		"sqlclassname": "",
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 2
 	}
 }

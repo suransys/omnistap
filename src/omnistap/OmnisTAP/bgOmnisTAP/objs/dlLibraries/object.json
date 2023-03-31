@@ -12,7 +12,7 @@
 		"enabled": true,
 		"helpfile": 0,
 		"iconid": 0,
-		"listheight": 0,
+		"listheight": 25,
 		"styledtext": false,
 		"text": {
 			"type": 0,

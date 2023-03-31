@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.1",
+	"omnisversion": "10.2",
 	"internalversion": 79,
 	"superclass": "ogTAPResults",
 	"designtaskname": "Startup_Task",
@@ -45,6 +45,7 @@
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 1
 	}
 }

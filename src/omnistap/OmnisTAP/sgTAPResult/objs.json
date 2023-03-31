@@ -40,5 +40,47 @@
 			"primarykey": false,
 			"userinfo": ""
 		}
+	},
+	{
+		"name": "Class",
+		"ident": 32008,
+		"order": 4,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Method",
+		"ident": 32009,
+		"order": 5,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Line",
+		"ident": 32010,
+		"order": 6,
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
 	}
 ]
