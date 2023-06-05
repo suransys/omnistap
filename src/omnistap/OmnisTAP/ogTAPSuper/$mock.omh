@@ -65,7 +65,9 @@ If isnull(lirMockClass)
 	Do lirConstruct.$lvardefs.$add("porMock",kObjectref,#NULL,0,kTrue)
 	Do lirConstruct.$methodlines.$add("Calculate _iorMock as porMock")
 	Do lirConstruct.$methodlines.$add("Do _iorMock.$setMockInstance($cinst())")
-	Do lirConstruct.$methodlines.$add("Do inherited")
+	If pbWithInherited
+		Do lirConstruct.$methodlines.$add("Do inherited")
+	End If
 	
 	# Override $destruct
 	Do lirMockClass.$methods.$add("$destruct")
