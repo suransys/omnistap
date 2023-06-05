@@ -33,11 +33,11 @@ If lbOK=kFalse
 	Quit method kFalse
 End If
 
-Do uniconv(kUniTypeUTF32,pcText,pnEncoding,Bin,kFalse,Error)
+Do uniconv(kUniTypeUTF32,pcText,pnEncoding,lbnBin,kFalse,lcError)
 If pbAppend
 	Do loFile.$setposition(loFile.$getfilesize())
 End If
-Do loFile.$writefile(Bin) Returns lbOK
+Do loFile.$writefile(lbnBin) Returns lbOK
 If lbOK=kFalse
 	Do uoLog.$error(con('Unable to write text to file: ',pcPath),1)
 End If
