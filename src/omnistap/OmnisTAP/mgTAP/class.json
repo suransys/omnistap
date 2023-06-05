@@ -1,7 +1,7 @@
 {
 	"classtype": "kMenu",
-	"omnisversion": "10.0",
-	"internalversion": 50,
+	"omnisversion": "10.2",
+	"internalversion": 56,
 	"designtaskname": "Startup_Task",
 	"nextident": 1017,
 	"cvardefs": [
@@ -17,6 +17,7 @@
 		}
 	],
 	"properties": {
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
@@ -30,7 +31,7 @@
 		"helptext": "",
 		"inheritedorder": 0,
 		"issupercomponent": false,
-		"moddate": "2019-01-22 18:31:30",
+		"moddate": "2023-01-25 16:29:46",
 		"showascheckedout": false,
 		"title": {
 			"type": 0,
@@ -38,6 +39,7 @@
 		},
 		"userinfo": "",
 		"users": "12345678",
-		"version": 4
+		"vcsrevision": 0,
+		"version": 5
 	}
 }

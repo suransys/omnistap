@@ -1,5 +1,5 @@
 {
-	"omnisversion": "10.0",
+	"omnisversion": "10.2",
 	"includes": [
 		"OMNISCLI"
 	],
@@ -8,15 +8,12 @@
 		"nodebug": false,
 		"remotedebug": false,
 		"userinfo": "",
-		"vcsbuilddate": {
-			"type": 23,
-			"subtype": 7,
-			"data": "2019-05-09 17:22:05"
-		},
+		"vcsbuilddate": "",
 		"vcsbuildersname": "",
 		"vcsbuildnotes": ""
 	},
 	"prefs": {
+		"alwayslog": false,
 		"animateui": true,
 		"canfocusbuttons": "kNofocus",
 		"centuryrange": 1980,
@@ -27,6 +24,7 @@
 		"disabledefaultcontextmenu": false,
 		"disableellipsis": false,
 		"disablewebservicelogging": false,
+		"dmlemulation": false,
 		"errorprocessing": "kEPreport",
 		"exportcontrolcharacters": false,
 		"exportedquotes": true,
@@ -35,13 +33,13 @@
 		"helpfoldername": "",
 		"hscale": 0,
 		"iconlib": "",
-		"iconset": "suran",
+		"iconsets": "suran",
 		"initiallayoutbreakpoints": "320,768,1024",
 		"javareturnsnative": true,
 		"justifiedtextthreshold": 75,
 		"keyevents": true,
-		"mapdmltodam": 0,
 		"mouseevents": true,
+		"osdroplimit": 100000000,
 		"reportcalculationerrors": true,
 		"reportnotationerrors": false,
 		"rmouseevents": true,
@@ -57,6 +55,7 @@
 		"uniquefieldnames": false,
 		"userexportdelimiter": ";",
 		"v3events": false,
+		"validcolumninbadrowisnull": false,
 		"vscale": 0,
 		"weekstart": "kMonday",
 		"windowsizeexcludesdockingarea": false

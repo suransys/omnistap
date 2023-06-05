@@ -1,15 +1,16 @@
 {
 	"classtype": "kSystemtable",
-	"omnisversion": "10.0",
-	"internalversion": 10,
+	"omnisversion": "10.2",
+	"internalversion": 11,
 	"properties": {
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2009-02-20 11:59:41",
 		"desc": "",
 		"external": true,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2023-01-25 16:29:46",
 		"showascheckedout": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 1
 	},
 	"formats": [

@@ -1,7 +1,7 @@
 {
 	"classtype": "kTable",
-	"omnisversion": "10.0",
-	"internalversion": 16,
+	"omnisversion": "10.2",
+	"internalversion": 17,
 	"superclass": "t0Base",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -24,6 +24,7 @@
 		}
 	],
 	"properties": {
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
@@ -33,10 +34,11 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
+		"moddate": "2023-01-25 16:29:46",
 		"showascheckedout": false,
 		"sqlclassname": "sgTAPResult",
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 3
 	}
 }

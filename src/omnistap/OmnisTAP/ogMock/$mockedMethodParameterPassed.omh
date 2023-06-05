@@ -1,0 +1,8 @@
+Calculate ilMockMethods.$line as piMethodLine
+Calculate ilMockMethods.Parameters.$line as piParameterNumber
+
+Calculate ilMockMethods.Calls.[ilMockMethods.Callcount].Parameters.[piParameterNumber].Have.Have as pirHave
+
+If ilMockMethods.Parameters.ObjType=kFieldreference
+	Do pfrFieldReferece.$assign(ilMockMethods.Calls.[ilMockMethods.Callcount].Parameters.[piParameterNumber].Return.Return)
+End If

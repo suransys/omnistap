@@ -1,6 +1,6 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.0",
+	"omnisversion": "10.2",
 	"internalversion": 25,
 	"superclass": "ogTAPSuper",
 	"designtaskname": "Startup_Task",
@@ -17,6 +17,7 @@
 		}
 	],
 	"properties": {
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
@@ -30,6 +31,7 @@
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 3
 	}
 }

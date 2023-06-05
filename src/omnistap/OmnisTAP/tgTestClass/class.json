@@ -1,6 +1,6 @@
 {
 	"classtype": "kTable",
-	"omnisversion": "10.0",
+	"omnisversion": "10.2",
 	"internalversion": 21,
 	"superclass": "t0Base",
 	"designtaskname": "Startup_Task",
@@ -24,6 +24,7 @@
 		}
 	],
 	"properties": {
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
@@ -37,6 +38,7 @@
 		"showascheckedout": false,
 		"sqlclassname": "sgTestClass",
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 5
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.0",
+	"omnisversion": "10.2",
 	"internalversion": 35,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
@@ -69,6 +69,7 @@
 	],
 	"properties": {
 		"aligntogrid": false,
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2011-06-21 11:08:32",
@@ -82,10 +83,12 @@
 		"issupercomponent": false,
 		"moddate": "2019-02-26 14:59:50",
 		"movebehind": true,
+		"osdropflags": "kOSDROPnone",
 		"showascheckedout": false,
 		"showgrid": false,
 		"sizetogrid": false,
 		"userinfo": "",
+		"vcsrevision": 0,
 		"version": 3,
 		"vertgrid": 8
 	},

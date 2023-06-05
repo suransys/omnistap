@@ -1,7 +1,7 @@
 {
 	"classtype": "kToolbar",
-	"omnisversion": "10.0",
-	"internalversion": 25,
+	"omnisversion": "10.2",
+	"internalversion": 27,
 	"designtaskname": "Startup_Task",
 	"nextident": 1015,
 	"cvardefs": [
@@ -19,6 +19,7 @@
 	"properties": {
 		"allowdrag": false,
 		"allowresize": false,
+		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
@@ -32,11 +33,12 @@
 		"inheritedorder": 0,
 		"initialdockingarea": "kDockingAreaTop",
 		"issupercomponent": false,
-		"moddate": "2019-02-26 14:59:50",
+		"moddate": "2023-03-13 17:00:44",
 		"showascheckedout": false,
 		"title": "",
 		"userinfo": "",
 		"users": "12345678",
+		"vcsrevision": 0,
 		"version": 2
 	}
 }
