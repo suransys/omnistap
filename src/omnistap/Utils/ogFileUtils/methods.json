@@ -483,6 +483,13 @@
 		],
 		"lvardefs": [
 			{
+				"name": "lbnBin",
+				"order": 7,
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 100000000
+			},
+			{
 				"name": "lbOK",
 				"order": 8,
 				"type": "kBoolean",
@@ -492,6 +499,13 @@
 			{
 				"name": "lcAccessErrorMessage",
 				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcError",
+				"order": 10,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000

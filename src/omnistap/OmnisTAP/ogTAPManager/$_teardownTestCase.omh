@@ -13,4 +13,4 @@ Calculate lcDescription as con(replaceall(lcDescription,"\","_"))
 
 Calculate lcTAPFilePath as con($cinst.$getTAPOutputDirectory(),pathsep(),lcDescription,".tap")
 
-Do loFileUtils.$write(lcTAPFilePath,icTAP)
+Do loFileUtils.$write(lcTAPFilePath,icTAP,kFalse,kUniTypeUTF8)

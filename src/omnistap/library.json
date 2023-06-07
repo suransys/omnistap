@@ -1,7 +1,8 @@
 {
-	"omnisversion": "10.2",
+	"omnisversion": "10.22",
 	"includes": [
-		"OMNISCLI"
+		"OMNISCLI",
+		"OMNISTAP"
 	],
 	"properties": {
 		"ignoreexternal": true,
