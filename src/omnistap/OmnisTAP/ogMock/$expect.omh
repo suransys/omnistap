@@ -31,7 +31,7 @@ For llParameters.$line from 1 to llParameters.$linecount step 1
 	End If
 	
 	If llParameters.ObjType=kItemref
-		Calculate llParameters.Want.Want as [llParameters.Name].$fullname
+		Calculate llParameters.Want.Want as pick(isclear([llParameters.Name]),[llParameters.Name].$fullname,"")
 	Else
 		Calculate llParameters.Want.Want as [llParameters.Name]
 	End If

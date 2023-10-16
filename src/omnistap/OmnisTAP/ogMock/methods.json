@@ -120,9 +120,24 @@
 				"subtype": "kSimplechar",
 				"sublen": 100000000,
 				"param": 2
+			},
+			{
+				"name": "piMethodLine",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 3
 			}
 		],
 		"lvardefs": [
+			{
+				"name": "lcHaveVariable",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
 			{
 				"name": "lcMethod",
 				"order": 3,
@@ -133,6 +148,13 @@
 			{
 				"name": "lcObject",
 				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcParameterMethodText",
+				"order": 9,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
@@ -574,7 +596,7 @@
 		]
 	},
 	{
-		"name": "==Mocking==",
+		"name": "==Runtime==",
 		"order": 17,
 		"pvardefs": [
 
@@ -585,8 +607,122 @@
 		"empty": true
 	},
 	{
-		"name": "$assert",
+		"name": "$mockedMethodCalled",
 		"order": 18,
+		"pvardefs": [
+			{
+				"name": "piMethodLine",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirMethod",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$mockedMethodParameterPassed",
+		"order": 19,
+		"pvardefs": [
+			{
+				"name": "piMethodLine",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "piParameterNumber",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pirHave",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pfrFieldReferece",
+				"order": 5,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirMethod",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$mockedMethodReturn",
+		"order": 20,
+		"pvardefs": [
+			{
+				"name": "piMethodLine",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirMethod",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "==Mocking API==",
+		"order": 21,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$always",
+		"order": 22,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$assert",
+		"order": 23,
 		"pvardefs": [
 
 		],
@@ -665,7 +801,7 @@
 	},
 	{
 		"name": "$because",
-		"order": 19,
+		"order": 24,
 		"pvardefs": [
 			{
 				"name": "pcReason",
@@ -682,7 +818,7 @@
 	},
 	{
 		"name": "$call",
-		"order": 20,
+		"order": 25,
 		"pvardefs": [
 			{
 				"name": "pnCall",
@@ -705,7 +841,7 @@
 	},
 	{
 		"name": "$callcount",
-		"order": 21,
+		"order": 26,
 		"pvardefs": [
 			{
 				"name": "pnExpectedCallcount",
@@ -728,7 +864,7 @@
 	},
 	{
 		"name": "$copy",
-		"order": 22,
+		"order": 27,
 		"pvardefs": [
 			{
 				"name": "piSourceCall",
@@ -751,9 +887,72 @@
 	},
 	{
 		"name": "$expect",
-		"order": 23,
+		"order": 28,
 		"pvardefs": [
-
+			{
+				"name": "pcMessage",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcSubMessage",
+				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pcTitle",
+				"order": 10,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3
+			},
+			{
+				"name": "pirParentWindow",
+				"order": 11,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 4
+			},
+			{
+				"name": "pbIcon",
+				"order": 13,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 5
+			},
+			{
+				"name": "pbSound",
+				"order": 14,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 6
+			},
+			{
+				"name": "piForecolor",
+				"order": 15,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 7
+			},
+			{
+				"name": "pirPosition",
+				"order": 16,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 8
+			}
 		],
 		"lvardefs": [
 			{
@@ -816,7 +1015,7 @@
 	},
 	{
 		"name": "$mock",
-		"order": 24,
+		"order": 29,
 		"pvardefs": [
 			{
 				"name": "pcMethodName",
@@ -853,7 +1052,7 @@
 	},
 	{
 		"name": "$new",
-		"order": 25,
+		"order": 30,
 		"pvardefs": [
 			{
 				"name": "pfoMock",
@@ -876,7 +1075,7 @@
 	},
 	{
 		"name": "$parameter",
-		"order": 26,
+		"order": 31,
 		"pvardefs": [
 			{
 				"name": "piParameter",
@@ -893,7 +1092,7 @@
 	},
 	{
 		"name": "$reset",
-		"order": 27,
+		"order": 32,
 		"pvardefs": [
 
 		],
@@ -903,7 +1102,7 @@
 	},
 	{
 		"name": "$return",
-		"order": 28,
+		"order": 33,
 		"pvardefs": [
 			{
 				"name": "pbReturn",
@@ -926,7 +1125,7 @@
 	},
 	{
 		"name": "$return_binary",
-		"order": 29,
+		"order": 34,
 		"pvardefs": [
 			{
 				"name": "pbnBinary",
@@ -943,7 +1142,7 @@
 	},
 	{
 		"name": "$return_boolean",
-		"order": 30,
+		"order": 35,
 		"pvardefs": [
 			{
 				"name": "pbReturn",
@@ -960,7 +1159,7 @@
 	},
 	{
 		"name": "$return_char",
-		"order": 31,
+		"order": 36,
 		"pvardefs": [
 			{
 				"name": "pcReturn",
@@ -983,7 +1182,7 @@
 	},
 	{
 		"name": "$return_datetime",
-		"order": 32,
+		"order": 37,
 		"pvardefs": [
 			{
 				"name": "pdReturn",
@@ -1000,7 +1199,7 @@
 	},
 	{
 		"name": "$return_itemref",
-		"order": 33,
+		"order": 38,
 		"pvardefs": [
 			{
 				"name": "pirReturn",
@@ -1017,7 +1216,7 @@
 	},
 	{
 		"name": "$return_list",
-		"order": 34,
+		"order": 39,
 		"pvardefs": [
 			{
 				"name": "plReturn",
@@ -1034,7 +1233,7 @@
 	},
 	{
 		"name": "$return_number",
-		"order": 35,
+		"order": 40,
 		"pvardefs": [
 			{
 				"name": "pnReturn",
@@ -1051,7 +1250,7 @@
 	},
 	{
 		"name": "$return_objectref",
-		"order": 36,
+		"order": 41,
 		"pvardefs": [
 			{
 				"name": "porReturn",
@@ -1068,7 +1267,7 @@
 	},
 	{
 		"name": "$return_row",
-		"order": 37,
+		"order": 42,
 		"pvardefs": [
 			{
 				"name": "prReturn",
@@ -1085,7 +1284,7 @@
 	},
 	{
 		"name": "$times",
-		"order": 38,
+		"order": 43,
 		"pvardefs": [
 			{
 				"name": "piTimes",
@@ -1122,7 +1321,7 @@
 	},
 	{
 		"name": "$twice",
-		"order": 39,
+		"order": 44,
 		"pvardefs": [
 
 		],
