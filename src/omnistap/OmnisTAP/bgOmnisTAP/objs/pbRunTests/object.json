@@ -3,8 +3,12 @@
 	"order": 3,
 	"objtype": "kToolCommandButton",
 	"properties": {
+		"componentinfo": {
+
+		},
 		"enabled": false,
 		"helpfile": 0,
+		"iconcolor": "kColorDefault",
 		"iconid": 1759,
 		"text": {
 			"type": 0,

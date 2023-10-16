@@ -1,7 +1,8 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.22",
-	"internalversion": 201,
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
+	"internalversion": 191,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
 		{
@@ -60,6 +61,9 @@
 		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2009-04-06 11:13:16",
 		"desc": "",
@@ -67,7 +71,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2023-06-05 16:46:29",
+		"moddate": "2020-05-05 19:13:48",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

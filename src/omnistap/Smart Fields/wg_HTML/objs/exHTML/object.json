@@ -14,7 +14,11 @@
 		"backalpha": 255,
 		"backcolor": "kColorWindow",
 		"candropcursor": 0,
+		"componentinfo": {
+
+		},
 		"contextmenu": "",
+		"contextmenuremovebackforward": false,
 		"cssextra": "",
 		"dataname": "_icHTML",
 		"desgroup": 0,
@@ -42,6 +46,7 @@
 		"helpfile": 0,
 		"hiliteline": false,
 		"htmlcontroloptions": null,
+		"htmlcontrolsusehttp": false,
 		"ignorecertificateerrors": false,
 		"isentryfield": false,
 		"keyevents": false,

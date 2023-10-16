@@ -1,7 +1,8 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.22",
-	"internalversion": 60,
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
+	"internalversion": 62,
 	"superclass": ".FileOps.FileOps",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -14,6 +15,9 @@
 		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2011-03-30 11:52:55",
 		"desc": "",
@@ -21,7 +25,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2023-06-05 16:45:00",
+		"moddate": "2020-05-05 17:02:28",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

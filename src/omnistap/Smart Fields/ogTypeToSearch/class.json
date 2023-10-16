@@ -1,6 +1,7 @@
 {
 	"classtype": "kObjectclass",
-	"omnisversion": "10.2",
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
 	"internalversion": 8,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -71,6 +72,9 @@
 		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2013-03-15 14:29:18",
 		"desc": "",

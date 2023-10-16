@@ -13,20 +13,26 @@ Do lirObject.$methods.$remove(lirObject.$methods.$findname(lcMethod))
 Do lirObject.$methods.$add(lcMethod) Returns lirMethod
 
 #Callcount
-Do lirMethod.$methodlines.$add(con("Do _iorMock.$mockedMethodCalled(",ilMockMethods.$line,")"))
+Do lirMethod.$methodlines.$add(con("Calculate _iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount as _iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount+1"))
+
+Do lirMethod.$methodlines.$add(con("If _iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount>_iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.$linecount"))
+Do lirMethod.$methodlines.$add(con("Do _iorMock.ilMockMethods.",ilMockMethods.$line,".ExtraCalls.$add(sys(192))"))
+Do lirMethod.$methodlines.$add("End if")
 
 #Add calls to the mock to set expected values
 For ilMockMethods.Parameters.$line from 1 to ilMockMethods.Parameters.$linecount step 1
 	Do lirMethod.$lvardefs.$add(ilMockMethods.Parameters.Name,ilMockMethods.Parameters.ObjType,ilMockMethods.Parameters.ObjSubType,ilMockMethods.Parameters.ObjSubLen,kTrue)
 	
 	If ilMockMethods.Parameters.ObjType=kItemref
-		Calculate lcHaveVariable as con(ilMockMethods.Parameters.Name,".$fullname.$ref")
+		Do lirMethod.$methodlines.$add(con("Calculate _iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.[_iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount].Parameters.",ilMockMethods.Parameters.$line,".Have.Have as ",ilMockMethods.Parameters.Name,".$fullname"))
 	Else
-		Calculate lcHaveVariable as con(ilMockMethods.Parameters.Name,".$ref")
+		Do lirMethod.$methodlines.$add(con("Calculate _iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.[_iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount].Parameters.",ilMockMethods.Parameters.$line,".Have.Have as ",ilMockMethods.Parameters.Name))
 	End If
 	
-	Do lirMethod.$methodlines.$add(con("Do _iorMock.$mockedMethodParameterPassed(",ilMockMethods.$line,",",ilMockMethods.Parameters.$line,",",lcHaveVariable,",",ilMockMethods.Parameters.Name,")"))
+	If ilMockMethods.Parameters.ObjType=kFieldreference
+		Do lirMethod.$methodlines.$add(con("Calculate ",ilMockMethods.Parameters.Name," as _iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.[_iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount].Parameters.",ilMockMethods.Parameters.$line,".Return.Return"))
+	End If
 End For
 
 #Return
-Do lirMethod.$methodlines.$add(con("Quit method _iorMock.$mockedMethodReturn(",ilMockMethods.$line,")"))
+Do lirMethod.$methodlines.$add(con("Quit method _iorMock.ilMockMethods.",ilMockMethods.$line,".Calls.[_iorMock.ilMockMethods.",ilMockMethods.$line,".Callcount].Return"))

@@ -8,6 +8,7 @@
 		"fontstyle": "kPlain",
 		"helpfile": 0,
 		"helptext": "",
+		"iconcolor": "kColorDefault",
 		"iconid": 0,
 		"macshortcutkey": "Cmnd+Shift+R",
 		"text": {

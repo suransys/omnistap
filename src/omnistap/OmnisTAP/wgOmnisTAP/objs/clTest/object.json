@@ -15,6 +15,9 @@
 			"type": 0,
 			"calc": "wg_CheckList"
 		},
+		"componentinfo": {
+
+		},
 		"contextmenu": "",
 		"cursor": 0,
 		"dataname": "ilTestMethods",
@@ -36,7 +39,7 @@
 		"fontsize": 0,
 		"fontstyle": "kPlain",
 		"forecolor": "kColorWindow",
-		"height": 463,
+		"height": 494,
 		"helpfile": 0,
 		"horzscroll": false,
 		"keyevents": false,

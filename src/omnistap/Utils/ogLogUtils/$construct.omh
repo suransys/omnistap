@@ -2,9 +2,6 @@ Calculate lcPathToOmnisCLI as con(loPath.$startup(),"omniscli.lbs")
 
 If isclear($libs.$findname("omniscli"))&FileOps.$doesfileexist(lcPathToOmnisCLI)
 	Do $libs.$add(lcPathToOmnisCLI,"omniscli")
-End If
-
-If not(isclear($libs.$findname("omniscli")))
 	Do $libs.omniscli.$objects.oOmnisCLI.$new() Returns loCLI
 	Calculate lcRed as loCLI.$kRed()
 	Calculate lcYellow as loCLI.$kYellow()

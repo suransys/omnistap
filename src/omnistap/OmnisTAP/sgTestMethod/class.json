@@ -1,10 +1,14 @@
 {
 	"classtype": "kSchema",
-	"omnisversion": "10.2",
-	"internalversion": 9,
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
+	"internalversion": 8,
 	"nextident": 32008,
 	"properties": {
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2016-07-14 07:00:33",
 		"createinstancewhensubtype": true,
@@ -12,7 +16,7 @@
 		"editor": "",
 		"editordata": "",
 		"external": true,
-		"moddate": "2023-01-25 16:29:46",
+		"moddate": "2018-07-05 16:05:25",
 		"servertablename": "",
 		"showascheckedout": false,
 		"userinfo": "",

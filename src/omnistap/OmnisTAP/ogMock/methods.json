@@ -120,24 +120,9 @@
 				"subtype": "kSimplechar",
 				"sublen": 100000000,
 				"param": 2
-			},
-			{
-				"name": "piMethodLine",
-				"order": 7,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0,
-				"param": 3
 			}
 		],
 		"lvardefs": [
-			{
-				"name": "lcHaveVariable",
-				"order": 8,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
 			{
 				"name": "lcMethod",
 				"order": 3,
@@ -148,13 +133,6 @@
 			{
 				"name": "lcObject",
 				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcParameterMethodText",
-				"order": 9,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
@@ -596,7 +574,7 @@
 		]
 	},
 	{
-		"name": "==Runtime==",
+		"name": "==Mocking==",
 		"order": 17,
 		"pvardefs": [
 
@@ -607,122 +585,8 @@
 		"empty": true
 	},
 	{
-		"name": "$mockedMethodCalled",
-		"order": 18,
-		"pvardefs": [
-			{
-				"name": "piMethodLine",
-				"order": 1,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0,
-				"param": 1
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lirMethod",
-				"order": 2,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "$mockedMethodParameterPassed",
-		"order": 19,
-		"pvardefs": [
-			{
-				"name": "piMethodLine",
-				"order": 2,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0,
-				"param": 1
-			},
-			{
-				"name": "piParameterNumber",
-				"order": 3,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0,
-				"param": 2
-			},
-			{
-				"name": "pirHave",
-				"order": 4,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0,
-				"param": 3
-			},
-			{
-				"name": "pfrFieldReferece",
-				"order": 5,
-				"type": "kFieldreference",
-				"subtype": 0,
-				"sublen": 0,
-				"param": 4
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lirMethod",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "$mockedMethodReturn",
-		"order": 20,
-		"pvardefs": [
-			{
-				"name": "piMethodLine",
-				"order": 2,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0,
-				"param": 1
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lirMethod",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0
-			}
-		]
-	},
-	{
-		"name": "==Mocking API==",
-		"order": 21,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
-		],
-		"empty": true
-	},
-	{
-		"name": "$always",
-		"order": 22,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
-		]
-	},
-	{
 		"name": "$assert",
-		"order": 23,
+		"order": 18,
 		"pvardefs": [
 
 		],
@@ -801,7 +665,7 @@
 	},
 	{
 		"name": "$because",
-		"order": 24,
+		"order": 19,
 		"pvardefs": [
 			{
 				"name": "pcReason",
@@ -818,7 +682,7 @@
 	},
 	{
 		"name": "$call",
-		"order": 25,
+		"order": 20,
 		"pvardefs": [
 			{
 				"name": "pnCall",
@@ -841,7 +705,7 @@
 	},
 	{
 		"name": "$callcount",
-		"order": 26,
+		"order": 21,
 		"pvardefs": [
 			{
 				"name": "pnExpectedCallcount",
@@ -864,7 +728,7 @@
 	},
 	{
 		"name": "$copy",
-		"order": 27,
+		"order": 22,
 		"pvardefs": [
 			{
 				"name": "piSourceCall",
@@ -887,40 +751,9 @@
 	},
 	{
 		"name": "$expect",
-		"order": 28,
+		"order": 23,
 		"pvardefs": [
-			{
-				"name": "pTableClass",
-				"order": 1,
-				"type": "kItemref",
-				"subtype": "",
-				"sublen": 0,
-				"param": 1
-			},
-			{
-				"name": "pRequiredColumns",
-				"order": 9,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 2
-			},
-			{
-				"name": "pRecordUniqueID",
-				"order": 10,
-				"type": "kInteger",
-				"subtype": "k32bitint",
-				"sublen": 0,
-				"param": 3
-			},
-			{
-				"name": "pWhereClause",
-				"order": 11,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000,
-				"param": 4
-			}
+
 		],
 		"lvardefs": [
 			{
@@ -983,7 +816,7 @@
 	},
 	{
 		"name": "$mock",
-		"order": 29,
+		"order": 24,
 		"pvardefs": [
 			{
 				"name": "pcMethodName",
@@ -1020,7 +853,7 @@
 	},
 	{
 		"name": "$new",
-		"order": 30,
+		"order": 25,
 		"pvardefs": [
 			{
 				"name": "pfoMock",
@@ -1043,7 +876,7 @@
 	},
 	{
 		"name": "$parameter",
-		"order": 31,
+		"order": 26,
 		"pvardefs": [
 			{
 				"name": "piParameter",
@@ -1060,7 +893,7 @@
 	},
 	{
 		"name": "$reset",
-		"order": 32,
+		"order": 27,
 		"pvardefs": [
 
 		],
@@ -1070,7 +903,7 @@
 	},
 	{
 		"name": "$return",
-		"order": 33,
+		"order": 28,
 		"pvardefs": [
 			{
 				"name": "pbReturn",
@@ -1093,7 +926,7 @@
 	},
 	{
 		"name": "$return_binary",
-		"order": 34,
+		"order": 29,
 		"pvardefs": [
 			{
 				"name": "pbnBinary",
@@ -1110,7 +943,7 @@
 	},
 	{
 		"name": "$return_boolean",
-		"order": 35,
+		"order": 30,
 		"pvardefs": [
 			{
 				"name": "pbReturn",
@@ -1127,7 +960,7 @@
 	},
 	{
 		"name": "$return_char",
-		"order": 36,
+		"order": 31,
 		"pvardefs": [
 			{
 				"name": "pcReturn",
@@ -1150,7 +983,7 @@
 	},
 	{
 		"name": "$return_datetime",
-		"order": 37,
+		"order": 32,
 		"pvardefs": [
 			{
 				"name": "pdReturn",
@@ -1167,7 +1000,7 @@
 	},
 	{
 		"name": "$return_itemref",
-		"order": 38,
+		"order": 33,
 		"pvardefs": [
 			{
 				"name": "pirReturn",
@@ -1184,7 +1017,7 @@
 	},
 	{
 		"name": "$return_list",
-		"order": 39,
+		"order": 34,
 		"pvardefs": [
 			{
 				"name": "plReturn",
@@ -1201,7 +1034,7 @@
 	},
 	{
 		"name": "$return_number",
-		"order": 40,
+		"order": 35,
 		"pvardefs": [
 			{
 				"name": "pnReturn",
@@ -1218,7 +1051,7 @@
 	},
 	{
 		"name": "$return_objectref",
-		"order": 41,
+		"order": 36,
 		"pvardefs": [
 			{
 				"name": "porReturn",
@@ -1235,7 +1068,7 @@
 	},
 	{
 		"name": "$return_row",
-		"order": 42,
+		"order": 37,
 		"pvardefs": [
 			{
 				"name": "prReturn",
@@ -1252,7 +1085,7 @@
 	},
 	{
 		"name": "$times",
-		"order": 43,
+		"order": 38,
 		"pvardefs": [
 			{
 				"name": "piTimes",
@@ -1289,7 +1122,7 @@
 	},
 	{
 		"name": "$twice",
-		"order": 44,
+		"order": 39,
 		"pvardefs": [
 
 		],

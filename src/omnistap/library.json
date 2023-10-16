@@ -1,5 +1,6 @@
 {
-	"omnisversion": "10.2",
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
 	"includes": [
 		"OMNISCLI",
 		"OMNISTAP"
@@ -9,7 +10,11 @@
 		"nodebug": false,
 		"remotedebug": false,
 		"userinfo": "",
-		"vcsbuilddate": "",
+		"vcsbuilddate": {
+			"type": 23,
+			"subtype": 7,
+			"data": "2019-05-09 17:22:05"
+		},
 		"vcsbuildersname": "",
 		"vcsbuildnotes": ""
 	},
@@ -22,8 +27,10 @@
 		"designdpi": "96,72,75",
 		"designdpimode": "kDPIoff",
 		"designedscreensizes": "kSSZjs320x480Portrait,kSSZjs768x1024Portrait",
+		"disableclassdatanotation": false,
 		"disabledefaultcontextmenu": false,
 		"disableellipsis": false,
+		"disablemethodtextnotation": false,
 		"disablewebservicelogging": false,
 		"dmlemulation": false,
 		"errorprocessing": "kEPreport",
@@ -41,6 +48,7 @@
 		"keyevents": true,
 		"mouseevents": true,
 		"osdroplimit": 100000000,
+		"pastestripscontrolcharacters": false,
 		"reportcalculationerrors": true,
 		"reportnotationerrors": false,
 		"rmouseevents": true,
@@ -54,6 +62,7 @@
 		"startuptaskname": "Startup_Task",
 		"statusevents": true,
 		"uniquefieldnames": false,
+		"useoldparameterpassing": true,
 		"userexportdelimiter": ";",
 		"v3events": false,
 		"validcolumninbadrowisnull": false,

@@ -9,11 +9,15 @@
 		"backgroundtheme": "kBGThemeNone",
 		"backpattern": 0,
 		"bordercolor": "RGB(0,0,0)",
+		"borderradius": "0",
 		"calculation": {
 			"type": 1,
 			"calc": "_ilList.Description"
 		},
 		"candropcursor": 0,
+		"componentinfo": {
+
+		},
 		"contextmenu": "",
 		"cursor": 0,
 		"dataname": "_ilList",
@@ -55,10 +59,13 @@
 		"objlink": 65541,
 		"osdropflags": "kOSDROPnone",
 		"rmouseevents": false,
+		"selectionbackcolor": "RGB(0,0,0)",
+		"selectiontextcolor": "RGB(0,0,0)",
 		"sidepanel": false,
 		"sidepanelmode": "kSidePanelModeNone",
 		"statecolumn": 0,
 		"statusevents": false,
+		"studioide": false,
 		"styledtext": true,
 		"textcolor": "kColorWindowText",
 		"tooltip": "",

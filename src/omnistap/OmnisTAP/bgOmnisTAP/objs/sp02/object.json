@@ -4,6 +4,9 @@
 	"objtype": "kToolSpacer",
 	"properties": {
 		"blank": true,
+		"componentinfo": {
+
+		},
 		"flexible": true
 	}
 }

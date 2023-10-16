@@ -12,9 +12,13 @@
 		"backgroundtheme": "kBGThemeNone",
 		"backpattern": 0,
 		"bordercolor": "kColorDefault",
+		"borderradius": "0",
 		"buttonmode": "kBMuser",
 		"buttonstyle": "kSystemButton",
 		"candropcursor": 0,
+		"componentinfo": {
+
+		},
 		"contextmenu": "",
 		"cursor": 0,
 		"desgroup": 0,
@@ -36,6 +40,7 @@
 		"forecolor": "kColorDefault",
 		"height": 18,
 		"helpfile": 0,
+		"iconcolor": "kColorDefault",
 		"iconid": "k16x16+9001",
 		"inactnorec": false,
 		"keyevents": false,
@@ -49,6 +54,7 @@
 		"sidepanel": false,
 		"sidepanelmode": "kSidePanelModeNone",
 		"statusevents": false,
+		"styledtext": false,
 		"subwindowstyle": false,
 		"text": {
 			"type": 0,

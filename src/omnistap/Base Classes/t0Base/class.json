@@ -1,6 +1,7 @@
 {
 	"classtype": "kTable",
-	"omnisversion": "10.2",
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
 	"internalversion": 38,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -70,6 +71,9 @@
 		"canremotedebugwhenlocked": false,
 		"collectperformancedata": false,
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2017-03-28 00:15:57",
 		"desc": "",

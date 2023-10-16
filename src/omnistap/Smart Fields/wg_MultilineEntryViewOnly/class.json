@@ -1,6 +1,7 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.2",
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
 	"internalversion": 6,
 	"superclass": "w2_MultilineEntry",
 	"designtaskname": "Startup_Task",
@@ -26,6 +27,9 @@
 		"closebox": true,
 		"collectperformancedata": false,
 		"componenticon": "k16x16+1803",
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"contextmenu": "",
 		"createdate": "2017-09-02 12:15:32",
@@ -54,8 +58,10 @@
 		"left": 312,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
+		"minheight": 0,
 		"minimizebox": false,
 		"minimizeiconid": 2006,
+		"minwidth": 0,
 		"moddate": "2019-02-08 23:52:06",
 		"modelessdata": true,
 		"movebehind": true,
@@ -84,6 +90,7 @@
 		"zoombox": false
 	},
 	"statusbar": {
+		"inherited": false,
 		"properties": {
 			"fieldstyle": "",
 			"font": 1,

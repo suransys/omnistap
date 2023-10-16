@@ -58,10 +58,10 @@ For pfrList1.$line from 1 to pfrList1.$linecount step 1
 		End If
 	End If
 	
-	Do lrList1Row.$assignrow(pfrList1,kFalse)
+	Do lrList1Row.$assignrow(pfrList1.0,kFalse)
 	Calculate lbnList1Row as lrList1Row
 	
-	Do lrList2Row.$assignrow(pfrList2,kFalse)
+	Do lrList2Row.$assignrow(pfrList2.0,kFalse)
 	Calculate lbnList2Row as lrList2Row
 	
 	Calculate lbRowsEqual as bincompare(lbnList1Row,lbnList2Row)

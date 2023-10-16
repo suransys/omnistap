@@ -15,6 +15,9 @@
 			"type": 0,
 			"calc": "wg_HTML"
 		},
+		"componentinfo": {
+
+		},
 		"contextmenu": "",
 		"cursor": 0,
 		"dataname": "icHTMLResults",
@@ -36,7 +39,7 @@
 		"fontsize": 0,
 		"fontstyle": "kPlain",
 		"forecolor": "kColorWindow",
-		"height": 430,
+		"height": 458,
 		"helpfile": 0,
 		"horzscroll": false,
 		"keyevents": false,
@@ -65,6 +68,6 @@
 		"userinfo": "",
 		"vertscroll": false,
 		"visible": true,
-		"width": 556
+		"width": 558
 	}
 }

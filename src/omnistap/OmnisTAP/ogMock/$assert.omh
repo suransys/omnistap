@@ -1,10 +1,5 @@
 #Assert methods
 For ilMockMethods.$line from 1 to ilMockMethods.$linecount step 1
-	# When using always we don't track or care about expected calls
-	If ilMockMethods.Always
-		Jump to start of loop
-	End If
-	
 	Calculate lnCallCountWant as pick(isclear(ilMockMethods.Calls.$linecount),ilMockMethods.Calls.$linecount,0)
 	
 	Switch lnCallCountWant

@@ -5,11 +5,16 @@
 	"properties": {
 		"active": true,
 		"alpha": 255,
+		"animateui": false,
 		"backcolor": "kColorWindow",
 		"backgroundtheme": "kBGThemeParent",
 		"backpattern": 0,
 		"bordercolor": "RGB(0,0,0)",
+		"borderradius": "0",
 		"candropcursor": 0,
+		"componentinfo": {
+
+		},
 		"contextmenu": "",
 		"currentpage": 1,
 		"cursor": 0,
@@ -38,6 +43,7 @@
 		"osdropflags": "kOSDROPnone",
 		"pagecount": 1,
 		"rmouseevents": false,
+		"showpagebuttons": false,
 		"sidepanel": false,
 		"sidepanelmode": "kSidePanelModeNone",
 		"statusevents": false,

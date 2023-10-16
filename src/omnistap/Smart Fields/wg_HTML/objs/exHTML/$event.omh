@@ -1,13 +1,2 @@
 On evBrowserOpenUrl
-	If low(left(pUrl,4))='tap:'
-		# Jump to method
-		Calculate lcURL as pUrl
-		Do strtok(nam(lcURL),'_')
-		Calculate lcURL as OW3.$unescapeuritext(lcURL)
-		Calculate lcClass as strtok(nam(lcURL),'|')
-		Calculate lcMethod as strtok(nam(lcURL),'|')
-		Calculate lcLine as strtok(nam(lcURL),'|')
-		Do [lcClass].$methods.$findname(lcMethod).$modify(lcLine)
-	Else
-		Do $ctask.uoWeb.$openURL(pUrl)
-	End If
+	Do $ctask.uoWeb.$openURL(pUrl)

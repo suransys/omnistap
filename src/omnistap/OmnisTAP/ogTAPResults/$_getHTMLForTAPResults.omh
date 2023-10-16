@@ -7,9 +7,6 @@ For ilTAPResults.$line from 1 to ilTAPResults.$linecount step 1
 	Else
 		Calculate lcDescription as $cinst.$_cleanHTML(ilTAPResults.Description)
 	End If
-	#//// Wrap the description in a link for jumping directly to the calling method
-	Calculate lvURL as con('tap:goto_',OW3.$escapeuritext(con(ilTAPResults.Class,'|',ilTAPResults.Method,'|',ilTAPResults.Line)))
-	Calculate lcDescription as con(' <a href="',lvURL,'" style="text-decoration:none;color:black;" target="_new" >',lcDescription,'</a>')
 	
 	Switch ilTAPResults.TAP
 		Case "#"

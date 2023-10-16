@@ -1,7 +1,8 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.2",
-	"internalversion": 515,
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
+	"internalversion": 508,
 	"superclass": "w0Base",
 	"designtaskname": "Startup_Task",
 	"nextident": 1074,
@@ -105,6 +106,9 @@
 		"closebox": true,
 		"collectperformancedata": false,
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"contextmenu": "",
 		"createdate": "2016-07-08 20:25:44",
@@ -133,9 +137,11 @@
 		"left": 605,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
+		"minheight": 0,
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2023-03-13 20:41:58",
+		"minwidth": 0,
+		"moddate": "2020-05-05 17:02:28",
 		"modelessdata": true,
 		"movebehind": true,
 		"osdropflags": "kOSDROPnone",
@@ -166,6 +172,7 @@
 		"zoombox": true
 	},
 	"statusbar": {
+		"inherited": false,
 		"properties": {
 			"fieldstyle": "",
 			"font": 1,

@@ -1,6 +1,7 @@
 {
 	"classtype": "kSystemtable",
-	"omnisversion": "10.2",
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
 	"internalversion": 4,
 	"iconversion": 0,
 	"nextident": 43,

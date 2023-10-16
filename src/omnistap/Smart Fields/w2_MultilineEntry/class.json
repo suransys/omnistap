@@ -1,6 +1,7 @@
 {
 	"classtype": "kWindow",
-	"omnisversion": "10.2",
+	"omnisversion": "11.0",
+	"omnisbuild": 110035659,
 	"internalversion": 7,
 	"superclass": "w1_SmartFieldSuper",
 	"designtaskname": "Startup_Task",
@@ -39,6 +40,9 @@
 		"closebox": true,
 		"collectperformancedata": false,
 		"componenticon": 0,
+		"componentinfo": {
+
+		},
 		"componenttype": "kCompStoreHidden",
 		"contextmenu": "",
 		"createdate": "2017-09-02 12:15:32",
@@ -67,8 +71,10 @@
 		"left": 110,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
+		"minheight": 0,
 		"minimizebox": false,
 		"minimizeiconid": 2006,
+		"minwidth": 0,
 		"moddate": "2019-02-26 14:59:50",
 		"modelessdata": true,
 		"movebehind": true,
@@ -97,6 +103,7 @@
 		"zoombox": false
 	},
 	"statusbar": {
+		"inherited": false,
 		"properties": {
 			"fieldstyle": "",
 			"font": 1,
