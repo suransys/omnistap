@@ -2,7 +2,7 @@
 	"classtype": "kObjectclass",
 	"omnisversion": "11.0",
 	"omnisbuild": 110035659,
-	"internalversion": 485,
+	"internalversion": 489,
 	"superclass": ".Timer Library.Timer",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -236,7 +236,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2020-05-05 17:02:28",
+		"moddate": "2023-12-13 09:13:02",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",
