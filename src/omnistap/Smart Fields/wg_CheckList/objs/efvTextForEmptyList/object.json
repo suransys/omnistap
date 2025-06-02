@@ -73,6 +73,7 @@
 		"sidepanelmode": "kSidePanelModeNone",
 		"statusevents": false,
 		"stripspaces": true,
+		"stripthousandonpaste": false,
 		"subwindowstyle": false,
 		"text": "",
 		"textcolor": "kColorGrayText",

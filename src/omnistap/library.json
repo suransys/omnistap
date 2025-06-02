@@ -1,9 +1,7 @@
 {
-	"omnisversion": "11.0",
-	"omnisbuild": 110035659,
+	"omnisversion": "11.2",
 	"includes": [
-		"OMNISCLI",
-		"OMNISTAP"
+		"OMNISCLI"
 	],
 	"properties": {
 		"ignoreexternal": true,
@@ -24,6 +22,7 @@
 		"canfocusbuttons": "kNofocus",
 		"centuryrange": 1980,
 		"defaultname": "",
+		"defineresolvesfieldrefs": false,
 		"designdpi": "96,72,75",
 		"designdpimode": "kDPIoff",
 		"designedscreensizes": "kSSZjs320x480Portrait,kSSZjs768x1024Portrait",

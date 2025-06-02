@@ -1,8 +1,6 @@
 {
 	"classtype": "kFolder",
-	"omnisversion": "11.0",
-	"omnisbuild": 110035659,
-	"internalversion": 10,
+	"omnisversion": "11.2",
 	"properties": {
 		"componentinfo": {
 
@@ -13,7 +11,6 @@
 		"editor": "",
 		"editordata": "",
 		"external": true,
-		"moddate": "2018-07-05 16:05:25",
 		"showascheckedout": false,
 		"userinfo": "",
 		"vcsrevision": 0,

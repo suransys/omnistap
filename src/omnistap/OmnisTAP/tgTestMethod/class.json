@@ -1,8 +1,6 @@
 {
 	"classtype": "kTable",
-	"omnisversion": "11.0",
-	"omnisbuild": 110035659,
-	"internalversion": 16,
+	"omnisversion": "11.2",
 	"superclass": "t0Base",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
@@ -38,7 +36,6 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-07-05 16:05:25",
 		"showascheckedout": false,
 		"sqlclassname": "sgTestMethod",
 		"userinfo": "",

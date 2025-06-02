@@ -1,8 +1,6 @@
 {
 	"classtype": "kSystemtable",
-	"omnisversion": "11.0",
-	"omnisbuild": 110035659,
-	"internalversion": 4,
+	"omnisversion": "11.2",
 	"iconversion": 0,
 	"nextident": 43,
 	"properties": {
@@ -10,7 +8,6 @@
 		"createdate": "2009-02-20 11:59:41",
 		"desc": "",
 		"external": true,
-		"moddate": "2017-07-30 12:11:00",
 		"showascheckedout": false,
 		"userinfo": "",
 		"vcsrevision": 0,

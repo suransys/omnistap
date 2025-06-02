@@ -1,8 +1,6 @@
 {
 	"classtype": "kMenu",
-	"omnisversion": "11.0",
-	"omnisbuild": 110035659,
-	"internalversion": 50,
+	"omnisversion": "11.2",
 	"designtaskname": "Startup_Task",
 	"nextident": 1017,
 	"cvardefs": [
@@ -36,7 +34,6 @@
 		"helptext": "",
 		"inheritedorder": 0,
 		"issupercomponent": false,
-		"moddate": "2019-01-22 18:31:30",
 		"showascheckedout": false,
 		"title": {
 			"type": 0,
